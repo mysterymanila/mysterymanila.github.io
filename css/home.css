@@ -1,8 +1,36 @@
 body{
+	/*background: url('/img/Desktop HD.png');	
+	background-size: cover;
+	background-repeat: no-repeat;*/
 	background-color: black;
+}
+
+header{
+	border:0!important;
+}
+
+#header{
+	background-color: black;
+}
+
+#header > #header-name{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+}
+
+#header > #header-logo{
+	width: 43px;
+	padding: 16px 9px 16px 27px;
 }
 
 #sidebar{
 	width: 50px;
 	float: right;
+}
+
+#header>.site-nav{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
 }
