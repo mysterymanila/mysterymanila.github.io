@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+  {% include boilerplate_head.html %}
+
+  <body>
+    {% include header.html %}
+    <div id="cover">
+      {% include front/cover %}
+    </div>
+    <div id="about">
+      {% include front/about.html %}
+    </div>
+    
+    <div id="rooms">
+      {% include room-navigation.html %}
+      {% for room in rooms %}
+        {{ room.output }}
+      {% endfor %}
+    </div>
+    <div id="leaderboard">
+      <!--Captured Instagram leaderboard posts-->
+    </div>
+    <div id="ig">
+      <!--Instagram captured hash tags-->
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
