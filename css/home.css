@@ -8,8 +8,92 @@ body{
 header{
 	border:0!important;
 }
+
+
 /*header style*/
-#header{
+nav#work-navbar {
+    background-color: black;
+}
+
+#nav-title{
+	float:right;
+	margin: 2px 0px 0px 10px;
+	letter-spacing: 1px;
+}
+
+nav#work-navbar a{
+	color:#fff;
+	text-decoration: none;
+}
+
+.brand-logo-small {
+height: 36px;
+}
+
+
+nav#work-navbar {
+    background-color: black;
+    border-color: transparent;
+}
+
+nav#work-navbar > .container > .navbar-header a > img{
+    top: auto;
+}
+
+.navbar-header button{
+    margin-top:20px;
+}
+
+nav#work-navbar > .container > .navbar-header > .navbar-brand{
+    height: inherit;  
+    padding-top: 0;
+    padding-bottom: 0; 
+    line-height: 55px;
+}
+
+nav#work-navbar > .container {
+    padding-top: 0;
+    line-height: 59px;
+    padding-bottom: 0;
+}
+
+nav#work-navbar > .container .navbar-right > ul.nav{
+    padding-right: 0;
+}
+
+.navbar-right > ul.nav > li{
+    padding:8px;
+}
+
+nav#work-navbar > .container .navbar-right > ul.nav > li{
+    font-size: 14px;
+    height: 100%;
+    text-align: right;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    line-height: 2;
+    margin: 6px 0px 0px 50px;
+}
+
+@media screen and (max-width: 480px) {
+    nav#work-navbar > .container .navbar-right > ul.nav > li{
+    margin-top:0px;}
+}
+
+nav#work-navbar > .container .navbar-right > ul.nav > li > a{
+    display: inline;
+    padding: 0;
+    color: #fff;
+
+}
+
+
+
+
+
+
+
+/*#header{
 	background-color: black;
 }
 
@@ -22,14 +106,21 @@ header{
 #header > #header-logo{
 	width: 43px;
 	padding: 16px 9px 16px 27px;
-}
+}*/
 
+/*cover style*/
 #cover{
-	height:500px;
-	width:500px;
-	background-color: #eeffee;
+	position: relative;
+	min-height: 1024px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
-
+/*sidebar style*/
 #sidebar{
 	width: 50px;
 	float: right;
@@ -41,4 +132,4 @@ header{
 	font-size: 20px;
 }
 
-/*cover style*/
+
