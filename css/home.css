@@ -1,5 +1,5 @@
 body{
-    /*background: url('/img/Desktop HD.png');
+/*    background: url('/img/Desktop HD.png');
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.5;*/
@@ -112,27 +112,31 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
 }
 
 /*cover style*/
+
+#m-logo{
+    padding:155px 0px 0px 0px;
+    min-height: 570px;
+    min-width: 100%;
+}
+
+.image-center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
 #cover{
     position: relative;
-    min-height: 954px;
+    min-height: 1024px;
     width: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
+    background-image: url('/img/coverbg.png');
 }
 
 #cover-brush{
-  
-    min-height: 954px;
+    background-image: url('/img/coverbrush.png');
+    min-height: 304px;
     width: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
