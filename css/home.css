@@ -1,29 +1,29 @@
 body{
-	/*background: url('/img/Desktop HD.png');	
-	background-size: cover;
-	background-repeat: no-repeat;*/
-	background-color: black;
+    background: url('/img/Desktop HD.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
 }
 
 header{
-	border:0!important;
+    border:0!important;
 }
 
 
 /*header style*/
 #nav-title{
-	float:right;
-	margin: 2px 0px 0px 10px;
-	letter-spacing: 1px;
+    float:right;
+    margin: 2px 0px 0px 10px;
+    letter-spacing: 1px;
 }
 
 nav#work-navbar a{
-	color:#fff;
-	text-decoration: none;
+    color:#fff;
+    text-decoration: none;
 }
 
 .brand-logo-small {
-height: 36px;
+    height: 36px;
 }
 
 
@@ -41,13 +41,13 @@ nav#work-navbar > .container > .navbar-header a > img{
 }
 
 .navbar-default .navbar-collapse{
-	border-color: transparent;
+    border-color: transparent;
 }
 
 nav#work-navbar > .container > .navbar-header > .navbar-brand{
-    height: inherit;  
+    height: inherit;
     padding-top: 0;
-    padding-bottom: 0; 
+    padding-bottom: 0;
     line-height: 55px;
 }
 
@@ -77,7 +77,7 @@ nav#work-navbar > .container .navbar-right > ul.nav > li{
 
 @media screen and (max-width: 480px) {
     nav#work-navbar > .container .navbar-right > ul.nav > li{
-    margin-top:0px;}
+        margin-top:0px;}
 
 }
 
@@ -90,23 +90,23 @@ nav#work-navbar > .container .navbar-right > ul.nav > li > a{
 
 /*cover style*/
 #cover{
-	position: relative;
+    position: relative;
     min-height: 1024px;
--   width: 100%;
--   top: 0;
--   left: 0;
--   right: 0;
--   bottom: 0;
--   background-size: cover;
--   background-position: top center;
--   background-repeat: no-repeat;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
 }
 
 
 /*sidebar style*/
 #sidebar{
-	width: 50px;
-	float: right;
+    width: 50px;
+    float: right;
 }
 
 #sidebar > img{
@@ -114,9 +114,9 @@ nav#work-navbar > .container .navbar-right > ul.nav > li > a{
 }
 
 #header>.site-nav{
-	text-decoration: none;
-	color: white;
-	font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
 }
 
 
