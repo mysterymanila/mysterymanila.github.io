@@ -38,7 +38,6 @@ nav#work-navbar a{
     height: 43px;
 }
 
-
 nav#work-navbar {
     background-color: black;
     border-color: transparent;
@@ -75,7 +74,7 @@ nav#work-navbar > .nav-container .container .navbar-right > ul.nav{
 }
 
 nav#work-navbar > .nav-container .navbar-right{
-    width: 33%;
+    margin-right: 15px;
 }
 
 nav#work-navbar > .nav-container .navbar-right > ul.nav{
@@ -96,11 +95,11 @@ nav#work-navbar > .nav-container .container .navbar-right > ul.nav > li{
     margin: 6px 0px 0px 50px;
 }
 
-@media screen and (max-width: 480px) {
-    nav#work-navbar > .nav-container .navbar-right > ul.nav > li{
+
+nav#work-navbar > .nav-container .navbar-right > ul.nav > li{
         margin-top:0px;}
 
-}
+
 
 nav#work-navbar > .nav-container .navbar-right > ul.nav > li > a{
     display: inline;
