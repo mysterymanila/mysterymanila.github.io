@@ -101,10 +101,16 @@ nav#work-navbar > .container .navbar-right > ul.nav > li > a{
 	background-position: top center;
 	background-repeat: no-repeat;
 }
+
+
 /*sidebar style*/
 #sidebar{
 	width: 50px;
 	float: right;
+}
+
+#sidebar > img{
+    width: 100%;
 }
 
 #header>.site-nav{
