@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
 /*    background: url('/img/Desktop HD.png');
     background-size: cover;
@@ -5,6 +6,8 @@ body{
     opacity: 0.5;*/
 }
 
+=======
+>>>>>>> Added markup for rooms
 header{
     border:0!important;
 }
@@ -158,8 +161,33 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
     font-size: 20px;
 }
 
+
 /*about style*/
 #about{
     height: 790px;
 }
 
+/*rooms styles*/
+div#rooms {
+    color: #FFF;
+    background-color: #000;
+}
+
+.room {
+    margin-top: -275px;
+}
+.room .room-title {
+    vertical-align: middle;
+    display: inline-block;
+}
+.room .room-title > img {
+    height: 50px;
+    width: auto;
+    float: left;
+}
+
+.room .room-title > h2 {
+    float: left;
+    margin-top: 10px;
+    padding-left: 15px;
+}

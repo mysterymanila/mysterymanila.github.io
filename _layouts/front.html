@@ -11,12 +11,8 @@
     <div id="about">
       {% include front/about.html %}
     </div>
-    
     <div id="rooms">
-      {% include room-navigation.html %}
-      {% for room in rooms %}
-        {{ room.output }}
-      {% endfor %}
+      {{ content }}
     </div>
     <div id="leaderboard">
       <!--Captured Instagram leaderboard posts-->
