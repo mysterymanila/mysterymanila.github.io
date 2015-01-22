@@ -1,11 +1,13 @@
 <div class="room">
     <div class="hero-content">
-        <img src="{{ page.hero }}" width=100%/>
+        <video width="100%" height="auto" poster="{{ page.image }}" autoplay loop>
+            <source src="{{ page.video }}" type="video/mp4">
+        </video>
     </div>
     <div class="container">
-        <div class="pull-right col-md-5 room">
+        <div class="pull-right col-md-5 room-text">
             <div class="room-title">
-                <img src="{{ page.icon }}"/>
+                <img src="{{ page.icon }}" class="pull-left" />
                 <h2>{{ page.title}}</h2>
             </div>
             {{ page.description }}
