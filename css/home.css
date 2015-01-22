@@ -1,8 +1,8 @@
 body{
-    background: url('/img/Desktop HD.png');
+    /*background: url('/img/Desktop HD.png');
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.5;
+    opacity: 0.5;*/
 }
 
 header{
@@ -125,6 +125,18 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
     background-repeat: no-repeat;
 }
 
+#cover-brush{
+  
+    min-height: 954px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
 
 /*sidebar style*/
 #sidebar{
