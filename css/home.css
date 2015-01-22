@@ -90,11 +90,16 @@ nav#work-navbar > .container .navbar-right > ul.nav > li > a{
 
 /*cover style*/
 #cover{
-	min-height: 1024px;
-    background: url('/img/Desktop HD.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.5;
+	position: relative;
+    min-height: 1024px;
+-   width: 100%;
+-   top: 0;
+-   left: 0;
+-   right: 0;
+-   bottom: 0;
+-   background-size: cover;
+-   background-position: top center;
+-   background-repeat: no-repeat;
 }
 
 
