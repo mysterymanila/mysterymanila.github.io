@@ -1,9 +1,9 @@
-body{
-/*    background: url('/img/Desktop HD.png');
+/*body{
+    background: url('/img/Desktop HD.png');
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.5;*/
-}
+    opacity: 0.5;
+}*/
 
 header{
     border:0!important;
@@ -114,7 +114,7 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
 /*cover style*/
 
 #m-logo{
-    padding:155px 0px 0px 0px;
+    padding:125px 0px 0px 0px;
     min-height: 570px;
     min-width: 100%;
 }
@@ -122,12 +122,14 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
 .image-center{
     display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    height: 25%;
+    width: 25%;
 }
 #cover{
-    position: relative;
-    min-height: 1024px;
+    min-height: 800px;
     width: 100%;
+    background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
     background-image: url('/img/coverbg.png');
@@ -135,12 +137,103 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
 
 #cover-brush{
     background-image: url('/img/coverbrush.png');
-    min-height: 304px;
+    min-height: 264px;
     width: 100%;
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
 }
+
+@media screen and (max-width: 1200px) {
+.image-center{
+    margin-left: auto;
+    margin-right: auto;
+    height: 337px;
+    width: 245px;}
+
+    #m-logo{
+    padding:125px 0px 0px 0px;
+    min-height: 100px;
+    min-width: 100%;}
+
+    #cover{
+    min-height: 650px;
+    width: 100%;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-image: url('/img/coverbg.png');}
+
+    #cover-brush{
+    background-image: url('/img/coverbrush.png');
+    min-height: 240px;
+    width: 100%;
+    background-position: bottom center;
+    background-repeat: no-repeat;}
+
+}
+
+@media screen and (max-width: 992px) {
+.image-center{
+    margin-left: auto;
+    margin-right: auto;
+    height: 337px;
+    width: 245px;}
+
+    #m-logo{
+    padding:125px 0px 0px 0px;
+    min-height: 100px;
+    min-width: 100%;}
+
+    #cover{
+    min-height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-image: url('/img/coverbg.png');}
+
+    #cover-brush{
+    background-image: url('/img/coverbrush.png');
+    min-height: 188px;
+    width: 100%;
+    background-position: bottom center;
+    background-repeat: no-repeat;}
+
+}
+
+@media screen and (max-width: 768px) {
+.image-center{
+    margin-left: auto;
+    margin-right: auto;
+    height: 337px;
+    width: 245px;}
+
+    #m-logo{
+    padding:125px 0px 0px 0px;
+    min-height: 100px;
+    min-width: 100%;}
+
+    #cover{
+    height: 570px;
+    width: 100%;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-image: url('/img/coverbg.png');}
+
+    #cover-brush{
+    background-image: url('/img/coverbrush.png');
+    min-height: 140px;
+    width: 100%;
+    background-position: bottom center;
+    background-repeat: no-repeat;}
+
+}
+
+
+
+
 
 /*sidebar style*/
 #sidebar{
@@ -162,4 +255,3 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
 #about{
     height: 790px;
 }
-
