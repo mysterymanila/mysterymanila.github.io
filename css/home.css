@@ -142,4 +142,8 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
     font-size: 20px;
 }
 
+/*about style*/
+#about{
+    height: 790px;
+}
 
