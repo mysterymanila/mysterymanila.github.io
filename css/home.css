@@ -11,10 +11,6 @@ header{
 
 
 /*header style*/
-nav#work-navbar {
-    background-color: black;
-}
-
 #nav-title{
 	float:right;
 	margin: 2px 0px 0px 10px;
@@ -41,7 +37,11 @@ nav#work-navbar > .container > .navbar-header a > img{
 }
 
 .navbar-header button{
-    margin-top:20px;
+    margin-top:10px;
+}
+
+.navbar-default .navbar-collapse{
+	border-color: transparent;
 }
 
 nav#work-navbar > .container > .navbar-header > .navbar-brand{
@@ -78,6 +78,7 @@ nav#work-navbar > .container .navbar-right > ul.nav > li{
 @media screen and (max-width: 480px) {
     nav#work-navbar > .container .navbar-right > ul.nav > li{
     margin-top:0px;}
+
 }
 
 nav#work-navbar > .container .navbar-right > ul.nav > li > a{
@@ -86,27 +87,6 @@ nav#work-navbar > .container .navbar-right > ul.nav > li > a{
     color: #fff;
 
 }
-
-
-
-
-
-
-
-/*#header{
-	background-color: black;
-}
-
-#header > #header-name{
-	text-decoration: none;
-	color: white;
-	font-size: 20px;
-}
-
-#header > #header-logo{
-	width: 43px;
-	padding: 16px 9px 16px 27px;
-}*/
 
 /*cover style*/
 #cover{
@@ -118,6 +98,7 @@ nav#work-navbar > .container .navbar-right > ul.nav > li > a{
 	right: 0;
 	bottom: 0;
 	background-size: cover;
+	background-position: top center;
 	background-repeat: no-repeat;
 }
 /*sidebar style*/
