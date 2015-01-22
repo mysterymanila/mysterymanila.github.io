@@ -1,9 +1,11 @@
+
 /*body{
     background: url('/img/Desktop HD.png');
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.5;
 }*/
+
 
 header{
     border:0!important;
@@ -63,7 +65,7 @@ nav#work-navbar > .nav-container > .navbar-header > .navbar-brand{
 
 nav#work-navbar > .nav-container {
     padding-top: 0;
-    line-height: 59px;
+    /*line-height: 59px;*/
     padding-bottom: 0;
 }
 
@@ -109,6 +111,12 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li > a{
 
 nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
     margin-right: 65px;
+}
+
+#header>.site-nav{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
 }
 
 /*cover style*/
@@ -238,20 +246,68 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
 /*sidebar style*/
 #sidebar{
     width: 50px;
-    float: right;
+    position: fixed;
+    top: 100px;
+    right: 0;
 }
 
 #sidebar > img{
+    position:  absolute;
     width: 100%;
+    right: -150%;
 }
 
-#header>.site-nav{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
+#side-bar-2{
+    top: 45px;
 }
+#side-bar-3{
+    top: 90px;
+}
+#side-bar-4{
+    top: 135px;
+}
+#side-bar-5{
+    top: 180px;
+}
+#side-bar-6{
+    top: 225px;
+}
+
+
+
 
 /*about style*/
 #about{
     height: 790px;
+}
+
+/*rooms styles*/
+div#rooms {
+    color: #FFF;
+    background-color: #000;
+}
+.room {
+    height: 100vh;
+    background-color: #000;
+}
+.room-text {
+    margin-top: -100px;
+}
+.room-text .room-title {
+    vertical-align: middle;
+    display: inline-block;
+}
+.room-text .room-title > img {
+    height: 50px;
+    width: auto;
+    float: left;
+}
+
+.room-text .room-title > h2 {
+    float: left;
+    margin-top: 10px;
+    padding-left: 15px;
+}
+
+.room-text .hero-content {
 }

@@ -1,6 +1,7 @@
 ---
 layout: front
 ---
-<div class="home">
 
-</div>
+{% for room in site.rooms %}
+  {{ room.output }}
+{% endfor %}
