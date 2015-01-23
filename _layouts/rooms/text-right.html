@@ -1,18 +1,22 @@
-<div class="room" >
+<div class="room clearfix">
     <div class="hero-content">
-        <span class="{{ page.frame.top }}"  data-stellar-ratio="0.9"></span>
-        <video data-stellar-ratio="0" width="100%" height="auto" poster="{{ page.image }}" autoplay loop data-stellar-offset-parent="true">
+        <video data-stellar-ratio="0" width="100%" height="auto" poster="{{ page.image }}" autoplay loop >
             <source src="{{ page.video }}" type="video/mp4">
-        </video>
-        <span class="{{ page.frame.bottom }}"  data-stellar-ratio="0.9"></span>
+        </video>        
     </div>
-    <div class="container">
-        <div class="pull-right col-md-5 room-text">
-            <div class="room-title">
-                <img src="{{ page.icon }}" class="pull-left" />
-                <h2>{{ page.title}}</h2>
+    <div class="room-description">
+        <span class="{{ page.frame.bottom }}"></span>
+        <div class="container">
+            <div class="pull-right col-md-6 room-text">
+                <div class="room-title">
+                    <img src="{{ page.icon }}" class="pull-left" />
+                    <h2>{{ page.title}}</h2>
+                </div>
+                {{ page.description }}
+                <h4>Location: {{ page.location }}</h4>
             </div>
-            {{ page.description }}
         </div>
+        <span class="{{ page.frame.top }}"></span>
     </div>
+    
 </div>

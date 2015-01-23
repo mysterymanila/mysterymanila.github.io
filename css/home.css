@@ -266,28 +266,38 @@ div#rooms {
     background-color: #000;
 }
 .room {
-    height: 100vh;
     background-color: #000;
 }
 .room-text {
-    margin-top: -200px;
+    margin-top: -150px;
 }
 .room-text .room-title {
-    vertical-align: middle;
     display: inline-block;
 }
 .room-text .room-title > img {
-    height: 50px;
+    height: 100px;
     width: auto;
     float: left;
 }
 
 .room-text .room-title > h2 {
     float: left;
-    margin-top: 10px;
+    margin-top: 36px;
     padding-left: 15px;
+    vertical-align: bottom;
 }
-.room-text .hero-content {
+
+.room-text h4 {
+    padding-top: 36px;
+    margin-bottom: 36px;
+}
+
+
+div#rooms .room-description {
+    top: -100px;
+    background-color: #000;
+    position: relative;
+    z-index: 36;
 }
 
 
@@ -297,8 +307,8 @@ div#rooms {
 
 .top-brush-frame-1 {
     position: absolute;
-    min-height: 200px;
-    top: 0;
+    height: 200px;
+    bottom: -250px;
     left: 0;
     right: 0;
     background-image: url(/img/brush-edges/Top_1.png);
@@ -309,8 +319,9 @@ div#rooms {
 
 .bottom-brush-frame-1 {
     position: absolute;
-    min-height: 150px;
-    bottom:0;
+    left: 0;
+    height: 200px;
+    top:-150px;
     left: 0;
     right: 0;
     background-color: transparent;
