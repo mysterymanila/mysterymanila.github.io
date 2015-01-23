@@ -406,6 +406,7 @@ div#rooms .room-description {
 /*IG style*/
 #ig{
     background-image: url('/img/Instagram%20BG.png');
+    background-size: 100% 120%;
 }
 
 #ig> #ig-header{
@@ -428,6 +429,32 @@ div#rooms .room-description {
 }
 
 #ig > #instafeed > a > img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+#leaderboard{
+    background-image: url('/img/board.png');
+    padding-top: 92px;
+}
+
+#leaderboard > #leaderboard-header{
+    text-align: center;
+}
+
+#leaderboard > #leaderboard-header > p{
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+#leaderboard > #leaderboard-images{
+    margin-top: 20px;
+}
+
+#leaderboard > #leaderboard-images> a > img{
     display: block;
     max-width: 100%;
     height: auto;

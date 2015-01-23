@@ -19,6 +19,21 @@ $(function(){
         resolution: 'standard_resolution'
     });
     feed.run();
+
+    var leaderboardFeed = new Instafeed({
+        target: 'leaderboard-images',
+        get: 'tagged',
+        tagName: 'MYSTERYMANILA',
+        clientId: 'b74a7734368849fabe400246441d36f6',
+        sortBy: 'most-recent',
+        limit: '4',
+        template: '<a href="{{link}}" class="col-md-3"><img src="{{image}}" /></a>',
+        resolution: 'standard_resolution',
+        filter: function(image){
+            return image.tags.indexOf('vscocam') >= 0;
+        }
+    });
+    leaderboardFeed.run();
 });
 
 function showSidebar(){
