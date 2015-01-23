@@ -6,7 +6,7 @@ $(function(){
 });
 
 function showSidebar(){
-    if($(document).scrollTop() >= $('#rooms').offset().top){
+    if($(document).scrollTop() >= $('#rooms').offset().top - 100){
         if(!$('#sidebar > img').hasClass('showIcon')){
             $('#sidebar > img').each(function(i){
                 $(this).delay( i * 100).animate({right:'30px'});

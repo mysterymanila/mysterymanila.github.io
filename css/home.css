@@ -307,27 +307,42 @@ div#rooms .room-description {
     position: relative;
 }
 
-.top-brush-frame-1 {
+.top-brush-frame-1, .top-brush-frame-2,
+.bottom-brush-frame-1, .bottom-brush-frame-2{    
     position: absolute;
-    height: 200px;
-    bottom: -250px;
-    left: 0;
-    right: 0;
-    background-image: url(/img/brush-edges/Top_1.png);
-    background-position: bottom;
     background-repeat: no-repeat;
     background-color: transparent;
+    left: 0;
+    right: 0;
+}
+
+.top-brush-frame-1 {
+    height: 200px;
+    bottom: -250px;
+    background-image: url(/img/brush-edges/Top_1.png);
+    background-position: bottom;
+    
 }
 
 .bottom-brush-frame-1 {
     position: absolute;
-    left: 0;
     height: 200px;
     top:-150px;
-    left: 0;
-    right: 0;
-    background-color: transparent;
     background-image: url(/img/brush-edges/Bottom_1.png);
     background-position: top;
-    background-repeat: no-repeat;
+}
+.top-brush-frame-2 {
+    height: 200px;
+    bottom: -250px;
+    background-image: url(/img/brush-edges/Top_2.png);
+    background-position: bottom;
+    
+}
+
+.bottom-brush-frame-2 {
+    position: absolute;
+    height: 200px;
+    top:-150px;
+    background-image: url(/img/brush-edges/Bottom_2.png);
+    background-position: top;
 }
