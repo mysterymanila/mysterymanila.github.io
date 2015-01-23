@@ -10,7 +10,8 @@ $(function(){
         clientId: 'b74a7734368849fabe400246441d36f6',
         limit: '8',
         sortBy: 'most-recent',
-        template: '<a href="{{link}}" class="col-md-3"><img src="{{image}}" /></a>'
+        template: '<a href="{{link}}" class="col-md-3"><img src="{{image}}" /></a>',
+        resolution: 'standard_resolution'
     });
     feed.run();
 });
