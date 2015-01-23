@@ -142,7 +142,8 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
 
 .magnifying-glass{
     display: block;
-    float:right;
+    margin-left: 40%;
+    margin-right: 60%;
     height: 60%;
     width: 60%;
 }
@@ -191,23 +192,17 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
     height: 337px;
     width: 245px;}
 
-
+#magnifying-container{
+    padding: 82px 270px 0px 0px;
+    min-width: 100%;
+}
 
 .magnifying-glass{
-    margin-left: auto;
-    margin-right: auto;
-    height: 337px;
-    width: 500px;
+    margin-left: 45%;
+    margin-right: 55%;
+   height: 392px;
+   width: 578px;
 }
-
-#magnifying-container{
-    padding:125px 0px 0px 0px;
-    min-height: 337px;
-    min-width: 100%;
- 
-}
-
-
 
 
 #cover{
@@ -217,11 +212,36 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
     background-position: top center;
     background-repeat: no-repeat;
     background-image: url('/img/coverbg.png');}
-
-
-
 }
 
+@media screen and (max-width: 800px) {
+
+#magnifying-container{
+    padding: 109px 215px 0px 0px;
+    min-width: 100%;
+}
+
+.magnifying-glass{
+   margin-left: 40%;
+   margin-right: auto;
+   height: 351px;
+   width: 520px;}
+ }
+
+ @media screen and (max-width: 768px) {
+
+#magnifying-container{
+    background-size: cover;
+    padding: 109px 215px 0px 0px;
+    min-width: 100%;
+}
+
+.magnifying-glass{
+
+   margin-right: auto;
+   height: 337px;
+   width: 500px;}
+ }
 
 /*sidebar style*/
 #sidebar{
