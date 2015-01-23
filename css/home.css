@@ -269,6 +269,7 @@ div#rooms {
 }
 .room {
     background-color: #000;
+    position: relative;
 }
 .room-text {
     margin-top: -150px;
@@ -325,14 +326,13 @@ div#rooms .room-description {
 }
 
 .bottom-brush-frame-1 {
-    position: absolute;
     height: 200px;
     top:-150px;
     background-image: url(/img/brush-edges/Bottom_1.png);
     background-position: top;
 }
 .top-brush-frame-2 {
-    height: 200px;
+    height: 250px;
     bottom: -250px;
     background-image: url(/img/brush-edges/Top_2.png);
     background-position: bottom;
@@ -340,7 +340,6 @@ div#rooms .room-description {
 }
 
 .bottom-brush-frame-2 {
-    position: absolute;
     height: 200px;
     top:-150px;
     background-image: url(/img/brush-edges/Bottom_2.png);
