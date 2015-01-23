@@ -231,16 +231,35 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
     position: fixed;
     top: 100px;
     right: 0;
+    list-style: none;
     z-index: 9999;
+    padding: 0;
+    float: right;
 }
 
-#sidebar > img{
-    position:  absolute;
-    width: 100%;
-    right: -150%;
+.sidebar-item{
+    position: relative;
+    right: -150px;
+    margin-bottom: 12px;
+    opacity: 0.5;
+    cursor: pointer;
 }
 
-#side-bar-2{
+img.sidebar-item{
+    height: 60px;
+    width: 60px;
+    transition: all 0.25s;
+}
+
+img.sidebar-item.active, img.sidebar-item:hover{
+    opacity: 1;
+}
+/* img.sidebar-item:hover{
+    height: 64px;
+    width: 64px;
+} */
+
+/* #side-bar-2{
     top: 45px;
 }
 #side-bar-3{
@@ -254,7 +273,7 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
 }
 #side-bar-6{
     top: 225px;
-}
+} */
 
 
 
