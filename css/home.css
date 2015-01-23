@@ -194,7 +194,6 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
 
 
 .magnifying-glass{
-    display: block;
     margin-left: auto;
     margin-right: auto;
     height: 337px;
@@ -202,10 +201,13 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
 }
 
 #magnifying-container{
-    position: absolute;
-    padding: 85px 130px 0px 0px;;
-    
+    padding:125px 0px 0px 0px;
+    min-height: 337px;
+    min-width: 100%;
+ 
 }
+
+
 
 
 #cover{
