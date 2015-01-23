@@ -121,18 +121,30 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
 
 /*cover style*/
 
-#magnifying-glass{
+/*#magnifying-glass{
     position: absolute;
-    min-height: 260px;
     width: 100%;
     left: 0;
     top: 0;
     bottom:0;
-    background-image: url('/img/magnifying-glass.png');
     background-color: transparent;
     background-position:right;
     background-repeat: no-repeat;
   
+}*/
+
+#magnifying-container{
+    position: absolute;
+    padding: 85px 130px 0px 0px;
+    min-height: 570px;
+    min-width: 100%;
+}
+
+.magnifying-glass{
+    display: block;
+    float:right;
+    height: 60%;
+    width: 60%;
 }
 
 #m-logo{
@@ -180,13 +192,31 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
     width: 245px;}
 
 
-    #cover{
+
+.magnifying-glass{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 337px;
+    width: 500px;
+}
+
+#magnifying-container{
+    position: absolute;
+    padding: 85px 130px 0px 0px;;
+    
+}
+
+
+#cover{
     min-height: 600px;
     width: 100%;
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
     background-image: url('/img/coverbg.png');}
+
+
 
 }
 
