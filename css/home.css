@@ -183,6 +183,7 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
     position: fixed;
     top: 100px;
     right: 0;
+    z-index: 9999;
 }
 
 #sidebar > img{
@@ -248,11 +249,13 @@ div#rooms {
 
 .hero-content {
     position: relative;
+    -webkit-filter: grayscale(50%);
+    filter: gray; filter: grayscale(50%);
 }
 
 .top-brush-frame-1 {
     position: absolute;
-    min-height: 150px;
+    min-height: 200px;
     top: 0;
     left: 0;
     right: 0;

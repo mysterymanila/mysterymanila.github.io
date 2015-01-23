@@ -1,13 +1,13 @@
-<div class="room">
+<div class="room" >
     <div class="hero-content">
-        <span class="{{ page.frame.top }}"></span>
-        <video width="100%" height="auto" poster="{{ page.image }}" autoplay loop>
+        <span class="{{ page.frame.top }}"  data-stellar-ratio="0.9"></span>
+        <video data-stellar-ratio="0" width="100%" height="auto" poster="{{ page.image }}" autoplay loop data-stellar-offset-parent="true">
             <source src="{{ page.video }}" type="video/mp4">
         </video>
-        <span class="{{ page.frame.bottom }}"></span>
+        <span class="{{ page.frame.bottom }}"  data-stellar-ratio="0.9"></span>
     </div>
     <div class="container">
-        <div class="pull-right col-md-5 room-text">
+        <div class="pull-right col-md-5 room-text" data-stellar-ratio="0.9">
             <div class="room-title">
                 <img src="{{ page.icon }}" class="pull-left" />
                 <h2>{{ page.title}}</h2>
