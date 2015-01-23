@@ -6,9 +6,13 @@
   <script type="text/javascript">
   $(document).ready(function(){
     $.stellar({
+      horizontalScrolling: false,
       scrollProperty: 'scroll',
       positionProperty: 'position',
       responsive: true
+      hideDistantElements: false,
+      horizontalOffset: 0,
+      verticalOffset: 0
     });
   });
   </script>
@@ -25,12 +29,11 @@
     <div id="rooms">
       {{ content }}
     </div>
-    
-    <div id="leaderboard" style="height:1000px">
+    <div id="leaderboard">
       <!--Captured Instagram leaderboard posts-->
     </div>
-    <div id="ig">
-      <!--Instagram captured hash tags-->
+    <div id="ig" class="clearfix">
+      {%include front/instagram.html%}
     </div>
 
     {% include footer.html %}

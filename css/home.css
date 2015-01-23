@@ -1,9 +1,11 @@
 
 body{
-/*    background: url('/img/Desktop HD.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.5;*/
+    /*background: url('/img/Desktop HD.png');*/
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+    /*opacity: 0.5;*/
+    /*background-position: 0% 60%;*/
+    /*height: 2000px;*/
     background-color:  black !important
 }
 
@@ -249,16 +251,35 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
     position: fixed;
     top: 100px;
     right: 0;
+    list-style: none;
     z-index: 9999;
+    padding: 0;
+    float: right;
 }
 
-#sidebar > img{
-    position:  absolute;
-    width: 100%;
-    right: -150%;
+.sidebar-item{
+    position: relative;
+    right: -150px;
+    margin-bottom: 12px;
+    opacity: 0.5;
+    cursor: pointer;
 }
 
-#side-bar-2{
+img.sidebar-item{
+    height: 60px;
+    width: 60px;
+    transition: all 0.25s;
+}
+
+img.sidebar-item.active, img.sidebar-item:hover{
+    opacity: 1;
+}
+/* img.sidebar-item:hover{
+    height: 64px;
+    width: 64px;
+} */
+
+/* #side-bar-2{
     top: 45px;
 }
 #side-bar-3{
@@ -272,7 +293,7 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
 }
 #side-bar-6{
     top: 225px;
-}
+} */
 
 
 
@@ -288,7 +309,9 @@ div#rooms {
     background-color: #000;
 }
 .room {
+    /*height: 100vh;*/
     background-color: #000;
+    position: relative;
 }
 .room-text {
     margin-top: -150px;
@@ -327,27 +350,71 @@ div#rooms .room-description {
     position: relative;
 }
 
-.top-brush-frame-1 {
+.top-brush-frame-1, .top-brush-frame-2,
+.bottom-brush-frame-1, .bottom-brush-frame-2{    
     position: absolute;
-    height: 200px;
-    bottom: -250px;
-    left: 0;
-    right: 0;
-    background-image: url(/img/brush-edges/Top_1.png);
-    background-position: bottom;
     background-repeat: no-repeat;
     background-color: transparent;
+    left: 0;
+    right: 0;
+}
+
+.top-brush-frame-1 {
+    height: 200px;
+    bottom: -250px;
+    background-image: url(/img/brush-edges/Top_1.png);
+    background-position: bottom;
+    
 }
 
 .bottom-brush-frame-1 {
-    position: absolute;
-    left: 0;
     height: 200px;
     top:-150px;
-    left: 0;
-    right: 0;
-    background-color: transparent;
     background-image: url(/img/brush-edges/Bottom_1.png);
     background-position: top;
-    background-repeat: no-repeat;
+}
+.top-brush-frame-2 {
+    height: 250px;
+    bottom: -250px;
+    background-image: url(/img/brush-edges/Top_2.png);
+    background-position: bottom;
+    
+}
+
+.bottom-brush-frame-2 {
+    height: 200px;
+    top:-150px;
+    background-image: url(/img/brush-edges/Bottom_2.png);
+    background-position: top;
+}
+
+/*IG style*/
+#ig{
+    background-image: url('/img/Instagram%20BG.png');
+}
+
+#ig> #ig-header{
+    text-align: center;
+    padding-top: 92px;
+}
+
+#ig > #ig-header > img{
+    width: 75px;
+}
+
+#ig > #ig-header > p{
+    font-size: 28px;
+    font-weight: 900;
+    margin-top: 23px;
+    color: #000000;
+}
+#ig > #instafeed > a{
+    padding-bottom: 20px;
+}
+
+#ig > #instafeed > a > img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
 }
