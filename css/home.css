@@ -121,6 +121,20 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
 
 /*cover style*/
 
+#magnifying-glass{
+    position: absolute;
+    min-height: 260px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom:0;
+    background-image: url('/img/magnifying-glass.png');
+    background-color: transparent;
+    background-position:right;
+    background-repeat: no-repeat;
+  
+}
+
 #m-logo{
     padding:125px 0px 0px 0px;
     min-height: 570px;

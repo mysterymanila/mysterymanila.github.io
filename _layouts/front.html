@@ -5,7 +5,10 @@
   <script src="/js/jquery.stellar.min.js"></script>
   <script type="text/javascript">
   $(document).ready(function(){
-    $.stellar();
+    $.stellar({
+      scrollProperty: 'scroll',
+      positionProperty: 'position'
+    });
   });
   </script>
 </head>
