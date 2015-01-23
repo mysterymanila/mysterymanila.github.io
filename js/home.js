@@ -4,6 +4,11 @@ $(function(){
         showSidebar();
     });
 
+    $('.scroll-to-rooms').click(function(event){
+        event.preventDefault();
+        $('html, body').animate({scrollTop:$('#rooms').position().top - 72}, 'easeInOutExpo');
+    });
+
     var feed = new Instafeed({
         get: 'tagged',
         tagName: 'MYSTERYMANILA',

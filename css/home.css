@@ -244,6 +244,14 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
    height: 337px;
    width: 500px;}
  }
+#about {
+    color: #FFF;
+    background-color: #000;
+    text-align: center;
+    z-index: 36;
+    position: relative;
+}
+
 
 /*sidebar style*/
 #sidebar{
@@ -265,6 +273,14 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
     cursor: pointer;
 }
 
+img.btn {
+    opacity: 0.5;
+    transition: opacity 0.5s;
+    cursor: pointer;
+}
+img.btn:hover, img.btn.active {
+    opacity: 1;
+}
 img.sidebar-item{
     height: 60px;
     width: 60px;
@@ -294,14 +310,6 @@ img.sidebar-item.active, img.sidebar-item:hover{
 #side-bar-6{
     top: 225px;
 } */
-
-
-
-
-/*about style*/
-#about{
-    height: 790px;
-}
 
 /*rooms styles*/
 div#rooms {
@@ -351,7 +359,8 @@ div#rooms .room-description {
 }
 
 .top-brush-frame-1, .top-brush-frame-2,
-.bottom-brush-frame-1, .bottom-brush-frame-2{    
+.bottom-brush-frame-1, .bottom-brush-frame-2,
+.about-brush-frame{    
     position: absolute;
     background-repeat: no-repeat;
     background-color: transparent;
@@ -379,6 +388,12 @@ div#rooms .room-description {
     background-image: url(/img/brush-edges/Top_2.png);
     background-position: bottom;
     
+}
+.about-brush-frame {
+    height: 150px;
+    bottom: -150px;
+    background-image: url(/img/brush-edges/Top_1.png);
+    background-position: bottom;
 }
 
 .bottom-brush-frame-2 {
