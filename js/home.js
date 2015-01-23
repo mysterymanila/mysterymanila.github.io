@@ -3,6 +3,16 @@ $(function(){
     $(document).scroll(function () {
         showSidebar();
     });
+
+    var feed = new Instafeed({
+        get: 'tagged',
+        tagName: 'MYSTERYMANILA',
+        clientId: 'b74a7734368849fabe400246441d36f6',
+        limit: '8',
+        sortBy: 'most-recent',
+        template: '<a href="{{link}}" class="col-md-3"><img src="{{image}}" /></a>'
+    });
+    feed.run();
 });
 
 function showSidebar(){
