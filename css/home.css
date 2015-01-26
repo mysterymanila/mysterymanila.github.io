@@ -418,8 +418,8 @@ div#rooms .room-description {
 }
 
 .top-brush-frame-1 {
-    height: 250px;
-    bottom: -250px;
+    height: 300px;
+    bottom: -300px;
     background-image: url(/img/brush-edges/Top_1.png);
     background-position: bottom;
     
@@ -456,6 +456,7 @@ div#rooms .room-description {
 #ig{
     background-image: url('/img/Instagram%20BG.png');
     background-size: 100% 120%;
+    background-color: white;
 }
 
 #ig> #ig-header{
