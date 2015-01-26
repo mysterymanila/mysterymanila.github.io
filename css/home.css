@@ -135,28 +135,27 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
   
 }*/
 
-#magnifying-container{
+/* .magnifying-glass-container{
     position: absolute;
-    padding: 85px 130px 0px 0px;
     min-height: 570px;
     min-width: 100%;
-}
+} */
 
-.magnifying-glass{
+#magnifying-glass{
+    position: absolute;
+    right: 0;
+    top: 100px;
     display: block;
-    margin-left: 40%;
-    margin-right: 60%;
-    height: 60%;
-    width: 60%;
+    width: 50%;
 }
 
-#m-logo{
+.m-logo-container{
     padding:125px 0px 0px 0px;
     min-height: 570px;
     min-width: 100%;
 }
 
-.image-center{
+#m-logo{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -164,7 +163,6 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
     width: 25%;
 }
 #cover{
-    position: relative;
     min-height: 760px;
     width: 100%;
     background-position: top center;
