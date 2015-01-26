@@ -1,7 +1,11 @@
 $(function(){
-    showSidebar();
     $(document).scroll(function () {
-        showSidebar();
+        if(($(document).scrollTop() >= $('#rooms').offset().top - 300)
+            && $(document).scrollTop() <= $('#ig').offset().top-500){
+            showSidebar();
+        }else{
+            hideSidebar();
+        }
     });
 
     $('.scroll-to-rooms').click(function(event){
@@ -37,22 +41,22 @@ $(function(){
 });
 
 function showSidebar(){
-    if($(document).scrollTop() >= $('#rooms').offset().top - 100){
-        if($('#sidebar').hasClass('sidebar-hidden')){
-            console.log("Showing sidebar")
-            $('.sidebar-item').each(function(i){
-                $(this).delay( i * 100).animate({right:'24px'});
-            });
-            $('#sidebar').addClass('sidebar-visible');
-            $('#sidebar').removeClass('sidebar-hidden');
-        }
-    }else{
-        if($('#sidebar').hasClass('sidebar-visible')){
-            $('.sidebar-item').each(function(i){
-                $(this).delay( i * 100).animate({right:'-150px'});
-            });
-            $('#sidebar').addClass('sidebar-hidden');
-            $('#sidebar').removeClass('sidebar-visible');
-        }
+    if($('#sidebar').hasClass('sidebar-hidden')){
+        console.log("Showing sidebar")
+        $('.sidebar-item').each(function(i){
+            $(this).delay( i * 100).animate({right:'24px'});
+        });
+        $('#sidebar').addClass('sidebar-visible');
+        $('#sidebar').removeClass('sidebar-hidden');
+    }   
+}
+
+function hideSidebar(){
+    if($('#sidebar').hasClass('sidebar-visible')){
+        $('.sidebar-item').each(function(i){
+            $(this).delay( i * 100).animate({right:'-150px'});
+        });
+        $('#sidebar').addClass('sidebar-hidden');
+        $('#sidebar').removeClass('sidebar-visible');
     }
 }
