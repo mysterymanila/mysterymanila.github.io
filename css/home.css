@@ -146,7 +146,7 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
     right: 0;
     top: 100px;
     display: block;
-    width: 50%;
+    height: 50%;
 }
 
 .m-logo-container{
@@ -173,9 +173,28 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
     max-height: 300px;
     min-height: 200px;
 }
-@media (min-width: 1200px){
+@media (min-width: 1000px){
     #m-logo{
         max-height: 480px;
+    }
+    #magnifying-glass{
+        height: 70%
+    }
+}
+
+@media (max-width: 1000px){
+    #magnifying-glass{
+        height: 55%
+    }
+}
+@media (max-width: 950px){
+    #magnifying-glass{
+        height: 45%
+    }
+}
+@media (max-width: 650px){
+    #magnifying-glass{
+        height: 35%
     }
 }
 #cover{
