@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color:  black !important;
+    background-color:  #000 !important;
     font-family: Gotham;
 }
 
@@ -305,12 +305,15 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
     list-style: none;
     z-index: 9999;
     padding: 0;
+    margin:0;
     float: right;
 }
 
 .sidebar-item{
     position: relative;
     right: -150px;
+    margin:0;
+    padding: 0;
     margin-bottom: 12px;
     opacity: 0.5;
     cursor: pointer;
@@ -415,7 +418,7 @@ div#rooms .room-description {
 }
 
 .top-brush-frame-1 {
-    height: 200px;
+    height: 250px;
     bottom: -250px;
     background-image: url(/img/brush-edges/Top_1.png);
     background-position: bottom;
