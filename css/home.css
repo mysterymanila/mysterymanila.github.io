@@ -155,12 +155,28 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
     min-width: 100%;
 }
 
+#magnifier {
+    background-image: url(/img/mystery-logo.png);
+    background-position: center center;
+    right: 0;
+    top: 100px;
+    height: 50vh;
+    width: 50vh;
+    position: absolute;
+    border-radius: 25vh;
+}
+
 #m-logo{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 25%;
-    width: 25%;
+    max-height: 300px;
+    min-height: 200px;
+}
+@media (min-width: 1200px){
+    #m-logo{
+        max-height: 480px;
+    }
 }
 #cover{
     min-height: 760px;
