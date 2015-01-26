@@ -173,16 +173,17 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
 }
 
 #cover-brush{
-    position: absolute;
+    position: relative;
     min-height: 260px;
+    top: -200px;
     left: 0;
     right: 0;
-    bottom:0;
+    z-index: 36;
   /*  background-size: cover;*/
     background-color: transparent;
     background-image: url('/img/coverbrush.png');
-    background-position: top;
-    background-repeat: no-repeat;
+    background-position: bottom;
+    background-repeat: no-repeat;   
 }
 
 
