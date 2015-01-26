@@ -1,14 +1,20 @@
-
-body{
-    /*background: url('/img/Desktop HD.png');*/
-    /*background-size: cover;*/
-    /*background-repeat: no-repeat;*/
-    /*opacity: 0.5;*/
-    /*background-position: 0% 60%;*/
-    /*height: 2000px;*/
-    background-color:  black !important
+@font-face {
+    font-family: Gotham;
+    src: url(/fonts/gotham/GOTHAM01.TTF);
+}
+@font-face {
+    font-family: LeviReBrushed;
+    src: url(/fonts/LeviReBrushed.ttf);
 }
 
+body{
+    background-color:  black !important;
+    font-family: Gotham;
+}
+
+.stylized {
+    font-family: LeviReBrushed;
+}
 
 header{
     border:0!important;
@@ -219,6 +225,9 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
     background-repeat: no-repeat;   
 }
 
+.about-content{
+    margin-top: -175px
+}
 
 
 @media screen and (max-width: 1200px) {
@@ -358,6 +367,7 @@ div#rooms {
 .room-text {
     margin-top: -150px;
 }
+
 .room-text .room-title {
     display: inline-block;
 }
@@ -372,6 +382,8 @@ div#rooms {
     margin-top: 36px;
     padding-left: 15px;
     vertical-align: bottom;
+    font-family: LeviReBrushed;
+    font-size: 48px;
 }
 
 .room-text h4 {
