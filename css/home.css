@@ -407,7 +407,7 @@ div#rooms .room-description {
     position: relative;
 }
 
-.top-brush-frame-1, .top-brush-frame-2,
+.top-brush-frame-1, .top-brush-frame-2, .top-brush-frame-3, .top-brush-frame-4,
 .bottom-brush-frame-1, .bottom-brush-frame-2,
 .about-brush-frame{    
     position: absolute;
@@ -422,7 +422,30 @@ div#rooms .room-description {
     bottom: -300px;
     background-image: url(/img/brush-edges/Top_1.png);
     background-position: bottom;
+}
+
+
+.top-brush-frame-2 {
+    height: 250px;
+    bottom: -250px;
+    background-image: url(/img/brush-edges/Top_2.png);
+    background-position: bottom;
     
+}
+
+.top-brush-frame-3 {
+    height: 175px;
+    bottom: -175px;
+    background-image: url(/img/brush-edges/Top_3.png);
+    background-position: bottom;   
+}
+
+
+.top-brush-frame-4 {
+    height: 300px;
+    bottom: -300px;
+    background-image: url(/img/brush-edges/Top_4.png);
+    background-position: bottom;   
 }
 
 .bottom-brush-frame-1 {
@@ -431,17 +454,11 @@ div#rooms .room-description {
     background-image: url(/img/brush-edges/Bottom_1.png);
     background-position: top;
 }
-.top-brush-frame-2 {
-    height: 250px;
-    bottom: -250px;
-    background-image: url(/img/brush-edges/Top_2.png);
-    background-position: bottom;
-    
-}
+
 .about-brush-frame {
     height: 150px;
     bottom: -150px;
-    background-image: url(/img/brush-edges/Top_1.png);
+    background-image: url(/img/brush-edges/Top_2.png);
     background-position: bottom;
 }
 
