@@ -13,7 +13,7 @@ $(function(){
     })
 
     $(document).on('click', '#rebeccas-room-button', function(){
-        $('html, body').animate({scrollTop:$('#rebeccas-room').position().top}, 'slow');
+        $('html, body').animate({scrollTop:$('#rebeccas-room').position().top - 50}, 'slow');
     })
 
     $('.scroll-to-rooms').click(function(event){
