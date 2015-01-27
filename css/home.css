@@ -527,3 +527,21 @@ div#rooms .room-description {
     height: auto;
     margin: auto;
 }
+
+/*#glass-image{*/
+    /*position: absolute;*/
+    /*top: 563px;*/
+    /*z-index: 100;*/
+    /*width: 100%;*/
+/*}*/
+
+#glass{
+    background-image: url('/img/scratches.png');
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    background-repeat: repeat-y;
+    background-size: contain;
+}
+
+

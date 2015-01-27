@@ -22,12 +22,15 @@
     {% include front/nav-header.html %}
     {% include front/cover.html %}
     {% include front/sidebar.html %}
-
-    <div id="about" >
-      {% include front/about.html %}
-    </div>
-    <div id="rooms">
-      {{ content }}
+    <div id="glass-container">
+        <div id="glass" data-stellar-background-ratio="2"></div>
+        <!--<img id="glass-image" src="/img/scratches.png" data-stellar-ratio="1.5"/>-->
+        <div id="about">
+          {% include front/about.html %}
+        </div>
+        <div id="rooms">
+          {{ content }}
+        </div>
     </div>
     <div id="ig" class="clearfix">
       {%include front/instagram.html%}

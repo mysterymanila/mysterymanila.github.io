@@ -8,6 +8,8 @@ $(function(){
         }
     });
 
+
+
     $(document).on('click', '#buried-bodies-button', function(){
         $('html, body').animate({scrollTop:$('#buried-bodies').position().top}, 'slow');
     })
@@ -46,6 +48,8 @@ $(function(){
         }
     });
     leaderboardFeed.run();
+
+    $('#glass').css('height', $('#glass-container').css('height'));
 });
 
 function showSidebar(){
