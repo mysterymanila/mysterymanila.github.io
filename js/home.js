@@ -50,7 +50,6 @@ $(function(){
 
 function showSidebar(){
     if($('#sidebar').hasClass('sidebar-hidden')){
-        console.log("Showing sidebar")
         $('.sidebar-item').each(function(i){
             $(this).delay( i * 100).animate({right:'24px'});
         });
