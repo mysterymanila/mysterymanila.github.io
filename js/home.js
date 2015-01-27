@@ -34,7 +34,7 @@ $(function(){
         template: '<a href="{{link}}" class="col-md-3"><img src="{{image}}" /></a>',
         resolution: 'standard_resolution',
         filter: function(image){
-            return image.tags.indexOf('vscocam') >= 0;
+            return image.tags.indexOf('LEADERBOARD') >= 0;
         }
     });
     leaderboardFeed.run();
