@@ -8,6 +8,14 @@ $(function(){
         }
     });
 
+    $(document).on('click', '#buried-bodies-button', function(){
+        $('html, body').animate({scrollTop:$('#buried-bodies').position().top}, 'slow');
+    })
+
+    $(document).on('click', '#rebeccas-room-button', function(){
+        $('html, body').animate({scrollTop:$('#rebeccas-room').position().top}, 'slow');
+    })
+
     $('.scroll-to-rooms').click(function(event){
         event.preventDefault();
         $('html, body').animate({scrollTop:$('#rooms').position().top - 72}, 'easeInOutExpo');
