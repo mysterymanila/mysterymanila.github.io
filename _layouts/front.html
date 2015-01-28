@@ -20,25 +20,7 @@
 
   <body>
     {% include front/nav-header.html %}
-    {% include front/cover.html %}
-    {% include front/sidebar.html %}
-    <div id="glass-container">
-        <div id="glass" data-stellar-background-ratio="0.1"></div>
-        <!--<img id="glass-image" src="/img/scratches.png" data-stellar-ratio="1.5"/>-->
-        <div id="about">
-          {% include front/about.html %}
-        </div>
-        <div id="rooms">
-          {{ content }}
-        </div>
-    </div>
-    <div id="ig" class="clearfix">
-      {%include front/instagram.html%}
-    </div>
-    <div id="leaderboard" class="clearfix">
-        {% include front/leaderboard.html %}
-    </div>
-
+    {{ content }}
     {% include footer.html %}
 
   </body>
