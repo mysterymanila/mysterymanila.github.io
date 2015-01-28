@@ -209,6 +209,7 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
     background-position: top center;
     background-repeat: no-repeat;
     background-image: url('/img/coverbg.png');
+    background-size: cover;
 }
 
 #cover-brush{
@@ -218,7 +219,7 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
     left: 0;
     right: 0;
     z-index: 36;
-  /*  background-size: cover;*/
+    background-size: 200% 100%;
     background-color: transparent;
     background-image: url('/img/coverbrush.png');
     background-position: bottom;
