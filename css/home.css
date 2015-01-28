@@ -537,7 +537,17 @@ div#rooms .room-description {
         margin-left: 40%;
         margin-right: auto;
         height: 351px;
-        width: 520px;}
+        width: 520px;
+    }
+
+    .bottom-brush-frame-2, .bottom-brush-frame-1{
+        top: -70px;
+    }
+
+    .room-text{
+        margin-top: -30px;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -566,6 +576,16 @@ div#rooms .room-description {
 @media screen and (max-width: 690px) {
     #magnifying-glass{
         right: -50px;
+    }
+}
+
+@media screen and (max-width: 648px) {
+    .bottom-brush-frame-2, .bottom-brush-frame-1{
+        top: -45px;
+    }
+
+    .top-brush-frame-3{
+        bottom: -153px;
     }
 }
 
