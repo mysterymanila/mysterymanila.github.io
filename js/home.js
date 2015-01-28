@@ -54,9 +54,9 @@ $(function(){
 
 function showSidebar(){
     if($('#sidebar').hasClass('sidebar-hidden')){
-        $('.sidebar-item').each(function(i){
+        /*$('.sidebar-item').each(function(i){
             $(this).delay( i * 100).animate({right:'24px'});
-        });
+        });*/
         $('#sidebar').addClass('sidebar-visible');
         $('#sidebar').removeClass('sidebar-hidden');
     }   
@@ -64,9 +64,9 @@ function showSidebar(){
 
 function hideSidebar(){
     if($('#sidebar').hasClass('sidebar-visible')){
-        $('.sidebar-item').each(function(i){
+        /*$('.sidebar-item').each(function(i){
             $(this).delay( i * 100).animate({right:'-150px'});
-        });
+        });*/
         $('#sidebar').addClass('sidebar-hidden');
         $('#sidebar').removeClass('sidebar-visible');
     }

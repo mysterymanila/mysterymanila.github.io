@@ -226,17 +226,26 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
     width: 50px;
     position: fixed;
     top: 100px;
-    right: 0;
+    right: -150px;
     list-style: none;
     z-index: 9999;
     padding: 0;
     margin:0;
     float: right;
+    transition: linear 0.25s;
+}
+
+#sidebar.sidebar-hidden{
+    right: -150px;
+}
+
+#sidebar.sidebar-visible{
+    right: 24px;
 }
 
 .sidebar-item{
     position: relative;
-    right: -150px;
+    right: 0;
     margin:0;
     padding: 0;
     margin-bottom: 12px;
