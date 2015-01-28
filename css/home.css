@@ -317,6 +317,13 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
         height: 337px;
         width: 500px;}
 }
+
+@media screen and (max-width: 762px){
+    #cover{
+        position: relative;
+        overflow-x: hidden;
+    }
+}
 #about {
     color: #FFF;
     background-color: #000;
