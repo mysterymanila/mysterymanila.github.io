@@ -13,7 +13,9 @@ $(function(){
         }
         var lastMouseMove = new Date().getTime();
         var t = setTimeout(function(){
-           if(new Date().getTime() - lastMouseMove > 2000 && ($(document).scrollTop() >= $('#about').offset().top)){
+           if(new Date().getTime() - lastMouseMove > 2000 && 
+                ($(document).scrollTop() >= $('#about').offset().top) &&
+                !$('.navbar').is(':hover')){
                 $('.navbar').removeClass('navbar-visible').addClass('navbar-hidden');
            }
         }, 2000)
