@@ -11,9 +11,7 @@ layout: front
       {% include front/about.html %}
     </div>
     <div id="rooms">
-        {% for room in site.rooms %}
-            {{ room.output }}
-        {% endfor %}
+        {% include front/rooms.html %}
     </div>
 </div>
 <div id="ig" class="clearfix">

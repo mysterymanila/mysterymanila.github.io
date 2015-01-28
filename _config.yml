@@ -12,9 +12,3 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
-
-#Collections
-collections:
-    rooms:
-        output: true
-        permalink: /rooms/:name/
