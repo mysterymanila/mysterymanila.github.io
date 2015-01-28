@@ -2,27 +2,31 @@
 <html>
 <head>
   {% include boilerplate_head.html %}
-  <script src="/js/jquery.stellar.min.js"></script>
-  <script type="text/javascript">
-  $(document).ready(function(){
-    $.stellar({
-      horizontalScrolling: false,
-      scrollProperty: 'scroll',
-      positionProperty: 'position',
-      responsive: true,
-      hideDistantElements: false,
-      horizontalOffset: 0,
-      verticalOffset: 0
-    });
-  });
-  </script>
 </head>
 
   <body>
     {% include front/nav-header.html %}
     {{ content }}
     {% include footer.html %}
-
+    <script src="/js/jquery-2.1.1.min.js"></script>
+    <!-- are we using bootstrap.min.js? maybe we can remove this -->
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/instafeed.min.js"></script>
+    <script src="/js/home.js"></script>
+    <script src="/js/jquery.stellar.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $.stellar({
+        horizontalScrolling: false,
+        scrollProperty: 'scroll',
+        positionProperty: 'position',
+        responsive: true,
+        hideDistantElements: false,
+        horizontalOffset: 0,
+        verticalOffset: 0
+      });
+    });
+    </script>
   </body>
 
 </html>
