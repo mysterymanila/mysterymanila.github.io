@@ -31,6 +31,16 @@ header{
 
 .navbar{
     min-height: 68px;
+    transition: linear 0.25s;
+}
+
+.navbar-fixed-top.navbar-hidden{
+    top: -100px;
+}
+
+
+.navbar-fixed-top.navbar-visible{
+    top: 0;
 }
 
 #work-navbar > .nav-container{

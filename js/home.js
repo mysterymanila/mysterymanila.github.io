@@ -7,6 +7,17 @@ $(function(){
             hideSidebar();
         }
     });
+    $(document).mousemove(function(e){
+        if ($('.navbar').hasClass('navbar-hidden')){
+            $('.navbar').addClass('navbar-visible');
+        }
+        var lastMouseMove = new Date().getTime();
+        var t = setTimeout(function(){
+           if(new Date().getTime() - lastMouseMove > 2000 && ($(document).scrollTop() >= $('#about').offset().top)){
+                $('.navbar').removeClass('navbar-visible').addClass('navbar-hidden');
+           }
+        }, 2000)
+    });
 
 
 
