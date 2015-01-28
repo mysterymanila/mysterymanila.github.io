@@ -542,4 +542,5 @@ div#rooms .room-description {
     z-index: 1000;
     background-repeat: repeat-y;
     background-size: contain;
+    pointer-events: none;
 }
