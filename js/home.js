@@ -1,5 +1,8 @@
 $(function(){
     $(document).scroll(function () {
+        if ($('.navbar').hasClass('navbar-hidden')){
+            $('.navbar').removeClass('navbar-hidden').addClass('navbar-visible');
+        }
         if(($(document).scrollTop() >= $('#rooms').offset().top - 300)
             && $(document).scrollTop() <= $('#ig').offset().top-500){
             showSidebar();
@@ -9,7 +12,7 @@ $(function(){
     });
     $(document).mousemove(function(e){
         if ($('.navbar').hasClass('navbar-hidden')){
-            $('.navbar').addClass('navbar-visible');
+            $('.navbar').removeClass('navbar-hidden').addClass('navbar-visible');
         }
         var lastMouseMove = new Date().getTime();
         var t = setTimeout(function(){
