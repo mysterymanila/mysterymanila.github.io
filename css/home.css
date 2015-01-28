@@ -183,54 +183,7 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
     max-height: 300px;
     min-height: 200px;
 }
-@media (min-width: 1000px){
-    #m-logo{
-        max-height: 480px;
-    }
-    /*#magnifying-glass{*/
-    /*height: 70%*/
-    /*}*/
-}
 
-/*@media (max-width: 1000px){*/
-/*#magnifying-glass{*/
-/*height: 55%*/
-/*}*/
-/*}*/
-/*@media (max-width: 950px){*/
-/*#magnifying-glass{*/
-/*height: 45%*/
-/*}*/
-/*}*/
-/*@media (max-width: 650px){*/
-/*#magnifying-glass{*/
-/*height: 35%*/
-/*}*/
-/*}*/
-
-@media screen and (max-width: 690px) {
-    #magnifying-glass{
-        right: -50px;
-    }
-}
-
-@media screen and (max-width: 610px){
-    #magnifying-glass{
-        right: -80px;
-    }
-}
-
-@media screen and (max-width: 530px){
-    #magnifying-glass{
-        min-width: 300px;
-    }
-}
-
-@media screen and (max-width: 400px){
-    #nav-title{
-        font-size: 16px;
-    }
-}
 #cover{
     min-height: 760px;
     width: 100%;
@@ -259,71 +212,6 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
 }
 
 
-@media screen and (max-width: 1200px) {
-    .image-center{
-        margin-left: auto;
-        margin-right: auto;
-        height: 337px;
-        width: 245px;}
-
-    #magnifying-container{
-        padding: 82px 270px 0px 0px;
-        min-width: 100%;
-    }
-
-    .magnifying-glass{
-        margin-left: 45%;
-        margin-right: 55%;
-        height: 392px;
-        width: 578px;
-    }
-
-
-    #cover{
-        min-height: 700px;
-        width: 100%;
-        background-size: cover;
-        background-position: top center;
-        background-repeat: no-repeat;
-        background-image: url('/img/coverbg.png');}
-}
-
-
-@media screen and (max-width: 800px) {
-
-    #magnifying-container{
-        padding: 109px 215px 0px 0px;
-        min-width: 100%;
-    }
-
-    .magnifying-glass{
-        margin-left: 40%;
-        margin-right: auto;
-        height: 351px;
-        width: 520px;}
-}
-
-@media screen and (max-width: 768px) {
-
-    #magnifying-container{
-        background-size: cover;
-        padding: 109px 215px 0px 0px;
-        min-width: 100%;
-    }
-
-    .magnifying-glass{
-
-        margin-right: auto;
-        height: 337px;
-        width: 500px;}
-}
-
-@media screen and (max-width: 762px){
-    #cover{
-        position: relative;
-        overflow-x: hidden;
-    }
-}
 #about {
     color: #FFF;
     background-color: #000;
@@ -580,4 +468,102 @@ div#rooms .room-description {
     background-repeat: repeat-y;
     background-size: contain;
     pointer-events: none;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 1200px) {
+    .image-center{
+        margin-left: auto;
+        margin-right: auto;
+        height: 337px;
+        width: 245px;}
+
+    #magnifying-container{
+        padding: 82px 270px 0px 0px;
+        min-width: 100%;
+    }
+
+    .magnifying-glass{
+        margin-left: 45%;
+        margin-right: 55%;
+        height: 392px;
+        width: 578px;
+    }
+
+
+    #cover{
+        min-height: 700px;
+        width: 100%;
+        background-size: cover;
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-image: url('/img/coverbg.png');}
+}
+
+@media (min-width: 1000px){
+    #m-logo{
+        max-height: 480px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    #magnifying-container{
+        padding: 109px 215px 0px 0px;
+        min-width: 100%;
+    }
+
+    .magnifying-glass{
+        margin-left: 40%;
+        margin-right: auto;
+        height: 351px;
+        width: 520px;}
+}
+
+@media screen and (max-width: 768px) {
+
+    #magnifying-container{
+        background-size: cover;
+        padding: 109px 215px 0px 0px;
+        min-width: 100%;
+    }
+
+    .magnifying-glass{
+
+        margin-right: auto;
+        height: 337px;
+        width: 500px;}
+}
+
+@media screen and (max-width: 762px){
+    #cover{
+        position: relative;
+        overflow-x: hidden;
+    }
+}
+
+
+@media screen and (max-width: 690px) {
+    #magnifying-glass{
+        right: -50px;
+    }
+}
+
+@media screen and (max-width: 610px){
+    #magnifying-glass{
+        right: -80px;
+    }
+}
+
+@media screen and (max-width: 530px){
+    #magnifying-glass{
+        min-width: 300px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    #nav-title{
+        font-size: 16px;
+    }
 }
