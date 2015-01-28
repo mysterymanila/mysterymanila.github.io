@@ -498,7 +498,7 @@ div#rooms .room-description {
         background-size: cover;
         background-position: top center;
         background-repeat: no-repeat;
-        background-image: url('/img/coverbg.png');}
+    }
 }
 
 @media (min-width: 1000px){
