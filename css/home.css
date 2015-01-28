@@ -152,7 +152,11 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
     right: 0;
     top: 100px;
     display: block;
-    height: 50%;
+    /*height: 50%;*/
+    width: 50%;
+    height: auto;
+    max-width: 850px;
+    min-width: 355px;
 }
 
 .m-logo-container{
@@ -183,24 +187,48 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
     #m-logo{
         max-height: 480px;
     }
+    /*#magnifying-glass{*/
+        /*height: 70%*/
+    /*}*/
+}
+
+/*@media (max-width: 1000px){*/
+    /*#magnifying-glass{*/
+        /*height: 55%*/
+    /*}*/
+/*}*/
+/*@media (max-width: 950px){*/
+    /*#magnifying-glass{*/
+        /*height: 45%*/
+    /*}*/
+/*}*/
+/*@media (max-width: 650px){*/
+    /*#magnifying-glass{*/
+        /*height: 35%*/
+    /*}*/
+/*}*/
+
+@media screen and (max-width: 690px) {
     #magnifying-glass{
-        height: 70%
+        right: -50px;
     }
 }
 
-@media (max-width: 1000px){
+@media screen and (max-width: 610px){
     #magnifying-glass{
-        height: 55%
+        right: -80px;
     }
 }
-@media (max-width: 950px){
+
+@media screen and (max-width: 530px){
     #magnifying-glass{
-        height: 45%
+        min-width: 300px;
     }
 }
-@media (max-width: 650px){
-    #magnifying-glass{
-        height: 35%
+
+@media screen and (max-width: 400px){
+    #nav-title{
+        font-size: 16px;
     }
 }
 #cover{
@@ -223,7 +251,7 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
     background-color: transparent;
     background-image: url('/img/coverbrush.png');
     background-position: bottom;
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat;
 }
 
 .about-content{
@@ -410,7 +438,7 @@ div#rooms .room-description {
 
 .top-brush-frame-1, .top-brush-frame-2, .top-brush-frame-3, .top-brush-frame-4,
 .bottom-brush-frame-1, .bottom-brush-frame-2,
-.about-brush-frame{    
+.about-brush-frame{
     position: absolute;
     background-repeat: no-repeat;
     background-color: transparent;
@@ -431,14 +459,14 @@ div#rooms .room-description {
     bottom: -250px;
     background-image: url(/img/brush-edges/Top_2.png);
     background-position: bottom;
-    
+
 }
 
 .top-brush-frame-3 {
     height: 175px;
     bottom: -175px;
     background-image: url(/img/brush-edges/Top_3.png);
-    background-position: bottom;   
+    background-position: bottom;
 }
 
 
@@ -446,7 +474,7 @@ div#rooms .room-description {
     height: 300px;
     bottom: -300px;
     background-image: url(/img/brush-edges/Top_4.png);
-    background-position: bottom;   
+    background-position: bottom;
 }
 
 .bottom-brush-frame-1 {
