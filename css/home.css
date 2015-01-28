@@ -280,7 +280,7 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
 
 
 #cover{
-    min-height: 600px;
+    min-height: 700px;
     width: 100%;
     background-size: cover;
     background-position: top center;
@@ -288,7 +288,13 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
     background-image: url('/img/coverbg.png');}
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px){
+    #cover{
+        min-height: 600px;
+    }
+}
+
+    @media screen and (max-width: 800px) {
 
 #magnifying-container{
     padding: 109px 215px 0px 0px;
