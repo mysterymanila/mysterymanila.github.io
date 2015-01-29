@@ -338,6 +338,10 @@ div#rooms {
     margin-bottom: 36px;
 }
 
+.room-video{
+    height: auto;
+    width: 100%;
+}
 
 div#rooms .room-description {
     top: -100px;
