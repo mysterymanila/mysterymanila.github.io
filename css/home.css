@@ -217,10 +217,24 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child){
     background-repeat: no-repeat;
 }
 
+/*About style*/
 .about-content{
     margin-top: -175px
 }
 
+.about-head{
+    font-size: 54px;
+    transform: rotate(-5deg);
+}
+
+.about-caption{
+    margin-top: 72px;
+}
+
+.about-btn-scroll{
+     height:75%; 
+     margin-top: 72px;
+}
 
 #about {
     color: #FFF;
