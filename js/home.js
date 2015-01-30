@@ -45,7 +45,7 @@ $(function(){
         clientId: 'b74a7734368849fabe400246441d36f6',
         limit: '8',
         sortBy: 'most-recent',
-        template: '<a href="{{link}}" class="col-md-3 col-sm-3 col-xs-6"><img src="{{image}}" /></a>',
+        template: '<a href="{{link}}" target="_blank" class="col-md-3 col-sm-3 col-xs-6"><img src="{{image}}" /></a>',
         resolution: 'standard_resolution'
     });
     feed.run();
@@ -57,7 +57,7 @@ $(function(){
         clientId: 'b74a7734368849fabe400246441d36f6',
         sortBy: 'most-recent',
         limit: '4',
-        template: '<a href="{{link}}" class="col-md-3 col-sm-3 col-xs-6"><img src="{{image}}" /></a>',
+        template: '<a href="{{link}}" target="_blank" class="col-md-3 col-sm-3 col-xs-6"><img src="{{image}}" /></a>',
         resolution: 'standard_resolution',
         filter: function(image){
             return image.tags.indexOf('LEADERBOARD') >= 0;
