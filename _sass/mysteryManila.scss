@@ -139,52 +139,30 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child) {
 }
 
 /*cover style */
-
-/*#magnifying-glass{
- *    position: absolute;
- *    width: 100%;
- *    left: 0;
- *    top: 0;
- *    bottom:0;
- *    background-color: transparent;
- *    background-position:right;
- *    background-repeat: no-repeat;
- *
- *} */
-
-/* .magnifying-glass-container{
- *    position: absolute;
- *    min-height: 570px;
- *    min-width: 100%;
- *} */
+#cover {
+  min-height: 760px;
+  width: 100%;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-image: url("/img/Wall%20Texture%20Blurred.png");
+  background-size: cover;
+}
 
 #magnifying-glass {
-  position: absolute;
-  right: 0;
-  top: 100px;
-  display: block;
-  /*height: 50%; */
-  width: 50%;
-  height: auto;
-  max-width: 850px;
-  min-width: 355px;
-}
+    position: absolute;
+    right: 0;
+    top: 100px;
+    display: block;
+    width: 50%;
+    height: auto;
+    max-width: 850px;
+    min-width: 355px;
+} 
 
 .m-logo-container {
-  padding: 125px 0px 0px 0px;
-  min-height: 570px;
-  min-width: 100%;
-}
-
-#magnifier {
-  background-image: url(/img/mystery-logo.png);
-  background-position: center center;
-  right: 0;
-  top: 100px;
-  height: 50vh;
-  width: 50vh;
-  position: absolute;
-  border-radius: 25vh;
+    padding: 125px 0px 0px 0px;
+    min-height: 570px;
+    min-width: 100%;
 }
 
 #m-logo {
@@ -193,15 +171,6 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child) {
   margin-right: auto;
   max-height: 300px;
   min-height: 200px;
-}
-
-#cover {
-  min-height: 760px;
-  width: 100%;
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-image: url("/img/Wall%20Texture%20Blurred.png");
-  background-size: cover;
 }
 
 #cover-brush {
@@ -218,24 +187,30 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child) {
   background-repeat: no-repeat;
 }
 
+
 /*About style */
-.about-content {
+
+div.about-content{
   margin-top: -175px;
+
+    .container{
+
+        .about-head {
+          font-size: 54px;
+          transform: rotate(-5deg);
+        }
+    }
+
+       .about-caption{
+          margin-top: 72px;
+       } 
+
+        .about-btn-scroll{
+          height: 75%;
+          margin-top: 72px;
+        }
 }
 
-.about-head {
-  font-size: 54px;
-  transform: rotate(-5deg);
-}
-
-.about-caption {
-  margin-top: 72px;
-}
-
-.about-btn-scroll {
-  height: 75%;
-  margin-top: 72px;
-}
 
 #about {
   color: white;
