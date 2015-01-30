@@ -26,6 +26,7 @@ header {
 }
 
 /*header style */
+
 #nav-title {
   float: right;
   margin: 11px 0px 0px 15px;
@@ -137,7 +138,6 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child) {
   color: white;
   font-size: 20px;
 }
-
 /*cover style */
 #cover {
   min-height: 760px;
@@ -211,8 +211,18 @@ div.about-content{
           height: 75%;
           margin-top: 72px;
         }
-}
 
+        .btn {
+          opacity: 0.5;
+          transition: opacity 0.5s;
+          cursor: pointer;
+
+          &:hover,
+          &:active {
+            opacity: 1;  
+          }
+        }
+}
 
 #about {
   color: white;
@@ -254,16 +264,6 @@ div.about-content{
   cursor: pointer;
 }
 
-img.btn {
-  opacity: 0.5;
-  transition: opacity 0.5s;
-  cursor: pointer;
-}
-
-img.btn:hover, img.btn.active {
-  opacity: 1;
-}
-
 img.sidebar-item {
   transition: all 0.25s;
 }
@@ -271,27 +271,6 @@ img.sidebar-item {
 img.sidebar-item.active, img.sidebar-item:hover {
   opacity: 1;
 }
-
-/* img.sidebar-item:hover{
- *    height: 64px;
- *    width: 64px;
- *} */
-
-/* #side-bar-2{
- *    top: 45px;
- *}
- *#side-bar-3{
- *    top: 90px;
- *}
- *#side-bar-4{
- *    top: 135px;
- *}
- *#side-bar-5{
- *    top: 180px;
- *}
- *#side-bar-6{
- *    top: 225px;
- *} */
 
 /*rooms styles */
 div#rooms {
