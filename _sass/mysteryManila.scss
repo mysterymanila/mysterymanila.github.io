@@ -146,9 +146,8 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child) {
   background-repeat: no-repeat;
   background-image: url("/img/Wall%20Texture%20Blurred.png");
   background-size: cover;
-}
 
-#magnifying-glass {
+  #magnifying-glass {
     position: absolute;
     right: 0;
     top: 100px;
@@ -157,20 +156,23 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child) {
     height: auto;
     max-width: 850px;
     min-width: 355px;
-} 
+  }
 
-.m-logo-container {
+  .m-logo-container {
     padding: 125px 0px 0px 0px;
     min-height: 570px;
     min-width: 100%;
-}
 
-#m-logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-height: 300px;
-  min-height: 200px;
+    #m-logo {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-height: 300px;
+      min-height: 200px;
+    }
+
+  } 
+
 }
 
 #cover-brush {
@@ -486,22 +488,6 @@ div#rooms .room-description {
 /*Media Queries */
 
 @media screen and (max-width: 1200px) {
-  .image-center {
-    margin-left: auto;
-    margin-right: auto;
-    height: 337px;
-    width: 245px;
-  }
-  #magnifying-container {
-    padding: 82px 270px 0px 0px;
-    min-width: 100%;
-  }
-  .magnifying-glass {
-    margin-left: 45%;
-    margin-right: 55%;
-    height: 392px;
-    width: 578px;
-  }
   #cover {
     min-height: 700px;
     width: 100%;
@@ -512,8 +498,12 @@ div#rooms .room-description {
 }
 
 @media (min-width: 1000px) {
-  #m-logo {
-    max-height: 480px;
+  #cover {
+    .m-logo-container{
+      #m-logo {
+        max-height: 480px;
+      }
+    }
   }
 }
 
@@ -521,16 +511,15 @@ div#rooms .room-description {
   #sidebar {
     display: none;
   }
-  #magnifying-container {
-    padding: 109px 215px 0px 0px;
-    min-width: 100%;
+  #cover {
+    .magnifying-glass {
+      margin-left: 40%;
+      margin-right: auto;
+      height: 351px;
+      width: 520px;
+    }
   }
-  .magnifying-glass {
-    margin-left: 40%;
-    margin-right: auto;
-    height: 351px;
-    width: 520px;
-  }
+
   .bottom-brush-frame-2, .bottom-brush-frame-1 {
     top: -70px;
   }
@@ -540,15 +529,12 @@ div#rooms .room-description {
 }
 
 @media screen and (max-width: 768px) {
-  #magnifying-container {
-    background-size: cover;
-    padding: 109px 215px 0px 0px;
-    min-width: 100%;
-  }
-  .magnifying-glass {
-    margin-right: auto;
-    height: 337px;
-    width: 500px;
+  #cover {
+    .magnifying-glass {
+      margin-right: auto;
+      height: 337px;
+      width: 500px;
+    }
   }
 }
 
@@ -560,8 +546,10 @@ div#rooms .room-description {
 }
 
 @media screen and (max-width: 690px) {
-  #magnifying-glass {
-    right: -50px;
+  #cover{
+    #magnifying-glass {
+      right: -50px;
+    }
   }
 }
 
@@ -575,15 +563,19 @@ div#rooms .room-description {
 }
 
 @media screen and (max-width: 610px) {
-  #magnifying-glass {
-    right: -80px;
-  }
+  #cover{
+    #magnifying-glass {
+      right: -80px;
+    }
+  }  
 }
 
 @media screen and (max-width: 530px) {
-  #magnifying-glass {
-    min-width: 300px;
-  }
+  #cover{
+    #magnifying-glass {
+      min-width: 300px;
+    }
+  }  
 }
 
 @media screen and (max-width: 400px) {
