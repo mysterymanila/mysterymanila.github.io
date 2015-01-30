@@ -393,7 +393,7 @@ div#rooms .room-description {
 
   #ig-header {
     text-align: center;
-    padding-top: 92px
+    padding-top: 92px;
 
     img {
       width: 75px;
@@ -427,35 +427,33 @@ div#rooms .room-description {
 #leaderboard {
   background-image: url("/img/board.png");
   padding-top: 92px;
-}
 
-#leaderboard > #leaderboard-header {
-  text-align: center;
-}
+  #leaderboard-header {
+    text-align: center;
 
-#leaderboard > #leaderboard-header > p {
-  color: white;
-  font-size: 28px;
-  font-weight: 500;
-}
+    p {
+      color: white;
+      font-size: 28px;
+      font-weight: 500;
+    }
 
-#leaderboard > #leaderboard-images {
-  margin-top: 20px;
-}
+  }
 
-#leaderboard > #leaderboard-images> a > img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: auto;
-}
+  #leaderboard-images {
+    margin-top: 20px;
 
-/*#glass-image{ */
-/*position: absolute; */
-/*top: 563px; */
-/*z-index: 100; */
-/*width: 100%; */
-/*} */
+    a {
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+      }
+    }
+
+  }
+
+}
 
 #glass {
   background-image: url("/img/scratches.png");
