@@ -479,7 +479,7 @@ div#rooms .room-description {
   }
 }
 
-@media (min-width: 1000px) {
+@media screen and (min-width: 1000px) {
   #cover {
     .m-logo-container{
       #m-logo {
