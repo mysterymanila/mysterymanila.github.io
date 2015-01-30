@@ -384,39 +384,45 @@ div#rooms .room-description {
   background-position: top;
 }
 
+
 /*IG style */
 #ig {
   background-image: url("/img/Instagram%20BG.png");
   background-size: 100% 120%;
   background-color: white;
+
+  #ig-header {
+    text-align: center;
+    padding-top: 92px
+
+    img {
+      width: 75px;
+    }
+
+    p {
+      font-size: 28px;
+      font-weight: 900;
+      margin-top: 23px;
+      color: black;
+    }
+
+  }
+
+  #instafeed{
+    a {
+      padding-bottom: 20px; 
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+      } 
+    }
+  } 
+
 }
 
-#ig> #ig-header {
-  text-align: center;
-  padding-top: 92px;
-}
-
-#ig > #ig-header > img {
-  width: 75px;
-}
-
-#ig > #ig-header > p {
-  font-size: 28px;
-  font-weight: 900;
-  margin-top: 23px;
-  color: black;
-}
-
-#ig > #instafeed > a {
-  padding-bottom: 20px;
-}
-
-#ig > #instafeed > a > img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: auto;
-}
+/* leaderboard style */
 
 #leaderboard {
   background-image: url("/img/board.png");
