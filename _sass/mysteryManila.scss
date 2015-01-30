@@ -244,32 +244,29 @@ div.about-content{
   margin: 0;
   float: right;
   transition: linear 0.25s;
-}
 
+  .sidebar-item {
+    position: relative;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 12px;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all 0.25s;
+
+    &:active,
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
 #sidebar.sidebar-hidden {
   right: -150px;
 }
 
 #sidebar.sidebar-visible {
   right: 24px;
-}
-
-.sidebar-item {
-  position: relative;
-  right: 0;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 12px;
-  opacity: 0.5;
-  cursor: pointer;
-}
-
-img.sidebar-item {
-  transition: all 0.25s;
-}
-
-img.sidebar-item.active, img.sidebar-item:hover {
-  opacity: 1;
 }
 
 /*rooms styles */
