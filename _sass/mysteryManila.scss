@@ -17,127 +17,121 @@ body {
   font-family: Gotham;
 }
 
-.stylized {
-  font-family: LeviReBrushed;
-}
-
 header {
   border: 0 !important;
 }
 
 /*header style */
 
-#nav-title {
-  float: right;
-  margin: 11px 0px 0px 15px;
-  letter-spacing: 1px;
-  font-size: 20px;
-}
+nav {
+  &#work-navbar{
+    background-color: black;
+    border-color: transparent;
 
-.navbar {
-  min-height: 68px;
-  transition: linear 0.25s;
-}
+  &.navbar-visible {
+    top: 0;
+  }
 
-.navbar-fixed-top.navbar-hidden {
-  top: -100px;
-}
+  &.navbar-hidden {
+    top: -100px;
+  }
 
-.navbar-fixed-top.navbar-visible {
-  top: 0;
-}
+  &.navbar {
+    min-height: 68px;
+    transition: linear 0.25s;
+  }
 
-#work-navbar > .nav-container {
-  margin: 0 12px;
-}
+    a {
+      color: white;
+      text-decoration: none;
+    }
 
-nav#work-navbar a {
-  color: white;
-  text-decoration: none;
-}
+    .nav-container {
+      margin: 0 12px;
+      padding-top: 0;
+      padding-bottom: 0;
+    
+      .navbar-header{
 
-.brand-logo-small {
-  height: 43px;
-}
+        .navbar-brand {
+          height: inherit;
+          padding-top: 0;
+          padding-bottom: 0;
+          line-height: 55px;
 
-nav#work-navbar {
-  background-color: black;
-  border-color: transparent;
-}
+          a {
 
-nav#work-navbar > .nav-container > .navbar-header a > img {
-  top: auto;
-  margin-top: 15px;
-}
+            img {
+              top: auto;
+              margin-top: 15px;
 
-.navbar-header button {
-  margin-top: 20px;
-}
+              &.brand-logo-small {
+                height: 43px;
+              } 
+            }
 
-.navbar-default .navbar-collapse {
-  border-color: transparent;
-}
+            #nav-title {
+              float: right;
+              margin: 11px 0px 0px 15px;
+              letter-spacing: 1px;
+              font-size: 20px;
+            } 
+          }
 
-nav#work-navbar > .nav-container > .navbar-header > .navbar-brand {
-  height: inherit;
-  padding-top: 0;
-  padding-bottom: 0;
-  line-height: 55px;
-}
+        }
 
-nav#work-navbar > .nav-container {
-  padding-top: 0;
-  /*line-height: 59px; */
-  padding-bottom: 0;
-}
+        button {
+          margin-top: 20px;
+        }
 
-nav#work-navbar > .nav-container .container .navbar-right > ul.nav {
-  padding-right: 0;
-}
+      }/* end of navbar-header */
 
-nav#work-navbar > .nav-container .navbar-right {
-  margin-right: 15px;
-}
+      .navbar-collapse {
+        border-color: transparent;
 
-nav#work-navbar > .nav-container .navbar-right > ul.nav {
-  width: 100%;
-}
+        .navbar-right {
+          margin-right: 15px;
 
-.navbar-right > ul.nav > li {
-  padding: 27px 8px 0px 8px;
-}
+          ul {
+            &.nav {
+              padding-right: 0;
+              width: 100%;
 
-nav#work-navbar > .nav-container .container .navbar-right > ul.nav > li {
-  font-size: 14px;
-  height: 100%;
-  text-align: right;
-  font-weight: lighter;
-  letter-spacing: 2px;
-  line-height: 2;
-  margin: 6px 0px 0px 50px;
-}
+              li {
+                padding: 27px 8px 0px 8px;
+                margin-top: 0px;
 
-nav#work-navbar > .nav-container .navbar-right > ul.nav > li {
-  margin-top: 0px;
-}
+                a {
+                  display: inline;
+                  padding: 0;
+                  color: white;
+                  font-size: 16px;
+                  letter-spacing: 3px;
+                }
 
-nav#work-navbar > .nav-container .navbar-right > ul.nav > li > a {
-  display: inline;
-  padding: 0;
-  color: white;
-  font-size: 16px;
-  letter-spacing: 3px;
-}
+                &:not(:last-child) {
+                  margin-right: 65px;
+                }
+              }
+            }
 
-nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child) {
-  margin-right: 65px;
-}
+          }
 
-#header>.site-nav {
+        }
+
+      } 
+
+    }/* end of navbar-container */
+
+  }/* end of work-navbar */
+}/* end of nav */
+
+/* #header>.site-nav {
   text-decoration: none;
   color: white;
   font-size: 20px;
-}
+} */
+
 /*cover style */
 #cover {
   min-height: 760px;
@@ -175,54 +169,7 @@ nav#work-navbar > .nav-container .navbar-right > ul.nav > li:not(:last-child) {
 
 }
 
-#cover-brush {
-  position: relative;
-  min-height: 260px;
-  top: -200px;
-  left: 0;
-  right: 0;
-  z-index: 36;
-  background-size: 200% 100%;
-  background-color: transparent;
-  background-image: url("/img/coverbrush.png");
-  background-position: bottom;
-  background-repeat: no-repeat;
-}
-
-
 /*About style */
-
-div.about-content{
-  margin-top: -175px;
-
-    .container{
-
-        .about-head {
-          font-size: 54px;
-          transform: rotate(-5deg);
-        }
-    }
-
-       .about-caption{
-          margin-top: 72px;
-       } 
-
-        .about-btn-scroll{
-          height: 75%;
-          margin-top: 72px;
-        }
-
-        .btn {
-          opacity: 0.5;
-          transition: opacity 0.5s;
-          cursor: pointer;
-
-          &:hover,
-          &:active {
-            opacity: 1;  
-          }
-        }
-}
 
 #about {
   color: white;
@@ -230,6 +177,57 @@ div.about-content{
   text-align: center;
   z-index: 36;
   position: relative;
+
+  #cover-brush {
+    position: relative;
+    min-height: 260px;
+    top: -200px;
+    left: 0;
+    right: 0;
+    z-index: 36;
+    background-size: 200% 100%;
+    background-color: transparent;
+    background-image: url("/img/coverbrush.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+
+  .about-content{
+    margin-top: -175px;
+
+      .container{
+
+          .stylized {
+            font-family: LeviReBrushed;
+          }
+
+          .about-head {
+            font-size: 54px;
+            transform: rotate(-5deg);
+          }
+      }
+
+         .about-caption{
+            margin-top: 72px;
+         } 
+
+          .about-btn-scroll{
+            height: 75%;
+            margin-top: 72px;
+          }
+
+          .btn {
+            opacity: 0.5;
+            transition: opacity 0.5s;
+            cursor: pointer;
+
+            &:hover,
+            &:active {
+              opacity: 1;  
+            }
+          }
+  }
+
 }
 
 /*sidebar style */
