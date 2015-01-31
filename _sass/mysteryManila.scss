@@ -267,62 +267,65 @@ nav {
   }
 }
 
-
 /*rooms styles */
 div#rooms {
   color: white;
   background-color: black;
-}
 
-.room {
-  /*height: 100vh; */
-  background-color: black;
-  position: relative;
-}
+  .room {
+    /*height: 100vh; */
+    background-color: black;
+    position: relative;
 
-.room-text {
-  margin-top: -150px;
-}
+    .hero-content {
+      position: relative;
 
-.room-text .room-title {
-  display: inline-block;
-}
+      .room-video {
+        height: auto;
+        width: 100%;
+      }
+    }
 
-.room-text .room-title > img {
-  height: 100px;
-  width: auto;
-  float: left;
-}
+    .room-description {
+      top: -100px;
+      background-color: black;
+      position: relative;
+      z-index: 36;
 
-.room-text .room-title > h2 {
-  float: left;
-  margin-top: 36px;
-  padding-left: 15px;
-  vertical-align: bottom;
-  font-family: LeviReBrushed;
-  font-size: 48px;
-}
+      .container {
 
-.room-text h4 {
-  padding-top: 36px;
-  margin-bottom: 36px;
-}
+        .room-text {
+          margin-top: -150px;
 
-.room-video {
-  height: auto;
-  width: 100%;
-}
+          .room-title {
+            display: inline-block;
 
-div#rooms .room-description {
-  top: -100px;
-  background-color: black;
-  position: relative;
-  z-index: 36;
-}
+            img {
+              height: 100px;
+              width: auto;
+              float: left;
+            }
 
-.hero-content {
-  position: relative;
-}
+            h2 {
+              float: left;
+              margin-top: 36px;
+              padding-left: 15px;
+              vertical-align: bottom;
+              font-family: LeviReBrushed;
+              font-size: 48px;
+            }
+
+            h4 {
+              padding-top: 36px;
+              margin-bottom: 36px;
+            }
+          }
+        }
+      }
+    }
+
+  }/* end of room */
+}/* end of rooms */
 
 .top-brush-frame-1, .top-brush-frame-2, .top-brush-frame-3, .top-brush-frame-4,
 .bottom-brush-frame-1, .bottom-brush-frame-2,
@@ -557,8 +560,11 @@ div#rooms .room-description {
   }  
 }
 
-@media screen and (max-width: 400px) {
-  #nav-title {
-    font-size: 16px;
+/* @media screen and (max-width: 400px) {
+  nav{
+    #nav-title {
+      font-size: 16px;
+    }
   }
 }
+ */
