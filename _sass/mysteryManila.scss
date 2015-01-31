@@ -245,6 +245,13 @@ div.about-content{
   float: right;
   transition: linear 0.25s;
 
+  &.sidebar-hidden {
+    right: -150px;
+  }
+  &.sidebar-visible {
+    right: 24px;
+  }
+
   .sidebar-item {
     position: relative;
     right: 0;
@@ -261,13 +268,7 @@ div.about-content{
     }
   }
 }
-#sidebar.sidebar-hidden {
-  right: -150px;
-}
 
-#sidebar.sidebar-visible {
-  right: 24px;
-}
 
 /*rooms styles */
 div#rooms {
