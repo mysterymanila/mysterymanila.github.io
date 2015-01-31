@@ -216,18 +216,28 @@ nav {
             margin-top: 72px;
           }
 
-          .btn {
-            opacity: 0.5;
-            transition: opacity 0.5s;
-            cursor: pointer;
+          img {  
+            &.btn {
+              opacity: 0.5;
+              transition: opacity 0.5s;
+              cursor: pointer;
 
-            &:hover,
-            &:active {
-              opacity: 1;  
+              &:hover,
+              &:active {
+                opacity: 1;  
+              }
+            }
+          }
+
+          span {
+            &.about-brush-frame {
+              height: 150px;
+              bottom: -150px;
+              background-image: url(/img/brush-edges/Top_2.png);
+              background-position: bottom;
             }
           }
   }
-
 }
 
 /*sidebar style */
@@ -292,6 +302,51 @@ div#rooms {
       position: relative;
       z-index: 36;
 
+      span {
+
+        &.top-brush-frame-1 {
+          height: 300px;
+          bottom: -300px;
+          background-image: url(/img/brush-edges/Top_1.png);
+          background-position: bottom;
+        }
+
+        &.top-brush-frame-2 {
+          height: 250px;
+          bottom: -250px;
+          background-image: url(/img/brush-edges/Top_2.png);
+          background-position: bottom;
+        }
+
+        &.top-brush-frame-3 {
+          height: 175px;
+          bottom: -175px;
+          background-image: url(/img/brush-edges/Top_3.png);
+          background-position: bottom;
+        }
+
+        &.top-brush-frame-4 {
+          height: 300px;
+          bottom: -300px;
+          background-image: url(/img/brush-edges/Top_4.png);
+          background-position: bottom;
+        }
+
+        &.bottom-brush-frame-1 {
+          height: 200px;
+          top: -150px;
+          background-image: url(/img/brush-edges/Bottom_1.png);
+          background-position: top;
+        }
+
+        &.bottom-brush-frame-2 {
+          height: 200px;
+          top: -150px;
+          background-image: url(/img/brush-edges/Bottom_2.png);
+          background-position: top;
+        }
+      }
+
       .container {
 
         .room-text {
@@ -327,7 +382,8 @@ div#rooms {
   }/* end of room */
 }/* end of rooms */
 
-.top-brush-frame-1, .top-brush-frame-2, .top-brush-frame-3, .top-brush-frame-4,
+.top-brush-frame-1, .top-brush-frame-2,
+.top-brush-frame-3, .top-brush-frame-4,
 .bottom-brush-frame-1, .bottom-brush-frame-2,
 .about-brush-frame {
   position: absolute;
@@ -336,56 +392,6 @@ div#rooms {
   left: 0;
   right: 0;
 }
-
-.top-brush-frame-1 {
-  height: 300px;
-  bottom: -300px;
-  background-image: url(/img/brush-edges/Top_1.png);
-  background-position: bottom;
-}
-
-.top-brush-frame-2 {
-  height: 250px;
-  bottom: -250px;
-  background-image: url(/img/brush-edges/Top_2.png);
-  background-position: bottom;
-}
-
-.top-brush-frame-3 {
-  height: 175px;
-  bottom: -175px;
-  background-image: url(/img/brush-edges/Top_3.png);
-  background-position: bottom;
-}
-
-.top-brush-frame-4 {
-  height: 300px;
-  bottom: -300px;
-  background-image: url(/img/brush-edges/Top_4.png);
-  background-position: bottom;
-}
-
-.bottom-brush-frame-1 {
-  height: 200px;
-  top: -150px;
-  background-image: url(/img/brush-edges/Bottom_1.png);
-  background-position: top;
-}
-
-.about-brush-frame {
-  height: 150px;
-  bottom: -150px;
-  background-image: url(/img/brush-edges/Top_2.png);
-  background-position: bottom;
-}
-
-.bottom-brush-frame-2 {
-  height: 200px;
-  top: -150px;
-  background-image: url(/img/brush-edges/Bottom_2.png);
-  background-position: top;
-}
-
 
 /*IG style */
 #ig {
@@ -490,24 +496,40 @@ div#rooms {
 }
 
 @media screen and (max-width: 800px) {
-  #sidebar {
-    display: none;
-  }
-  #cover {
-    .magnifying-glass {
-      margin-left: 40%;
-      margin-right: auto;
-      height: 351px;
-      width: 520px;
-    }
-  }
+#sidebar {
+  display: none;
+}
 
-  .bottom-brush-frame-2, .bottom-brush-frame-1 {
-    top: -70px;
+#cover {
+  .magnifying-glass {
+    margin-left: 40%;
+    margin-right: auto;
+    height: 351px;
+    width: 520px;
   }
-  .room-text {
-    margin-top: -30px;
+}
+
+div#rooms {
+  .room {
+    .room-description {
+      span {
+        &.bottom-brush-frame-2, 
+        &.bottom-brush-frame-1 {
+          top: -70px;
+        }
+      }
+
+      .container {
+        .room-text {
+          margin-top: 30px;
+        }
+      }
+    }
+
+
   }
+}
+
 }
 
 @media screen and (max-width: 768px) {
@@ -536,13 +558,24 @@ div#rooms {
 }
 
 @media screen and (max-width: 648px) {
-  .bottom-brush-frame-2, .bottom-brush-frame-1 {
-    top: -45px;
+
+  div#rooms {
+    .room {
+      .room-description {
+        span {
+          &.bottom-brush-frame-2,
+          &.bottom-brush-frame-1 {
+            top: -45px;
+          }
+          &.top-brush-frame-3 {
+            bottom: -162px;
+            height: 164px;
+          }
+        }
+      }
+    }
   }
-  .top-brush-frame-3 {
-    bottom: -153px;
-  }
-}
+}        
 
 @media screen and (max-width: 610px) {
   #cover{
@@ -560,11 +593,8 @@ div#rooms {
   }  
 }
 
-/* @media screen and (max-width: 400px) {
-  nav{
+@media screen and (max-width: 400px) {
     #nav-title {
       font-size: 16px;
     }
-  }
 }
- */
