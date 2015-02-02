@@ -464,6 +464,55 @@ div#rooms {
 
 }
 
+/* footer style */
+footer {
+  &#footer-header {
+    text-align: center;
+
+    p {
+      color: white;
+      font-size: 28px;
+      font-weight: 500;
+      padding-top: 92px;
+    }
+
+    #featured-icon {
+      ul {
+        margin: 0px;
+        padding: 0px;
+        li {
+          padding: 27px 25px 30px 0px;
+          margin-top: 0px;
+          text-align: center;
+          display: inline-block;
+          a {
+            img {
+              height: 90px;
+            }
+/* 
+            &:hover,
+            &:active {
+              opacity: 1;  
+            } */
+          }
+         
+        } 
+      }
+
+    }
+
+    #brand-logo {
+      text-align: center;
+      padding: 50px 0px 50px 0px;
+        a {
+          img {
+             height: 50px; 
+          }
+        }  
+    }
+  }
+}
+
 #glass {
   background-image: url("/img/scratches.png");
   position: absolute;
