@@ -241,7 +241,7 @@ nav {
             &.about-brush-frame {
               height: 150px;
               bottom: -150px;
-              background-image: url(/img/brush-edges/Top_2.png);
+              background-image: url(/img/brush-edges/Top_1.png);
               background-position: bottom;
             }
           }
@@ -314,29 +314,37 @@ div#rooms {
 
         &.top-brush-frame-1 {
           height: 300px;
-          bottom: -300px;
           background-image: url(/img/brush-edges/Top_1.png);
           background-position: bottom;
         }
 
         &.top-brush-frame-2 {
           height: 250px;
-          bottom: -250px;
           background-image: url(/img/brush-edges/Top_2.png);
           background-position: bottom;
         }
 
         &.top-brush-frame-3 {
           height: 175px;
-          bottom: -175px;
           background-image: url(/img/brush-edges/Top_3.png);
           background-position: bottom;
         }
 
         &.top-brush-frame-4 {
           height: 300px;
-          bottom: -300px;
           background-image: url(/img/brush-edges/Top_4.png);
+          background-position: bottom;
+        }
+
+        &.top-brush-frame-5 {
+          height: 200px;
+          background-image: url(/img/brush-edges/Top_5.png);
+          background-position: bottom;
+        }
+
+        &.top-brush-frame-6 {
+          height: 200px;
+          background-image: url(/img/brush-edges/Top_6.png);
           background-position: bottom;
         }
 
@@ -353,12 +361,50 @@ div#rooms {
           background-image: url(/img/brush-edges/Bottom_2.png);
           background-position: top;
         }
+
+        &.bottom-brush-frame-3 {
+          height: 200px;
+          top: -150px;
+          background-image: url(/img/brush-edges/Bottom_3.png);
+          background-position: top;
+        }
+
+        &.bottom-brush-frame-4 {
+          height: 200px;
+          top: -150px;
+          background-image: url(/img/brush-edges/Bottom_4.png);
+          background-position: top;
+        }
+
+        &.bottom-brush-frame-5 {
+          height: 300px;
+          top: -250px;
+          background-image: url(/img/brush-edges/Bottom_5.png);
+          background-position: top;
+        }
+
+        &.bottom-brush-frame-6 {
+          height: 200px;
+          top: -150px;
+          background-image: url(/img/brush-edges/Bottom_6.png);
+          background-position: top;
+        }
       }
 
       .container {
 
         .room-text {
           margin-top: -150px;
+
+          h2 {
+            margin-top: 36px;
+            cursor: pointer;
+
+            #book-arrow{
+              transform: rotate(-90deg);
+            }
+          }
+          
 
           .room-title {
             display: inline-block;
@@ -391,9 +437,8 @@ div#rooms {
   }/* end of room */
 }/* end of rooms */
 
-.top-brush-frame-1, .top-brush-frame-2,
-.top-brush-frame-3, .top-brush-frame-4,
-.bottom-brush-frame-1, .bottom-brush-frame-2,
+.top-brush-frame-1, .top-brush-frame-2, .top-brush-frame-3, .top-brush-frame-4, .top-brush-frame-5, .top-brush-frame-6,
+.bottom-brush-frame-1, .bottom-brush-frame-2, .bottom-brush-frame-3, .bottom-brush-frame-4, .bottom-brush-frame-5, .bottom-brush-frame-6,
 .about-brush-frame {
   position: absolute;
   background-repeat: no-repeat;
