@@ -392,17 +392,7 @@ div#rooms {
       .container {
 
         .room-text {
-          margin-top: -150px;
-
-          h2 {
-            margin-top: 36px;
-            cursor: pointer;
-
-            #book-arrow{
-              transform: rotate(-90deg);
-            }
-          }
-          
+          margin-top: -150px;        
 
           .room-title {
             display: inline-block;
@@ -424,9 +414,16 @@ div#rooms {
           }
 
           h4 {
-            padding-top: 36px;
-            margin-bottom: 36px;
-            font-size: 22px;
+            padding-top: 24px;
+            margin-bottom: 24px;
+          }
+          img#book-arrow{
+              transform: rotate(-90deg);
+              vertical-align: middle;
+            }
+          a, a:hover, a:visited {
+            color: #FFF;
+            text-decoration: none;
           }
         }
       }
