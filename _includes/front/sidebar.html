@@ -1,8 +1,5 @@
-<div id="sidebar" class="sidebar-hidden">
-	<img class="sidebar-item" src='img/icons/:MM-01.png'/>
-	<img id="buried-bodies-button" class="sidebar-item" src='img/icons/:MM-02.png'/>
-	<img class="sidebar-item" src='img/icons/:MM-03.png'/>
-	<img class="sidebar-item" src='img/icons/:MM-04.png'/>
-	<img class="sidebar-item" src='img/icons/:MM-05.png'/>
-	<img id="rebeccas-room-button" class="sidebar-item" src='img/icons/:MM-06.png'/>
+<div id='sidebar' class="sidebar-hidden">
+    {% for room in site.data.rooms %}
+	   <img data-target="#{{ room.slug }}"class="sidebar-item" src='{{ room.icon }}'/>
+    {% endfor %}
 </div>
