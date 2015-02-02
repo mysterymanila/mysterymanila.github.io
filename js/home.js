@@ -26,17 +26,13 @@ $(function(){
 
 
 
-    $(document).on('click', '#buried-bodies-button', function(){
-        $('html, body').animate({scrollTop:$('#buried-bodies').position().top}, 'slow');
-    })
-
-    $(document).on('click', '#rebeccas-room-button', function(){
-        $('html, body').animate({scrollTop:$('#rebeccas-room').position().top - 50}, 'slow');
-    })
+    $('.sidebar-item').click(function(){
+        $('html, body').animate({scrollTop:$($(this).data('target')).position().top}, 'slow');
+    });
 
     $('.scroll-to-rooms').click(function(event){
         event.preventDefault();
-        $('html, body').animate({scrollTop:$('#rooms').position().top - 72}, 'easeInOutExpo');
+        $('html, body').animate({scrollTop:$('#rooms').position().top}, 'easeInOutExpo');
     });
 
     var feed = new Instafeed({
