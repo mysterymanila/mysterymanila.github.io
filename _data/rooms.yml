@@ -6,7 +6,7 @@
   poster: /img/posters/ticking-timebomb.png
   video: https://s3-ap-southeast-1.amazonaws.com/mystery-video-loops/MM_Bomb.mp4
   frame:
-    top: top-brush-frame-1
+    top: top-brush-frame-2
     bottom: bottom-brush-frame-1
   description: >
     <p>You are all part of Metro Manila's elite bomb squad and have been called to disarm a ticking time bomb placed by a deranged psychopath at the heart of the city. To solve the mystery, you may need to go outside Mystery Manila and explore the nearby areas by foot to look for important clues. You have 90 minutes to disarm the bomb before it explodes.</p>
@@ -20,7 +20,7 @@
   poster: /img/posters/buried-bodies.png
   video: https://s3-ap-southeast-1.amazonaws.com/mystery-video-loops/MM_Bomb.mp4
   frame:
-    top: top-brush-frame-2
+    top: top-brush-frame-3
     bottom: bottom-brush-frame-2
   description: >
     <p>Enigma strikes again. The psycopathic killer challenges you to escape from his graveyard using clues and puzzles hidden around the dark cemetery. Some of you are buried alive while others collect pieces of the deadly puzzle</p>
@@ -32,9 +32,9 @@
   icon: /img/icons/:MM-03.png
   alignment: pull-right
   poster: /img/posters/sinister-sensorium.png
-  video: https://s3-ap-southeast-1.amazonaws.com/mystery-video-loops/MM_WOW.mp4
+  video: https://s3-ap-southeast-1.amazonaws.com/mystery-video-loops/MM_Sinister.mp4
   frame:
-    top: top-brush-frame-3
+    top: top-brush-frame-4
     bottom: bottom-brush-frame-3
   description: >
     <p>You and your friends have been held captive by the psychopathic killer named Enigma. He has taken away one sense from each of you. It could be your sense of hearing, speaking, or sight.</p>
@@ -51,7 +51,7 @@
   poster: /img/posters/reversed-reality.png
   video: https://s3-ap-southeast-1.amazonaws.com/mystery-video-loops/MM_WOW.mp4
   frame:
-    top: top-brush-frame-4
+    top: top-brush-frame-5
     bottom: bottom-brush-frame-4
   description: >
     <p>It's 2016 and the psychopathic killer Enigma has been captured by the government. Using a method called dream snatching, you are hired to extract an evil plan from Enigma's mind within 60 minutes. In the process of extraction, you have to overcome several mind blocks and solve complex puzzles scattered within Enigma's sinister head.</p>
@@ -60,12 +60,12 @@
 - slug: world-of-wizardry
   title: World of Wizardry
   location: Libis, Quezon City Branch
-  icon: /img/icons/:MM-04.png
+  icon: /img/icons/:MM-05.png
   alignment: pull-right
   poster: /img/posters/reversed-reality.png
   video: https://s3-ap-southeast-1.amazonaws.com/mystery-video-loops/MM_WOW.mp4
   frame:
-    top: top-brush-frame-5
+    top: top-brush-frame-6
     bottom: bottom-brush-frame-5
   description: >
     <p>As a trainee wizard, you and your friends are tasked to steal the magical time turner and stop Sidius from his evil master plan that will change the world of wizardry.</p>
@@ -78,7 +78,7 @@
   poster: /img/rebecca.png
   video: https://s3-ap-southeast-1.amazonaws.com/mystery-video-loops/MM_WOW.mp4
   frame:
-    top: top-brush-frame-6
+    top: top-brush-frame-1
     bottom: bottom-brush-frame-6
   description: >
     <p>Play the role of spirit questers out to give peace to Rebecca's soul. You are given 60 minutes inside Rebecca's Room to solve her mysterious disappearance.</p>
