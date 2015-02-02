@@ -28,6 +28,7 @@ $levi-text: LeviReBrushed;
 body {
   background-color: $black !important;
   font-family: $text;
+  font-size: 17px;
 }
 
 header {
@@ -376,11 +377,12 @@ div#rooms {
               font-family: $levi-text;
               font-size: 48px;
             }
+          }
 
-            h4 {
-              padding-top: 36px;
-              margin-bottom: 36px;
-            }
+          h4 {
+            padding-top: 36px;
+            margin-bottom: 36px;
+            font-size: 22px;
           }
         }
       }
