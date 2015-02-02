@@ -14,7 +14,8 @@
                     <h2>{{ room.title}}</h2>
                 </div>
                 {{ room.description }}
-                <h4>Location: {{ room.location }}</h4>
+                <h4>LOCATION: {{ room.location | upcase }}</h4>
+                <h2>BOOK NOW <img id="book-arrow" src="/img/arrow.png"></img></h2>
             </div>
         </div>
         <span class="{{ room.frame.top }}"></span>
