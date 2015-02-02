@@ -1,33 +1,86 @@
-- id: buried-bodies
-  title: Buried Bodies
-  layout: rooms/text-right
+- slug: ticking-timebomb
+  title: Ticking Timebomb
   location: Libis, Quezon City Branch
-  description: >
-    <p>Enigma strikes again! The psycopathic killer challenges you to escape from his graveyard using clues and puzzles hidden around the dark cemetery. Some of you are buried alive while others collect pieces of the deadly puzzle</p>
-
-    <p>If you don't solve the mystery in 60 minutes, you will be buried amongst the dead and will be stuck in the graveyard for eternity. The choice is yours. Solve quickly.</p>
-
-  icon: /img/icons/:MM-02.png
+  icon: /img/icons/:MM-01.png
   alignment: pull-right
-  image: /img/buried.png
+  poster: /img/posters/ticking-timebomb.png
   video: https://s3-ap-southeast-1.amazonaws.com/mystery-video-loops/MM_Bomb.mp4
-  frame:
-    top: top-brush-frame-3
-    bottom: bottom-brush-frame-2
-
-- id: rebeccas-room
-  title: Rebecca's Room
-  layout: rooms/text-right
-  location: Jupiter, Makati City Branch
-  description: >
-    <p>Play the role of spirit questers out to give peace to Rebecca's soul. You are given 60 minutes inside Rebecca's Room to solve her mysterious disappearance.</p>
-    <p>While inside the room, you find that there is more behind her disappearance. You even experience some paranormal events...</p><p>what could these mean?</p>
-
-    <p>Are you brave enough to enter Rebecca's Room?</p>
-  icon: /img/icons/:MM-06.png
-  alignment: pull-left
-  image: /img/rebecca.png
-  video: https://s3-ap-southeast-1.amazonaws.com/mystery-video-loops/MM_WOW.mp4
   frame:
     top: top-brush-frame-1
     bottom: bottom-brush-frame-1
+  description: >
+    <p>You are all part of Metro Manila's elite bomb squad and have been called to disarm a ticking time bomb placed by a deranged psychopath at the heart of the city. To solve the mystery, you may need to go outside Mystery Manila and explore the nearby areas by foot to look for important clues. You have 90 minutes to disarm the bomb before it explodes.</p>
+    <p>Solve quickly.</p>
+
+- slug: buried-bodies
+  title: Buried Bodies
+  location: Libis, Quezon City Branch
+  icon: /img/icons/:MM-02.png
+  alignment: pull-left
+  poster: /img/posters/buried-bodies.png
+  video: https://s3-ap-southeast-1.amazonaws.com/mystery-video-loops/MM_Bomb.mp4
+  frame:
+    top: top-brush-frame-2
+    bottom: bottom-brush-frame-2
+  description: >
+    <p>Enigma strikes again. The psycopathic killer challenges you to escape from his graveyard using clues and puzzles hidden around the dark cemetery. Some of you are buried alive while others collect pieces of the deadly puzzle</p>
+    <p>If you don't solve the mystery in 60 minutes, you will be buried amongst the dead and will be stuck in the graveyard for eternity. The choice is yours. Solve quickly.</p>
+
+- slug: sinister-sensorium
+  title: Sinister Sensorium
+  location: Jupiter, Makati City Branch
+  icon: /img/icons/:MM-03.png
+  alignment: pull-right
+  poster: /img/posters/sinister-sensorium.png
+  video: https://s3-ap-southeast-1.amazonaws.com/mystery-video-loops/MM_WOW.mp4
+  frame:
+    top: top-brush-frame-3
+    bottom: bottom-brush-frame-3
+  description: >
+    <p>You and your friends have been held captive by the psychopathic killer named Enigma. He has taken away one sense from each of you. It could be your sense of hearing, speaking, or sight.</p>
+    <p>It's up to you to escape the room in 60 minutes using your remaining senses.</p> 
+    <p>Unravel the clues and solve the puzzles found inside the room. If you don't solve the mystery, you will be left for dead. </p>
+    <p>The clock is ticking. Solve quickly.</p>
+    <p>Can you escape the Sinister Sensorium? </p>
+
+- slug: reversed-reality
+  title: Reversed Reality
+  location: Libis, Quezon City Branch
+  icon: /img/icons/:MM-04.png
+  alignment: pull-left
+  poster: /img/posters/reversed-reality.png
+  video: https://s3-ap-southeast-1.amazonaws.com/mystery-video-loops/MM_WOW.mp4
+  frame:
+    top: top-brush-frame-4
+    bottom: bottom-brush-frame-4
+  description: >
+    <p>It's 2016 and the psychopathic killer Enigma has been captured by the government. Using a method called dream snatching, you are hired to extract an evil plan from Enigma's mind within 60 minutes. In the process of extraction, you have to overcome several mind blocks and solve complex puzzles scattered within Enigma's sinister head.</p>
+    <p>If you fail, millions of people will be in danger.</p>
+
+- slug: world-of-wizardry
+  title: World of Wizardry
+  location: Libis, Quezon City Branch
+  icon: /img/icons/:MM-04.png
+  alignment: pull-right
+  poster: /img/posters/reversed-reality.png
+  video: https://s3-ap-southeast-1.amazonaws.com/mystery-video-loops/MM_WOW.mp4
+  frame:
+    top: top-brush-frame-5
+    bottom: bottom-brush-frame-5
+  description: >
+    <p>As a trainee wizard, you and your friends are tasked to steal the magical time turner and stop Sidius from his evil master plan that will change the world of wizardry.</p>
+
+- slug: rebeccas-room
+  title: Rebecca's Room
+  location: Jupiter, Makati City Branch
+  icon: /img/icons/:MM-06.png
+  alignment: pull-left
+  poster: /img/rebecca.png
+  video: https://s3-ap-southeast-1.amazonaws.com/mystery-video-loops/MM_WOW.mp4
+  frame:
+    top: top-brush-frame-6
+    bottom: bottom-brush-frame-6
+  description: >
+    <p>Play the role of spirit questers out to give peace to Rebecca's soul. You are given 60 minutes inside Rebecca's Room to solve her mysterious disappearance.</p>
+    <p>While inside the room, you find that there is more behind her disappearance. You even experience some paranormal events...</p><p>what could these mean?</p>
+    <p>Are you brave enough to enter Rebecca's Room?</p>
