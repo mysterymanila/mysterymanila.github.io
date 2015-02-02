@@ -1,4 +1,3 @@
-@import "bootstrap.min";
 
 /* variables */
 
@@ -6,17 +5,16 @@
 $white: #fff;
 $black: #000;
 
-$text: Gotham Book;
+$text:Gotham Book;
 $levi-text: LeviReBrushed;
 
 /* font style */
 
 
-
-@font-face {
+/* @font-face {
   font-family: Gotham;
   src: url(/fonts/gotham/GOTHAM01.TTF);
-}
+} */
 
 
 @font-face {
