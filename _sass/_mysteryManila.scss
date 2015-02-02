@@ -139,12 +139,6 @@ nav {
   }/* end of work-navbar */
 }/* end of nav */
 
-/* #header>.site-nav {
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-} */
-
 /*cover style */
 #cover {
   min-height: 760px;
@@ -502,11 +496,6 @@ footer {
             img {
               height: 90px;
             }
-/* 
-            &:hover,
-            &:active {
-              opacity: 1;  
-            } */
           }
          
         } 
@@ -537,7 +526,14 @@ footer {
 }
 
 /*Media Queries */
-
+@media screen and (min-width: 1367px){
+  #cover {
+    #magnifying-glass {
+      height: 0px;
+      width: 0px;
+    }
+  }
+}  
 @media screen and (max-width: 1200px) {
   #cover {
     min-height: 700px;
@@ -563,15 +559,6 @@ footer {
   display: none;
 }
 
-#cover {
-  .magnifying-glass {
-    margin-left: 40%;
-    margin-right: auto;
-    height: 351px;
-    width: 520px;
-  }
-}
-
 div#rooms {
   .room {
     .room-description {
@@ -595,15 +582,6 @@ div#rooms {
 
 }
 
-@media screen and (max-width: 768px) {
-  #cover {
-    .magnifying-glass {
-      margin-right: auto;
-      height: 337px;
-      width: 500px;
-    }
-  }
-}
 
 @media screen and (max-width: 762px) {
   #cover {
@@ -612,13 +590,7 @@ div#rooms {
   }
 }
 
-@media screen and (max-width: 690px) {
-  #cover{
-    #magnifying-glass {
-      right: -50px;
-    }
-  }
-}
+
 
 @media screen and (max-width: 648px) {
 
