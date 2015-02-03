@@ -4,6 +4,11 @@ mm.init = function(){
     mm.resetScroll();
     //mm.autoHideNavbar();
     mm.sidebar.init();
+    mm.initVideos();
+    mm.initScrollToTopLinks();
+    mm.initGlass();
+
+    $('body').trigger('scroll');
 
     setTimeout(function(){
         mm.runInstagramFeed();
@@ -13,7 +18,6 @@ mm.init = function(){
 mm.resetScroll = function(){
     /* Force scrolling at the top on reload */
     setTimeout(function(){
-        console.log('force scroll top!');
         $(document).scrollTop(0);
     }, 300);
 };
@@ -63,32 +67,6 @@ mm.sidebar.hide = function () {
     $('#sidebar.sidebar-visible').addClass('sidebar-hidden').removeClass('sidebar-visible');
 };
 
-
-mm.bindScroll = function () {
-    $(document).scroll(function () {
-
-        //Show sidebar when needed
-        if(($(document).scrollTop() >= $('#rooms').offset().top - 300)
-            && $(document).scrollTop() <= $('#ig').offset().top-500){
-            showSidebar();
-        }else{
-            hideSidebar();
-        }
-
-        $('.room-video').each(function(index, video){
-            $video = $(video);
-            if ($video.is(':in-viewport')){
-                if ($video.data('play-status') == 'pause'){
-                    video.play();
-                }
-            }
-            else if ($video.data('play-status') == 'play'){
-                video.pause();
-            }
-        });
-    });
-};
-
 mm.runInstagramFeed = function () {
     $.getScript('/js/instafeed.min.js', function () {
         if (Instafeed) {
@@ -112,28 +90,24 @@ $(function(){
     mm.init();
 })
 
-$(function(){
+mm.initGlass = function () {
+    $('#glass').height($('#glass-container').height());
+};
 
-
-    function setPlaybackStatus(video, status){
-        $(video).data('play-status', status);
-    }
-
-    $('.room-video').each(function(index, video){
-        video.onplaying = function(){
-            if ($(video).data('play-status') == 'pause'){
-                setPlaybackStatus(video, 'play');
+mm.initVideos = function () {
+    $(document).scroll(function(){
+        $('.room-video').each(function(index, video){
+            $video = $(video);
+            if ($video.is(':in-viewport')) {
+                video.play();
+            } else if (!video.paused) {
+                video.pause();
             }
-        };
-        video.onplay = function(){
-            if ($(video).data('play-status') == 'pause'){
-                setPlaybackStatus(video, 'play');
-            }
-        };
-        video.onpause = function(){
-            setPlaybackStatus(video, 'pause');
-        };
+        });
     });
+};
+
+$(function(){
 
     $('.sidebar-item').click(function(){
         $('html, body').animate({scrollTop:$($(this).data('target')).position().top}, 'slow');
@@ -145,12 +119,11 @@ $(function(){
     });
 
 
-
-
-    $('#glass').css('height', $('#glass-container').css('height'));
 });
 
-function scrollToTop(){
-    $('html, body').animate({scrollTop: 0}, 'easeInOutExpo');
+mm.initScrollToTopLinks = function(){
+    $(document).on('click', '.scroll-to-top', function(e){
+        e.preventDefault();
+        $('html, body').animate({scrollTop: 0}, 'easeInOutExpo');
+    });
 }
-
