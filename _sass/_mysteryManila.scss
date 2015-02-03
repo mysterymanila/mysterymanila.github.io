@@ -292,6 +292,7 @@ div#rooms {
     }
 
     .room-description {
+      min-height: 200px;
       top: -100px;
       background-color: $black;
       position: relative;
@@ -337,7 +338,7 @@ div#rooms {
         }
 
         &.top-brush-frame-6 {
-          height: 200px;
+          height: 309px;
           background-image: url(/img/brush-edges/Top_6.png);
           background-position: bottom;
         }
