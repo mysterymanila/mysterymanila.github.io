@@ -1,22 +1,12 @@
 <footer id="footer-header" class="clearfix" >
   <p>FEATURED ON</p>
-    <div id="featured-icon">
+    <div id="featured">
         <ul>
+            {% for media in site.data.media %}
             <li>
-              <a href="#thumb"><img src="{{ 'img/featured/ABSCBN.png' | prepend: site.baseurl }}"/></a>
+                <a href="{{ media.url }}" class="featured-media" style="width: {{media.width}}; background-position-x: {{ media.position }}" title="{{ media.name }}"></a>
             </li>
-
-            <li>
-              <a href="#thumb"><img src="{{ 'img/featured/OAP.png' | prepend: site.baseurl }}"/></a>
-            </li>
-
-             <li>
-              <a href="#thumb"><img src="{{ 'img/featured/WIM.png' | prepend: site.baseurl }}"/></a>
-            </li>
-
-             <li>
-              <a href="#thumb"><img src="{{ 'img/featured/GMA.png' | prepend: site.baseurl }}"/></a>
-            </li>
+            {% endfor %}
         </ul>
     </div>
 
