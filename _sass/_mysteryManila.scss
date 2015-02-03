@@ -4,18 +4,7 @@
 /* colors */
 $white: #fff;
 $black: #000;
-
-$text:Gotham Book;
 $levi-text: LeviReBrushed;
-
-/* font style */
-
-
-/* @font-face {
-  font-family: Gotham;
-  src: url(/fonts/gotham/GOTHAM01.TTF);
-} */
-
 
 @font-face {
   font-family: LeviReBrushed;
@@ -25,8 +14,9 @@ $levi-text: LeviReBrushed;
 
 body {
   background-color: $black !important;
-  font-family: $text;
+  font-family: 'Gotham SSm A', 'Gotham SSm B', 'sans-serif';
   font-size: 17px;
+  font-weight: 400;
 }
 
 header {
@@ -416,6 +406,7 @@ div#rooms {
           h4 {
             padding-top: 24px;
             margin-bottom: 24px;
+            font-weight: 700;
           }
           img#book-arrow{
               transform: rotate(-90deg);
@@ -459,7 +450,7 @@ div#rooms {
 
     p {
       font-size: 28px;
-      font-weight: 900;
+      font-weight: 700;
       margin-top: 23px;
       color: $black;
     }
@@ -492,7 +483,7 @@ div#rooms {
     p {
       color: $white;
       font-size: 28px;
-      font-weight: 500;
+      font-weight: 400;
     }
 
   }
@@ -521,7 +512,7 @@ footer {
     p {
       color: $white;
       font-size: 28px;
-      font-weight: 500;
+      font-weight: 400;
       padding-top: 92px;
     }
 
