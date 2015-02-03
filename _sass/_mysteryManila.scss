@@ -471,6 +471,7 @@ div#rooms {
   }
 
   #instafeed{
+    padding-bottom: 80px;
     a {
       padding-bottom: 20px; 
       img {
@@ -612,12 +613,20 @@ footer {
 
     #brand-logo {
       text-align: center;
-      padding: 90px 0px 50px 0px;
-        button {
-          img {
-             height: 60px; 
-          }
-        }  
+      padding: 90px 0px 30px 0px;
+
+      button {
+        img {
+            height: 70px; 
+        }
+      }
+
+      p {
+        text-align: center;
+        font-size: 14px;
+        padding-top: 20px;
+      }
+
     }
   }
 }
