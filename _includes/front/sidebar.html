@@ -1,5 +1,5 @@
 <div id='sidebar' class="sidebar-hidden">
     {% for room in site.data.rooms %}
-	   <img data-target="#{{ room.slug }}"class="sidebar-item" src='{{ room.icon }}'/>
+        <div class="sidebar-item room-icon" data-target="#{{ room.slug }}" style="background-position: {{ room.sidebar_icon.position }}"></div>
     {% endfor %}
 </div>

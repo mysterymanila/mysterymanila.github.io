@@ -275,6 +275,12 @@ nav {
 .room-icon{
   background-repeat: no-repeat;
   background-image: url('/img/rooms/rooms-sprite.png');
+
+  &.sidebar-item{
+    height: 50px;
+    width: 50px;
+    background-size: 156px;
+  }
 }
 
 /*rooms styles */
