@@ -748,5 +748,24 @@ div#rooms {
       min-width: 300px;
     }
   }  
+
+  nav {
+    &#work-navbar {
+      .nav-container {
+        .navbar-header {
+          .navbar-brand {
+            a {
+              #nav-title {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
 }
 
+
+/* nav#work-navbar .nav-container .navbar-header .navbar-brand a #nav-title */
