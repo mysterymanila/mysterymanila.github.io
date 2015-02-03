@@ -1,4 +1,5 @@
 $(function(){
+
     $(document).scroll(function () {
         if ($('.navbar').hasClass('navbar-hidden')){
             $('.navbar').removeClass('navbar-hidden').addClass('navbar-visible');
@@ -63,6 +64,10 @@ $(function(){
 
     $('#glass').css('height', $('#glass-container').css('height'));
 });
+
+function scrollToTop(){
+    $('html, body').animate({scrollTop: 0}, 'easeInOutExpo');
+}
 
 function showSidebar(){
     if($('#sidebar').hasClass('sidebar-hidden')){
