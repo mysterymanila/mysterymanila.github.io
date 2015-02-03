@@ -1,9 +1,9 @@
 {% for room in site.data.rooms %}
 <div id="{{room.slug}}" class="room clearfix">
     <div class="hero-content" data-stellar-ratio="0.7">
-        <video class="room-video" autoplay loop>
+        <video class="room-video" poster="{{ room.poster }}" loop data-play-status="pause">
             <source src="{{ room.video }}" type="video/mp4">
-        </video>        
+        </video>       
     </div>
     <div class="room-description">
         <span class="{{ room.frame.bottom }}"></span>
