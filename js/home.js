@@ -1,9 +1,73 @@
-$(function(){
+var mm = mm || {};
+mm.init = function(){
 
+    mm.resetScroll();
+    //mm.autoHideNavbar();
+    mm.sidebar.init();
+
+    setTimeout(function(){
+        mm.runInstagramFeed();
+    }, 3000);
+};
+
+mm.resetScroll = function(){
+    /* Force scrolling at the top on reload */
+    setTimeout(function(){
+        console.log('force scroll top!');
+        $(document).scrollTop(0);
+    }, 300);
+};
+
+mm.autoHideNavbar = function(){
+    if ($(".navbar").size()) {
+        //Show navbar when mouse moves
+        $(document).mousemove(function (e) {
+            if ($('.navbar').hasClass('navbar-hidden')) {
+                $('.navbar').removeClass('navbar-hidden').addClass('navbar-visible');
+            }
+            var lastMouseMove = new Date().getTime();
+            var t = setTimeout(function () {
+                if (new Date().getTime() - lastMouseMove > 2000 &&
+                    ($(document).scrollTop() >= $('#about').offset().top) && !$('.navbar').is(':hover')) {
+                    $('.navbar').removeClass('navbar-visible').addClass('navbar-hidden');
+                }
+            }, 2000)
+        });
+
+        //Show navbar while scrolling
+        $(document).scroll(function () {
+            $('.navbar.navbar-hidden').removeClass('.navbar-hidden').addClass('navbar-visible');
+        });
+    }
+};
+
+mm.sidebar = mm.sidebar || {};
+mm.sidebar.init = function () {
+    var self = this;
     $(document).scroll(function () {
-        if ($('.navbar').hasClass('navbar-hidden')){
-            $('.navbar').removeClass('navbar-hidden').addClass('navbar-visible');
+        //Show sidebar when needed
+        if (($(document).scrollTop() >= $('#rooms').offset().top - 300)
+            && $(document).scrollTop() <= $('#ig').offset().top - 500) {
+            self.show();
+        } else {
+            self.hide();
         }
+    });
+};
+
+mm.sidebar.show = function () {
+    $('#sidebar.sidebar-hidden').addClass('sidebar-visible').removeClass('sidebar-hidden');
+};
+
+mm.sidebar.hide = function () {
+    $('#sidebar.sidebar-visible').addClass('sidebar-hidden').removeClass('sidebar-visible');
+};
+
+
+mm.bindScroll = function () {
+    $(document).scroll(function () {
+
+        //Show sidebar when needed
         if(($(document).scrollTop() >= $('#rooms').offset().top - 300)
             && $(document).scrollTop() <= $('#ig').offset().top-500){
             showSidebar();
@@ -23,54 +87,25 @@ $(function(){
             }
         });
     });
-});
-
-var mm = mm || {};
-mm.init = function(){
-    mm.resetScroll();
-    //mm.autoHideNavbar();
-
-    setTimeout(function(){
-        mm.runInstagramFeed();
-    }, 1000);
 };
 
-mm.resetScroll = function(){
-    /* Force scrolling at the top on reload */
-    setTimeout(function(){
-        console.log('force scroll top!');
-        $(document).scrollTop(0);
-    }, 300);
-};
-
-mm.autoHideNavbar = function(){
-    if ($(".navbar").size()) {
-        $(document).mousemove(function (e) {
-            if ($('.navbar').hasClass('navbar-hidden')) {
-                $('.navbar').removeClass('navbar-hidden').addClass('navbar-visible');
-            }
-            var lastMouseMove = new Date().getTime();
-            var t = setTimeout(function () {
-                if (new Date().getTime() - lastMouseMove > 2000 &&
-                    ($(document).scrollTop() >= $('#about').offset().top) && !$('.navbar').is(':hover')) {
-                    $('.navbar').removeClass('navbar-visible').addClass('navbar-hidden');
+mm.runInstagramFeed = function () {
+    $.getScript('/js/instafeed.min.js', function () {
+        if (Instafeed) {
+            new Instafeed({
+                get: 'tagged',
+                tagName: 'MYSTERYMANILA',
+                clientId: 'b74a7734368849fabe400246441d36f6',
+                limit: 18,
+                sortBy: 'most-recent',
+                template: '<a href="{{link}}" target="_blank" class="col-md-2 col-sm-2 col-xs-6"><img src="{{image}}" /></a>',
+                resolution: 'low_resolution',
+                after: function(){
+                    $("#ig").show();
                 }
-            }, 2000)
-        });
-    }
-};
-
-mm.runInstagramFeed = function(){
-    var feed = new Instafeed({
-        get: 'tagged',
-        tagName: 'MYSTERYMANILA',
-        clientId: 'b74a7734368849fabe400246441d36f6',
-        limit: 18,
-        sortBy: 'most-recent',
-        template: '<a href="{{link}}" target="_blank" class="col-md-2 col-sm-2 col-xs-6"><img src="{{image}}" /></a>',
-        resolution: 'low_resolution'
+            }).run();
+        }
     });
-    feed.run();
 };
 
 $(function(){
@@ -119,22 +154,3 @@ function scrollToTop(){
     $('html, body').animate({scrollTop: 0}, 'easeInOutExpo');
 }
 
-function showSidebar(){
-    if($('#sidebar').hasClass('sidebar-hidden')){
-        /*$('.sidebar-item').each(function(i){
-            $(this).delay( i * 100).animate({right:'24px'});
-        });*/
-        $('#sidebar').addClass('sidebar-visible');
-        $('#sidebar').removeClass('sidebar-hidden');
-    }
-}
-
-function hideSidebar(){
-    if($('#sidebar').hasClass('sidebar-visible')){
-        /*$('.sidebar-item').each(function(i){
-            $(this).delay( i * 100).animate({right:'-150px'});
-        });*/
-        $('#sidebar').addClass('sidebar-hidden');
-        $('#sidebar').removeClass('sidebar-visible');
-    }
-}
