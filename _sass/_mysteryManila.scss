@@ -534,11 +534,12 @@ footer {
         margin: 0px;
         padding: 0px;
         li {
-          padding: 35px 60px 30px 0px;
+          padding: 35px 40px 30px 40px;
           margin-top: 0px;
           text-align: center;
           display: inline-block;
-
+          list-style-type: none;
+          
           &:nth-child(1) {
             a {
               img {
@@ -660,18 +661,6 @@ footer {
   }
 }
 
-@media screen and (max-width: 911px) {
-  footer {
-    #featured-icon {
-      ul {
-        display: none;
-      }
-
-    }
-
-  }
-}
-
 @media screen and (max-width: 800px) {
 #sidebar {
   display: none;
@@ -736,6 +725,21 @@ div#rooms {
       right: -80px;
     }
   }  
+}
+
+@media screen and (max-width: 585px) {
+  footer {
+    &#footer-header {
+      #featured-icon {
+        ul {
+          li {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
 }
 
 @media screen and (max-width: 530px) {
