@@ -23,19 +23,62 @@ $(function(){
             }
         });
     });
-    $(document).mousemove(function(e){
-        if ($('.navbar').hasClass('navbar-hidden')){
-            $('.navbar').removeClass('navbar-hidden').addClass('navbar-visible');
-        }
-        var lastMouseMove = new Date().getTime();
-        var t = setTimeout(function(){
-           if(new Date().getTime() - lastMouseMove > 2000 && 
-                ($(document).scrollTop() >= $('#about').offset().top) &&
-                !$('.navbar').is(':hover')){
-                $('.navbar').removeClass('navbar-visible').addClass('navbar-hidden');
-           }
-        }, 2000)
+});
+
+var mm = mm || {};
+mm.init = function(){
+    mm.resetScroll();
+    //mm.autoHideNavbar();
+
+    setTimeout(function(){
+        mm.runInstagramFeed();
+    }, 1000);
+};
+
+mm.resetScroll = function(){
+    /* Force scrolling at the top on reload */
+    setTimeout(function(){
+        console.log('force scroll top!');
+        $(document).scrollTop(0);
+    }, 300);
+};
+
+mm.autoHideNavbar = function(){
+    if ($(".navbar").size()) {
+        $(document).mousemove(function (e) {
+            if ($('.navbar').hasClass('navbar-hidden')) {
+                $('.navbar').removeClass('navbar-hidden').addClass('navbar-visible');
+            }
+            var lastMouseMove = new Date().getTime();
+            var t = setTimeout(function () {
+                if (new Date().getTime() - lastMouseMove > 2000 &&
+                    ($(document).scrollTop() >= $('#about').offset().top) && !$('.navbar').is(':hover')) {
+                    $('.navbar').removeClass('navbar-visible').addClass('navbar-hidden');
+                }
+            }, 2000)
+        });
+    }
+};
+
+mm.runInstagramFeed = function(){
+    var feed = new Instafeed({
+        get: 'tagged',
+        tagName: 'MYSTERYMANILA',
+        clientId: 'b74a7734368849fabe400246441d36f6',
+        limit: 18,
+        sortBy: 'most-recent',
+        template: '<a href="{{link}}" target="_blank" class="col-md-2 col-sm-2 col-xs-6"><img src="{{image}}" /></a>',
+        resolution: 'low_resolution'
     });
+    feed.run();
+};
+
+$(function(){
+    mm.init();
+})
+
+$(function(){
+
 
     function setPlaybackStatus(video, status){
         $(video).data('play-status', status);
@@ -66,31 +109,8 @@ $(function(){
         $('html, body').animate({scrollTop:$('#rooms').position().top}, 'easeInOutExpo');
     });
 
-    var feed = new Instafeed({
-        get: 'tagged',
-        tagName: 'MYSTERYMANILA',
-        clientId: 'b74a7734368849fabe400246441d36f6',
-        limit: '8',
-        sortBy: 'most-recent',
-        template: '<a href="{{link}}" target="_blank" class="col-md-3 col-sm-3 col-xs-6"><img src="{{image}}" /></a>',
-        resolution: 'standard_resolution'
-    });
-    feed.run();
 
-    var leaderboardFeed = new Instafeed({
-        target: 'leaderboard-images',
-        get: 'tagged',
-        tagName: 'MYSTERYMANILA',
-        clientId: 'b74a7734368849fabe400246441d36f6',
-        sortBy: 'most-recent',
-        limit: '4',
-        template: '<a href="{{link}}" target="_blank" class="col-md-3 col-sm-3 col-xs-6"><img src="{{image}}" /></a>',
-        resolution: 'standard_resolution',
-        filter: function(image){
-            return image.tags.indexOf('LEADERBOARD') >= 0;
-        }
-    });
-    leaderboardFeed.run();
+
 
     $('#glass').css('height', $('#glass-container').css('height'));
 });
@@ -106,7 +126,7 @@ function showSidebar(){
         });*/
         $('#sidebar').addClass('sidebar-visible');
         $('#sidebar').removeClass('sidebar-hidden');
-    }   
+    }
 }
 
 function hideSidebar(){
