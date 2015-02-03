@@ -8,12 +8,19 @@ mm.init = function(){
     mm.initScrollToTopLinks();
     mm.initGlass();
     mm.initBookNowLinks();
-
+    mm.initScrollToRooms();
     $('body').trigger('scroll');
 
     setTimeout(function(){
         mm.runInstagramFeed();
     }, 3000);
+};
+
+mm.initScrollToRooms = function () {
+    $('.scroll-to-rooms').click(function (event) {
+        event.preventDefault();
+        $('html, body').animate({scrollTop: $('#rooms').position().top}, 'easeInOutExpo');
+    });
 };
 
 mm.resetScroll = function(){
@@ -49,6 +56,7 @@ mm.autoHideNavbar = function(){
 mm.sidebar = mm.sidebar || {};
 mm.sidebar.init = function () {
     var self = this;
+
     $(document).scroll(function () {
         //Show sidebar when needed
         if (($(document).scrollTop() >= $('#rooms').offset().top - 300)
@@ -57,6 +65,10 @@ mm.sidebar.init = function () {
         } else {
             self.hide();
         }
+    });
+
+    $('.sidebar-item').click(function(){
+        $('html, body').animate({scrollTop:$($(this).data('target')).position().top}, 'slow');
     });
 };
 
@@ -87,40 +99,24 @@ mm.runInstagramFeed = function () {
     });
 };
 
-$(function(){
-    mm.init();
-})
-
 mm.initGlass = function () {
     $('#glass').height($('#glass-container').height());
 };
 
 mm.initVideos = function () {
-    $(document).scroll(function(){
-        $('.room-video').each(function(index, video){
-            $video = $(video);
-            if ($video.is(':in-viewport')) {
-                video.play();
-            } else if (!video.paused) {
-                video.pause();
-            }
+    if ($(window).width() >= 500) {
+        $(document).scroll(function () {
+            $('.room-video').each(function (index, video) {
+                $video = $(video);
+                if ($video.is(':in-viewport')) {
+                    video.play();
+                } else if (!video.paused) {
+                    video.pause();
+                }
+            });
         });
-    });
+    }
 };
-
-$(function(){
-
-    $('.sidebar-item').click(function(){
-        $('html, body').animate({scrollTop:$($(this).data('target')).position().top}, 'slow');
-    });
-
-    $('.scroll-to-rooms').click(function(event){
-        event.preventDefault();
-        $('html, body').animate({scrollTop:$('#rooms').position().top}, 'easeInOutExpo');
-    });
-
-
-});
 
 mm.initScrollToTopLinks = function(){
     $(document).on('click', '.scroll-to-top', function(e){
@@ -140,3 +136,7 @@ mm.initBookNowLinks = function() {
         window.open('http://www.mysterymanila.com/booknow.php', 'book_window', options);
     });
 };
+
+$(function(){
+    mm.init();
+})
