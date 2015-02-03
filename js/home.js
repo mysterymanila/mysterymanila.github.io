@@ -12,12 +12,13 @@ $(function(){
         }
 
         $('.room-video').each(function(index, video){
-            if ($(video).is(':in-viewport')){
-                if ($(video).data('play-status') == 'pause'){
+            $video = $(video);
+            if ($video.is(':in-viewport')){
+                if ($video.data('play-status') == 'pause'){
                     video.play();
                 }
             }
-            else if ($(video).data('play-status') == 'play'){
+            else if ($video.data('play-status') == 'play'){
                 video.pause();
             }
         });
