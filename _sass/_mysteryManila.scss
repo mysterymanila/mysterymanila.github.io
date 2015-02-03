@@ -13,10 +13,13 @@ $levi-text: LeviReBrushed;
 
 
 body {
-  background-color: $black !important;
   font-family: 'Gotham SSm A', 'Gotham SSm B', 'sans-serif';
   font-size: 17px;
   font-weight: 400;
+  background-color: $black !important;
+  background-image: url(http://mysterymanila.github.io/img/cover-1280.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 header {
@@ -132,10 +135,6 @@ nav {
 #cover {
   min-height: 760px;
   width: 100%;
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-image: url("/img/cover-1280.jpg");
-  background-size: cover;
 
   #magnifying-glass {
     position: absolute;
@@ -521,6 +520,7 @@ div#rooms {
 /* footer style */
 footer {
   &#footer-header {
+    background: rgba(0,0,0,0.8);
     text-align: center;
 
     p {
