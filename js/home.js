@@ -100,7 +100,7 @@ mm.runInstagramFeed = function () {
 };
 
 mm.initGlass = function () {
-    $('#glass').height($('#glass-container').height());
+    $('#glass').height($('#glass-container').height() * 1.2);
 };
 
 mm.initVideos = function () {
