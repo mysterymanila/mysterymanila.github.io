@@ -12,7 +12,7 @@ $(function(){
         }
 
         $('.room-video').each(function(index, video){
-            if ($(video).is(':in-viewport(200)')){
+            if ($(video).is(':in-viewport')){
                 if ($(video).data('play-status') == 'pause'){
                     video.play();
                 }
