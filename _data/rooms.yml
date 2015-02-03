@@ -1,7 +1,8 @@
 - slug: ticking-timebomb
   title: Ticking Timebomb
   location: Libis, Quezon City Branch
-  icon: /img/icons/:MM-01.png
+  icon:
+    position: -176px 0
   alignment: pull-right
   poster: /img/posters/ticking-timebomb.jpg
   video: http://d3pfdit6z4xogx.cloudfront.net/videos/MM_TimeBomb.mp4
@@ -15,7 +16,8 @@
 - slug: buried-bodies
   title: Buried Bodies
   location: Libis, Quezon City Branch
-  icon: /img/icons/:MM-02.png
+  icon:
+    position: -88px 0
   alignment: pull-left
   poster: /img/posters/buried-bodies.jpg
   video: http://d3pfdit6z4xogx.cloudfront.net/videos/MM_BuriedBodies.mp4
@@ -29,7 +31,8 @@
 - slug: sinister-sensorium
   title: Sinister Sensorium
   location: Jupiter, Makati City Branch
-  icon: /img/icons/:MM-03.png
+  icon:
+    position: 0 -88px
   alignment: pull-right
   poster: /img/posters/sinister-sensorium.jpg
   video: http://d3pfdit6z4xogx.cloudfront.net/videos/MM_Sinister.mp4
@@ -46,7 +49,8 @@
 - slug: reversed-reality
   title: Reversed Reality
   location: Libis, Quezon City Branch
-  icon: /img/icons/:MM-04.png
+  icon:
+    position: -176px -88px
   alignment: pull-left
   poster: /img/posters/reversed-reality.jpg
   video: http://d3pfdit6z4xogx.cloudfront.net/videos/MM_ReversedReality.mp4
@@ -60,7 +64,8 @@
 - slug: world-of-wizardry
   title: World of Wizardry
   location: Libis, Quezon City Branch
-  icon: /img/icons/:MM-05.png
+  icon:
+    position: 0 0
   alignment: pull-right
   poster: /img/posters/world-of-wizardry.jpg
   video: http://d3pfdit6z4xogx.cloudfront.net/videos/MM_WorldOfWizardry.mp4
@@ -73,7 +78,8 @@
 - slug: rebeccas-room
   title: Rebecca's Room
   location: Jupiter, Makati City Branch
-  icon: /img/icons/:MM-06.png
+  icon:
+    position: -88px -88px
   alignment: pull-left
   poster: /img/posters/rebeccas-room.jpg
   video: http://d3pfdit6z4xogx.cloudfront.net/videos/MM_Rebecca.mp4

@@ -6,11 +6,11 @@
         </video>       
     </div>
     <div class="room-description">
-        <span class="{{ room.frame.bottom }} hidden-xs"></span>
+        <span class="{{ room.frame.bottom }} brush-frame hidden-xs"></span>
         <div class="container">
             <div class="{{ room.alignment }} col-md-6 clearfix room-text">
                 <div class="room-title">
-                    <img src="{{ room.icon }}" class="pull-left" />
+                    <div class="pull-left room-icon" style="background-position: {{ room.icon.position }}"></div>
                     <h2>{{ room.title}}</h2>
                 </div>
                 {{ room.description }}
@@ -20,7 +20,7 @@
                 </a>
             </div>
         </div>
-        <span class="{{ room.frame.top }} hidden-xs"></span>
+        <span class="{{ room.frame.top }} brush-frame hidden-xs"></span>
     </div>
 </div>
 {% endfor %}

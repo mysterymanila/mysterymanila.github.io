@@ -272,6 +272,11 @@ nav {
   }
 }
 
+.room-icon{
+  background-repeat: no-repeat;
+  background-image: url('/img/rooms/rooms-sprite.png');
+}
+
 /*rooms styles */
 div#rooms {
   color: $white;
@@ -281,6 +286,12 @@ div#rooms {
     /*height: 100vh; */
     background-color: $black;
     position: relative;
+
+    .room-icon {
+      width: 77px;
+      height: 77px;
+      margin-top: 6px;
+    }
 
     .hero-content {
       position: relative;
@@ -600,30 +611,29 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
-#sidebar {
-  display: none;
-}
-
-div#rooms {
-  .room {
-    .room-description {
-      span {
-        &.bottom-brush-frame-2, 
-        &.bottom-brush-frame-1 {
-          top: -70px;
-        }
-      }
-
-      .container {
-        .room-text {
-          margin-top: 30px;
-        }
-      }
-    }
-
-
+  #sidebar {
+    display: none;
   }
-}
+
+  div#rooms {
+    .room {
+      .room-description {
+        span {
+          &.bottom-brush-frame-2,
+          &.bottom-brush-frame-1 {
+            top: -70px;
+          }
+        }
+
+        .container {
+          .room-text {
+            margin-top: 30px;
+          }
+        }
+      }
+
+    }
+  }
 
 }
 
