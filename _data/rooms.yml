@@ -4,7 +4,7 @@
   icon: /img/icons/:MM-01.png
   alignment: pull-right
   poster: /img/posters/ticking-timebomb.png
-  video: https://s3-ap-southeast-1.amazonaws.com/mystery-video-loops/MM_Bomb.mp4
+  video: http://d3pfdit6z4xogx.cloudfront.net/videos/MM_TimeBomb.mp4
   frame:
     top: top-brush-frame-2
     bottom: bottom-brush-frame-1
@@ -18,7 +18,7 @@
   icon: /img/icons/:MM-02.png
   alignment: pull-left
   poster: /img/posters/buried-bodies.png
-  video: https://s3-ap-southeast-1.amazonaws.com/mystery-video-loops/MM_Bomb.mp4
+  video: http://d3pfdit6z4xogx.cloudfront.net/videos/MM_BuriedBodies.mp4
   frame:
     top: top-brush-frame-3
     bottom: bottom-brush-frame-2
@@ -32,7 +32,7 @@
   icon: /img/icons/:MM-03.png
   alignment: pull-right
   poster: /img/posters/sinister-sensorium.png
-  video: https://s3-ap-southeast-1.amazonaws.com/mystery-video-loops/MM_Sinister.mp4
+  video: http://d3pfdit6z4xogx.cloudfront.net/videos/MM_Sinister.mp4
   frame:
     top: top-brush-frame-4
     bottom: bottom-brush-frame-3
@@ -49,7 +49,7 @@
   icon: /img/icons/:MM-04.png
   alignment: pull-left
   poster: /img/posters/reversed-reality.png
-  video: https://s3-ap-southeast-1.amazonaws.com/mystery-video-loops/MM_WOW.mp4
+  video: http://d3pfdit6z4xogx.cloudfront.net/videos/MM_ReversedReality.mp4
   frame:
     top: top-brush-frame-5
     bottom: bottom-brush-frame-4
@@ -63,7 +63,7 @@
   icon: /img/icons/:MM-05.png
   alignment: pull-right
   poster: /img/posters/reversed-reality.png
-  video: https://s3-ap-southeast-1.amazonaws.com/mystery-video-loops/MM_WOW.mp4
+  video: http://d3pfdit6z4xogx.cloudfront.net/videos/MM_WorldOfWizardry.mp4
   frame:
     top: top-brush-frame-6
     bottom: bottom-brush-frame-5
@@ -76,7 +76,7 @@
   icon: /img/icons/:MM-06.png
   alignment: pull-left
   poster: /img/rebecca.png
-  video: https://s3-ap-southeast-1.amazonaws.com/mystery-video-loops/MM_WOW.mp4
+  video: http://d3pfdit6z4xogx.cloudfront.net/videos/MM_Rebecca.mp4
   frame:
     top: top-brush-frame-1
     bottom: bottom-brush-frame-6
