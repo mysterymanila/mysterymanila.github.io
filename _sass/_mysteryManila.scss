@@ -136,17 +136,6 @@ nav {
   min-height: 760px;
   width: 100%;
 
-  #magnifying-glass {
-    position: absolute;
-    right: 0;
-    top: 100px;
-    display: block;
-    width: 50%;
-    height: auto;
-    max-width: 850px;
-    min-width: 355px;
-  }
-
   .m-logo-container {
     padding: 75px 0px 0px 0px;
     min-height: 570px;
@@ -182,7 +171,7 @@ nav {
     z-index: 36;
     background-size: 200% 100%;
     background-color: transparent;
-    background-image: url("/img/coverbrush.png");
+    background-image: url("/img/brush-edges/coverbrush.png");
     background-position: bottom;
     background-repeat: no-repeat;
   }
@@ -484,39 +473,6 @@ div#rooms {
 
 }
 
-/* leaderboard style */
-
-#leaderboard {
-  background-image: url("/img/board.png");
-  padding-top: 92px;
-
-  #leaderboard-header {
-    text-align: center;
-
-    p {
-      color: $white;
-      font-size: 28px;
-      font-weight: 400;
-    }
-
-  }
-
-  #leaderboard-images {
-    margin-top: 20px;
-
-    a {
-      img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-        margin: auto;
-      }
-    }
-
-  }
-
-}
-
 /* footer style */
 footer {
   &#footer-header {
@@ -588,14 +544,7 @@ footer {
 }
 
 /*Media Queries */
-@media screen and (min-width: 1367px){
-  #cover {
-    #magnifying-glass {
-      height: 0px;
-      width: 0px;
-    }
-  }
-}  
+ 
 @media screen and (max-width: 1200px) {
   #cover {
     min-height: 700px;
@@ -643,7 +592,6 @@ footer {
 
 }
 
-
 @media screen and (max-width: 762px) {
   #cover {
     position: relative;
@@ -672,37 +620,8 @@ footer {
     }
   }
 }        
-
-@media screen and (max-width: 610px) {
-  #cover{
-    #magnifying-glass {
-      right: -80px;
-    }
-  }  
-}
-
-@media screen and (max-width: 585px) {
-  footer {
-    &#footer-header {
-      #featured-icon {
-        ul {
-          li {
-            display: block;
-          }
-        }
-      }
-    }
-  }
-
-}
-
+ 
 @media screen and (max-width: 530px) {
-  #cover{
-    #magnifying-glass {
-      min-width: 300px;
-    }
-  }  
-
   nav {
     &#work-navbar {
       .nav-container {
@@ -721,5 +640,3 @@ footer {
 
 }
 
-
-/* nav#work-navbar .nav-container .navbar-header .navbar-brand a #nav-title */
