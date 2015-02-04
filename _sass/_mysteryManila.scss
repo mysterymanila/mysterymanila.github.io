@@ -20,6 +20,7 @@ body {
   background-image: url(/img/mystery-wall.jpg);
   background-size: cover;
   background-attachment: fixed;
+
 }
 
 header {
@@ -496,8 +497,6 @@ footer {
           text-align: center;
           display: inline-block;
           list-style-type: none;
-
-          display: inline-block;
           vertical-align: middle;
           a {
             height: 167px;
@@ -530,6 +529,21 @@ footer {
       }
 
     }
+  }
+
+  #widgets {
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        padding: 0px 10px 0px 10px;
+        margin-top: 0px;
+        text-align: center;
+        display: inline-block;
+        list-style-type: none;
+        vertical-align: middle;
+      }
+    } 
   }
 }
 
