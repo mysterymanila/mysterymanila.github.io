@@ -140,3 +140,25 @@ mm.initBookNowLinks = function() {
 $(function(){
     mm.init();
 })
+
+
+/*social media*/
+   <!-- tripadvisory -->
+    <script src="http://www.jscache.com/wejs?wtype=socialButtonReviews&amp;uniq=813&amp;locationId=7142887&amp;color=green&amp;size=rect&amp;lang=en_PH&amp;display_version=2">
+    </script>
+
+    <!-- facebook -->
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- instagram -->
+    <script>(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src="http://instagramfollowbutton.com/components/instagram/v2/js/ig-follow.js";s.parentNode.insertBefore(g,s);}(document,"script"));
+    </script>
+    <!-- twitter -->
+    <script>window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
+    </script>
