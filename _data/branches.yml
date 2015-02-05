@@ -1,22 +1,21 @@
 - name: Mystery Manila - Libis Quezon City
   address: > 
-            <p>Address: Unit 9A, JW Plaza Building, 195 E. Rodriguez Jr Ave.</p> 
-            <p>(also known as C5, right across the street from the entrance of Eastwood, Libis)</p> 
-            <p>Brgy. Bagumbayan, 1110 Quezon City, Metro Manila, Philippines.</p> 
-  description: >          
-            <p>Tel: (+63) 02 501 2824 or (+63) 917 582 08 08</p> 
-            <p>Operating Hours:</p> 
-            <p>1pm to 930pm Mondays to Fridays</p> 
-            <p>9am to 930pm Holidays/Saturdays/Sundays</p>
+              Address: Unit 9A, JW Plaza Building, 195 E. Rodriguez Jr Ave.
+              (also known as C5, right across the street from the entrance of Eastwood, Libis)
+              Brgy. Bagumbayan, 1110 Quezon City, Metro Manila, Philippines.
+  telephone: "Tel: (+63) 02 501 2824 or (+63) 917 582 08 08"
+  availability: >
+                 1pm to 930pm Mondays to Fridays 
+                 9am to 930pm Holidays/Saturdays/Sundays             
+ 
 
 - name: Mystery Manila - Jupiter Makati
   address: > 
-            <p>Address: 2nd floor, G. A. Yupangco Building, Jupiter St. and Gil Puyat Avenue corner Reposo St., Brgy. Bel Air</p> 
-            <p>(landmark is Starbucks right across Mapua Makati & SM Jazz)</p> 
-            <p>1200 Makati City, Metro Manila, Philippines.</p> 
-  description: >          
-            <p>Tel: (+632) 587 1689 or (+63) 917 559 40 10 </p> 
-            <p>Operating Hours:</p> 
-            <p>1pm to 930pm Mondays to Fridays</p> 
-            <p>9am to 930pm Holidays/Saturdays/Sundays</p>
-            
+              Address: 2nd floor, G. A. Yupangco Building, Jupiter St. and Gil Puyat Avenue corner Reposo St., Brgy. Bel Air 
+              (landmark is Starbucks right across Mapua Makati & SM Jazz) 
+              1200 Makati City, Metro Manila, Philippines.
+  telephone: "Tel: (+632) 587 1689 or (+63) 917 559 40 10"
+  availability: >
+                 1pm to 930pm Mondays to Fridays 
+                 9am to 930pm Holidays/Saturdays/Sundays  
+ 

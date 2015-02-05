@@ -485,6 +485,7 @@ div#rooms {
       text-align: center;
       color:$white;
       margin: 0;
+      padding-bottom: 30px;
 
     }
     p {
@@ -516,8 +517,12 @@ div#rooms {
           font-weight: 700;
 
         }
+        address {
+          color:$white;
+          font-size:17px;
+          margin: 0;
+        }
         p {
-          text-align: center;
           color:$white;
           font-size:17px;
           margin: 0;

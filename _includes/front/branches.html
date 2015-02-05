@@ -5,9 +5,11 @@
     {% for branch in site.data.branches %}
       <div class="col-md-6">
         <h4>{{ branch.name }}</h4>
-        <p>{{ branch.address }}</p>
+        <address>{{ branch.address }}</address>
           <br/>
-        {{ branch.description }}  
+         <p>{{ branch.telephone }}</p>
+        <p>Operating Hours:</p>
+        <p>{{ branch.availability }}</p>
       </div>
     {% endfor %}  
   </div>
