@@ -8,7 +8,7 @@
     <div class="room-description">
         <span class="{{ room.frame.bottom }} brush-frame hidden-xs"></span>
         <div class="container">
-            <div class="{{ room.alignment }} col-md-6 clearfix room-text">
+            <div class="{% cycle 'pull-right', 'pull-left' %} col-md-6 clearfix room-text">
                 <div class="room-title">
                     <div class="pull-left room-icon" style="background-position: {{ room.icon.position }}"></div>
                     <h2>{{ room.title}}</h2>
