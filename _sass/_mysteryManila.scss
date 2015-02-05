@@ -566,6 +566,16 @@ div#rooms {
   }
 }
 
+#corporate {
+  height: 100vh;
+  position: relative;
+  .corporate-content{
+    margin-top: 35vh;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
 
 /* footer style */
 footer {
