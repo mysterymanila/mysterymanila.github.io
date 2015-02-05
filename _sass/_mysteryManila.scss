@@ -448,31 +448,65 @@ div#rooms {
   right: 0;
 }
 
-/*IG style */
-#ig {
+.transparent-container{
   background: rgba(0,0,0,0.8);
+  color: #ffffff;
 
-  #ig-header {
-    text-align: center;
-    padding-top: 192px;
-    font-size: 21px;
-    margin: 23px 42px;
-    color: $white;
-  }
-
-  #instafeed{
-    padding-bottom: 80px;
-    a {
-      padding-bottom: 20px; 
-      img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-        margin: auto;
-      } 
+  #ig {
+    #ig-header {
+      text-align: center;
+      padding-top: 192px;
+      font-size: 21px;
+      margin: 23px 42px;
+      color: $white;
     }
-  } 
 
+    #instafeed{
+      padding-bottom: 80px;
+      a {
+        padding-bottom: 20px; 
+        img {
+          display: block;
+          max-width: 100%;
+          height: auto;
+          margin: auto;
+        } 
+      }
+    } 
+  }
+  #faq {
+    line-height: 2.5;
+    h2 {
+      text-align: center;
+    }
+    .answer{
+      font-weight: 300;
+      font-size: 16px;
+    }
+    .questions {
+      list-style: none;
+      margin-left: 0;
+      .active {
+        font-weight: 700;
+      }
+      li {
+        padding-left: 15px;
+        margin-left: 2px
+      }
+      li:hover, .active{
+        border-left: 2px solid #FFF;
+        margin-left: 0;
+      }
+      li a {
+        color: #fff;
+        line-height: 2;
+      }
+      li a:hover {
+        color: #ccc;
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 /* footer style */

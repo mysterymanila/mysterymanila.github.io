@@ -1,14 +1,16 @@
 var mm = mm || {};
 mm.init = function(){
 
-    mm.resetScroll();
+    //mm.resetScroll();
     //mm.autoHideNavbar();
     mm.sidebar.init();
     mm.initVideos();
     mm.initScrollToTopLinks();
     mm.initGlass();
     mm.initBookNowLinks();
+    mm.initNavbar();
     mm.initScrollToRooms();
+    mm.initFAQ();
     $('body').trigger('scroll');
 
     setTimeout(function(){
@@ -55,6 +57,14 @@ mm.autoHideNavbar = function(){
             $('.navbar.navbar-hidden').removeClass('.navbar-hidden').addClass('navbar-visible');
         });
     }
+};
+
+mm.initNavbar = function(){
+    $(document).on('click', '.navbar-nav li a', function(e){
+        e.preventDefault();
+        $link = $(e.target);
+        $('html, body').animate({scrollTop: $($link.attr('href')).offset().top - 96}, 'easeInOutExpo');
+    });
 };
 
 mm.sidebar = mm.sidebar || {};
@@ -142,6 +152,21 @@ mm.initBookNowLinks = function() {
         window.open($(this).attr('href'), 'book_window', options);
     });
 };
+
+mm.initFAQ = function() {
+    $(document).on('click', '.questions li a', function(e){
+        e.preventDefault();
+        $question = $(e.target);
+
+        $('.answer').slideUp(300);
+        $($question.attr('href')).fadeIn(300);
+        $('.questions li').removeClass('active');
+        $question.parents().eq(2).addClass('active');
+        setTimeout(function(){
+            $('html, body').animate({scrollTop: $question.parents(2).offset().top - 96}, 'easeInOutExpo');
+        }, 300);
+    });
+}
 
 
 
