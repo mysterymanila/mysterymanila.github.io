@@ -12,7 +12,11 @@ mm.init = function(){
     $('body').trigger('scroll');
 
     setTimeout(function(){
-        mm.runInstagramFeed();
+        mm.runInstagramFeed(),
+        mm.runFacebookWidget(),
+        mm.runTwitterWidget(),
+        mm.runInstagramWidget();
+        /*mm.runTripAdvisoryWidget();*/
     }, 3000);
 };
 
@@ -99,6 +103,8 @@ mm.runInstagramFeed = function () {
     });
 };
 
+
+
 mm.initGlass = function () {
     $('#glass').height($('#glass-container').height() * 1.2);
 };
@@ -144,4 +150,38 @@ $(function(){
 })
 
 
+
 /*social media*/
+
+/*mm.runTripAdvisoryWidget = function () {
+    $.getScript('http://www.jscache.com/wejs?wtype=socialButtonReviews&amp;uniq=813&amp;locationId=7142887&amp;color=green&amp;size=rect&amp;lang=en_PH&amp;display_version=2');
+};*/
+
+mm.runFacebookWidget = function () {
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));    
+};
+
+mm.runTwitterWidget = function () {
+    window.twttr= $.getScript('https://platform.twitter.com/widgets.js',function(d,s,id){
+        var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};
+        if(d.getElementById(id))return;
+        js=d.createElement(s);js.id=id;
+        fjs.parentNode.insertBefore(js,fjs);
+        t._e=[];t.ready=function(f){
+            t._e.push(f);};return t;
+        }(document,"script","twitter-wjs"));
+
+};
+
+mm.runInstagramWidget = function () {
+    $.getScript('http://instagramfollowbutton.com/components/instagram/v2/js/ig-follow.js', function(d,t){
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        s.parentNode.insertBefore(g,s);
+    }(document,"script"));
+}
