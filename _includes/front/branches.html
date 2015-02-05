@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>BRANCHES</h1>
+
+  <div class="row">
+    {% for branch in site.data.branches %}
+      <div class="col-md-6">
+        <h4>{{ branch.name }}</h4>
+        <p>{{ branch.address }}</p>
+          <br/>
+        {{ branch.description }}  
+      </div>
+    {% endfor %}  
+  </div>
+
+</div>
+
+
+
