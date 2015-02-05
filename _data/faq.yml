@@ -28,23 +28,48 @@
 
 - question: How much is the game?
   answer: > 
-    Price depends on the number of people playing inside the room.
+    Price depends on the number of people playing inside the room. For our introductory price, please see below:
+
+    <table class="table">
+        <thead>
+            <th>No. of Pax</th>
+            <th>Price per Pax</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2</td>
+                <td>550</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>500</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>450</td>
+            </tr>
+            <tr>
+                <td>5 or more</td>
+                <td>400</td>
+            </tr>
+        </tbody>
+    </table>
 
 - question: How long is the game?
   answer: > 
     Each game is an hour and a half long. There will be a 15 minute briefing prior to entering the room, 60 minutes to play the game inside the room, and 15 minutes after the game for debriefing. The briefing and debriefing with the gamekeeper will take place outside of the mystery room.
 
-#- question:Can I change my booking?
-  # answer: >
-  #   Yes but bookings are non refundable and may be transferred to other players. 
+- question: Can I change my booking?
+  answer: >
+    Yes but bookings are non refundable and may be transferred to other players. 
      
-  #   No refunds will be given if the number of the initial group booked is lesser than the ones who will actually play. 
+    No refunds will be given if the number of the initial group booked is lesser than the ones who will actually play. 
      
-  #   Time and date changes made to any confirmed booking will be subject for approval and availability of the new chosen time as well as additional charges. Below is the table of fees depending on when the booking change request is made\: 
+    Time and date changes made to any confirmed booking will be subject for approval and availability of the new chosen time as well as additional charges. Below is the table of fees depending on when the booking change request is made\: 
     
-  #   \-48 hours or more before the original schedule: rebooking fee of PHP500 
-  #   \-less than 48 hours up to 24 hours before the original schedule: PHP700 
-  #   \-24 hrs and below/no show/booking time has passed: no rebooking is allowed. The slot will be considered played.
+    \- 48 hours or more before the original schedule: rebooking fee of PHP500 
+    \- less than 48 hours up to 24 hours before the original schedule: PHP700 
+    \- 24 hrs and below/no show/booking time has passed: no rebooking is allowed. The slot will be considered played.
 
 - question: What is the minimum age requirement for players?
   answer: >

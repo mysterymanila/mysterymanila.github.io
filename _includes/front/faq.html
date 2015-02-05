@@ -7,9 +7,9 @@
                     <h5><a href="#answer-{{forloop.index}}">{{ item.question | upcase }}</a><h5>
                 </div>
                 <div class="col-md-7">
-                    <p class="answer" id="answer-{{forloop.index}}" style="display:none">
+                    <span class="answer" id="answer-{{forloop.index}}" style="display:none">
                         {{ item.answer }}
-                    </p>
+                    </span>
                 </div>
             </li>
         {% endfor %}
