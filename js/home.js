@@ -133,7 +133,7 @@ mm.initBookNowLinks = function() {
         var left = (screen.width / 2) - (width / 2);
         var top = (screen.height / 2) - (height / 2);
         var options = 'width=' + width + ',height=' + height + ',toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,copyhistory=no,resizable=no,left=' + left + ',top=' + top;
-        window.open('http://www.mysterymanila.com/booknow.php', 'book_window', options);
+        window.open($(this).attr('href'), 'book_window', options);
     });
 };
 
