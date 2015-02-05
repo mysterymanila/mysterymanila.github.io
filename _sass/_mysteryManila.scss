@@ -565,16 +565,15 @@ div#rooms {
 
   }
 }
-
-#corporate {
+#contact {
+  padding-top: 72px;
+  padding-bottom: 32px;
   height: 100vh;
-  position: relative;
-  .corporate-content{
-    margin-top: 35vh;
-    display: inline-block;
-    vertical-align: middle;
+  #email-us{
+    text-align: center;
   }
 }
+
 
 
 /* footer style */
