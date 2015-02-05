@@ -475,6 +475,27 @@ div#rooms {
 
 }
 
+/* About-us style */
+#about-us {
+  margin: 0;
+  padding: 0 0 50px 0;
+  background: rgba(0,0,0,0.8);
+  #about-content {
+    h1 {
+      text-align: center;
+      color:$white;
+      margin: 0;
+
+    }
+    p {
+      text-align: center;
+      color:$white;
+      font-size:17px;
+      margin: 0;
+    }
+  }
+}
+
 /* footer style */
 footer {
   &#footer-header {
