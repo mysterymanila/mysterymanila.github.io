@@ -479,18 +479,18 @@ div#rooms {
 #about-us {
   margin: 0;
   padding: 0 0 50px 0;
-  background: rgba(0,0,0,0.8);
+  background: rgba(0,0,0,0.8);  
+  color: darken(#fff, 5%);
   #about-content {
     h1 {
       text-align: center;
-      color:$white;
       margin: 0;
       padding-bottom: 30px;
 
     }
     p {
       text-align: center;
-      color:$white;
+      line-height: 1.75;
       font-size:17px;
       margin: 0;
     }
@@ -502,28 +502,26 @@ div#rooms {
   margin: 0;
   padding: 0 0 50px 0;
   background: rgba(0,0,0,0.8);
+  color: darken(#fff, 5%);
+
+  font-weight: 300;
   .container {
-    h1 {
+    h2 {
       text-align: center;
-      color:$white;
       padding-bottom: 30px;
     }
 
     .row {
       .col-md-6{
         h4 {
-          text-align: center;
-          color:$white;
           font-weight: 700;
 
         }
         address {
-          color:$white;
-          font-size:17px;
-          margin: 0;
+          font-size:16px;
+          line-height: 1.5;
         }
         p {
-          color:$white;
           font-size:17px;
           margin: 0;
         }

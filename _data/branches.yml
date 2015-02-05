@@ -1,21 +1,26 @@
 - name: Mystery Manila - Libis Quezon City
   address: > 
-              Address: Unit 9A, JW Plaza Building, 195 E. Rodriguez Jr Ave.
-              (also known as C5, right across the street from the entrance of Eastwood, Libis)
-              Brgy. Bagumbayan, 1110 Quezon City, Metro Manila, Philippines.
-  telephone: "Tel: (+63) 02 501 2824 or (+63) 917 582 08 08"
+    Unit 9A, JW Plaza Building, 195 E. Rodriguez Jr Ave. <br>
+    (also known as C5, right across the street from the entrance of Eastwood, Libis) <br>
+    Brgy. Bagumbayan, 1110 Quezon City, Metro Manila, Philippines. <br>
+
+  telephone:
+    - (+63) 02 501 2824
+    - (+63) 917 582 08 08
   availability: >
-                 1pm to 930pm Mondays to Fridays 
-                 9am to 930pm Holidays/Saturdays/Sundays             
+        1 PM to 9:30 PM Mondays to Fridays 
+        9 PM to 9:30 PM Holidays/Saturdays/Sundays
  
 
 - name: Mystery Manila - Jupiter Makati
   address: > 
-              Address: 2nd floor, G. A. Yupangco Building, Jupiter St. and Gil Puyat Avenue corner Reposo St., Brgy. Bel Air 
-              (landmark is Starbucks right across Mapua Makati & SM Jazz) 
-              1200 Makati City, Metro Manila, Philippines.
-  telephone: "Tel: (+632) 587 1689 or (+63) 917 559 40 10"
+    2nd floor, G. A. Yupangco Building,<br>
+    Jupiter St. and Gil Puyat Avenue corner Reposo St., <br>
+    Brgy. Bel Air, 1200 Makati City, Metro Manila, Philippines.<br>
+    (Landmark: Starbucks right across Mapua Makati & SM Jazz) 
+  telephone: 
+    - (+632) 587 1689
+    - (+63) 917 559 40 10
   availability: >
-                 1pm to 930pm Mondays to Fridays 
-                 9am to 930pm Holidays/Saturdays/Sundays  
- 
+        1 PM to 9:30 PM Mondays to Fridays<br>
+        9 PM to 9:30 PM Holidays/Saturdays/Sundays<br>
