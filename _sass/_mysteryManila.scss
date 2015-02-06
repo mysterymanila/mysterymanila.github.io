@@ -544,7 +544,7 @@ div#rooms {
   color: darken(#fff, 5%);
   #about-content {
     padding: 72px 0 0;
-    h1 {
+    h2 {
       text-align: center;
       margin: 0;
       padding-bottom: 30px;
@@ -601,9 +601,8 @@ footer {
     background: #000;
     text-align: center;
 
-    p {
+    h2 {
       color: $white;
-      font-size: 21px;
       font-weight: 400;
       padding-top: 40px;
     }
