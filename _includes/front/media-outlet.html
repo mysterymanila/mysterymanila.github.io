@@ -1,8 +1,12 @@
-<h2 class="section-header">FEATURED ON</h2>  
-<ul>
+
+<div class="container">
+    <h2>FEATURED ON</h2>
     {% for media in site.data.media %}
-    <li>
-        <a href="{{ media.url }}" class="featured-media" style="width: {{media.width}}; background-position-x: {{ media.position }}" title="{{ media.name }}" target="_blank"></a>
-    </li>
+        <div class="feature">
+            <div class="media-icon">
+                <a href="{{ media.url }}" class="featured-media" style="width: {{media.width}}; background-position-x: {{ media.position }}" title="{{ media.name }}" target="_blank"></a>
+            </div>
+            <p class="quote">{{ media.quote }}</p>
+        </div>
     {% endfor %}
-</ul>
+</div>
