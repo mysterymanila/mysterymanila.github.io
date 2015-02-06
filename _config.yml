@@ -8,5 +8,8 @@ url: "http://mysterymanila.com" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
 
+mailchimp:
+    form_action: "//mysterymanila.us8.list-manage.com/subscribe/post?u=adcaf98baa115e601f7273ef6&amp;id=bd9785a80c"
+
 sass:
   style: compressed

@@ -507,6 +507,33 @@ div#rooms {
       }
     }
   }
+  #contact {
+    padding-top: 72px;
+    padding-bottom: 32px;
+    #email-us{
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+    .mailchimp-container{    
+      margin-bottom: 4rem;
+      text-align: center;
+      #mc-embedded-subscribe{
+        background-color: transparent;
+        border-radius: 0;
+        border: 2px solid #fff;
+        color: #fff;
+      }
+    }
+    .corporate-content{
+      text-align: center;
+      font-weight: 300;      
+      margin-bottom: 4rem;
+      *{
+        margin-bottom: 12px;
+      }
+    }
+  }
+
 }
 
 /* About-us style */
@@ -517,7 +544,7 @@ div#rooms {
   color: darken(#fff, 5%);
   #about-content {
     padding: 72px 0 0;
-    h1 {
+    h2 {
       text-align: center;
       margin: 0;
       padding-bottom: 30px;
@@ -567,15 +594,15 @@ div#rooms {
 }
 
 
+
 /* footer style */
 footer {
   &#footer-header {
     background: #000;
     text-align: center;
 
-    p {
+    h2 {
       color: $white;
-      font-size: 21px;
       font-weight: 400;
       padding-top: 40px;
     }
