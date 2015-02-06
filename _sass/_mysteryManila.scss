@@ -523,6 +523,9 @@ div#rooms {
     .mailchimp-container{    
       margin-bottom: 4rem;
       text-align: center;
+      h5 {
+        font-size: 17px;
+      }
       #mc-embedded-subscribe{
         background-color: transparent;
         border-radius: 0;
@@ -536,6 +539,12 @@ div#rooms {
       margin-bottom: 4rem;
       *{
         margin-bottom: 12px;
+      }
+      h2 {
+        font-size: 34px;
+      }
+      h4 {
+        font-size: 21px;
       }
     }
   }
