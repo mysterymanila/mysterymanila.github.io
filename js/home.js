@@ -46,7 +46,7 @@ mm.autoHideNavbar = function(){
             var lastMouseMove = new Date().getTime();
             var t = setTimeout(function () {
                 if (new Date().getTime() - lastMouseMove > 2000 &&
-                    ($(document).scrollTop() >= $('#about').offset().top) && !$('.navbar').is(':hover')) {
+                    ($(document).scrollTop() >= $('#teaser').offset().top) && !$('.navbar').is(':hover')) {
                     $('.navbar').removeClass('navbar-visible').addClass('navbar-hidden');
                 }
             }, 2000)
@@ -63,8 +63,9 @@ mm.initNavbar = function(){
     $(document).on('click', '.navbar-nav li a', function(e){
         e.preventDefault();
         $link = $(e.target);
-        $('html, body').animate({scrollTop: $($link.attr('href')).offset().top - 96}, 'easeInOutExpo');
+        $('html, body').animate({scrollTop: $($link.attr('href')).offset().top}, 'easeInOutExpo');
     });
+    mm.autoHideNavbar();
 };
 
 mm.sidebar = mm.sidebar || {};
