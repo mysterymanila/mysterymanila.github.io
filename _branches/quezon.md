@@ -7,9 +7,9 @@ address: >
 telephone:
     - (+63) 02 501 2824
     - (+63) 917 582 08 08
-availability: >
-      1 PM to 9:30 PM Mondays to Fridays 
-      9 PM to 9:30 PM Holidays/Saturdays/Sundays
+availability:
+    - 1 PM to 9:30 PM Mondays to Fridays 
+    - 9 PM to 9:30 PM Holidays/Saturdays/Sundays
 ---
 <div id="TA_rated856" class="TA_rated">
   <ul id="g0UPGFQalavv" class="TA_links JXJAj9i">

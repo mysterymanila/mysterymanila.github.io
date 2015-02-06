@@ -8,9 +8,9 @@ address: >
 telephone: 
   - (+632) 587 1689
   - (+63) 917 559 40 10
-availability: >
-      1 PM to 9:30 PM Mondays to Fridays<br>
-      9 PM to 9:30 PM Holidays/Saturdays/Sundays<br>
+availability:
+  - 1 PM to 9:30 PM Mondays to Fridays
+  - 9 PM to 9:30 PM Holidays/Saturdays/Sundays
 ---
 <div id="TA_rated31" class="TA_rated">
   <ul id="M0ahjGNZ" class="TA_links oQOplTYnXTkF">

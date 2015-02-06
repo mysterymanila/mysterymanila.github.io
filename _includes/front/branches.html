@@ -17,7 +17,9 @@
         </address>
         <address>
           <strong>Operating Hours</strong><br>
-          {{ branch.availability }}
+          {% for item in branch.availability %}
+            {{ item }}<br>
+          {% endfor %}
         </address>
         {{ branch.output }}
       </div>
