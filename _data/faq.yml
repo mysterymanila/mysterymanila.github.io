@@ -65,11 +65,28 @@
      
     No refunds will be given if the number of the initial group booked is lesser than the ones who will actually play. 
      
-    Time and date changes made to any confirmed booking will be subject for approval and availability of the new chosen time as well as additional charges. Below is the table of fees depending on when the booking change request is made\: 
-    
-    \- 48 hours or more before the original schedule: rebooking fee of PHP500 
-    \- less than 48 hours up to 24 hours before the original schedule: PHP700 
-    \- 24 hrs and below/no show/booking time has passed: no rebooking is allowed. The slot will be considered played.
+    Time and date changes made to any confirmed booking will be subject for approval and availability of the new chosen time as well as additional charges. Below is the table of fees depending on when the booking change request is made: 
+
+    <table class="table">
+        <thead>
+            <th>Condition</th>
+            <th>Rebooking Fee</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>48 hours or more before the original schedule</td>
+                <td>PHP 500.00</td>
+            </tr>
+            <tr>
+                <td>Less than 48 hours up to 24 hours before the original schedule</td>
+                <td>PHP 700.00</td>
+            </tr>
+            <tr>
+                <td>24 hrs and below/no show/booking time has passed</td>
+                <td>NO REBOOKING ALLOWED. The slot will be considered played</td>
+            </tr>
+        </tbody>
+    </table>
 
 - question: What is the minimum age requirement for players?
   answer: >
