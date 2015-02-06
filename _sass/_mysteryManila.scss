@@ -30,6 +30,7 @@ header {
 /*header style */
 
 nav {
+  font-family: "futura-pt",sans-serif;
   &#work-navbar{
     background-color: $black;
     border-color: transparent;
@@ -60,7 +61,7 @@ nav {
       .navbar-header{
 
         .navbar-brand {
-          height: inherit;
+          height: 66px;
           padding-top: 0;
           padding-bottom: 0;
           line-height: 55px;
@@ -70,6 +71,7 @@ nav {
             img {
               top: auto;
               margin-top: 15px;
+              float: left;
 
               &.brand-logo-small {
                 height: 43px;
@@ -77,10 +79,10 @@ nav {
             }
 
             #nav-title {
-              float: right;
-              margin: 11px 0px 0px 15px;
+              float: left;
+              margin: 7px 0px 0px 15px;
               letter-spacing: 1px;
-              font-size: 20px;
+              font-size: 24px;
             } 
           }
 
@@ -104,14 +106,14 @@ nav {
               width: 100%;
 
               li {
-                padding: 27px 8px 0px 8px;
+                padding: 20px 8px 0px 8px;
                 margin-top: 0px;
 
                 a {
                   display: inline;
                   padding: 0;
                   color: $white;
-                  font-size: 16px;
+                  font-size: 20px;
                   letter-spacing: 3px;
                 }
 
