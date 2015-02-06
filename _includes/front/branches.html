@@ -2,7 +2,8 @@
   <h2>BRANCHES</h2>
 
   <div class="row">
-    {% for branch in site.branches %}
+    {% assign branches = site.branches | sort: 'id' %}
+    {% for branch in branches %}
       <div class="col-md-6">
         <h4>{{ branch.name | upcase }}</h4>
         <address>
@@ -23,7 +24,7 @@
         </address>
         {{ branch.output }}
       </div>
-    {% endfor %}  
+    {% endfor %} 
   </div>
 
 </div>
