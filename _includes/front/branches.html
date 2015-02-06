@@ -2,7 +2,7 @@
   <h2>BRANCHES</h2>
 
   <div class="row">
-    {% for branch in site.data.branches %}
+    {% for branch in site.branches %}
       <div class="col-md-6">
         <h4>{{ branch.name | upcase }}</h4>
         <address>
@@ -19,6 +19,7 @@
           <strong>Operating Hours</strong><br>
           {{ branch.availability }}
         </address>
+        {{ branch.output }}
       </div>
     {% endfor %}  
   </div>
