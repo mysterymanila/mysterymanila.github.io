@@ -13,8 +13,8 @@ $levi-text: LeviReBrushed;
 
 
 body {
-  font-family: 'Gotham SSm A', 'Gotham SSm B', 'sans-serif';
-  font-size: 17px;
+  font-family: "futura-pt",sans-serif;
+  font-size: 21px;
   font-weight: 400;
   background-color: $black !important;
   background-image: url(/img/mystery-wall.jpg);
@@ -60,7 +60,7 @@ nav {
       .navbar-header{
 
         .navbar-brand {
-          height: inherit;
+          height: 66px;
           padding-top: 0;
           padding-bottom: 0;
           line-height: 55px;
@@ -70,6 +70,7 @@ nav {
             img {
               top: auto;
               margin-top: 15px;
+              float: left;
 
               &.brand-logo-small {
                 height: 43px;
@@ -77,10 +78,10 @@ nav {
             }
 
             #nav-title {
-              float: right;
-              margin: 11px 0px 0px 15px;
+              float: left;
+              margin: 7px 0px 0px 15px;
               letter-spacing: 1px;
-              font-size: 20px;
+              font-size: 24px;
             } 
           }
 
@@ -104,14 +105,14 @@ nav {
               width: 100%;
 
               li {
-                padding: 27px 8px 0px 8px;
+                padding: 20px 8px 0px 8px;
                 margin-top: 0px;
 
                 a {
                   display: inline;
                   padding: 0;
                   color: $white;
-                  font-size: 16px;
+                  font-size: 20px;
                   letter-spacing: 3px;
                 }
 
@@ -188,7 +189,7 @@ nav {
           }
 
           .teaser-head {
-            font-size: 54px;
+            font-size: 58px;
             transform: rotate(-5deg);
           }
       }
@@ -414,7 +415,7 @@ div#rooms {
               padding-left: 15px;
               vertical-align: bottom;
               font-family: $levi-text;
-              font-size: 48px;
+              font-size: 52px;
             }
           }
 
@@ -456,9 +457,13 @@ div#rooms {
     #ig-header {
       text-align: center;
       padding-top: 192px;
-      font-size: 21px;
+      font-size: 25px;
       margin: 23px 42px;
       color: $white;
+
+      h5 {
+        font-size: 17px;
+      }
     }
 
     #instafeed{
@@ -476,13 +481,12 @@ div#rooms {
   }
   #faq {
     line-height: 2.5;
-    padding-top: 32px;
     h2 {
       text-align: center;
     }
     .answer{
       font-weight: 300;
-      font-size: 16px;
+      font-size: 20px;
     }
     .questions {
       list-style: none;
@@ -501,6 +505,7 @@ div#rooms {
       li a {
         color: #fff;
         line-height: 2;
+        font-size: 20px;
       }
       li a:hover {
         color: #ccc;
@@ -518,6 +523,9 @@ div#rooms {
     .mailchimp-container{    
       margin-bottom: 4rem;
       text-align: center;
+      h5 {
+        font-size: 17px;
+      }
       #mc-embedded-subscribe{
         background-color: transparent;
         border-radius: 0;
@@ -531,6 +539,12 @@ div#rooms {
       margin-bottom: 4rem;
       *{
         margin-bottom: 12px;
+      }
+      h2 {
+        font-size: 34px;
+      }
+      h4 {
+        font-size: 21px;
       }
     }
   }
@@ -554,7 +568,7 @@ div#rooms {
     p {
       text-align: center;
       line-height: 1.75;
-      font-size:17px;
+      font-size:21px;
       margin: 0;
     }
   }
@@ -581,11 +595,11 @@ div#rooms {
 
         }
         address {
-          font-size:16px;
+          font-size:20px;
           line-height: 1.5;
         }
         p {
-          font-size:17px;
+          font-size:21px;
           margin: 0;
         }
       }
@@ -645,7 +659,7 @@ footer {
 
       p {
         text-align: center;
-        font-size: 14px;
+        font-size: 18px;
         padding-top: 20px;
         color: $white;
       }
@@ -765,7 +779,7 @@ footer {
           .navbar-brand {
             a {
               #nav-title {
-                font-size: 16px;
+                font-size: 20px;
               }
             }
           }
