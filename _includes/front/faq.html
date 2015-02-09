@@ -1,4 +1,4 @@
-<h2>{{ 'Frequently Asked Questions' | upcase }}</h2>
+<h2 class="section-header">{{ 'Frequently Asked Questions' | upcase }}</h2>
 <div class="container">    
         <ul class="questions">
         {% for item in site.data.faq %}
@@ -7,7 +7,7 @@
                     <h5><a href="#answer-{{forloop.index}}">{{ item.question | upcase }}</a><h5>
                 </div>
                 <div class="col-md-7">
-                    <span class="answer" id="answer-{{forloop.index}}" style="display:none">
+                    <span class="answer" id="answer-{{forloop.index}}" {% unless forloop.first %}style="display:none"{% endunless %}>
                         {{ item.answer }}
                     </span>
                 </div>
