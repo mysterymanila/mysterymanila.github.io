@@ -581,7 +581,6 @@ div#rooms {
   padding: 0 0 50px 0;
   background: rgba(0,0,0,0.8);
   color: darken(#fff, 5%);
-
   font-weight: 300;
   .container {
     h2 {
@@ -605,6 +604,40 @@ div#rooms {
   }
 }
 
+#featured {
+  background-color: #000;
+  color: darken(#fff, 10%);
+  padding-top: 32px;
+  text-align: center;
+  padding: 0 0 20px;
+    .quote {
+      transition: opacity 0.25s;
+      opacity: 0.5;
+      display: inline-block;      
+      padding: 0 0 20px;
+      &:hover,
+      &:active {
+        opacity: 1;
+      }
+
+      * {
+        vertical-align: middle;
+      }
+
+      a {
+        height: 119px;
+        display: inline-block;
+        background-image: url('/img/featured/quote-sprites.png');
+        background-repeat: no-repeat;
+        margin: 0 15px;
+      }
+
+      p {
+        display: inline-block;
+      }
+    }  
+}
+
 
 
 /* footer style */
@@ -617,33 +650,6 @@ footer {
       color: $white;
       font-weight: 400;
       padding-top: 40px;
-    }
-
-    #featured {
-      ul {
-        margin: 0px;
-        padding: 0px;
-        li {
-          padding: 35px 40px 30px;
-          margin-top: 0px;
-          text-align: center;
-          display: inline-block;
-          list-style-type: none;
-          vertical-align: middle;
-          a {
-            height: 167px;
-            display: inline-block;
-            background-image: url('/img/featured/featured-sprites.png');
-            background-repeat: no-repeat;
-            opacity: 0.5;
-            transition: opacity 0.5s;
-            &:hover,
-            &:active {
-              opacity: 1;
-            }
-          }
-        }
-      }
     }
 
     #brand-logo {

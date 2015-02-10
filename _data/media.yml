@@ -1,20 +1,23 @@
-- name: ABS-CBN
-  position: -14px
-  width: 288px
+- name: ABS-CBN News.com
+  position: 0
+  width: 250px
   url:  http://www.abs-cbnnews.com/lifestyle/06/26/14/check-out-real-life-rpg-mystery-manila
-  
-- name: Our Awesome Planet
-  position: -510px
-  width: 294px
-  url: http://www.ourawesomeplanet.com/awesome/2014/08/mystery-manila-justice-for-jamila-mystery-solved-mysterymanila.html
+  quote: "Trade your usual movie night and channel your inner Sherlock Holmes with your Nancy Drew friends."
 
 - name: When in Manila
-  position: -332px
-  width: 141px
+  position: -250px
+  width: 119px
   url: http://www.wheninmanila.com/mystery-manila-1-room-1-mystery-1-hour-1-way-out/
+  quote: "We were in awe by how the rooms were meticulously crafted and well thought-of even to the most minute detail."
 
-- name: GMA
-  position: -840px
-  width: 220px
+- name: Our Awesome Planet
+  position: -369px
+  width: 260px
+  url: http://www.ourawesomeplanet.com/awesome/2014/08/mystery-manila-justice-for-jamila-mystery-solved-mysterymanila.html
+  quote: "My personal favorite is Rebecca's Room by Mystery Manila"
+
+- name: GMA News Online
+  position: -629px
+  width: 193px
   url: http://www.gmanetwork.com/news/story/363563/lifestyle/peopleandevents/mystery-manila-offers-aspiring-sleuths-a-chance-to-stretch-their-mental-muscles 
-  
+  quote: "Mystery Manila offers aspiring sleuths a chance to stretch their mental muscles"
