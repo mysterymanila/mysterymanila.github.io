@@ -1,34 +1,15 @@
 
 <div class="container">
     <h2 class="section-header">FEATURED ON</h2>
+    <div class="col-md-offset-2 col-md-8 feature">
     {% for media in site.data.media %}
-        {% capture cycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-        <div class="col-md-offset-2 col-md-8">
-        <table class="feature">
-            <tr class="quote">
-                {% if cycle == 'even' %}
-                <td>
-                    <p style="text-align: right">
-                        {{ media.quote }}
-                    </p>
-                </td>
-                <td>
-                    <a href="{{ media.url }}" class="featured-media" style="width: {{media.width}}; background-position-x: {{ media.position }}" title="{{ media.name }}" target="_blank"></a>
-                </td>
-                
-                {% else %}
-                <td>
-                    <a href="{{ media.url }}" class="featured-media" style="width: {{media.width}}; background-position-x: {{ media.position }}" title="{{ media.name }}" target="_blank"></a>
-                </td>
-                <td>
-                    <p style="text-align: left">
-                        {{ media.quote }}
-                    </p>
-                </td>                
-                
-                {% endif %}
-            </tr>
-        </table>
-        </div>  
+        {% capture cycle %}{% cycle 'left', 'right' %}{% endcapture %}
+            <div class="quote">
+                <a href="{{ media.url }}" class="featured-media" style="width: {{media.width}}; background-position-x: {{ media.position }}" title="{{ media.name }}" target="_blank"></a>
+                <p>
+                    {{ media.quote }}
+                </p>
+            </div>
     {% endfor %}
+    </div>
 </div>
