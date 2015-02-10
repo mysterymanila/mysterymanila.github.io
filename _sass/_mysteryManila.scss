@@ -685,6 +685,7 @@ footer {
 #glass {
   background-image: url("/img/scratches.png");
   position: absolute;
+  background-repeat: repeat-y;
   width: 100%;
   z-index: 1000;
   background-size: contain;
