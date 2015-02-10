@@ -612,23 +612,25 @@ div#rooms {
   padding-top: 32px;
   text-align: center;
   .feature {
-    padding: 35px 40px 30px;
-    margin-top: 0px;
-    text-align: center;
-    display: inline-block;
-    vertical-align: middle;
+    margin: 0 0 20px;
     list-style-type: none;
-    a {
-      height: 167px;
-      display: inline-block;
-      vertical-align: middle;
-      background-image: url('/img/featured/featured-sprites.png');
-      background-repeat: no-repeat;
+    .quote {
+      transition: opacity 0.25s;
       opacity: 0.5;
-      transition: opacity 0.5s;
       &:hover,
       &:active {
         opacity: 1;
+      }
+      a {
+      height: 119px;
+      display: inline-block;
+      vertical-align: middle;
+      background-image: url('/img/featured/quote-sprites.png');
+      background-repeat: no-repeat;
+      margin: 0 15px;
+      }
+      p {
+        vertical-align: middle;
       }
     }
   }   
