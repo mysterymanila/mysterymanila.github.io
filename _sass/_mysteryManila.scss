@@ -821,7 +821,23 @@ footer {
             }
           }
         }
-      }
+
+        .navbar-collapse {
+          .navbar-right {
+            ul {
+              &.nav{
+                li{
+                  a {
+                    font-size: 16px;
+                  }
+                }
+              } 
+            }
+          }
+        }/* navbar-collapse */
+
+
+      }/* navbar-container */
     }
   }
 
