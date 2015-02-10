@@ -9,7 +9,7 @@ mm.init = function(){
     mm.initGlass();
     mm.initBookNowLinks();
     mm.initNavbar();
-    mm.initScrollToRooms();
+    mm.initScrollToTeaser();
     mm.initFAQ();
     $('body').trigger('scroll');
 
@@ -22,10 +22,10 @@ mm.init = function(){
     }, 3000);
 };
 
-mm.initScrollToRooms = function () {
-    $('.scroll-to-rooms').click(function (event) {
+mm.initScrollToTeaser = function () {
+    $('#scroll-to-teaser').click(function (event) {
         event.preventDefault();
-        $('html, body').animate({scrollTop: $('#rooms').position().top}, 'easeInOutExpo');
+        $('html, body').animate({scrollTop: $('#teaser').position().top}, 'easeInOutExpo');
     });
 };
 

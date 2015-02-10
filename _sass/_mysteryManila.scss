@@ -152,7 +152,7 @@ nav {
 #cover {
   min-height: 760px;
   width: 100%;
-
+  text-align: center;
   .m-logo-container {
     padding: 75px 0px 0px 0px;
     min-height: 570px;
@@ -166,10 +166,27 @@ nav {
       min-height: 200px;
       margin-top: 32px;
     }
+  }
+ 
 
-  } 
+    img#scroll-to-teaser {  
+      &.scroll-btn {
+        opacity: 0.5;
+        transition: opacity 0.25s;
+        cursor: pointer;
+        margin-top: 15px;
+        height: 75%;
 
+        &:hover,
+        &:active {
+          opacity: 1;  
+        }
+      }
+    } 
+  
 }
+
+
 
 /*teaser style */
 
@@ -181,6 +198,7 @@ nav {
   position: relative;
 
   #cover-brush {
+    pointer-events: none;
     position: relative;
     min-height: 260px;
     top: -200px;
@@ -212,25 +230,6 @@ nav {
          .teaser-caption{
             margin-top: 72px;
          } 
-
-          .teaser-btn-scroll{
-            height: 75%;
-            margin-top: 72px;
-          }
-
-          img {  
-            &.btn {
-              opacity: 0.5;
-              transition: opacity 0.5s;
-              cursor: pointer;
-
-              &:hover,
-              &:active {
-                opacity: 1;  
-              }
-            }
-          }
-
           span {
             &.teaser-brush-frame {
               height: 150px;
