@@ -365,7 +365,7 @@ div#rooms {
 
         &.top-brush-frame-6 {
           height: 360px;
-          background-image: url(/img/brush-edges/Top_6.png);
+          background-image: url(/img/brush-edges/Top_1.png);
           background-position: bottom;
         }
 
@@ -471,9 +471,9 @@ div#rooms {
   color: #ffffff;
 
   #ig {
+    padding-top: 192px;
     #ig-header {
       text-align: center;
-      padding-top: 192px;
       font-size: 21px;
       margin: 23px 42px;
       color: $white;
@@ -921,4 +921,12 @@ footer {
   }
 }
 
+@media screen and (min-width: 1366px){
+  div#rooms .room .room-description span.top-brush-frame-6{
+    height: 560px;
+  }
 
+  .transparent-container #ig{    
+      padding-top: 300px;
+  }
+}
