@@ -1,7 +1,7 @@
 var mm = mm || {};
 mm.init = function(){
 
-    //mm.resetScroll();
+    mm.resetScroll();
     //mm.autoHideNavbar();
     mm.sidebar.init();
     mm.initVideos();
