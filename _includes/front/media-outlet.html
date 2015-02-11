@@ -4,7 +4,7 @@
     <div class="col-md-offset-3 col-md-6 feature">
     {% for media in site.data.media %}
             <div class="quote">
-                <a href="{{ media.url }}" class="featured-media" style="width: {{media.width}}; background-position-x: {{ media.position }}" title="{{ media.name }}" target="_blank"></a>
+                <a href="{{ media.url }}" class="featured-media" style="width: {{media.width}}; background-position: {{ media.position }} 0" title="{{ media.name }}" target="_blank"></a>
                 <blockquote>
                     {{ media.quote }}
                 </blockquote>
