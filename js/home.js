@@ -8,7 +8,7 @@ mm.init = function(){
     mm.initScrollToTopLinks();
     mm.initGlass();
     mm.initBookNowLinks();
-    mm.initNavbar();
+    mm.navbar.init();
     mm.initScrollToTeaser();
     mm.initFAQ();
     $('body').trigger('scroll');
@@ -39,15 +39,23 @@ mm.resetScroll = function(){
 mm.lastMouseMove = mm.lastMouseMove || new Date().getTime();
 mm.mouseMoveWait = mm.mouseMoveWait || 5000;
 
-mm.autoHideNavbar = function(){
+mm.navbar = mm.navbar || {};
+mm.navbar.show = function(){
     if ($('.navbar').hasClass('navbar-hidden')) {
         $('.navbar').removeClass('navbar-hidden').addClass('navbar-visible');
     }
+}
+mm.navbar.hide = function(){
+    if (!$('.navbar').hasClass('navbar-hidden')){
+        $('.navbar').removeClass('navbar-visible').addClass('navbar-hidden');   
+    }
+}
+mm.navbar.autoHide = function(){
     mm.lastMouseMove = new Date().getTime();
     var t = setTimeout(function () {
         if (new Date().getTime() - mm.lastMouseMove > mm.mouseMoveWait &&
             ($(document).scrollTop() >= $('#teaser').offset().top) && !$('.navbar').is(':hover')) {
-            $('.navbar').removeClass('navbar-visible').addClass('navbar-hidden');
+            mm.navbar.hide();
         }
     }, mm.mouseMoveWait);
 };
@@ -56,16 +64,17 @@ mm.initAutoHideNavbar = function(){
     if ($(".navbar").size()) {
         //Show navbar when mouse moves
         $(document).mousemove(function (e) {
-            mm.autoHideNavbar();
+            mm.navbar.show();
+            mm.navbar.autoHide();
         });
         //Show navbar while scrolling
         $(document).scroll(function () {
-            $('.navbar.navbar-hidden').removeClass('.navbar-hidden').addClass('navbar-visible');
+            mm.navbar.show();
         });
     }
 };
 
-mm.initNavbar = function(){
+mm.navbar.init = function(){
     $(document).on('click', '.navbar-nav li a', function(e){
         e.preventDefault();
         $link = $(e.target);
