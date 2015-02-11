@@ -1,7 +1,7 @@
 var mm = mm || {};
 mm.init = function(){
 
-    //mm.resetScroll();
+    mm.resetScroll();
     //mm.autoHideNavbar();
     var width = $('.placeholder').width();
     $('.placeholder').each(function(){
