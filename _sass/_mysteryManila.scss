@@ -632,8 +632,11 @@ div#rooms {
         margin: 0 15px;
       }
 
-      p {
+      blockquote {
+        border-left: none;
+        padding: 10px 0;
         display: inline-block;
+        position: relative;
         &:before {
           content: open-quote;
         }
