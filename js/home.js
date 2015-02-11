@@ -1,8 +1,13 @@
 var mm = mm || {};
 mm.init = function(){
 
-    mm.resetScroll();
+    //mm.resetScroll();
     //mm.autoHideNavbar();
+    var width = $('.placeholder').width();
+    $('.placeholder').each(function(){
+        $(this).css('height', width);   
+    });
+
     mm.sidebar.init();
     mm.initVideos();
     mm.initScrollToTopLinks();
@@ -123,7 +128,8 @@ mm.runInstagramFeed = function () {
                 template: '<a href="{{link}}" target="_blank" class="col-md-2 col-sm-2 col-xs-6"><img src="{{image}}" /></a>',
                 resolution: 'low_resolution',
                 after: function(){
-                    $("#ig").show();
+                    $("#placeholders").slideUp();
+                    $("#instafeed").fadeIn();
                 }
             }).run();
         }

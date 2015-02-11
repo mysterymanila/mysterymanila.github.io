@@ -479,12 +479,19 @@ div#rooms {
     padding: 32px 0 32px;
   }
   #ig {
+    position:relative
     padding-top: 192px;
     #ig-header {
       text-align: center;
       font-size: 21px;
       margin: 23px 42px;
       color: $white;
+    }
+
+    #placeholders{
+      .placeholder{
+        padding-bottom: 20px; 
+      }
     }
 
     #instafeed{
