@@ -7,17 +7,17 @@
       <div class="col-md-6">
         <h3 class="brand">{{ branch.name | upcase }}</h3>
         <address>
-          <strong>Address</strong><br>
+          <br>
           {{ branch.address }}
         </address>
         <address>
-          <strong>Telephone</strong><br>
+          <br>
           {% for number in branch.telephone %}
             {{ number }}<br>
           {% endfor %}
         </address>
         <address>
-          <strong>Operating Hours</strong><br>
+          <br>
           {% for item in branch.availability %}
             {{ item }}<br>
           {% endfor %}
