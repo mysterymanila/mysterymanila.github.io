@@ -1,21 +1,21 @@
 var mm = mm || {};
 mm.init = function(){
 
-    mm.resetScroll();
+    
     //mm.autoHideNavbar();
     var width = $('.placeholder').width();
     $('.placeholder').each(function(){
         $(this).css('height', width);   
     });
-
+    mm.resetScroll();
+    mm.initFAQ();
+    mm.navbar.init();
     mm.sidebar.init();
     mm.initVideos();
     mm.initScrollToTopLinks();
     mm.initGlass();
     mm.initBookNowLinks();
     mm.initScrollToTeaser();
-    mm.initFAQ();
-    mm.navbar.init();
     $('body').trigger('scroll');
 
     setTimeout(function(){
@@ -82,9 +82,12 @@ mm.initAutoHideNavbar = function(){
 mm.navbar.init = function(){
     $(document).on('click', '.navbar-nav li a', function(e){
         e.preventDefault();
-        $link = $(e.target);
-
-        $('html, body').animate({scrollTop: $($link.attr('href')).offset().top - 32 }, 'easeInOutExpo');
+        var target = $($(this).attr('href'));
+        var top = target.offset().top;
+        $('html, body').animate({scrollTop: top - 32 }, 'easeInOutExpo', function(){
+            var adjustedTop = target.offset().top;
+            $('html, body').animate({scrollTop: adjustedTop - 32});
+        });
     });
     mm.initAutoHideNavbar();
 };
