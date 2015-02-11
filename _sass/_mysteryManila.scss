@@ -634,6 +634,12 @@ div#rooms {
 
       p {
         display: inline-block;
+        &:before {
+          content: open-quote;
+        }
+        &:after {
+          content: close-quote;
+        }
       }
     }  
 }
