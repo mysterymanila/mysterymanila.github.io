@@ -37,7 +37,7 @@ mm.resetScroll = function(){
 };
 
 mm.lastMouseMove = mm.lastMouseMove || new Date().getTime();
-mm.mouseMoveWait = mm.mouseMoveWait || 3000;
+mm.mouseMoveWait = mm.mouseMoveWait || 5000;
 
 mm.autoHideNavbar = function(){
     if ($('.navbar').hasClass('navbar-hidden')) {
