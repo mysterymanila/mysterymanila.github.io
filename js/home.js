@@ -37,6 +37,7 @@ mm.resetScroll = function(){
 };
 
 mm.lastMouseMove = mm.lastMouseMove || new Date().getTime();
+mm.mouseMoveWait = mm.mouseMoveWait || 3000;
 
 mm.autoHideNavbar = function(){
     if ($('.navbar').hasClass('navbar-hidden')) {
@@ -44,11 +45,11 @@ mm.autoHideNavbar = function(){
     }
     mm.lastMouseMove = new Date().getTime();
     var t = setTimeout(function () {
-        if (new Date().getTime() - mm.lastMouseMove > 3000 &&
+        if (new Date().getTime() - mm.lastMouseMove > mm.mouseMoveWait &&
             ($(document).scrollTop() >= $('#teaser').offset().top) && !$('.navbar').is(':hover')) {
             $('.navbar').removeClass('navbar-visible').addClass('navbar-hidden');
         }
-    }, 3000)
+    }, mm.mouseMoveWait);
 };
 
 mm.initAutoHideNavbar = function(){
