@@ -8,9 +8,9 @@ mm.init = function(){
     mm.initScrollToTopLinks();
     mm.initGlass();
     mm.initBookNowLinks();
-    mm.navbar.init();
     mm.initScrollToTeaser();
     mm.initFAQ();
+    mm.navbar.init();
     $('body').trigger('scroll');
 
     setTimeout(function(){
@@ -78,7 +78,8 @@ mm.navbar.init = function(){
     $(document).on('click', '.navbar-nav li a', function(e){
         e.preventDefault();
         $link = $(e.target);
-        $('html, body').animate({scrollTop: $($link.attr('href')).offset().top}, 'easeInOutExpo');
+
+        $('html, body').animate({scrollTop: $($link.attr('href')).offset().top - 32 }, 'easeInOutExpo');
     });
     mm.initAutoHideNavbar();
 };

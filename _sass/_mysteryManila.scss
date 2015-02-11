@@ -34,6 +34,13 @@ header {
 h2.section-header {
   font-family: "futura-pt", sans-serif;
   letter-spacing: 2px;
+  border-bottom: 2px solid #fff;
+  padding-top: 30px;
+  margin: 0px 0px 30px 0px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .brand {
@@ -468,7 +475,9 @@ div#rooms {
 .transparent-container{
   background: rgba(0,0,0,0.8);
   color: #ffffff;
-
+  > *{
+    padding: 32px 0 32px;
+  }
   #ig {
     padding-top: 192px;
     #ig-header {
@@ -479,7 +488,7 @@ div#rooms {
     }
 
     #instafeed{
-      padding-bottom: 80px;
+      padding-bottom: 30px;
       a {
         padding-bottom: 20px; 
         img {
@@ -493,7 +502,6 @@ div#rooms {
   }
   #faq {
     line-height: 2.5;
-    padding-top: 32px;
     h2 {
       text-align: center;
     }
@@ -526,8 +534,6 @@ div#rooms {
     }
   }
   #contact {
-    padding-top: 72px;
-    padding-bottom: 32px;
     #email-us{
       text-align: center;
       margin-bottom: 4rem;
@@ -555,22 +561,57 @@ div#rooms {
     }
   }
 
-}
+  #featured {
+    background-color: #000;
+    color: darken(#fff, 10%);;
+    text-align: center;
+    .container {
+      .quote {
+        transition: opacity 0.25s;
+        opacity: 0.5;
+        display: inline-block;      
+        padding: 0 10px 20px;
+        &:hover,
+        &:active {
+          opacity: 1;
+        }
+
+        * {
+          vertical-align: middle;
+        }
+
+        a {
+          height: 119px;
+          display: inline-block;
+          background-image: url('/img/featured/quote-sprites.png');
+          background-repeat: no-repeat;
+          margin: 0 15px;
+        }
+
+        blockquote {
+          border-left: none;
+          padding: 10px 0;
+          display: inline-block;
+          position: relative;
+          &:before {
+            content: open-quote;
+          }
+          &:after {
+            content: close-quote;
+          }
+        }
+      } 
+    }/* end of container */    
+  }
+
+}/* end of transparent container */
 
 /* About-us style */
 #about-us {
   margin: 0;
-  padding: 0 0 50px 0;
   background: rgba(0,0,0,0.8);  
   color: darken(#fff, 5%);
   #about-content {
-    padding: 72px 0 0;
-    h2 {
-      text-align: center;
-      margin: 0;
-      padding-bottom: 30px;
-
-    }
     p {
       text-align: center;
       line-height: 1.75;
@@ -583,16 +624,10 @@ div#rooms {
 /*branches style*/
 #branches {
   margin: 0;
-  padding: 0 0 50px 0;
   background: rgba(0,0,0,0.8);
   color: darken(#fff, 5%);
   font-weight: 300;
   .container {
-    h2 {
-      text-align: center;
-      padding-bottom: 30px;
-    }
-
     .row {
       .col-md-6{
         address {
@@ -608,51 +643,6 @@ div#rooms {
 
   }
 }
-
-#featured {
-  background-color: #000;
-  color: darken(#fff, 10%);
-  padding-top: 32px;
-  text-align: center;
-  padding: 0 0 20px;
-    .quote {
-      transition: opacity 0.25s;
-      opacity: 0.5;
-      display: inline-block;      
-      padding: 0 10px 20px;
-      &:hover,
-      &:active {
-        opacity: 1;
-      }
-
-      * {
-        vertical-align: middle;
-      }
-
-      a {
-        height: 119px;
-        display: inline-block;
-        background-image: url('/img/featured/quote-sprites.png');
-        background-repeat: no-repeat;
-        margin: 0 15px;
-      }
-
-      blockquote {
-        border-left: none;
-        padding: 10px 0;
-        display: inline-block;
-        position: relative;
-        &:before {
-          content: open-quote;
-        }
-        &:after {
-          content: close-quote;
-        }
-      }
-    }  
-}
-
-
 
 /* footer style */
 footer {
