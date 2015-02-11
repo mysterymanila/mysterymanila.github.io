@@ -816,6 +816,17 @@ footer {
   body{
     background-size: auto;
   }
+  #cover {
+    .m-logo-container{
+      img#m-logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-height: 330px;
+        margin-top: 32px;
+      }
+    }  
+  }
 }
 
 @media screen and (max-width: 762px) {
