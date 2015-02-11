@@ -227,10 +227,12 @@ nav {
          .teaser-caption{
             margin-top: 72px;
          } 
+         h2{
+          margin-bottom: 0;
+         }
           span {
             &.teaser-brush-frame {
-              height: 110px;
-              bottom: -110px;
+              height: 200px;
               background-image: url(/img/brush-edges/Top_2.png);
               background-position: bottom;
             }
@@ -359,13 +361,13 @@ div#rooms {
 
         &.top-brush-frame-6 {
           height: 360px;
-          background-image: url(/img/brush-edges/Top_6.png);
+          background-image: url(/img/brush-edges/Top_1.png);
           background-position: bottom;
         }
 
         &.bottom-brush-frame-1 {
           height: 200px;
-          top: -150px;
+          top: -200px;
           background-image: url(/img/brush-edges/Bottom_1.png);
           background-position: top;
         }
@@ -400,7 +402,7 @@ div#rooms {
 
         &.bottom-brush-frame-6 {
           height: 200px;
-          top: -150px;
+          top: -200px;
           background-image: url(/img/brush-edges/Bottom_6.png);
           background-position: top;
         }
@@ -448,6 +450,9 @@ div#rooms {
     }
 
   }/* end of room */
+  #rebaccas-room .room-description{
+    top: -158px;
+  }
 }/* end of rooms */
 
 .top-brush-frame-1, .top-brush-frame-2, .top-brush-frame-3, .top-brush-frame-4, .top-brush-frame-5, .top-brush-frame-6,
@@ -465,9 +470,9 @@ div#rooms {
   color: #ffffff;
 
   #ig {
+    padding-top: 192px;
     #ig-header {
       text-align: center;
-      padding-top: 192px;
       font-size: 21px;
       margin: 23px 42px;
       color: $white;
@@ -924,4 +929,29 @@ footer {
   }
 }
 
+@media screen and (min-width: 1366px){
+  #rebeccas-room > div.room-description {
+    span.bottom-brush-frame-6{
+      height: 286px !important;
+      top: -286px !important;
+    }
+  }#ticking-timebomb > div.room-description {
+    span.bottom-brush-frame-1{
+      height: 275px !important;
+      top: -275px !important;
+    }
+  }
+  div#rooms{
+    .room {
+      .room-description{
+        span.top-brush-frame-6{
+          height: 560px;
+        }
+      }
+    }
+  }
 
+  .transparent-container #ig{    
+      padding-top: 350px;
+  }
+}
