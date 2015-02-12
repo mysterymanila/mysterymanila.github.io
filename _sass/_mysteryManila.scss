@@ -78,7 +78,7 @@ nav {
       margin: 0 12px;
       padding-top: 0;
       padding-bottom: 0;
-    
+
       .navbar-header{
 
         .navbar-brand {
@@ -96,7 +96,7 @@ nav {
 
               &.brand-logo-small {
                 height: 43px;
-              } 
+              }
             }
 
             #nav-title {
@@ -104,7 +104,7 @@ nav {
               margin: 7px 0px 0px 15px;
               letter-spacing: 1px;
               font-size: 24px;
-            } 
+            }
           }
 
         }
@@ -148,7 +148,7 @@ nav {
 
         }
 
-      } 
+      }
 
     }/* end of navbar-container */
 
@@ -174,7 +174,7 @@ nav {
       margin-top: 32px;
     }
   }
-    img#scroll-to-teaser {  
+    img#scroll-to-teaser {
       &.scroll-btn {
         opacity: 0.5;
         transition: opacity 0.25s;
@@ -184,10 +184,10 @@ nav {
 
         &:hover,
         &:active {
-          opacity: 1;  
+          opacity: 1;
         }
       }
-    } 
+    }
 }
 
 
@@ -233,7 +233,7 @@ nav {
 
          .teaser-caption{
             margin-top: 72px;
-         } 
+         }
          h2{
           margin-bottom: 0;
          }
@@ -418,7 +418,7 @@ div#rooms {
       .container {
 
         .room-text {
-          margin-top: -150px;        
+          margin-top: -150px;
 
           .room-title {
             display: inline-block;
@@ -491,17 +491,17 @@ div#rooms {
       margin-bottom: 30px;
 
       .placeholder{
-        margin-bottom: 20px; 
+        margin-bottom: 20px;
         a {
           img {
             display: block;
             max-width: 100%;
             height: auto;
             margin: auto;
-          } 
+          }
         }
       }
-    } 
+    }
   }
   #faq {
     line-height: 2.5;
@@ -544,7 +544,7 @@ div#rooms {
         word-break: break-all;
       }
     }
-    .mailchimp-container{    
+    .mailchimp-container{
       margin-bottom: 4rem;
       text-align: center;
       #mc-embedded-subscribe{
@@ -556,7 +556,7 @@ div#rooms {
     }
     .corporate-content{
       text-align: center;
-      font-weight: 300;      
+      font-weight: 300;
       margin-bottom: 4rem;
       *{
         margin-bottom: 12px;
@@ -572,7 +572,7 @@ div#rooms {
       .quote {
         transition: opacity 0.25s;
         opacity: 0.5;
-        display: inline-block;      
+        display: inline-block;
         padding: 0 10px 20px;
         &:hover,
         &:active {
@@ -603,8 +603,8 @@ div#rooms {
             content: close-quote;
           }
         }
-      } 
-    }/* end of container */    
+      }
+    }/* end of container */
   }
 
 }/* end of transparent container */
@@ -612,7 +612,7 @@ div#rooms {
 /* About-us style */
 #about-us {
   margin: 0;
-  background: rgba(0,0,0,0.8);  
+  background: rgba(0,0,0,0.8);
   color: darken(#fff, 5%);
   #about-content {
     p {
@@ -690,7 +690,7 @@ footer {
         list-style-type: none;
         vertical-align: middle;
       }
-    } 
+    }
   }
 }
 
@@ -705,7 +705,7 @@ footer {
 }
 
 /*Media Queries */
- 
+
 @media screen and (max-width: 1200px) {
   #cover {
     min-height: 700px;
@@ -721,12 +721,12 @@ footer {
         max-height: 370px;
         margin-top: 32px;
       }
-      img#scroll-to-teaser {  
+      img#scroll-to-teaser {
         &.scroll-btn {
           margin-top: 30px;
         }
       }
-    }  
+    }
   }
 }
 
@@ -736,6 +736,14 @@ footer {
       #m-logo {
         max-height: 480px;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 991px){
+  #faq{
+    .answer-container{
+      text-indent: 75px;
     }
   }
 }
@@ -777,7 +785,7 @@ footer {
     display: block !important;
   }
 }
- 
+
 @media screen and (max-width: 800px) {
   #sidebar {
     display: none;
@@ -818,7 +826,7 @@ footer {
         max-height: 330px;
         margin-top: 32px;
       }
-    }  
+    }
   }
 
   .transparent-container #ig{
@@ -886,7 +894,7 @@ footer {
                     font-size: 16px;
                   }
                 }
-              } 
+              }
             }
           }
         }/* navbar-collapse */
@@ -937,6 +945,14 @@ footer {
   }
 }
 
+@media screen and (max-width: 350px) {
+  #faq{
+    .answer-container{
+      text-indent: 30px;
+    }
+  }
+}
+
 @media screen and (min-width: 1366px){
   #rebeccas-room > div.room-description {
     span.bottom-brush-frame-6{
@@ -959,7 +975,7 @@ footer {
     }
   }
 
-  .transparent-container #ig{    
+  .transparent-container #ig{
       padding-top: 350px;
   }
 }
