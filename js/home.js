@@ -21,8 +21,8 @@ mm.init = function(){
     setTimeout(function(){
         mm.runInstagramFeed(),
         mm.runFacebookWidget(),
-        mm.runTwitterWidget(),
-        mm.runInstagramWidget();
+        mm.runTwitterWidget()
+        /*mm.runInstagramWidget();*/
         /*mm.runTripAdvisoryWidget();*/
     }, 3000);
 };
