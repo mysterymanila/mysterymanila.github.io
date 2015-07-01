@@ -2,6 +2,7 @@
   icon: img/featured/icons/abs-cbn.png
   position: 0
   width: 250px
+  height: 50px
   url:  http://www.abs-cbnnews.com/lifestyle/06/26/14/check-out-real-life-rpg-mystery-manila
   quote: "Trade your usual movie night and channel your inner Sherlock Holmes with your Nancy Drew friends."
 
@@ -9,6 +10,7 @@
   icon: img/featured/icons/wheninmanila.png
   position: -250px
   width: 119px
+  height: 110px
   url: http://www.wheninmanila.com/mystery-manila-1-room-1-mystery-1-hour-1-way-out/
   quote: "We were in awe by how the rooms were meticulously crafted and well thought-of even to the most minute detail."
 
@@ -16,6 +18,7 @@
   icon: img/featured/icons/planet.png
   position: -369px
   width: 260px
+  height: 90px
   url: http://www.ourawesomeplanet.com/awesome/2014/08/mystery-manila-justice-for-jamila-mystery-solved-mysterymanila.html
   quote: My personal favorite is Rebecca's Room<br>by Mystery Manila
 
@@ -23,5 +26,6 @@
   icon: img/featured/icons/gma.png
   position: -629px
   width: 193px
+  height: 85px
   url: http://www.gmanetwork.com/news/story/363563/lifestyle/peopleandevents/mystery-manila-offers-aspiring-sleuths-a-chance-to-stretch-their-mental-muscles 
   quote: "Mystery Manila offers aspiring sleuths a chance to stretch their mental muscles"
