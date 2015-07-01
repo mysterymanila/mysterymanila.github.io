@@ -10,8 +10,8 @@ mm.init = function(){
     mm.resetScroll();
     mm.initFAQ();
     mm.navbar.init();
-    mm.sidebar.init();
-    mm.initVideos();
+    //mm.sidebar.init();
+    //mm.initVideos();
     mm.initScrollToTopLinks();
     mm.initGlass();
     mm.initBookNowLinks();

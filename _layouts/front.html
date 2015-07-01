@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    {% include boilerplate_head.html %}
+    {% include header/front-head.html %}
     <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
     <style type="text/css">
     </style>
 </head>
   <body>
-    {% include front/nav-header.html %}
+    {% include nav-header.html %}
     {{ content }}
     {% include footer.html %}
     <script src="/js/jquery-2.1.1.min.js"></script>
     <!-- are we using bootstrap.min.js? maybe we can remove this -->
     <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/home.js"></script>
+    <script src="/js/front.js"></script>
     <script src="/js/isInViewport.min.js"></script>
     <script src="/js/jquery.stellar.min.js"></script>
     <script type="text/javascript">
