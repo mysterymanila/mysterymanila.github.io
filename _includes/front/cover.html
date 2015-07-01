@@ -4,7 +4,7 @@
         <div id="cbp-qtrotator" class="cbp-qtrotator clearfix">
             {% for media in site.data.media %}
                 <div class="cbp-qtcontent clearfix">
-                    <a style="width: {{media.width}}; background-position: {{ media.position }} 0"></a>
+                    <img src="{{ media.icon }}"/>
                     <blockquote>
                         {{ media.quote }}
                     </blockquote>
