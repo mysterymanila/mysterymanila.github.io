@@ -5,13 +5,15 @@
             {% for media in site.data.media %}
                 <div class="cbp-qtcontent clearfix">
                     <div class="row">
-                        <span class="col-md-5">
-                            <img src="{{ media.icon }}"/>
-                        </span>
-                        <span class="col-md-7">
-                            <blockquote>
-                                {{ media.quote }}
-                            </blockquote>
+                        <span class="col-md-12">
+                            <span class="col-md-6" style="padding: 0px">
+                                <img src="{{ media.icon }}"/>
+                            </span>
+                            <span class="col-md-6" style="padding: 0px">
+                                <blockquote>
+                                    {{ media.quote }}
+                                </blockquote>
+                            </span>
                         </span>
                     </div>
                 </div>
