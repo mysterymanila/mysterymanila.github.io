@@ -122,43 +122,47 @@ nav
       max-height: 295px
       min-height: 200px
       margin-top: 92px
-
-  .cbp-qtrotator
-    position: relative
-    margin: 0 auto
-    max-width: 800px
-    width: 100%
-    min-height: 119px
-    .cbp-qtcontent
-      position: absolute
-      min-height: 200px
-      z-index: 0
-      opacity: 0
+    .cbp-qtrotator
+      position: relative
+      margin: 0 auto
+      max-width: 1000px
       width: 100%
-    .cbp-qtcurrent
-      position: absolute
-      min-height: 200px
-      z-index: 100
-      opacity: 1
-      width: 100%
-      a
-        height: 119px
-        display: inline-block
-        background-image: url("/img/featured/quote-sprites.png")
-        background-repeat: no-repeat
-        margin: 0 15px
-      blockquote
-        width: 50%
-        border-left: 1px solid #ffffff
-        color: #ffffff
-        padding: 10px 0
-        display: inline-block
+      height: 119px
+      .cbp-qtcontent
+        position: absolute
+        z-index: 0
+        opacity: 0
+        width: 100%
+        color: transparent
         &:before
-          content: open-quote
+          content: " "
+          display: table
         &:after
-          content: close-quote
-
-
+          content: " "
+          display: table
+          clear: both
+        a
+          height: 119px
+          display: inline-block
+          background-image: url("/img/featured/quote-sprites.png")
+          background-repeat: no-repeat
+          margin: 0 15px
+        blockquote
+          width: 50%
+          border-left: 1px solid #ffffff
+          color: #ffffff
+          padding: 0
+          display: inline-block
+          margin-top: -50px
+          &:before
+            content: open-quote
+          &:after
+            content: close-quote
+        &.cbp-qtcurrent
+          position: absolute
+          z-index: 100
+          opacity: 1
+          width: 100%
 
 /*teaser style
 #teaser
@@ -445,7 +449,7 @@ div#rooms
         a
           height: 119px
           display: inline-block
-          background-image: url("/img/featured/quote-sprites.png")
+          background-image: url("/img/featured/orig.png")
           background-repeat: no-repeat
           margin: 0 15px
         blockquote
