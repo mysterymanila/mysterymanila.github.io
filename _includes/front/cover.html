@@ -4,10 +4,16 @@
         <div id="cbp-qtrotator" class="cbp-qtrotator clearfix">
             {% for media in site.data.media %}
                 <div class="cbp-qtcontent clearfix">
-                    <img src="{{ media.icon }}"/>
-                    <blockquote>
-                        {{ media.quote }}
-                    </blockquote>
+                    <div class="row">
+                        <span class="col-md-5">
+                            <img src="{{ media.icon }}"/>
+                        </span>
+                        <span class="col-md-7">
+                            <blockquote>
+                                {{ media.quote }}
+                            </blockquote>
+                        </span>
+                    </div>
                 </div>
             {% endfor %}
         </div>
