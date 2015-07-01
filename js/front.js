@@ -16,6 +16,7 @@ mm.init = function(){
     mm.initGlass();
     mm.initBookNowLinks();
     mm.initScrollToTeaser();
+    mm.initQuotesRotator();
     $('body').trigger('scroll');
 
     setTimeout(function(){
@@ -25,6 +26,10 @@ mm.init = function(){
         /*mm.runInstagramWidget();*/
         /*mm.runTripAdvisoryWidget();*/
     }, 3000);
+};
+
+mm.initQuotesRotator = function(){
+    $( '#cbp-qtrotator' ).cbpQTRotator();
 };
 
 mm.initScrollToTeaser = function () {

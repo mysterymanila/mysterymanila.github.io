@@ -3,19 +3,18 @@
 <head>
     {% include header/front-head.html %}
     <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
-    <style type="text/css">
-    </style>
+    <script src="js/modernizr.custom.js"></script>
 </head>
-  <body>
+  <body id="mock">
     {% include nav-header.html %}
     {{ content }}
     {% include footer.html %}
     <script src="/js/jquery-2.1.1.min.js"></script>
-    <!-- are we using bootstrap.min.js? maybe we can remove this -->
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/front.js"></script>
     <script src="/js/isInViewport.min.js"></script>
     <script src="/js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.cbpQTRotator.js"></script>
     <script type="text/javascript">
     $(document).ready(function(){
       $.stellar({
@@ -29,6 +28,7 @@
       });
     });
     </script>
+
   <!-- Quezon-TripAdvisor -->
    <script src="http://www.jscache.com/wejs?wtype=socialButtonReviews&amp;uniq=71&amp;locationId=7142887&amp;color=green&amp;size=rect&amp;lang=en_PH&amp;display_version=2">
    </script>
