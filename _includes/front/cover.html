@@ -6,8 +6,10 @@
                 <div class="cbp-qtcontent clearfix">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="col-md-offset-2 col-md-4" style="padding: 0px; line-height: 110px">
-                                <img src="{{ media.icon }}" style="height:{{media.height}}" align="center"/>
+                            <div class="col-md-offset-2 col-md-4 cover-image" style="padding: 0px; line-height: 110px">
+                                <a href="{{media.url}}" target="_blank">
+                                    <img src="{{ media.icon }}" style="height:{{media.height}}; padding-left:{{media.padding}};" align="center"/>
+                                </a>
                             </div>
                             <div class="col-md-6" style="padding: 0px">
                                 <blockquote>
