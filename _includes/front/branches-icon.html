@@ -3,18 +3,26 @@
         <div class="col-md-12">
             {% for branch in site.data.branches %}
                <div class="col-md-4">
-                   <ul>
-                       <li style="display: inline-block; list-style: none;"><img src="{{ branch.branch1 }}" style="height: 50px;"/></li>
-                       <li style="display: inline-block; list-style: none;"><img src="{{ branch.branch2 }}" style="height: 50px;"/></li>
-                       <li style="display: inline-block; list-style: none;"><img src="{{ branch.branch3 }}" style="height: 50px;"/></li>
-                   </ul>
+                   <div class="row branches-icon-container">
+                       <ul>
+                           <li class="col-md-4" style="display: inline-block; list-style: none; padding: 0px">
+                               <img class="center-block" src="{{ branch.branch1 }}" style="height: 50px;"/>
+                           </li>
+                           <li class="col-md-4" style="display: inline-block; list-style: none;">
+                               <img class="center-block" src="{{ branch.branch2 }}" style="height: 50px;"/>
+                           </li>
+                           <li class="col-md-4" style="display: inline-block; list-style: none;">
+                               <img class="center-block" src="{{ branch.branch3 }}" style="height: 50px;"/>
+                           </li>
+                       </ul>
+                   </div>
                     <img class="center-block branches-image" src="{{ branch.brand-logo }}"/>
                     <h3 class="text-center">{{ branch.name }}</h3>
                </div>
             {% endfor %}
         </div>
     </div>
-    <div class="book-now-container"align="center">
+    <div class="book-now-container" align="center">
         <a class="book-now-button" href="#">BOOK NOW</a>
     </div>
 </div>
