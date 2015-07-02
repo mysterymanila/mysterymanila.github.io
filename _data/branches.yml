@@ -1,17 +1,17 @@
 - name: QUEZON CITY
-  brand-logo: /img/branches-icon/brand-logo.png
+  brand-logo: /img/brand-logo.png
   branch1: /img/branches-icon/brand-logo.png
   branch2: /img/branches-icon/brand-logo.png
   branch3: /img/branches-icon/brand-logo.png
 
 - name: MAKATI CITY
-  brand-logo: /img/branches-icon/brand-logo.png
+  brand-logo: /img/brand-logo.png
   branch1: /img/branches-icon/brand-logo.png
   branch2: /img/branches-icon/brand-logo.png
   branch3: /img/branches-icon/brand-logo.png
 
 - name: BORACAY
-  brand-logo: /img/branches-icon/brand-logo.png
+  brand-logo: /img/brand-logo.png
   branch1: /img/branches-icon/brand-logo.png
   branch2: /img/branches-icon/brand-logo.png
   branch3: /img/branches-icon/brand-logo.png
