@@ -1,0 +1,99 @@
+- slug: buried-bodies
+  title: Buried Bodies
+  location: Libis, Quezon City Branch
+  icon:
+    position: -88px 0
+  sidebar_icon:
+      position: -53px 0
+  poster: /img/posters/buried-bodies.jpg
+  video: http://d3pfdit6z4xogx.cloudfront.net/videos/MM_BuriedBodies.mp4
+  frame:
+    top: top-brush-frame-3
+    bottom: bottom-brush-frame-2
+  description: >
+    <p>Enigma strikes again. The psychopathic killer challenges you to escape from his graveyard using clues and puzzles hidden around the dark cemetery. Some of you are buried alive while others roam free to look for objects to help you escape.</p>
+    <p>If you don't solve the mystery in 60 minutes, you will be buried amongst the dead and will be stuck in the graveyard for eternity.</p>
+
+- slug: reversed-reality
+  title: Reversed Reality
+  location: Libis, Quezon City Branch
+  icon:
+    position: -176px -88px
+  sidebar_icon:
+    position: -106px -53px
+  poster: /img/posters/reversed-reality.jpg
+  video: http://d3pfdit6z4xogx.cloudfront.net/videos/MM_ReversedReality.mp4
+  frame:
+    top: top-brush-frame-4
+    bottom: bottom-brush-frame-3
+  description: >
+    <p>It's 2016 and the psychopathic killer Enigma has been captured by the government. Using a method called dream snatching, you are hired to extract an evil plan from Enigma's mind within 60 minutes. In the process of extraction, you have to overcome several mind blocks and solve complex puzzles scattered within Enigma's sinister head.</p>
+    <p>If you fail, millions of people will be in danger.</p>
+
+
+- slug: ticking-timebomb
+  title: Ticking Time Bomb
+  location: Libis, Quezon City Branch
+  icon:
+    position: -176px 0
+  sidebar_icon:
+    position: -106px 0
+  poster: /img/posters/ticking-timebomb.jpg
+  video: http://d3pfdit6z4xogx.cloudfront.net/videos/MM_TimeBomb.mp4
+  frame:
+    top: top-brush-frame-2
+    bottom: bottom-brush-frame-1
+  description: >
+    <p>You are all part of Metro Manila's elite bomb squad and have been called to disarm a ticking time bomb placed by a deranged psychopath at the heart of the city. To solve the mystery, you may need to go outside Mystery Manila and explore the nearby areas by foot to look for important clues. You have 90 minutes to disarm the bomb before it explodes.</p>
+    <p>Solve quickly.</p>
+
+- slug: sinister-sensorium
+  title: Sinister Sensorium
+  location: Jupiter, Makati City Branch
+  icon:
+    position: 0 -88px
+  sidebar_icon:
+      position: 0 -53px
+  poster: /img/posters/sinister-sensorium.jpg
+  video: http://d3pfdit6z4xogx.cloudfront.net/videos/MM_Sinister.mp4
+  frame:
+    top: top-brush-frame-1
+    bottom: bottom-brush-frame-4
+  description: >
+    <p>You and your friends have been held captive by the psychopathic killer named Enigma. He has taken away one sense from each of you. It could be your sense of hearing, speaking, or sight.</p>
+    <p>It's up to you to escape the room in 60 minutes using your remaining senses.</p>
+    <p>Unravel the clues and solve the puzzles found inside the room. If you don't solve the mystery, you will be left for dead. </p>
+    <p>The clock is ticking. Solve quickly.</p>
+    <p>Can you escape the Sinister Sensorium? </p>
+
+- slug: rebeccas-room
+  title: Rebecca's Room
+  location: Jupiter, Makati City Branch
+  icon:
+    position: -88px -88px
+  sidebar_icon:
+    position: -53px -53px
+  poster: /img/posters/rebeccas-room.jpg
+  video: http://d3pfdit6z4xogx.cloudfront.net/videos/MM_Rebecca.mp4
+  frame:
+    top: top-brush-frame-5
+    bottom: bottom-brush-frame-6
+  description: >
+    <p>Play the role of spirit questers out to give peace to Rebecca's soul. You are given 60 minutes inside Rebecca's Room to solve her mysterious disappearance.</p>
+    <p>While inside the room, you find that there is more behind her disappearance. You even experience some paranormal events...</p><p>what could these mean?</p>
+    <p>Are you brave enough to enter Rebecca's Room?</p>
+
+- slug: world-of-wizardry
+  title: World of Wizardry
+  location: Jupiter, Makati City Branch
+  icon:
+    position: 0 0
+  sidebar_icon:
+    position: 0 0
+  poster: /img/posters/world-of-wizardry.jpg
+  video: http://d3pfdit6z4xogx.cloudfront.net/videos/MM_WorldOfWizardry.mp4
+  frame:
+    top: top-brush-frame-6
+    bottom: bottom-brush-frame-5
+  description: >
+    <p>As a trainee wizard, you and your friends are tasked to steal the magical time turner and stop Sidius from his evil master plan that will change the world of wizardry.</p>

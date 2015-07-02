@@ -1,7 +1,7 @@
-//#mock
-//  opacity: 0.7
-//  background: url("/img/mock.jpg")
-//  background-size: contain
+#mock
+  opacity: 0.7
+  background: url("/img/mock.jpg")
+  background-size: contain
 
 /* colors
 $white: white
@@ -143,7 +143,10 @@ nav
           clear: both
         img
           vertical-align: middle
+          &:nth-child(2)
+            padding-left: 100px
         blockquote
+          border-left: 2px solid #ffffff
           color: #ffffff
           width: 70%
           min-height: 110px
@@ -185,20 +188,27 @@ nav
       .stylized
         font-family: $levi-text
       .teaser-head
-        font-size: 54px
+        font-size: 63px
         transform: rotate(-5deg)
-    blockquote
-      padding: 10px 30px
-      width: 100%
-      border-left: none
-    h2
-      margin-top: 10px
-      margin-bottom: 0
-    span
-      &.teaser-brush-frame
-        height: 200px
-        background-image: url(/img/brush-edges/Top_2.png)
-        background-position: bottom
+      .teaser-description
+        margin-top: 80px
+        .teaser-text
+          padding: 0px
+          p
+            font-size: 19px
+            width: 100%
+        .teaser-text-right
+          padding-left: 30px
+          .top-teaser-text
+            font-size: 35px
+            margin: 0px
+          .bottom-teaser-text
+            margin-top: 50px
+  span
+    &.teaser-brush-frame
+      height: 200px
+      background-image: url(/img/brush-edges/Top_2.png)
+      background-position: bottom
 
 /*sidebar style
 #sidebar

@@ -3,33 +3,35 @@ layout: front
 ---
 
 {% include front/cover.html %}
+{% include front/sidebar.html %}
 <div id="glass-container">
     <div id="glass" data-stellar-background-ratio="0.1" class="clearfix"></div>
     <!--<img id="glass-image" src="/img/scratches.png" data-stellar-ratio="1.5"/>-->
     <div id="teaser">
-      {% include front/teaser.html %}
+        {% include front/teaser.html %}
+    </div>
+    <div id="rooms">
+        {% include front/rooms.html %}
     </div>
 </div>
 <div class="transparent-container">
     <div id="ig" class="clearfix">
-      {%include front/instagram.html%}
+        {%include front/instagram.html%}
     </div>
 
     <div id="faq">
         {% include front/faq.html %}
     </div>
     <div id="about-us">
-      {% include front/about-us.html %}
+        {% include front/about-us.html %}
     </div>
     <div id="branches">
-      {% include front/branches.html %}
+        {% include front/branches.html %}
     </div>
     <div id="contact">
         {% include front/contact-us.html %}
     </div>
     <div id="featured">
-      {% include front/media-outlet.html %}
+        {% include front/media-outlet.html %}
     </div>
 </div>
-
-
