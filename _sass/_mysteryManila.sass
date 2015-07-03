@@ -215,25 +215,41 @@ nav
     margin-top: 200px
     height: 1000px
     .branches-container
-      margin-top: 190px
-      .branch-icon-container
-        .branch-icon-content
-          display: none
-          padding: 0px
-        .active
-          display: inline-block
-          -webkit-transition: opacity 2s ease-in-out
-          -moz-transition: opacity 2s ease-in-out
-          -o-transition: opacity 2s ease-in-out
-          -ms-transition: opacity 2s ease-in-out
-          transition: opacity 2s ease-in-out
-          transform:translate(100px,100px)
-    img
-      height: 123px
-    h3
-      color: #ffffff
+      padding-top: 190px
+      //.branch-icon-container
+      //  .branch-icon-content
+      //    padding: 0px
+      //  .active
+      //    position: absolute
+      //    -webkit-transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000)
+      //    -moz-transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000)
+      //    -o-transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000)
+      //    transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000)
+      //    -ms-transform: translate(-100px,-100px)
+      //    -webkit-transform: translate(-100px,-100px)
+      //    transform: translate(-100px,-100px)
+      .branches-content
+        padding: 0
+        position: relative
+        .branches-button-container
+          position: relative
+          ul
+            position: absolute
+            list-style: none
+            display: inline-block
+            height: inherit
+            li
+              position: relative
+              height: inherit
+          img
+            height: 123px
+            position: absolute
+            left: 0
+            right: 0
+          h3
+            color: #ffffff
     .book-now-container
-      margin-top: 138px
+      margin-top: 238px
       .book-now-button
         font-size: 27px
         padding: 21px 22px

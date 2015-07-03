@@ -1,32 +1,31 @@
 <div class="container">
-	<div class="row branches-container">
-		<div class="col-md-12">
-			{% for branch in site.data.branches %}
-			   <div class="col-md-4">
-				   <div class="row branch-icon-container">
-					   <ul class="branch-icon-content">
-                           <li class="col-md-4" style="display: inline-block; list-style: none; padding: 0px">
-                               <a class="branch-button" href="">
-                                   <img class="center-block branch-images" src="{{ branch.branch1 }}" style="height: 50px;"/>
-                               </a>
-                           </li>
-                           <li class="col-md-4" style="display: inline-block; list-style: none;">
-                               <a class="branch-button" href="#">
-                                   <img class="center-block branch-images" src="{{ branch.branch2 }}" style="height: 50px;"/>
-                               </a>
-                           </li>
-                           <li class="col-md-4" style="display: inline-block; list-style: none;">
-                               <a class="branch-button" href="#">
-                                   <img class="center-block branch-images" src="{{ branch.branch3 }}" style="height: 50px;"/>
-                               </a>
-                           </li>
-                       </ul>
-                   </div>
-                   <a class="brand-logo-button" href="#branches-icon">
-                       <img class="center-block branches-image" src="{{ branch.brand-logo }}"/>
-                   </a>
-                   <h3 class="text-center">{{ branch.name }}</h3>
-               </div>
+    <div class="row branches-container">
+        <div class="col-md-12">
+            {% for branch in site.data.branches %}
+            <div class="col-md-4 branches-content" align="center">
+                <div class="branches-button-container" align="center">
+                    <a class="brand-logo-button" href="javascript:void(0)">
+                        <img style="z-index: 100" class="center-block branches-image" src="/img/brand-logo.png"/>
+                    </a>
+                    <ul class="branches-icons">
+                        <li>
+                            <a class="branch-button" href="">
+                                <img style="position: absolute; z-index: 1; height: 50px;" class="center-block branch-images" src="{{ branch.branch1 }}"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="branch-button" href="">
+                                <img style="position: absolute; z-index: 1; height: 50px;" class="center-block branch-images" src="{{ branch.branch1 }}"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="branch-button" href="">
+                                <img style="position: absolute; z-index: 1; height: 50px;" class="center-block branch-images" src="{{ branch.branch1 }}"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             {% endfor %}
         </div>
     </div>
@@ -34,3 +33,61 @@
         <a class="book-now-button" href="#">BOOK NOW</a>
     </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div class="container">-->
+    <!--<div class="row branches-container">-->
+        <!--<div class="col-md-12">-->
+            <!--{% for branch in site.data.branches %}-->
+            <!--<div class="col-md-4">-->
+                <!--<div class="row branch-icon-container">-->
+                    <!--<ul class="branch-icon-content" style="position: relative">-->
+                        <!--<li class="col-md-4" style="z-index: 10; position: absolute; list-style: none; padding: 0px">-->
+                            <!--<a class="branch-button" href="">-->
+                                <!--<img class="center-block branch-images" src="{{ branch.branch1 }}" style="height: 50px;"/>-->
+                            <!--</a>-->
+                        <!--</li>-->
+
+                        <!--<li class="col-md-4" style="z-index: 10; position: absolute; display: inline-block; list-style: none;">-->
+                            <!--<a class="branch-button" href="#">-->
+                                <!--<img class="center-block branch-images" src="{{ branch.branch2 }}" style="height: 50px;"/>-->
+                            <!--</a>-->
+                        <!--</li>-->
+                        <!--<li class="col-md-4" style="z-index: 10; position: absolute; display: inline-block; list-style: none;">-->
+                            <!--<a class="branch-button" href="#">-->
+                                <!--<img class="center-block branch-images" src="{{ branch.branch3 }}" style="height: 50px;"/>-->
+                            <!--</a>-->
+                        <!--</li>-->
+                        <!--<li style="position: absolute; z-index: 100;">-->
+                            <!--<a class="brand-logo-button" href="javascript:void(0)">-->
+                                <!--<img class="center-block branches-image" src="{{ branch.brand-logo }}"/>-->
+                            <!--</a>-->
+                        <!--</li>-->
+                    <!--</ul>-->
+
+                <!--</div>-->
+                <!--<h3 style="position: relative"class="text-center">{{ branch.name }}</h3>-->
+            <!--</div>-->
+            <!--{% endfor %}-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="book-now-container" align="center">-->
+        <!--<a class="book-now-button" href="#">BOOK NOW</a>-->
+    <!--</div>-->
+<!--</div>-->
+

@@ -7,7 +7,7 @@ mm.init = function(){
     $('.placeholder').each(function(){
         $(this).css('height', width);   
     });
-    mm.resetScroll();
+    //mm.resetScroll();
     mm.initFAQ();
     mm.navbar.init();
     mm.sidebar.init();
@@ -29,7 +29,7 @@ mm.init = function(){
     }, 3000);
 };
 
-mm.initEaseBranches = function(){
+mm.initEaseBranches = function(img){
     $(".brand-logo-button").click(function(){
         $('.branch-icon-content .active').removeClass("active");
         $('.branch-icon-content').addClass("active");
