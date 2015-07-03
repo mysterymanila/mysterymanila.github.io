@@ -30,18 +30,10 @@ mm.init = function(){
 };
 
 mm.initEaseBranches = function(){
-    $(".brand-logo-button").click(function(){
-
-        //$('.branches-icon').addClass("active");
-        $('.brand-logo-button').click(function(){
-            $(this).parent().find('li').each(function(index){
-                $(this).parent().find('li').removeClass("transition"+(index+1));
-                $(this).addClass("transition"+(index+1));
-            });
+    $('.brand-logo-button').click(function(){
+        $(this).parent().find('li').each(function(index){
+            $(this).toggleClass("transition"+(index+1));
         });
-        //$( ".branches-icon" ).each(function( index ) {
-        //    console.log( index + ": " + $( this ).text() );
-        //});
     });
 };
 
