@@ -1,23 +1,31 @@
 <div class="container">
-    <div class="row branches-container">
-        <div class="col-md-12">
-            {% for branch in site.data.branches %}
-               <div class="col-md-4">
-                   <div class="row branches-icon-container">
-                       <ul>
+	<div class="row branches-container">
+		<div class="col-md-12">
+			{% for branch in site.data.branches %}
+			   <div class="col-md-4">
+				   <div class="row branch-icon-container">
+					   <ul class="branch-icon-content">
                            <li class="col-md-4" style="display: inline-block; list-style: none; padding: 0px">
-                               <img class="center-block" src="{{ branch.branch1 }}" style="height: 50px;"/>
+                               <a class="branch-button" href="">
+                                   <img class="center-block branch-images" src="{{ branch.branch1 }}" style="height: 50px;"/>
+                               </a>
                            </li>
                            <li class="col-md-4" style="display: inline-block; list-style: none;">
-                               <img class="center-block" src="{{ branch.branch2 }}" style="height: 50px;"/>
+                               <a class="branch-button" href="#">
+                                   <img class="center-block branch-images" src="{{ branch.branch2 }}" style="height: 50px;"/>
+                               </a>
                            </li>
                            <li class="col-md-4" style="display: inline-block; list-style: none;">
-                               <img class="center-block" src="{{ branch.branch3 }}" style="height: 50px;"/>
+                               <a class="branch-button" href="#">
+                                   <img class="center-block branch-images" src="{{ branch.branch3 }}" style="height: 50px;"/>
+                               </a>
                            </li>
                        </ul>
                    </div>
-                    <img class="center-block branches-image" src="{{ branch.brand-logo }}"/>
-                    <h3 class="text-center">{{ branch.name }}</h3>
+                   <a class="brand-logo-button" href="#branches-icon">
+                       <img class="center-block branches-image" src="{{ branch.brand-logo }}"/>
+                   </a>
+                   <h3 class="text-center">{{ branch.name }}</h3>
                </div>
             {% endfor %}
         </div>

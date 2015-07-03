@@ -17,6 +17,7 @@ mm.init = function(){
     mm.initBookNowLinks();
     mm.initScrollToTeaser();
     mm.initQuotesRotator();
+    mm.initEaseBranches();
     $('body').trigger('scroll');
 
     setTimeout(function(){
@@ -26,6 +27,13 @@ mm.init = function(){
         /*mm.runInstagramWidget();*/
         /*mm.runTripAdvisoryWidget();*/
     }, 3000);
+};
+
+mm.initEaseBranches = function(){
+    $(".brand-logo-button").click(function(){
+        $('.branch-icon-content .active').removeClass("active");
+        $('.branch-icon-content').addClass("active");
+    });
 };
 
 mm.initQuotesRotator = function(){
