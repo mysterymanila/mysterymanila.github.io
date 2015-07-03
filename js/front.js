@@ -29,10 +29,19 @@ mm.init = function(){
     }, 3000);
 };
 
-mm.initEaseBranches = function(img){
+mm.initEaseBranches = function(){
     $(".brand-logo-button").click(function(){
-        $('.branch-icon-content .active').removeClass("active");
-        $('.branch-icon-content').addClass("active");
+
+        //$('.branches-icon').addClass("active");
+        $('.brand-logo-button').click(function(){
+            $(this).parent().find('li').each(function(index){
+                $(this).parent().find('li').removeClass("transition"+(index+1));
+                $(this).addClass("transition"+(index+1));
+            });
+        });
+        //$( ".branches-icon" ).each(function( index ) {
+        //    console.log( index + ": " + $( this ).text() );
+        //});
     });
 };
 

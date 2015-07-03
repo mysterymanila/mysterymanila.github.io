@@ -1,0 +1,16 @@
+<div class="col-md-4 branches-content" align="center">
+    <div class="branches-button-container" align="center">
+        <a class="brand-logo-button" href="javascript:void(0)">
+            <img style="z-index: 100" class="center-block branches-image" src="/img/brand-logo.png"/>
+        </a>
+        <ul>
+            {% for game in site.data.games limit:3 offset:6 %}
+                <li class="branches-icon">
+                    <a class="branch-button" href="">
+                        <img style="position: absolute; z-index: 1; height: 50px;" class="center-block branch-images" src="{{ game.img }}"/>
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

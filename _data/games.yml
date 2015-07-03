@@ -1,0 +1,39 @@
+- name: mm-game-1
+  img: /img/brand-logo.png
+  class: transition1
+
+- name: mm-game-2
+  img: /img/brand-logo.png
+  class: transition2
+
+- name: mm-game-3
+  img: /img/brand-logo.png
+  class: transition3
+
+- name: mm-game-4
+  img: /img/brand-logo.png
+  class: transition1
+
+- name: mm-game-5
+  img: /img/brand-logo.png
+  class: transition2
+
+- name: mm-game-6
+  img: /img/brand-logo.png
+  class: transition3
+
+- name: mm-game-7
+  img: /img/brand-logo.png
+  class: transition1
+
+- name: mm-game-8
+  img: /img/brand-logo.png
+  class: transition2
+
+- name: mm-game-9
+  img: /img/brand-logo.png
+  class: transition3
+
+
+
+
