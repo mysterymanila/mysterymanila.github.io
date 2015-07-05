@@ -112,7 +112,7 @@ mm.sidebar.init = function () {
 
     $(document).scroll(function () {
         //Show sidebar when needed
-        if (($(document).scrollTop() >= $('#rooms').offset().top - 300)
+        if (($(document).scrollTop() >= $('#rooms').offset().top - 100)
             && $(document).scrollTop() <= $('#ig').offset().top - 500) {
             self.show();
         } else {
