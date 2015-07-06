@@ -18,6 +18,7 @@ mm.init = function(){
     mm.initScrollToTeaser();
     mm.initQuotesRotator();
     mm.initEaseBranches();
+    mm.initEaseBoracay();
     $('body').trigger('scroll');
 
     setTimeout(function(){
@@ -32,7 +33,15 @@ mm.init = function(){
 mm.initEaseBranches = function(){
     $('.brand-logo-button').click(function(){
         $(this).parent().find('li').each(function(index){
-            $(this).toggleClass("transition"+(index+1));
+            $(this).toggleClass("transition" + (index + 1));
+        });
+    });
+};
+
+mm.initEaseBoracay = function(){
+    $('.boracay-logo-button').click(function(){
+        $(this).parent().find('li').each(function(index){
+            $(this).toggleClass("transition" + (index + 4));
         });
     });
 };
