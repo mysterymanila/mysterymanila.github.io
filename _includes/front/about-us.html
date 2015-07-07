@@ -8,3 +8,37 @@
   <p>challenging them to solve their way out with friends in </p>
   <p>60 minutes</p>
 </div>
+
+<div class="container">
+  <h2 class="section-header">BRANCHES</h2>
+
+  <div class="row">
+    {% assign branches = site.branches | sort: 'id' %}
+    {% for branch in branches %}
+    <div class="col-md-6">
+      <h3 class="brand">{{ branch.name | upcase }}</h3>
+      <address>
+        <br>
+        {{ branch.address }}
+      </address>
+      <address>
+        <br>
+        {% for number in branch.telephone %}
+        {{ number }}<br>
+        {% endfor %}
+      </address>
+      <address>
+        <br>
+        {% for item in branch.availability %}
+        {{ item }}<br>
+        {% endfor %}
+      </address>
+      {{ branch.output }}
+    </div>
+    {% endfor %}
+  </div>
+
+</div>
+
+
+
