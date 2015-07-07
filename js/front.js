@@ -19,6 +19,7 @@ mm.init = function(){
     mm.initQuotesRotator();
     mm.initEaseBranches();
     mm.initEaseBoracay();
+    mm.initScrollBranches();
     $('body').trigger('scroll');
 
     setTimeout(function(){
@@ -28,6 +29,13 @@ mm.init = function(){
         /*mm.runInstagramWidget();*/
         /*mm.runTripAdvisoryWidget();*/
     }, 3000);
+};
+
+
+mm.initScrollBranches = function(){
+    $('.branch-button').click(function(){
+        $('html, body').animate({scrollTop:$($(this).data('target')).position().top}, 'slow');
+    });
 };
 
 mm.initEaseBranches = function(){

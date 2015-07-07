@@ -1,31 +1,31 @@
-- name: burried-bodies
+- name: buried-bodies
   class: transition1
   position: -78px 0px
   width: 75px
 
-- name: reverse-reality
+- name: reversed-reality
   class: transition2
   position: -156px -80px
   width: 75px
 
-- name: ticking-bomb
+- name: ticking-timebomb
   class: transition3
   position: -156px 0px
   width: 75px
 
-- name: rebeccas-room
+- name: sinister-sensorium
   class: transition1
+  position: 0px -80px
+  width: 75px
+
+- name: rebeccas-room
+  class: transition2
   position: -78px -80px
   width: 75px
 
 - name: world-of-wizardry
-  class: transition2
-  position: 0px 0px
-  width: 75px
-
-- name: occulus
   class: transition3
-  position: 0px -80px
+  position: 0px 0px
   width: 75px
 
 - name: villainous vault

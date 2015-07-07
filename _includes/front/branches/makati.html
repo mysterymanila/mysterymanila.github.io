@@ -7,7 +7,7 @@
         <ul>
             {% for game in site.data.games limit:3 offset:3 %}
             <li class="branches-icon">
-                <a class="branch-button" href="javascript:void(0)">
+                <a class="branch-button" data-target="#{{ game.name }}" href="javascript:void(0)">
                     <img border="0" style="width: {{game.width}}; background-position: {{ game.position }}"  class="center-block branches-icon" src="http://www-cdr.stanford.edu/~petrie/blank.gif"/>
                 </a>
             </li>
