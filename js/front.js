@@ -31,13 +31,19 @@ mm.init = function(){
 };
 
 mm.initBranchesMouseOver = function(){
-  $('.branches-icon').on('mouseenter mouseleave', function(){
-     $(this).find('span').fadeToggle(100);
+  $('.branches-icon .branch-label').hide();
+  $('.branches-icon').on('mouseenter', function(){
+     $(this).find('.branch-button img').css({opacity:1})
+     $(this).find('span').fadeIn(100);
+  });
+  $('.branches-icon').on('mouseleave', function(){
+     $(this).find('.branch-button img').css({opacity:0.5})
+     $(this).find('span').fadeOut(100);
   });
 };
 
 mm.initScrollBranches = function(){
-    $('.branch-button').click(function(){
+    $('.branch-name-btn').click(function(){
         $('html, body').animate({scrollTop:$($(this).data('target')).position().top}, 'slow');
     });
 };
