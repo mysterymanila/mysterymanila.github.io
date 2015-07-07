@@ -20,17 +20,21 @@ mm.init = function(){
     mm.initEaseBranches();
     mm.initEaseBoracay();
     mm.initScrollBranches();
+    mm.initBranchesMouseOver();
     $('body').trigger('scroll');
 
     setTimeout(function(){
         mm.runInstagramFeed(),
         mm.runFacebookWidget(),
         mm.runTwitterWidget()
-        /*mm.runInstagramWidget();*/
-        /*mm.runTripAdvisoryWidget();*/
     }, 3000);
 };
 
+mm.initBranchesMouseOver = function(){
+  $('.branches-icon').on('mouseenter mouseleave', function(){
+     $(this).find('span').fadeToggle(100);
+  });
+};
 
 mm.initScrollBranches = function(){
     $('.branch-button').click(function(){
