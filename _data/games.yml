@@ -1,42 +1,52 @@
-- name: mm-game-1
-  img: /img/brand-logo.png
+- name: burried-bodies
   class: transition1
+  position: -78px 0px
+  width: 75px
 
-- name: mm-game-2
-  img: /img/brand-logo.png
+- name: reverse-reality
   class: transition2
+  position: -156px -80px
+  width: 75px
 
-- name: mm-game-3
-  img: /img/brand-logo.png
+- name: ticking-bomb
   class: transition3
+  position: -156px 0px
+  width: 75px
 
-- name: mm-game-4
-  img: /img/brand-logo.png
+- name: rebeccas-room
   class: transition1
+  position: -78px -80px
+  width: 75px
 
-- name: mm-game-5
-  img: /img/brand-logo.png
+- name: world-of-wizardry
   class: transition2
+  position: 0px 0px
+  width: 75px
 
-- name: mm-game-6
-  img: /img/brand-logo.png
+- name: occulus
   class: transition3
+  position: 0px -80px
+  width: 75px
 
-- name: mm-game-7
-  img: /img/brand-logo.png
-  class: transition1
+- name: villainous vault
+  class: transition4
+  position: -155px -158px
+  width: 75px
 
-- name: mm-game-8
-  img: /img/brand-logo.png
-  class: transition2
+- name: chained-chamber
+  class: transition5
+  position: -78px -158px
+  width: 75px
 
-- name: mm-game-9
-  img: /img/brand-logo.png
-  class: transition3
+- name: aztec-adventure
+  class: transition6
+  position: 0px -238px
+  width: 75px
 
-- name: mm-game-10
-  img: /img/brand-logo.png
-  class: transition3
+- name: tainted-treasure
+  class: transition7
+  position: 0px -158px
+  width: 75px
 
 
 

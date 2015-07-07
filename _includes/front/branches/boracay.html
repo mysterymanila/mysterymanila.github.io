@@ -6,11 +6,11 @@
         <h3>BORACAY</h3>
         <ul>
             {% for game in site.data.games limit:4 offset:6 %}
-                <li class="branches-icon">
-                    <a class="branch-button branches-icon" href="">
-                        <!--<img class="center-block branch-images" src="{{ game.img }}"/>-->
-                    </a>
-                </li>
+            <li class="branches-icon">
+                <a class="branch-button" href="javascript:void(0)">
+                    <img border="0" style="width: {{game.width}}; background-position: {{ game.position }}"  class="center-block branches-icon" src="http://www-cdr.stanford.edu/~petrie/blank.gif"/>
+                </a>
+            </li>
             {% endfor %}
         </ul>
     </div>
