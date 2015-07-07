@@ -15,7 +15,7 @@ mm.init = function(){
     mm.initScrollToTopLinks();
     mm.initGlass();
     mm.initBookNowLinks();
-    mm.initScrollToTeaser();
+    //mm.initScrollToTeaser();
     mm.initQuotesRotator();
     mm.initEaseBranches();
     mm.initEaseBoracay();
@@ -50,12 +50,12 @@ mm.initQuotesRotator = function(){
     $( '#cbp-qtrotator' ).cbpQTRotator();
 };
 
-mm.initScrollToTeaser = function () {
-    $('#scroll-to-teaser').click(function (event) {
-        event.preventDefault();
-        $('html, body').animate({scrollTop: $('#teaser').position().top}, 'easeInOutExpo');
-    });
-};
+//mm.initScrollToTeaser = function () {
+//    $('#scroll-to-teaser').click(function (event) {
+//        event.preventDefault();
+//        $('html, body').animate({scrollTop: $('#teaser').position().top}, 'easeInOutExpo');
+//    });
+//};
 
 mm.resetScroll = function(){
     /* Force scrolling at the top on reload */
