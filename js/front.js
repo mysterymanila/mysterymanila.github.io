@@ -54,6 +54,9 @@ mm.initEaseBranches = function(){
             $(this).toggleClass("transition" + (index + 1));
         });
     });
+    setTimeout(function(){
+        $('li .branches-icon').removeClass("branch-icon");
+    }, 2000);
 };
 
 mm.initEaseBoracay = function(){
@@ -61,6 +64,7 @@ mm.initEaseBoracay = function(){
         $(this).parent().find('li').each(function(index){
             $(this).toggleClass("transition" + (index + 4));
         });
+
     });
 };
 
