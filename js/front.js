@@ -150,7 +150,9 @@ mm.sidebar.init = function () {
         if (($(document).scrollTop() >= $('#rooms').offset().top - 100)
             && $(document).scrollTop() <= $('#ig').offset().top - 500) {
             self.show();
-            if($(document).scrollTop() >= $('#sinister-sensorium').find('h2').offset().top - 600){
+            if($(document).scrollTop() >= $('#ticking-timebomb').find('h2').offset().top + 200
+               && $(document).scrollTop() <= $('#sinister-sensorium').find('h2').offset().top - 600
+            ){
                 branchMakati.hide();
                 branchQuezon.show();
             }
@@ -158,15 +160,31 @@ mm.sidebar.init = function () {
                 branchMakati.show();
                 branchQuezon.hide();
             }
-            else if($(document).scrollTop() >= $('#villainous-vault').offset().top - 600){
-                alert('MEOW');
-                branchBoracay.show();
+            else if($(document).scrollTop() >= $('#world-of-wizardry').find('h2').offset().top + 200
+                && $(document).scrollTop() <= $('#villainous-vault').find('h2').offset().top - 600
+                || $(document).scrollTop() >= $('#villainous-vault').find('h2').offset().top - 600
+            ){
+                branchMakati.hide();
                 branchQuezon.hide();
+                branchBoracay.show();
             }
-            else if($(document).scrollTop() <= $('#villainous-vault').find('h2').offset().top - 600){
+            else if($(document).scrollTop() <= $('#world-of-wizardry').find('h2').offset().top + 200){
+                branchMakati.hide();
                 branchQuezon.show();
                 branchBoracay.hide();
             }
+
+
+
+
+            //else if($(document).scrollTop() <= $('#villainous-vault').find('h2').offset().top - 600){
+            //    branchBoracay.show();
+            //    branchQuezon.hide();
+            //}
+            //else if($(document).scrollTop() <= $('#villainous-vault').find('h2').offset().top - 600){
+            //    branchQuezon.show();
+            //    branchBoracay.hide();
+            //}
         } else {
             self.hide();
         }
