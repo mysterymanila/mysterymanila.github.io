@@ -1,5 +1,4 @@
 - slug: buried-bodies
-  branchNo: 1
   title: Buried Bodies
   location: Libis, Quezon City Branch
   icon:
@@ -16,7 +15,6 @@
     <p>If you don't solve the mystery in 60 minutes, you will be buried amongst the dead and will be stuck in the graveyard for eternity.</p>
 
 - slug: reversed-reality
-  branchNo: 1
   title: Reversed Reality
   location: Libis, Quezon City Branch
   icon:
@@ -34,7 +32,6 @@
 
 
 - slug: ticking-timebomb
-  branchNo: 1
   title: Ticking Time Bomb
   location: Libis, Quezon City Branch
   icon:
@@ -51,7 +48,6 @@
     <p>Solve quickly.</p>
 
 - slug: sinister-sensorium
-  branchNo: 2
   title: Sinister Sensorium
   location: Jupiter, Makati City Branch
   icon:
@@ -71,7 +67,6 @@
     <p>Can you escape the Sinister Sensorium? </p>
 
 - slug: rebeccas-room
-  branchNo: 2
   title: Rebecca's Room
   location: Jupiter, Makati City Branch
   icon:
@@ -89,7 +84,6 @@
     <p>Are you brave enough to enter Rebecca's Room?</p>
 
 - slug: world-of-wizardry
-  branchNo: 2
   title: World of Wizardry
   location: Jupiter, Makati City Branch
   icon:
@@ -105,15 +99,14 @@
     <p>As a trainee wizard, you and your friends are tasked to steal the magical time turner and stop Sidius from his evil master plan that will change the world of wizardry.</p>
 
 - slug: Villainous Vault
-  branchNo: 3
   title:  Villainous Vault
   location: Boracay Branch
   icon:
     position: 0 0
   sidebar_icon:
     position: 0 0
-  poster: /img/posters/world-of-wizardry.jpg
-  video: http://d3pfdit6z4xogx.cloudfront.net/videos/MM_WorldOfWizardry.mp4
+  poster: /img/posters/villanous-vault.jpg
+  video:
   frame:
     top: top-brush-frame-1
     bottom: bottom-brush-frame-4
@@ -121,15 +114,14 @@
     <p> A highly classified document that will cause a mass genocide has been contained in a secret vault on the island of Boracay. Your mission, if you choose to accept it, is to steal an information from an evil spy organization's high-security vault within an hour.</p>
 
 - slug: Chained Chamber
-  branchNo: 3
   title: Chained Chamber
   location: Boracay Branch
   icon:
     position: 0 0
   sidebar_icon:
     position: 0 0
-  poster: /img/posters/world-of-wizardry.jpg
-  video: http://d3pfdit6z4xogx.cloudfront.net/videos/MM_WorldOfWizardry.mp4
+  poster: /img/posters/chained-chamber.jpg
+  video:
   frame:
     top: top-brush-frame-1
     bottom: bottom-brush-frame-4
@@ -137,31 +129,29 @@
     <p>You and your friends are given 1 hour to escape the Chained Chamber devised by a psychopathic serial killer. Your group must make use of the riddles, puzzles and clues around to escape this deadly room. If your group fails to escape, you will be left for dead and stuck permanently inside the room. The choice is yours. Solve quickly.</p>
 
 - slug: Aztec Adventure
-  branchNo: 3
   title: Aztec Adventure
   location: Boracay Branch
   icon:
     position: 0 0
   sidebar_icon:
     position: 0 0
-  poster: /img/posters/world-of-wizardry.jpg
-  video: http://d3pfdit6z4xogx.cloudfront.net/videos/MM_WorldOfWizardry.mp4
+  poster: /img/posters/aztec-adventure.jpg
+  video:
   frame:
     top: top-brush-frame-1
     bottom: bottom-brush-frame-4
   description: >
     <p>Archeology Professor Jones was said to be missing in search of an artifact used by Queen Gilukhipa on an ancient Aztec ruin on the island of Boracay. While recovering his tracks inside the ruins, you found out that there are other groups that are after the artifact as well and they will do whatever it takes to grab hold of it.  With your life in danger, you have only 1 hour left to find the professor and the artifact before they find you inside the ruins and kill you.</p>
 
-- slug: Tainted Treasure
-  branchNo: 3
+- slug: Tainted Treasure`
   title: Tainted Treasure
   location: Boracay Branch
   icon:
     position: 0 0
   sidebar_icon:
     position: 0 0
-  poster: /img/posters/world-of-wizardry.jpg
-  video: http://d3pfdit6z4xogx.cloudfront.net/videos/MM_WorldOfWizardry.mp4
+  poster: /img/posters/tainted-treasure.jpg
+  video:
   frame:
     top: top-brush-frame-4
     bottom: bottom-brush-frame-5
