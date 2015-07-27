@@ -140,12 +140,33 @@ mm.navbar.init = function(){
 mm.sidebar = mm.sidebar || {};
 mm.sidebar.init = function () {
     var self = this;
-
+    var branchMakati = $('#sidebar .branch-makati');
+    var branchQuezon = $('#sidebar .branch-quezon');
+    var branchBoracay = $('#sidebar .branch-boracay');
+    branchQuezon.hide();
+    branchBoracay.hide();
     $(document).scroll(function () {
         //Show sidebar when needed
         if (($(document).scrollTop() >= $('#rooms').offset().top - 100)
             && $(document).scrollTop() <= $('#ig').offset().top - 500) {
             self.show();
+            if($(document).scrollTop() >= $('#sinister-sensorium').find('h2').offset().top - 600){
+                branchMakati.hide();
+                branchQuezon.show();
+            }
+            else if($(document).scrollTop() <= $('#sinister-sensorium').find('h2').offset().top - 600){
+                branchMakati.show();
+                branchQuezon.hide();
+            }
+            else if($(document).scrollTop() >= $('#villainous-vault').offset().top - 600){
+                alert('MEOW');
+                branchBoracay.show();
+                branchQuezon.hide();
+            }
+            else if($(document).scrollTop() <= $('#villainous-vault').find('h2').offset().top - 600){
+                branchQuezon.show();
+                branchBoracay.hide();
+            }
         } else {
             self.hide();
         }
