@@ -1,5 +1,17 @@
 <div id='sidebar' class="sidebar-hidden">
-    {% for room in site.data.rooms %}
+    <div class="branch-makati">
+        {% for room in site.data.rooms limit:3 %}
         <div class="sidebar-item room-icon" data-target="#{{ room.slug }}" style="background-position: {{ room.sidebar_icon.position }}"></div>
-    {% endfor %}
+        {% endfor %}
+    </div>
+    <div class="branch-quezon">
+        {% for room in site.data.rooms offset:3 limit:3 %}
+        <div class="sidebar-item room-icon" data-target="#{{ room.slug }}" style="background-position: {{ room.sidebar_icon.position }}"></div>
+        {% endfor %}
+    </div>
+    <div class="branch-boracay">
+        {% for room in site.data.rooms offset:6 limit:4 %}
+        <div class="sidebar-item room-icon" data-target="#{{ room.slug }}" style="background-position: {{ room.sidebar_icon.position }}"></div>
+        {% endfor %}
+    </div>
 </div>

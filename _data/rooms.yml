@@ -98,7 +98,7 @@
   description: >
     <p>As a trainee wizard, you and your friends are tasked to steal the magical time turner and stop Sidius from his evil master plan that will change the world of wizardry.</p>
 
-- slug: Villainous Vault
+- slug: villainous-vault
   title:  Villainous Vault
   location: Boracay Branch
   icon:
@@ -113,7 +113,7 @@
   description: >
     <p> A highly classified document that will cause a mass genocide has been contained in a secret vault on the island of Boracay. Your mission, if you choose to accept it, is to steal an information from an evil spy organization's high-security vault within an hour.</p>
 
-- slug: Chained Chamber
+- slug: chained-chamber
   title: Chained Chamber
   location: Boracay Branch
   icon:
@@ -128,7 +128,7 @@
   description: >
     <p>You and your friends are given 1 hour to escape the Chained Chamber devised by a psychopathic serial killer. Your group must make use of the riddles, puzzles and clues around to escape this deadly room. If your group fails to escape, you will be left for dead and stuck permanently inside the room. The choice is yours. Solve quickly.</p>
 
-- slug: Aztec Adventure
+- slug: aztec-adventure
   title: Aztec Adventure
   location: Boracay Branch
   icon:
@@ -143,7 +143,7 @@
   description: >
     <p>Archeology Professor Jones was said to be missing in search of an artifact used by Queen Gilukhipa on an ancient Aztec ruin on the island of Boracay. While recovering his tracks inside the ruins, you found out that there are other groups that are after the artifact as well and they will do whatever it takes to grab hold of it.  With your life in danger, you have only 1 hour left to find the professor and the artifact before they find you inside the ruins and kill you.</p>
 
-- slug: Tainted Treasure`
+- slug: tainted-treasure`
   title: Tainted Treasure
   location: Boracay Branch
   icon:
