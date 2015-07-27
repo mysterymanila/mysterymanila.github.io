@@ -142,6 +142,8 @@ nav
           content: " "
           display: table
           clear: both
+        .row
+          margin: 0
         a
           vertical-align: middle
         blockquote
@@ -210,12 +212,14 @@ nav
       background-position: bottom
 
 #branches
-  overflow-x: hidden
+  overflow: hidden
   position: relative
   .container
+    padding: 0px
     margin-top: 200px
     height: 860px
     .branches-container
+      margin: 0px
       min-height: 360px
       padding-top: 212px
       .branches-content
@@ -683,17 +687,20 @@ footer
         display: block
         margin-left: auto
         margin-right: auto
-        max-height: 370px
+        max-height: 295px
         margin-top: 32px
       img#scroll-to-teaser
         &.scroll-btn
           margin-top: 30px
+  #branches
+    .container
+      width: 100%
 
 @media screen and (min-width: 1000px)
   #cover
     .m-logo-container
       #m-logo
-        max-height: 480px
+        max-height: 295px
 
 @media screen and (max-width: 991px)
   .navbar-header
@@ -722,13 +729,25 @@ footer
   .collapse.in
     display: block !important
 
+  #branches
+    .container
+      height: 1400px
+      .branches-container
+        padding-top: 0px
+        .branches-content
+          margin: 135px 0px
+      .book-now-container
+        margin-top: -65px
+
+  #sidebar
+    display: none
+
   #faq
     .answer-container
       margin-left: 30px
 
+
 @media screen and (max-width: 800px)
-  #sidebar
-    display: none
   div#rooms
     .room
       .room-description
