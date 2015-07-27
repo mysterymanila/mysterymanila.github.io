@@ -102,9 +102,9 @@
   title:  Villainous Vault
   location: Boracay Branch
   icon:
-    position: 0 0
+    position: -176px -179px
   sidebar_icon:
-    position: 0 0
+    position: -176px -179px
   poster: /img/posters/villanous-vault.jpg
   video:
   frame:
@@ -117,9 +117,9 @@
   title: Chained Chamber
   location: Boracay Branch
   icon:
-    position: 0 0
+    position: -88px -179px
   sidebar_icon:
-    position: 0 0
+    position: -88px -179px
   poster: /img/posters/chained-chamber.jpg
   video:
   frame:
@@ -132,9 +132,9 @@
   title: Aztec Adventure
   location: Boracay Branch
   icon:
-    position: 0 0
+    position: 0 -257px
   sidebar_icon:
-    position: 0 0
+    position: 0 -257px
   poster: /img/posters/aztec-adventure.jpg
   video:
   frame:
@@ -147,9 +147,9 @@
   title: Tainted Treasure
   location: Boracay Branch
   icon:
-    position: 0 0
+    position: 0 -174px
   sidebar_icon:
-    position: 0 0
+    position: 0 -174px
   poster: /img/posters/tainted-treasure.jpg
   video:
   frame:
