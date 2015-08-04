@@ -18,9 +18,9 @@ mm.init = function(){
     //mm.initScrollToTeaser();
     mm.initQuotesRotator();
     mm.initEaseBranches();
-    mm.initEaseBoracay();
     mm.initScrollBranches();
     mm.initBranchesMouseOver();
+    mm.initBranchOnClick();
     $('body').trigger('scroll');
 
     setTimeout(function(){
@@ -53,19 +53,28 @@ mm.initEaseBranches = function(){
         $(this).parent().find('li').each(function(index){
             $(this).toggleClass("transition" + (index + 1));
         });
-    });
-    setTimeout(function(){
-        $('li .branches-icon').removeClass("branch-icon");
-    }, 2000);
-};
+        $('.boracay-logo-button').click(function(){
+            $(this).parent().find('li').each(function(index){
+                $(this).toggleClass("transition" + (index + 4));
+            });
 
-mm.initEaseBoracay = function(){
-    $('.boracay-logo-button').click(function(){
-        $(this).parent().find('li').each(function(index){
-            $(this).toggleClass("transition" + (index + 4));
         });
-
     });
+
+    //onhover implementation
+    //$('.brand-logo-button').on('mouseenter',function(){
+    //    $(this).parent().find('li').each(function(index){
+    //        console.log('enter');
+    //        $(this).addClass("transition" + (index + 1));
+    //    });
+    //});
+    //
+    //$('.brand-logo-button').on('mouseout',function(){
+    //    $(this).parent().find('li').each(function(index){
+    //        console.log('exit');
+    //        $(this).removeClass("transition" + (index + 1));
+    //    });
+    //});
 };
 
 mm.initQuotesRotator = function(){
