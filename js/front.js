@@ -49,7 +49,7 @@ mm.initScrollBranches = function(){
 
 mm.initEaseBranches = function(){
     $('.brand-logo-button').click(function(){
-        $(this).parent().find('li').each(function(index){
+        $(this).parent().find('li').each(function (index) {
             $(this).toggleClass("transition" + (index + 1));
         });
     });
