@@ -52,13 +52,14 @@ mm.initEaseBranches = function(){
         $(this).parent().find('li').each(function(index){
             $(this).toggleClass("transition" + (index + 1));
         });
-        $('.boracay-logo-button').click(function(){
-            $(this).parent().find('li').each(function(index){
-                $(this).toggleClass("transition" + (index + 4));
-            });
-
-        });
     });
+    $('.boracay-logo-button').click(function(){
+        $(this).parent().find('li').each(function(index){
+            $(this).toggleClass("transition" + (index + 4));
+        });
+
+    });
+
 
     //onhover implementation
     //$('.brand-logo-button').on('mouseenter',function(){
