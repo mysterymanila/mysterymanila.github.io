@@ -20,7 +20,6 @@ mm.init = function(){
     mm.initEaseBranches();
     mm.initScrollBranches();
     mm.initBranchesMouseOver();
-    mm.initBranchOnClick();
     $('body').trigger('scroll');
 
     setTimeout(function(){
