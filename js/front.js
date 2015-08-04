@@ -74,6 +74,7 @@ mm.initEaseBranches = function(){
     //        $(this).removeClass("transition" + (index + 1));
     //    });
     //});
+
 };
 
 mm.initQuotesRotator = function(){
