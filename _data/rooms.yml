@@ -39,6 +39,17 @@
     <p>If you fail, millions of people will be in danger.</p>
 
 
+- slug: rebeccas-revenge
+  title: Rebecca's Revenge
+  location: Libis, Quezon City Branch
+  icon:
+      position: -87px -262px
+  sidebar_icon:
+    position: -52px -156px
+  poster: /img/posters/coming-soon.jpg
+  frame:
+      top: top-brush-frame-1
+
 - slug: ticking-timebomb
   title: Ticking Time Bomb
   location: Libis, Quezon City Branch

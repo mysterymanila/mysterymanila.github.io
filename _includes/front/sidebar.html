@@ -1,6 +1,6 @@
 <div id='sidebar' class="sidebar-hidden">
     <div class="branch-makati">
-        {% for room in site.data.rooms limit:3 %}
+        {% for room in site.data.rooms limit:4 %}
         <div class="sidebar-item room-icon" data-target="#{{ room.slug }}" style="background-position: {{ room.sidebar_icon.position }}"></div>
         {% endfor %}
     </div>
