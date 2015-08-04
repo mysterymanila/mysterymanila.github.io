@@ -5,15 +5,15 @@
         </a>
         <h3>MAKATI CITY</h3>
         <ul>
-            {% for game in site.data.games limit:3 offset:3 %}
+            {% for mystery in site.data.rooms limit:3 offset:3 %}
             <li class="branches-icon">
-                <a class="branch-name-btn" data-target="#{{ game.name }}" href="javascript:void(0)">
-                    <span class="branch-label" data-target="#{{ game.name }}">
-                        <p class="text-center">{{ game.name | upcase}}</p>
+                <a class="branch-name-btn" data-target="#{{ mystery.slug }}" href="javascript:void(0)">
+                    <span class="branch-label">
+                        <p class="text-center">{{ mystery.slug | upcase}}</p>
                     </span>
                 </a>
                 <a class="branch-button" href="javascript:void(0)">
-                    <img border="0" style="width: {{game.width}}; background-position: {{ game.position }}"  class="center-block branches-icon" src="http://www-cdr.stanford.edu/~petrie/blank.gif"/>
+                    <img border="0" style="width: {{mystery.branch.width}}; background-position: {{ mystery.branch.position }}"  class="center-block branches-icon" src="http://www-cdr.stanford.edu/~petrie/blank.gif"/>
                 </a>
             </li>
             {% endfor %}

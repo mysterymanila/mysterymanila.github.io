@@ -28,7 +28,7 @@
   position: 0px 0px
   width: 75px
 
-- name: villainous vault
+- name: villainous-vault
   class: transition4
   position: -155px -158px
   width: 75px

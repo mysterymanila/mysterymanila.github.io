@@ -1,6 +1,10 @@
 - slug: buried-bodies
   title: Buried Bodies
   location: Libis, Quezon City Branch
+  branch:
+    class: transition1
+    position: -78px 0px
+    width: 75px
   icon:
     position: -88px 0
   sidebar_icon:
@@ -13,9 +17,14 @@
   description: >
     <p>Enigma strikes again. The psychopathic killer challenges you to escape from his graveyard using clues and puzzles hidden around the dark cemetery. Some of you will need to solve clues while being buried alive while others roam free to look for objects to help you escape.</p>
 
+
 - slug: reversed-reality
   title: Reversed Reality
   location: Libis, Quezon City Branch
+  branch:
+    class: transition2
+    position: -156px -80px
+    width: 75px
   icon:
     position: -176px -88px
   sidebar_icon:
@@ -33,6 +42,10 @@
 - slug: ticking-timebomb
   title: Ticking Time Bomb
   location: Libis, Quezon City Branch
+  branch:
+    class: transition3
+    position: -156px 0px
+    width: 75px
   icon:
     position: -176px 0
   sidebar_icon:
@@ -45,9 +58,14 @@
   description: >
     <p>You are all part of Metro Manila's elite bomb squad and have been called to disarm a ticking time bomb placed by a deranged psychopath at the heart of the city. To solve the mystery, you will need to go outside Mystery Manila and explore the nearby areas by foot to look for important clues. You have 90 minutes to disarm the bomb before it explodes.</p>
 
+
 - slug: sinister-sensorium
   title: Sinister Sensorium
   location: Jupiter, Makati City Branch
+  branch:
+    class: transition1
+    position: 0px -80px
+    width: 75px
   icon:
     position: 0 -88px
   sidebar_icon:
@@ -64,9 +82,14 @@
     <p>The clock is ticking. Solve quickly.</p>
     <p>Can you escape the Sinister Sensorium? </p>
 
+
 - slug: rebeccas-room
   title: Rebecca's Room
   location: Jupiter, Makati City Branch
+  branch:
+    class: transition2
+    position: -78px -80px
+    width: 75px
   icon:
     position: -88px -88px
   sidebar_icon:
@@ -82,6 +105,10 @@
 - slug: world-of-wizardry
   title: World of Wizardry
   location: Jupiter, Makati City Branch
+  branch:
+    class: transition3
+    position: 0px 0px
+    width: 75px
   icon:
     position: 0 0
   sidebar_icon:
@@ -97,6 +124,10 @@
 - slug: villainous-vault
   title:  Villainous Vault
   location: Boracay Branch
+  branch:
+    class: transition4
+    position: -155px -158px
+    width: 75px
   icon:
     position: -176px -174px
   sidebar_icon:
@@ -112,6 +143,10 @@
 - slug: chained-chamber
   title: Chained Chamber
   location: Boracay Branch
+  branch:
+    class: transition5
+    position: -78px -158px
+    width: 75px
   icon:
     position: -87px -174px
   sidebar_icon:
@@ -126,6 +161,10 @@
 - slug: aztec-adventure
   title: Aztec Adventure
   location: Boracay Branch
+  branch:
+    class: transition6
+    position: 0px -238px
+    width: 75px
   icon:
     position: 0 -262px
   sidebar_icon:
@@ -141,6 +180,10 @@
 - slug: tainted-treasure
   title: Tainted Treasure
   location: Boracay Branch
+  branch:
+    class: transition7
+    position: 0px -158px
+    width: 75px
   icon:
     position: 0 -174px
   sidebar_icon:
