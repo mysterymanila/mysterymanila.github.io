@@ -11,8 +11,7 @@
     top: top-brush-frame-3
     bottom: bottom-brush-frame-2
   description: >
-    <p>Enigma strikes again. The psychopathic killer challenges you to escape from his graveyard using clues and puzzles hidden around the dark cemetery. Some of you are buried alive while others roam free to look for objects to help you escape.</p>
-    <p>If you don't solve the mystery in 60 minutes, you will be buried amongst the dead and will be stuck in the graveyard for eternity.</p>
+    <p>Enigma strikes again. The psychopathic killer challenges you to escape from his graveyard using clues and puzzles hidden around the dark cemetery. Some of you will need to solve clues while being buried alive while others roam free to look for objects to help you escape.</p>
 
 - slug: reversed-reality
   title: Reversed Reality
@@ -44,8 +43,7 @@
     top: top-brush-frame-2
     bottom: bottom-brush-frame-1
   description: >
-    <p>You are all part of Metro Manila's elite bomb squad and have been called to disarm a ticking time bomb placed by a deranged psychopath at the heart of the city. To solve the mystery, you may need to go outside Mystery Manila and explore the nearby areas by foot to look for important clues. You have 90 minutes to disarm the bomb before it explodes.</p>
-    <p>Solve quickly.</p>
+    <p>You are all part of Metro Manila's elite bomb squad and have been called to disarm a ticking time bomb placed by a deranged psychopath at the heart of the city. To solve the mystery, you will need to go outside Mystery Manila and explore the nearby areas by foot to look for important clues. You have 90 minutes to disarm the bomb before it explodes.</p>
 
 - slug: sinister-sensorium
   title: Sinister Sensorium
@@ -79,9 +77,7 @@
     top: top-brush-frame-5
     bottom: bottom-brush-frame-6
   description: >
-    <p>Play the role of spirit questers out to give peace to Rebecca's soul. You are given 60 minutes inside Rebecca's Room to solve her mysterious disappearance.</p>
-    <p>While inside the room, you find that there is more behind her disappearance. You even experience some paranormal events...</p><p>what could these mean?</p>
-    <p>Are you brave enough to enter Rebecca's Room?</p>
+    <p>Play the role of spirit questors out to give peace to Rebecca's soul. You are given 60 minutes inside Rebecca's Room to solve her mysterious death.</p>
 
 - slug: world-of-wizardry
   title: World of Wizardry
@@ -96,7 +92,7 @@
     top: top-brush-frame-1
     bottom: bottom-brush-frame-4
   description: >
-    <p>As a trainee wizard, you and your friends are tasked to steal the magical time turner and stop Sidius from his evil master plan that will change the world of wizardry.</p>
+    <p>As a trainee wizard, you and your friends are tasked to steal the magical time turner and stop Sidius from his evil master plan that will change the world of wizardry. To do this you must learn to mix potions, cast spells and solve magical puzzles. Hurry, the world of wizardry is counting on you!</p>
 
 - slug: villainous-vault
   title:  Villainous Vault
@@ -111,7 +107,7 @@
     top: top-brush-frame-1
     bottom: bottom-brush-frame-4
   description: >
-    <p> A highly classified document that will cause a mass genocide has been contained in a secret vault on the island of Boracay. Your mission, if you choose to accept it, is to steal an information from an evil spy organization's high-security vault within an hour.</p>
+    <p>A highly classified document that will cause a mass genocide has been contained in a secret vault on the island of Boracay. Your mission, if you choose to accept it, is to steal [an] information from an evil spy organization's high-security vault within an hour and save the world!</p>
 
 - slug: chained-chamber
   title: Chained Chamber
@@ -126,8 +122,7 @@
     top: top-brush-frame-1
     bottom: bottom-brush-frame-4
   description: >
-    <p>You and your friends are given 1 hour to escape the Chained Chamber devised by a psychopathic serial killer. Your group must make use of the riddles, puzzles and clues around to escape this deadly room. If your group fails to escape, you will be left for dead and stuck permanently inside the room. The choice is yours. Solve quickly.</p>
-
+    <p>You and your friends are kidnapped by psychopathic killer Enigma and only given 1 hour to escape the Chained Chamber. You must prove your worth by solving the riddles, puzzles and clues cleverly hidden inside. If you fail to escape, you will all be left for dead and stuck permanently inside.</p>
 - slug: aztec-adventure
   title: Aztec Adventure
   location: Boracay Branch
