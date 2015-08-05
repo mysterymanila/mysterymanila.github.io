@@ -49,6 +49,7 @@
   poster: /img/posters/coming-soon.jpg
   frame:
       top: top-brush-frame-1
+      bottom: bottom-brush-frame-1
 
 - slug: ticking-timebomb
   title: Ticking Time Bomb

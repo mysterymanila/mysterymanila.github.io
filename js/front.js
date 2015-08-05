@@ -175,7 +175,7 @@ mm.sidebar.init = function () {
                 && $(document).scrollTop() <= $('#villainous-vault').find('h2').offset().top - 600
                 || $(document).scrollTop() >= $('#villainous-vault').find('h2').offset().top - 600
             ){
-                branchMakati.hide();
+                branchMakati.hide().animate('');
                 branchQuezon.hide();
                 branchBoracay.show();
             }
