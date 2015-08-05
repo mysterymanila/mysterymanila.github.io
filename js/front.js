@@ -48,48 +48,36 @@ mm.initScrollBranches = function(){
 };
 
 mm.initEaseBranches = function() {
-    if (!$('.brand-logo-button').hasClass('button-active')) {
-        $('.brand-logo-button').click(function () {
-            $(this).toggleClass('button-active');
-            $(this).parent().find('li').each(function (index) {
-                $(this).toggleClass("transition" + (index + 1));
-            });
+    var quezonBranch = $('.quezon-branch-button');
+    var makatiBranch = $('.makati-branch-button');
+    var boracayBranch = $('.boracay-branch-button');
+    quezonBranch.click(function () {
+        makatiBranch.parent().find('li').removeClass();
+        boracayBranch.parent().find('li').removeClass();
+        $(this).parent().find('li').each(function (index) {
+            $(this).toggleClass("transition" + (index + 1));
         });
-    }
-    else if($('.brand-logo-button').hasClass('button-active')) {
-        $('.brand-logo-button').not(this).parent().find('li').each(function (index) {
-            $('.brand-logo-button').removeClass("transition" + (index + 1));
-        });
-        $('.brand-logo-button').click(function () {
-            $(this).toggleClass('button-active');
-            $(this).parent().find('li').each(function (index) {
-                $(this).toggleClass("transition" + (index + 1));
-            });
-        });
-    }
-};
-
-$('.boracay-logo-button').click(function () {
-    $(this).parent().find('li').each(function (index) {
-        $(this).toggleClass("transition" + (index + 4));
     });
 
-});
-        //onhover implementation
-        //$('.brand-logo-button').on('mouseenter',function(){
-    //    $(this).parent().find('li').each(function(index){
-    //        console.log('enter');
-    //        $(this).addClass("transition" + (index + 1));
-    //    });
-    //});
-    //
-    //$('.brand-logo-button').on('mouseout',function(){
-    //    $(this).parent().find('li').each(function(index){
-    //        console.log('exit');
-    //        $(this).removeClass("transition" + (index + 1));
-    //    });
-    //});
+    makatiBranch.click(function () {
+        quezonBranch.parent().find('li').removeClass();
+        boracayBranch.parent().find('li').removeClass();
+        $(this).toggleClass('branch-active');
+        $(this).parent().find('li').each(function (index) {
+            $(this).toggleClass("transition" + (index + 1));
+        });
+    });
 
+    boracayBranch.click(function () {
+        quezonBranch.parent().find('li').removeClass();
+        makatiBranch.parent().find('li').removeClass();
+        $(this).toggleClass('branch-active');
+        $(this).parent().find('li').each(function (index) {
+            $(this).toggleClass("transition" + (index + 4));
+        });
+
+    });
+};
 
 mm.initQuotesRotator = function(){
     $( '#cbp-qtrotator' ).cbpQTRotator();
