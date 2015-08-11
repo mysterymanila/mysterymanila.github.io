@@ -51,32 +51,41 @@ mm.initEaseBranches = function() {
     var quezonBranch = $('.quezon-branch-button');
     var makatiBranch = $('.makati-branch-button');
     var boracayBranch = $('.boracay-branch-button');
-    quezonBranch.click(function () {
+    quezonBranch.click(function (event) {
         makatiBranch.parent().find('li').removeClass();
         boracayBranch.parent().find('li').removeClass();
         $(this).parent().find('li').each(function (index) {
             $(this).toggleClass("transition" + (index + 1));
         });
+        event.stopPropagation();
     });
 
-    makatiBranch.click(function () {
+    makatiBranch.click(function (event) {
         quezonBranch.parent().find('li').removeClass();
         boracayBranch.parent().find('li').removeClass();
         $(this).toggleClass('branch-active');
         $(this).parent().find('li').each(function (index) {
             $(this).toggleClass("transition" + (index + 1));
         });
+        event.stopPropagation();
     });
 
-    boracayBranch.click(function () {
+    boracayBranch.click(function (event) {
         quezonBranch.parent().find('li').removeClass();
         makatiBranch.parent().find('li').removeClass();
         $(this).toggleClass('branch-active');
         $(this).parent().find('li').each(function (index) {
             $(this).toggleClass("transition" + (index + 4));
         });
-
+        event.stopPropagation();
     });
+    $(document).on("click", function(event) {
+        quezonBranch.parent().find('li').removeClass();
+        makatiBranch.parent().find('li').removeClass();
+        boracayBranch.parent().find('li').removeClass();
+    });
+
+
 };
 
 mm.initQuotesRotator = function(){
@@ -184,9 +193,6 @@ mm.sidebar.init = function () {
                 branchQuezon.show();
                 branchBoracay.hide();
             }
-
-
-
 
             //else if($(document).scrollTop() <= $('#villainous-vault').find('h2').offset().top - 600){
             //    branchBoracay.show();
