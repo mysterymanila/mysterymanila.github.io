@@ -50,6 +50,9 @@
   frame:
       top: top-brush-frame-1
       bottom: bottom-brush-frame-1
+  description: >
+    <p>Coming soon.</p>
+
 
 - slug: ticking-timebomb
   title: Ticking Time Bomb
