@@ -52,7 +52,7 @@
     position: 0 -350px
   sidebar_icon:
     position: 0 -208px
-  poster: /img/posters/coming-soon.jpg
+  poster: /img/posters/r3.jpg
   frame:
       top: top-brush-frame-1
       bottom: bottom-brush-frame-1
@@ -259,13 +259,17 @@
     position: -176px -350px
   sidebar_icon:
     position: -106px -210px
-  poster: /img/posters/coming-soon.jpg
+  poster: /img/posters/pp.jpg
   video:
   frame:
     top: top-brush-frame-4
     bottom: bottom-brush-frame-5
   description: >
-    <p>Coming soon.</p>
+    <p>The Pym Particle, when harnessed, allows one to manipulate atomic distances in effect shrinking or expanding objects.</p>
+    <p>You must infiltrate the office of the evil Dr. Cross to prevent the Pym Particle from falling into the wrong hands. </p>
+    <p>Unravel the clues and solve the puzzles found inside the room. If you don't solve the mystery, you will be left for dead. </p>
+    <p>The mission may not be as easy as you planned as some rooms are not the size you'd expect.</p>
+    
 
 - slug: crime-of-the-century
   title: Crime of the Century
@@ -279,16 +283,20 @@
     position: 0 -438px
   sidebar_icon:
     position: 0 -261px
-  poster: /img/posters/coming-soon.jpg
+  poster: /img/posters/coc.jpg
   video:
   frame:
     top: top-brush-frame-4
     bottom: bottom-brush-frame-5
   description: >
-    <p>Coming soon.</p>
+    <p>Enigma strikes again! After the the ticking time bomb he planted in Libis last year, he challenges Manila's finest once more by planting a bomb in the heart of the Makati Business Disctrict</p>
+    <p>He plans to cripple the economic capital of the country and cause chaos and panic to the people</p>
+    <p>It's up to you to diffuse the bomb in 90 minutes and prevent what can be the Crime of the Century</p>
+    <p>The clock is ticking. Solve quickly.</p>
+    
 
-- slug: virtual-venture
-  title: Virtual Venture
+- slug: virtual-voyage
+  title: Virtual Voyage
   location: Century City Mall
   branch:
     slug: century
@@ -299,10 +307,13 @@
     position: -88px -350px
   sidebar_icon:
     position: -53px -208px
-  poster: /img/posters/coming-soon.jpg
+  poster: /img/posters/vv.jpg
   video:
   frame:
     top: top-brush-frame-4
     bottom: bottom-brush-frame-5
   description: >
-    <p>Coming soon.</p>
+    <p>You are volunteers in an experimental program to test the boundaries of virtual reality.</p>
+    <p>Unfortunately, the experiment goes wrong and you are inadvertently trapped in the virtual world. </p>
+    <p>You must find a way to escape back to reality within 1 hour or else be trapped in limbo forever.</p>
+    
