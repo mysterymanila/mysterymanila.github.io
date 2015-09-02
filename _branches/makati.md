@@ -2,7 +2,7 @@
 id: 2
 rank: 2
 slug: jupiter
-name: Makati City
+name: Jupiter
 address: >
   2nd floor, G. A. Yupangco Building,<br>
   Jupiter St. and Gil Puyat Avenue corner Reposo St., <br>

@@ -78,31 +78,27 @@
   description: >
     <p>You are all part of Metro Manila's elite bomb squad and have been called to disarm a ticking time bomb placed by a deranged psychopath at the heart of the city. To solve the mystery, you will need to go outside Mystery Manila and explore the nearby areas by foot to look for important clues. You have 90 minutes to disarm the bomb before it explodes.</p>
 
-
-- slug: sinister-sensorium
-  title: Sinister Sensorium
-  location: Century City Mall
+- slug: order-of-the-oculus
+  title: Order of the Oculus
+  location: Jupiter
   branch:
-    slug: century
-    class: transition1
-    position: 0px -80px
+    slug: jupiter
+    class: transition7
+    position: 0px -158px
     width: 75px
   icon:
-    position: 0 -88px
+    position: 0 -174px
   sidebar_icon:
-      position: 0 -53px
-  poster: /img/posters/sinister-sensorium.jpg
-  video: http://d3pfdit6z4xogx.cloudfront.net/videos/MM_Sinister.mp4
+    position: 0 -102px
+  poster: http://www.luxottica.com/sites/luxottica.com/files/styles/main-img-768x450/public/main-image/copertina_neverhide.jpg
+  video:
   frame:
-    top: top-brush-frame-1
-    bottom: bottom-brush-frame-4
+    top: top-brush-frame-4
+    bottom: bottom-brush-frame-5
   description: >
-    <p>You and your friends have been held captive by the psychopathic killer named Enigma. He has taken away one sense from each of you. It could be your sense of hearing, speaking, or sight.</p>
-    <p>It's up to you to escape the room in 60 minutes using your remaining senses.</p>
-    <p>Unravel the clues and solve the puzzles found inside the room. If you don't solve the mystery, you will be left for dead. </p>
-    <p>The clock is ticking. Solve quickly.</p>
-    <p>Can you escape the Sinister Sensorium? </p>
-
+    <p>You've been invited to be part of the most prestigious secret society whose members include various prominent and influential people throughout history. You must prove yourself worthy by completing a series of challenges, same as all the other members that have gone before you.</p>
+    <p>Your ultimate challenge for this leg is to recover the valuable golden Ray-Ban from the mansion of the evil Dr. Hide who stole it from the Order to keep it for himself. You were able to infiltrate the mansion and you have an hour inside his room to steal the golden Ray-Ban.</p>
+    <p>Do you have what it takes to be a member of the Order of the Oculus?</p>
 
 - slug: rebeccas-room
   title: Rebecca's Room
@@ -225,11 +221,35 @@
   description: >
     <p>(Coming Soon)- A century old tale says that there was a treasure left by an unknown pirate on the island of Boracay. Due to the harshness and cruelty of the pirate against the island's locals, he was cursed by the island's tribal chief along with all the treasure the pirate acquired from his past voyages.  Decades passed and it has been said that anyone who touches the treasure will be cursed and eventually perish. It is because of this curse that the treasure was locked in a safe place to keep other treasure seekers from dying. Your mission is to unlock the treasure and break the curse within 90 minutes. As your reward, you get to keep the treasure. Are you ready to run around Boracay's White Beach, break the curse, and unlock the treasure in this outdoor mystery? The choice is yours.</p>
 
-- slug: order-of-the-oculus
-  title: Order of the Oculus
-  location: Jupiter
+- slug: sinister-sensorium
+  title: Sinister Sensorium
+  location: Century City Mall
   branch:
-    slug: jupiter
+    slug: century
+    class: transition1
+    position: 0px -80px
+    width: 75px
+  icon:
+    position: 0 -88px
+  sidebar_icon:
+      position: 0 -53px
+  poster: /img/posters/sinister-sensorium.jpg
+  video: http://d3pfdit6z4xogx.cloudfront.net/videos/MM_Sinister.mp4
+  frame:
+    top: top-brush-frame-1
+    bottom: bottom-brush-frame-4
+  description: >
+    <p>You and your friends have been held captive by the psychopathic killer named Enigma. He has taken away one sense from each of you. It could be your sense of hearing, speaking, or sight.</p>
+    <p>It's up to you to escape the room in 60 minutes using your remaining senses.</p>
+    <p>Unravel the clues and solve the puzzles found inside the room. If you don't solve the mystery, you will be left for dead. </p>
+    <p>The clock is ticking. Solve quickly.</p>
+    <p>Can you escape the Sinister Sensorium? </p>
+
+- slug: pym-particle
+  title: Pym Particle
+  location: Century City Mall
+  branch:
+    slug: century
     class: transition7
     position: 0px -158px
     width: 75px
@@ -237,12 +257,30 @@
     position: 0 -174px
   sidebar_icon:
     position: 0 -102px
-  poster: http://www.luxottica.com/sites/luxottica.com/files/styles/main-img-768x450/public/main-image/copertina_neverhide.jpg
+  poster: /img/posters/coming-soon.jpg
   video:
   frame:
     top: top-brush-frame-4
     bottom: bottom-brush-frame-5
   description: >
-    <p>You've been invited to be part of the most prestigious secret society whose members include various prominent and influential people throughout history. You must prove yourself worthy by completing a series of challenges, same as all the other members that have gone before you.</p>
-    <p>Your ultimate challenge for this leg is to recover the valuable golden Ray-Ban from the mansion of the evil Dr. Hide who stole it from the Order to keep it for himself. You were able to infiltrate the mansion and you have an hour inside his room to steal the golden Ray-Ban.</p>
-    <p>Do you have what it takes to be a member of the Order of the Oculus?</p>
+    <p>Coming soon.</p>
+
+- slug: crime-of-the-century
+  title: Crime of the Century
+  location: Century City Mall
+  branch:
+    slug: century
+    class: transition7
+    position: 0px -158px
+    width: 75px
+  icon:
+    position: 0 -174px
+  sidebar_icon:
+    position: 0 -102px
+  poster: /img/posters/coming-soon.jpg
+  video:
+  frame:
+    top: top-brush-frame-4
+    bottom: bottom-brush-frame-5
+  description: >
+    <p>Coming soon.</p>

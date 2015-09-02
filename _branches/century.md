@@ -1,6 +1,7 @@
 ---
 id: 3
-name: Mystery Manila - Century City Mall
+name: Century
+slug: century
 address: > 
   Unit L305 3rd Floor Century City Mall,<br>
   Kalayaan Ave. cor. Salamanca St, Brgy. Poblacion,<br>
