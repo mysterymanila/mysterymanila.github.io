@@ -12,7 +12,7 @@
 
 - question: How many can play?
   answer: > 
-    Depending on the mystery chosen, your group can play with a minimum of 2/3 up to a maximum of 5/6.
+    Depending on the mystery chosen, your group can play with a minimum of 2/3 up to a maximum of 6.
 
 - question: What if I have tried and solved mysteries for both branches already? When will the next new mysteries be available?
   answer: > 
@@ -33,24 +33,29 @@
     <table class="table">
         <thead>
             <th>No. of Pax</th>
-            <th>Price per Pax</th>
+            <th>Price per Pax(Manila Branches)</th>
+            <th>Price per Pax(Boracay Branch)</th>
         </thead>
         <tbody>
             <tr>
                 <td>2</td>
                 <td>550</td>
+                <td>650</td>
             </tr>
             <tr>
                 <td>3</td>
                 <td>500</td>
+                <td>600</td>
             </tr>
             <tr>
                 <td>4</td>
                 <td>450</td>
+                <td>550</td>
             </tr>
             <tr>
-                <td>5 or more</td>
+                <td>5 or 6</td>
                 <td>400</td>
+                <td>500</td>
             </tr>
         </tbody>
     </table>
@@ -98,11 +103,11 @@
 
 - question: What if I really want to play alone?
   answer: > 
-    Depending on the mystery, you can play alone if you really want to but you have to pay for the price of two players. The mysteries are designed to be solved by at least two players and a maximum of four. We believe that it is better and much more fun to solve mysteries together.
+    Depending on the mystery, you can play alone if you really want to but you have to pay for the price of two players. The mysteries are designed to be solved by at least two players and a maximum of six. We believe that it is better and much more fun to solve mysteries together.
 
 - question: What if we booked already but something comes up and we can't go to the game?
   answer: > 
-    Since booking and confirming your slot makes that specific slot unavailable for other customers, we cannot refund paid <bookin></bookings. You can however, transfer your booking to your family or friends who can play on your behalf.
+    Since booking and confirming your slot makes that specific slot unavailable for other customers, we cannot refund paid booking/s. You can however, transfer your booking to your family or friends who can play on your behalf.
 
 - question: What if someone who already played the game gives me answers to the mysteries? Wouldn't that spoil the experience?
   answer: >
