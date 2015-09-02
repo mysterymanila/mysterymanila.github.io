@@ -1,7 +1,9 @@
 ---
 id: 2
-name: Mystery Manila - Jupiter Makati
-address: > 
+rank: 2
+slug: jupiter
+name: Makati City
+address: >
   2nd floor, G. A. Yupangco Building,<br>
   Jupiter St. and Gil Puyat Avenue corner Reposo St., <br>
   Brgy. Bel Air, 1200 Makati City, Metro Manila, Philippines.<br>

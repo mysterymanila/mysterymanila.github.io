@@ -1,7 +1,9 @@
 ---
 id: 1
-name: Mystery Manila - Libis Quezon City
-address: > 
+rank: 3
+slug: libis
+name: Quezon City
+address: >
   Unit 9A, JW Plaza Building, 195 E. Rodriguez Jr Ave. <br>
   (also known as C5, right across the street from the entrance of Eastwood, Libis) <br>
   Brgy. Bagumbayan, 1110 Quezon City, Metro Manila, Philippines. <br>

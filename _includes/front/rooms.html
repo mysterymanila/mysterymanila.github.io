@@ -1,5 +1,5 @@
 {% for room in site.data.rooms %}
-{% if room.slug != "tainted-treasure" %}
+{% if room.hide != true %}
 <div id="{{room.slug}}" class="room clearfix">
     <div class="hero-content" data-stellar-ratio="0.7">
         <video class="room-video" poster="{{ room.poster }}" loop preload="none" data-play-status="pause">

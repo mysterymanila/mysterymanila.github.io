@@ -2,6 +2,7 @@
   title: Buried Bodies
   location: Libis, Quezon City Branch
   branch:
+    slug: libis
     class: transition1
     position: -78px 0px
     width: 75px
@@ -22,6 +23,7 @@
   title: Reversed Reality
   location: Libis, Quezon City Branch
   branch:
+    slug: libis
     class: transition2
     position: -156px -80px
     width: 75px
@@ -42,6 +44,8 @@
 - slug: rebeccas-revenge
   title: Rebecca's Revenge
   location: Libis, Quezon City Branch
+  branch:
+    slug: libis
   icon:
       position: -87px -262px
   sidebar_icon:
@@ -58,6 +62,7 @@
   title: Ticking Time Bomb
   location: Libis, Quezon City Branch
   branch:
+    slug: libis
     class: transition3
     position: -156px 0px
     width: 75px
@@ -76,8 +81,9 @@
 
 - slug: sinister-sensorium
   title: Sinister Sensorium
-  location: Jupiter, Makati City Branch
+  location: Century City Mall
   branch:
+    slug: century
     class: transition1
     position: 0px -80px
     width: 75px
@@ -102,6 +108,7 @@
   title: Rebecca's Room
   location: Jupiter, Makati City Branch
   branch:
+    slug: jupiter
     class: transition2
     position: -78px -80px
     width: 75px
@@ -121,6 +128,7 @@
   title: World of Wizardry
   location: Jupiter, Makati City Branch
   branch:
+    slug: jupiter
     class: transition3
     position: 0px 0px
     width: 75px
@@ -140,6 +148,7 @@
   title:  Villainous Vault
   location: Boracay Branch
   branch:
+    slug: boracay
     class: transition4
     position: -155px -158px
     width: 75px
@@ -159,6 +168,7 @@
   title: Chained Chamber
   location: Boracay Branch
   branch:
+    slug: boracay
     class: transition5
     position: -78px -158px
     width: 75px
@@ -173,10 +183,12 @@
     bottom: bottom-brush-frame-4
   description: >
     <p>You and your friends are kidnapped by psychopathic killer Enigma and only given 1 hour to escape the Chained Chamber. You must prove your worth by solving the riddles, puzzles and clues cleverly hidden inside. If you fail to escape, you will all be left for dead and stuck permanently inside.</p>
+
 - slug: aztec-adventure
   title: Aztec Adventure
   location: Boracay Branch
   branch:
+    slug: boracay
     class: transition6
     position: 0px -238px
     width: 75px
@@ -193,9 +205,11 @@
     <p>Archeology Professor Jones was said to be missing in search of an artifact used by Queen Gilukhipa on an ancient Aztec ruin on the island of Boracay. While recovering his tracks inside the ruins, you found out that there are other groups that are after the artifact as well and they will do whatever it takes to grab hold of it.  With your life in danger, you have only 1 hour left to find the professor and the artifact before they find you inside the ruins and kill you.</p>
 
 - slug: tainted-treasure
+  hide: true
   title: Tainted Treasure
   location: Boracay Branch
   branch:
+    slug: boracay
     class: transition7
     position: 0px -158px
     width: 75px
@@ -211,3 +225,24 @@
   description: >
     <p>(Coming Soon)- A century old tale says that there was a treasure left by an unknown pirate on the island of Boracay. Due to the harshness and cruelty of the pirate against the island's locals, he was cursed by the island's tribal chief along with all the treasure the pirate acquired from his past voyages.  Decades passed and it has been said that anyone who touches the treasure will be cursed and eventually perish. It is because of this curse that the treasure was locked in a safe place to keep other treasure seekers from dying. Your mission is to unlock the treasure and break the curse within 90 minutes. As your reward, you get to keep the treasure. Are you ready to run around Boracay's White Beach, break the curse, and unlock the treasure in this outdoor mystery? The choice is yours.</p>
 
+- slug: order-of-the-oculus
+  title: Order of the Oculus
+  location: Jupiter
+  branch:
+    slug: jupiter
+    class: transition7
+    position: 0px -158px
+    width: 75px
+  icon:
+    position: 0 -174px
+  sidebar_icon:
+    position: 0 -102px
+  poster: http://www.luxottica.com/sites/luxottica.com/files/styles/main-img-768x450/public/main-image/copertina_neverhide.jpg
+  video:
+  frame:
+    top: top-brush-frame-4
+    bottom: bottom-brush-frame-5
+  description: >
+    <p>You've been invited to be part of the most prestigious secret society whose members include various prominent and influential people throughout history. You must prove yourself worthy by completing a series of challenges, same as all the other members that have gone before you.</p>
+    <p>Your ultimate challenge for this leg is to recover the valuable golden Ray-Ban from the mansion of the evil Dr. Hide who stole it from the Order to keep it for himself. You were able to infiltrate the mansion and you have an hour inside his room to steal the golden Ray-Ban.</p>
+    <p>Do you have what it takes to be a member of the Order of the Oculus?</p>
