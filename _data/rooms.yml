@@ -46,10 +46,12 @@
   location: Libis, Quezon City Branch
   branch:
     slug: libis
+    position: 0px -318px
+    width: 75px
   icon:
-      position: -87px -262px
+    position: 0 -350px
   sidebar_icon:
-    position: -52px -156px
+    position: 0 -208px
   poster: /img/posters/coming-soon.jpg
   frame:
       top: top-brush-frame-1
@@ -84,12 +86,12 @@
   branch:
     slug: jupiter
     class: transition7
-    position: 0px -158px
+    position: -155px -238px
     width: 75px
   icon:
-    position: 0 -174px
+    position: -176px -262px
   sidebar_icon:
-    position: 0 -102px
+    position: -106px -157px
   poster: http://www.luxottica.com/sites/luxottica.com/files/styles/main-img-768x450/public/main-image/copertina_neverhide.jpg
   video:
   frame:
@@ -251,12 +253,12 @@
   branch:
     slug: century
     class: transition7
-    position: 0px -158px
+    position: -155px -318px
     width: 75px
   icon:
-    position: 0 -174px
+    position: -176px -350px
   sidebar_icon:
-    position: 0 -102px
+    position: -106px -210px
   poster: /img/posters/coming-soon.jpg
   video:
   frame:
@@ -271,12 +273,32 @@
   branch:
     slug: century
     class: transition7
-    position: 0px -158px
+    position: 0px -398px
     width: 75px
   icon:
-    position: 0 -174px
+    position: 0 -438px
   sidebar_icon:
-    position: 0 -102px
+    position: 0 -261px
+  poster: /img/posters/coming-soon.jpg
+  video:
+  frame:
+    top: top-brush-frame-4
+    bottom: bottom-brush-frame-5
+  description: >
+    <p>Coming soon.</p>
+
+- slug: virtual-venture
+  title: Virtual Venture
+  location: Century City Mall
+  branch:
+    slug: century
+    class: transition7
+    position: -78px -318px
+    width: 75px
+  icon:
+    position: -88px -350px
+  sidebar_icon:
+    position: -53px -208px
   poster: /img/posters/coming-soon.jpg
   video:
   frame:
