@@ -9,6 +9,6 @@ address: >
 telephone: 
   - (+63) 917 559 40 10
 availability:
-  - 1pm to 930pm Weekdays
-  - 9am to 930pm Holidays and Weekends
+  - 1 PM to 9:30 PM Mondays to Fridays
+  - 9 AM to 9:30 PM Holidays/Saturdays/Sundays
 ---
