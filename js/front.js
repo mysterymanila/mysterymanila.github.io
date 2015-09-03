@@ -246,7 +246,8 @@ mm.initGlass = function () {
 };
 
 mm.initVideos = function () {
-    if ($(window).width() >= 767) {
+    var MIN_WIDTH_SCREEN_FOR_VIDEOS = 767
+    if ($(window).width() >= MIN_WIDTH_SCREEN_FOR_VIDEOS) {
         $(document).scroll(function () {
             $('.room-video').each(function (index, video) {
                 $video = $(video);
