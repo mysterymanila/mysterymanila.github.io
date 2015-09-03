@@ -1,19 +1,11 @@
 <div id='sidebar' class="sidebar-hidden">
-    <div class="branch-makati">
-        {% for room in site.data.rooms limit:4 %}
-        <div class="sidebar-item room-icon" data-target="#{{ room.slug }}" style="background-position: {{ room.sidebar_icon.position }}"></div>
-        {% endfor %}
-    </div>
-    <div class="branch-quezon">
-        {% for room in site.data.rooms offset:4 limit:3 %}
-        <div class="sidebar-item room-icon" data-target="#{{ room.slug }}" style="background-position: {{ room.sidebar_icon.position }}"></div>
-        {% endfor %}
-    </div>
-    <div class="branch-boracay">
-        {% for room in site.data.rooms offset:7 limit:4 %}
-        <!--{% if room.slug != "tainted-treasure" %}-->
-        <div class="sidebar-item room-icon" data-target="#{{ room.slug }}" style="background-position: {{ room.sidebar_icon.position }}"></div>
-        <!--{% endif %}-->
-        {% endfor %}
-    </div>
+    {% for branch in site.branches %}
+        <div class="sidebar-branch sidebar-branch-{{ branch.slug }}">
+            {% for room in site.data.rooms %}
+                {% if room.branch.slug == branch.slug and room.hide != true %}
+                    <div class="sidebar-item room-icon" data-target="#{{ room.slug }}" style="background-position: {{ room.sidebar_icon.position }}"></div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    {% endfor %}
 </div>

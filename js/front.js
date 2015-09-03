@@ -149,48 +149,30 @@ mm.navbar.init = function(){
 mm.sidebar = mm.sidebar || {};
 mm.sidebar.init = function () {
     var self = this;
-    var branchMakati = $('#sidebar .branch-makati');
-    var branchQuezon = $('#sidebar .branch-quezon');
-    var branchBoracay = $('#sidebar .branch-boracay');
-    branchQuezon.hide();
-    branchBoracay.hide();
     $(document).scroll(function () {
-        //Show sidebar when needed
-        if (($(document).scrollTop() >= $('#rooms').offset().top - 100)
-            && $(document).scrollTop() <= $('#ig').offset().top - 500) {
-            self.show();
-            if($(document).scrollTop() >= $('#ticking-timebomb').find('h2').offset().top + 200
-               && $(document).scrollTop() <= $('#sinister-sensorium').find('h2').offset().top - 600
-            ){
-                branchMakati.hide();
-                branchQuezon.show();
-            }
-            else if($(document).scrollTop() <= $('#sinister-sensorium').find('h2').offset().top - 600){
-                branchMakati.show();
-                branchQuezon.hide();
-            }
-            else if($(document).scrollTop() >= $('#world-of-wizardry').find('h2').offset().top + 200
-                && $(document).scrollTop() <= $('#villainous-vault').find('h2').offset().top - 600
-                || $(document).scrollTop() >= $('#villainous-vault').find('h2').offset().top - 600
-            ){
-                branchMakati.hide().animate('');
-                branchQuezon.hide();
-                branchBoracay.show();
-            }
-            else if($(document).scrollTop() <= $('#world-of-wizardry').find('h2').offset().top + 200){
-                branchMakati.hide();
-                branchQuezon.show();
-                branchBoracay.hide();
-            }
 
-            //else if($(document).scrollTop() <= $('#villainous-vault').find('h2').offset().top - 600){
-            //    branchBoracay.show();
-            //    branchQuezon.hide();
-            //}
-            //else if($(document).scrollTop() <= $('#villainous-vault').find('h2').offset().top - 600){
-            //    branchQuezon.show();
-            //    branchBoracay.hide();
-            //}
+        var scrollTop = $(document).scrollTop();
+
+        //Show sidebar when needed
+        if ((scrollTop >= $('#rooms').offset().top - 100)
+            && scrollTop <= $('#ig').offset().top - 500) {
+
+            self.show();
+
+            var nearest = _.min($('.room h2'), function(room){
+                var diff = $(room).offset().top - scrollTop;
+                if( diff < 0 ){
+                    return;
+                }else{
+                    return diff;
+                }
+            });
+
+            var nearestBranch = $(nearest).closest('.room').data('branch');
+
+            $('.sidebar-branch').not('.sidebar-branch-'+nearestBranch).hide();
+            $('.sidebar-branch-'+nearestBranch).show();
+
         } else {
             self.hide();
         }

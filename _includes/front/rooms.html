@@ -2,7 +2,7 @@
 {% for branch in sorted-branch %}
     {% for room in site.data.rooms %}
         {% if room.branch.slug == branch.slug and room.hide != true %}
-            <div id="{{room.slug}}" class="room clearfix">
+            <div id="{{room.slug}}" class="room clearfix" data-branch="{{ room.branch.slug }}">
                 <div class="hero-content" data-stellar-ratio="0.7">
                     <video class="room-video" poster="{{ room.poster }}" loop preload="none" data-play-status="pause">
                         <source src="{{ room.video }}" type="video/mp4">
