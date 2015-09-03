@@ -58,9 +58,6 @@ mm.initScrollBranches = function(){
 };
 
 mm.initEaseBranches = function() {
-    var quezonBranch = $('.quezon-branch-button');
-    var makatiBranch = $('.makati-branch-button');
-    var boracayBranch = $('.boracay-branch-button');
 
     $('.branches-button-container > a').click(function(event){
       event.stopPropagation();
@@ -74,12 +71,9 @@ mm.initEaseBranches = function() {
       });
     });
 
-    $(document).on("click", function(event) {
-        quezonBranch.parent().find('li').removeClass();
-        makatiBranch.parent().find('li').removeClass();
-        boracayBranch.parent().find('li').removeClass();
+    $(document).on("click", function() {
+        $('.branches-button-container li').removeClass();
     });
-
 
 };
 
