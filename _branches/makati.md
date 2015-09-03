@@ -13,10 +13,7 @@ telephone:
   - (+63) 917 559 40 10
 availability:
   - 1 PM to 9:30 PM Mondays to Fridays
-  - 9 PM to 9:30 PM Holidays/Saturdays/Sundays
-tripAdvisor:
-  uniq: 726
-  locationId: 7336529
+  - 9 AM to 9:30 PM Holidays/Saturdays/Sundays
 ---
 <div id="TA_socialButtonReviews726" class="TA_socialButtonReviews">
   <ul id="anK57tqO" class="TA_links XlzeS8tC9">
@@ -25,3 +22,4 @@ tripAdvisor:
     </li>
   </ul>
 </div>
+<script src="http://www.jscache.com/wejs?wtype=socialButtonReviews&amp;uniq=726&amp;locationId=7336529&amp;color=green&amp;size=rect&amp;lang=en_PH&amp;display_version=2"></script>
