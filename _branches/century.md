@@ -1,6 +1,6 @@
 ---
 id: 3
-name: Century
+name: Century City Mall
 slug: century
 address: > 
   Unit L305 3rd Floor Century City Mall,<br>
