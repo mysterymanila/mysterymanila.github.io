@@ -42,12 +42,12 @@ mm.init = function(){
 mm.initBranchesMouseOver = function(){
   $('.branches-icon .branch-label').hide();
   $('.branches-icon').on('mouseenter', function(){
-     $(this).find('.branch-button img').css({opacity:1})
-     $(this).find('span').fadeIn(100);
+     $(this).find('.branch-button .branches-icon').css({opacity:1})
+     $(this).find('.branch-label').fadeIn(100);
   });
   $('.branches-icon').on('mouseleave', function(){
-     $(this).find('.branch-button img').css({opacity:0.5})
-     $(this).find('span').fadeOut(100);
+     $(this).find('.branch-button .branches-icon').css({opacity:0.5})
+     $(this).find('.branch-label').fadeOut(100);
   });
 };
 
