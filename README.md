@@ -1,4 +1,4 @@
-#MYSERY MANILA
+#MYSTERY MANILA
 
 Fonts and Font Usage
 -------
