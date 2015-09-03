@@ -17,7 +17,7 @@
                     <h2>{{ room.title}}</h2>
                 </div>
                 {{ room.description }}
-                <h4>LOCATION: {{ room.location | upcase }}</h4>
+                <h4>BRANCH: {{ site.branches | where:'slug',room.branch.slug | map: 'name' | first | upcase}}</h4>
                 <a class="book-now" href="http://booknow.mysterymanila.com/" target="_blank">
                     BOOK NOW <img id="book-arrow" src="/img/arrow.png" height="25px"/>
                 </a>

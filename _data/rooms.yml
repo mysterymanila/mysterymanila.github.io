@@ -1,6 +1,5 @@
 - slug: buried-bodies
   title: Buried Bodies
-  location: Libis, Quezon City Branch
   branch:
     slug: libis
     class: transition1
@@ -21,7 +20,6 @@
 
 - slug: reversed-reality
   title: Reversed Reality
-  location: Libis, Quezon City Branch
   branch:
     slug: libis
     class: transition2
@@ -43,7 +41,6 @@
 
 - slug: rebeccas-revenge
   title: Rebecca's Revenge
-  location: Libis, Quezon City Branch
   branch:
     slug: libis
     position: 0px -318px
@@ -66,7 +63,6 @@
 
 - slug: ticking-timebomb
   title: Ticking Time Bomb
-  location: Libis, Quezon City Branch
   branch:
     slug: libis
     class: transition3
@@ -86,7 +82,6 @@
 
 - slug: order-of-the-oculus
   title: Order of the Oculus
-  location: Jupiter
   branch:
     slug: jupiter
     class: transition7
@@ -108,7 +103,6 @@
 
 - slug: rebeccas-room
   title: Rebecca's Room
-  location: Jupiter, Makati City Branch
   branch:
     slug: jupiter
     class: transition2
@@ -128,7 +122,6 @@
 
 - slug: world-of-wizardry
   title: World of Wizardry
-  location: Jupiter, Makati City Branch
   branch:
     slug: jupiter
     class: transition3
@@ -148,7 +141,6 @@
 
 - slug: villainous-vault
   title:  Villainous Vault
-  location: Boracay Branch
   branch:
     slug: boracay
     class: transition4
@@ -168,7 +160,6 @@
 
 - slug: chained-chamber
   title: Chained Chamber
-  location: Boracay Branch
   branch:
     slug: boracay
     class: transition5
@@ -188,7 +179,6 @@
 
 - slug: aztec-adventure
   title: Aztec Adventure
-  location: Boracay Branch
   branch:
     slug: boracay
     class: transition6
@@ -209,7 +199,6 @@
 - slug: tainted-treasure
   hide: true
   title: Tainted Treasure
-  location: Boracay Branch
   branch:
     slug: boracay
     class: transition7
@@ -229,7 +218,6 @@
 
 - slug: sinister-sensorium
   title: Sinister Sensorium
-  location: Century City Mall
   branch:
     slug: century
     class: transition1
@@ -253,7 +241,6 @@
 
 - slug: pym-particle
   title: Pym Particle
-  location: Century City Mall
   branch:
     slug: century
     class: transition7
@@ -277,7 +264,6 @@
 
 - slug: crime-of-the-century
   title: Crime of the Century
-  location: Century City Mall
   branch:
     slug: century
     class: transition7
@@ -301,7 +287,6 @@
 
 - slug: virtual-voyage
   title: Virtual Voyage
-  location: Century City Mall
   branch:
     slug: century
     class: transition7
