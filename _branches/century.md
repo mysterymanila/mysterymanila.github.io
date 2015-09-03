@@ -9,7 +9,7 @@ address: >
 telephone: 
   - (+63) 2 218 20 12  
   - (+63) 917 820 64 69    
- availability:
+availability:
   - 1 PM to 9:30 PM Mondays to Fridays
   - 9 AM to 9:30 PM Holidays/Saturdays/Sundays
 ---
