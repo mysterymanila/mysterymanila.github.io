@@ -2,12 +2,12 @@
 <div class="container">    
         <ul class="questions">
         {% for item in site.data.faq %}
-            <li class="clearfix {% if forloop.first %} active{% endif %}">
+            <li class="clearfix">
                 <div class="col-md-5">
                     <h5><a href="#answer-{{forloop.index}}">{{ item.question | upcase }}</a></h5>
                 </div>
                 <div class="col-md-7 answer-container">
-                    <span class="answer" id="answer-{{forloop.index}}" {% unless forloop.first %}style="display:none"{% endunless %}>
+                    <span class="answer" id="answer-{{forloop.index}}" style="display:none">
                         {{ item.answer }}
                     </span>
                 </div>

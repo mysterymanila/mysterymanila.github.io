@@ -2,6 +2,7 @@
   title: Buried Bodies
   location: Libis, Quezon City Branch
   branch:
+    slug: libis
     class: transition1
     position: -78px 0px
     width: 75px
@@ -22,6 +23,7 @@
   title: Reversed Reality
   location: Libis, Quezon City Branch
   branch:
+    slug: libis
     class: transition2
     position: -156px -80px
     width: 75px
@@ -42,22 +44,29 @@
 - slug: rebeccas-revenge
   title: Rebecca's Revenge
   location: Libis, Quezon City Branch
+  branch:
+    slug: libis
+    position: 0px -318px
+    width: 75px
   icon:
-      position: -87px -262px
+    position: 0 -350px
   sidebar_icon:
-    position: -52px -156px
-  poster: /img/posters/coming-soon.jpg
+    position: 0 -208px
+  poster: /img/posters/r3.jpg
   frame:
       top: top-brush-frame-1
       bottom: bottom-brush-frame-1
   description: >
-    <p>Coming soon.</p>
+    <p>A group of spirit questors were hired to solve the mystery of Rebecca's disappearance from her room in Jupiter, Makati City. </Pa></P>After a few hours of investigating the paranormal activities inside the room, they thought they managed to solve the mystery. However, this didn't give peace to Rebecca's soul. The spirit questors left the scene thinking their work was done... all along leaving the spirit of Rebecca trapped inside her room.</p>
+    <p></p>
+    
 
 
 - slug: ticking-timebomb
   title: Ticking Time Bomb
   location: Libis, Quezon City Branch
   branch:
+    slug: libis
     class: transition3
     position: -156px 0px
     width: 75px
@@ -73,35 +82,33 @@
   description: >
     <p>You are all part of Metro Manila's elite bomb squad and have been called to disarm a ticking time bomb placed by a deranged psychopath at the heart of the city. To solve the mystery, you will need to go outside Mystery Manila and explore the nearby areas by foot to look for important clues. You have 90 minutes to disarm the bomb before it explodes.</p>
 
-
-- slug: sinister-sensorium
-  title: Sinister Sensorium
-  location: Jupiter, Makati City Branch
+- slug: order-of-the-oculus
+  title: Order of the Oculus
+  location: Jupiter
   branch:
-    class: transition1
-    position: 0px -80px
+    slug: jupiter
+    class: transition7
+    position: -155px -238px
     width: 75px
   icon:
-    position: 0 -88px
+    position: -176px -262px
   sidebar_icon:
-      position: 0 -53px
-  poster: /img/posters/sinister-sensorium.jpg
-  video: http://d3pfdit6z4xogx.cloudfront.net/videos/MM_Sinister.mp4
+    position: -106px -157px
+  poster: http://www.luxottica.com/sites/luxottica.com/files/styles/main-img-768x450/public/main-image/copertina_neverhide.jpg
+  video:
   frame:
-    top: top-brush-frame-1
-    bottom: bottom-brush-frame-4
+    top: top-brush-frame-4
+    bottom: bottom-brush-frame-5
   description: >
-    <p>You and your friends have been held captive by the psychopathic killer named Enigma. He has taken away one sense from each of you. It could be your sense of hearing, speaking, or sight.</p>
-    <p>It's up to you to escape the room in 60 minutes using your remaining senses.</p>
-    <p>Unravel the clues and solve the puzzles found inside the room. If you don't solve the mystery, you will be left for dead. </p>
-    <p>The clock is ticking. Solve quickly.</p>
-    <p>Can you escape the Sinister Sensorium? </p>
-
+    <p>You've been invited to be part of the most prestigious secret society whose members include various prominent and influential people throughout history. You must prove yourself worthy by completing a series of challenges, same as all the other members that have gone before you.</p>
+    <p>Your ultimate challenge for this leg is to recover the valuable golden Ray-Ban from the mansion of the evil Dr. Hide who stole it from the Order to keep it for himself. You were able to infiltrate the mansion and you have an hour inside his room to steal the golden Ray-Ban.</p>
+    <p>Do you have what it takes to be a member of the Order of the Oculus?</p>
 
 - slug: rebeccas-room
   title: Rebecca's Room
   location: Jupiter, Makati City Branch
   branch:
+    slug: jupiter
     class: transition2
     position: -78px -80px
     width: 75px
@@ -121,6 +128,7 @@
   title: World of Wizardry
   location: Jupiter, Makati City Branch
   branch:
+    slug: jupiter
     class: transition3
     position: 0px 0px
     width: 75px
@@ -140,6 +148,7 @@
   title:  Villainous Vault
   location: Boracay Branch
   branch:
+    slug: boracay
     class: transition4
     position: -155px -158px
     width: 75px
@@ -153,12 +162,13 @@
     top: top-brush-frame-1
     bottom: bottom-brush-frame-4
   description: >
-    <p>A highly classified document that will cause a mass genocide has been contained in a secret vault on the island of Boracay. Your mission, if you choose to accept it, is to steal [an] information from an evil spy organization's high-security vault within an hour and save the world!</p>
+    <p>A highly classified document that will cause a mass genocide has been contained in a secret vault on the island of Boracay. Your mission, if you choose to accept it, is to steal information from an evil spy organization's high-security vault within an hour and save the world!</p>
 
 - slug: chained-chamber
   title: Chained Chamber
   location: Boracay Branch
   branch:
+    slug: boracay
     class: transition5
     position: -78px -158px
     width: 75px
@@ -173,10 +183,12 @@
     bottom: bottom-brush-frame-4
   description: >
     <p>You and your friends are kidnapped by psychopathic killer Enigma and only given 1 hour to escape the Chained Chamber. You must prove your worth by solving the riddles, puzzles and clues cleverly hidden inside. If you fail to escape, you will all be left for dead and stuck permanently inside.</p>
+
 - slug: aztec-adventure
   title: Aztec Adventure
   location: Boracay Branch
   branch:
+    slug: boracay
     class: transition6
     position: 0px -238px
     width: 75px
@@ -193,9 +205,11 @@
     <p>Archeology Professor Jones was said to be missing in search of an artifact used by Queen Gilukhipa on an ancient Aztec ruin on the island of Boracay. While recovering his tracks inside the ruins, you found out that there are other groups that are after the artifact as well and they will do whatever it takes to grab hold of it.  With your life in danger, you have only 1 hour left to find the professor and the artifact before they find you inside the ruins and kill you.</p>
 
 - slug: tainted-treasure
+  hide: true
   title: Tainted Treasure
   location: Boracay Branch
   branch:
+    slug: boracay
     class: transition7
     position: 0px -158px
     width: 75px
@@ -211,3 +225,97 @@
   description: >
     <p>(Coming Soon)- A century old tale says that there was a treasure left by an unknown pirate on the island of Boracay. Due to the harshness and cruelty of the pirate against the island's locals, he was cursed by the island's tribal chief along with all the treasure the pirate acquired from his past voyages.  Decades passed and it has been said that anyone who touches the treasure will be cursed and eventually perish. It is because of this curse that the treasure was locked in a safe place to keep other treasure seekers from dying. Your mission is to unlock the treasure and break the curse within 90 minutes. As your reward, you get to keep the treasure. Are you ready to run around Boracay's White Beach, break the curse, and unlock the treasure in this outdoor mystery? The choice is yours.</p>
 
+- slug: sinister-sensorium
+  title: Sinister Sensorium
+  location: Century City Mall
+  branch:
+    slug: century
+    class: transition1
+    position: 0px -80px
+    width: 75px
+  icon:
+    position: 0 -88px
+  sidebar_icon:
+      position: 0 -53px
+  poster: /img/posters/sinister-sensorium.jpg
+  video: http://d3pfdit6z4xogx.cloudfront.net/videos/MM_Sinister.mp4
+  frame:
+    top: top-brush-frame-1
+    bottom: bottom-brush-frame-4
+  description: >
+    <p>You and your friends have been held captive by the psychopathic killer named Enigma. He has taken away one sense from each of you. It could be your sense of hearing, speaking, or sight.</p>
+    <p>It's up to you to escape the room in 60 minutes using your remaining senses.</p>
+    <p>Unravel the clues and solve the puzzles found inside the room. If you don't solve the mystery, you will be left for dead. </p>
+    <p>The clock is ticking. Solve quickly.</p>
+    <p>Can you escape the Sinister Sensorium? </p>
+
+- slug: pym-particle
+  title: Pym Particle
+  location: Century City Mall
+  branch:
+    slug: century
+    class: transition7
+    position: -155px -318px
+    width: 75px
+  icon:
+    position: -176px -350px
+  sidebar_icon:
+    position: -106px -210px
+  poster: /img/posters/pp.jpg
+  video:
+  frame:
+    top: top-brush-frame-4
+    bottom: bottom-brush-frame-5
+  description: >
+    <p>The Pym Particle, when harnessed, allows one to manipulate atomic distances in effect shrinking or expanding objects.</p>
+    <p>You must infiltrate the office of the evil Dr. Cross to prevent the Pym Particle from falling into the wrong hands. </p>
+    <p>Unravel the clues and solve the puzzles found inside the room. If you don't solve the mystery, you will be left for dead. </p>
+    <p>The mission may not be as easy as you planned as some rooms are not the size you'd expect.</p>
+    
+
+- slug: crime-of-the-century
+  title: Crime of the Century
+  location: Century City Mall
+  branch:
+    slug: century
+    class: transition7
+    position: 0px -398px
+    width: 75px
+  icon:
+    position: 0 -438px
+  sidebar_icon:
+    position: 0 -261px
+  poster: /img/posters/coc.jpg
+  video:
+  frame:
+    top: top-brush-frame-4
+    bottom: bottom-brush-frame-5
+  description: >
+    <p>Enigma strikes again! After the the ticking time bomb he planted in Libis last year, he challenges Manila's finest once more by planting a bomb in the heart of the Makati Business Disctrict</p>
+    <p>He plans to cripple the economic capital of the country and cause chaos and panic to the people</p>
+    <p>It's up to you to diffuse the bomb in 90 minutes and prevent what can be the Crime of the Century</p>
+    <p>The clock is ticking. Solve quickly.</p>
+    
+
+- slug: virtual-voyage
+  title: Virtual Voyage
+  location: Century City Mall
+  branch:
+    slug: century
+    class: transition7
+    position: -78px -318px
+    width: 75px
+  icon:
+    position: -88px -350px
+  sidebar_icon:
+    position: -53px -208px
+  poster: /img/posters/vv.jpg
+  video:
+  frame:
+    top: top-brush-frame-4
+    bottom: bottom-brush-frame-5
+  description: >
+    <p>You are volunteers in an experimental program to test the boundaries of virtual reality.</p>
+    <p>Unfortunately, the experiment goes wrong and you are inadvertently trapped in the virtual world. </p>
+    <p>You must find a way to escape back to reality within 1 hour or else be trapped in limbo forever.</p>
+    

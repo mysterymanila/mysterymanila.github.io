@@ -1,7 +1,9 @@
 ---
 id: 2
-name: Mystery Manila - Jupiter Makati
-address: > 
+rank: 2
+slug: jupiter
+name: Jupiter
+address: >
   2nd floor, G. A. Yupangco Building,<br>
   Jupiter St. and Gil Puyat Avenue corner Reposo St., <br>
   Brgy. Bel Air, 1200 Makati City, Metro Manila, Philippines.<br>
@@ -11,7 +13,7 @@ telephone:
   - (+63) 917 559 40 10
 availability:
   - 1 PM to 9:30 PM Mondays to Fridays
-  - 9 PM to 9:30 PM Holidays/Saturdays/Sundays
+  - 9 AM to 9:30 PM Holidays/Saturdays/Sundays
 ---
 <div id="TA_socialButtonReviews726" class="TA_socialButtonReviews">
   <ul id="anK57tqO" class="TA_links XlzeS8tC9">

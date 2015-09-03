@@ -1,7 +1,9 @@
 ---
 id: 3
-name: Mystery Manila - Boracay
-address: > 
+rank: 1
+slug: boracay
+name: Boracay
+address: >
   3rd Floor Alexandrea Building, Main Road,<br>
   Station 1 Boracay, Brgy. Balabag,<br>
   5608  Malay, Aklan , Philippines.<br>

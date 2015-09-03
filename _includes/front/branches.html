@@ -1,19 +1,37 @@
 <div class="container">
     <div class="row branches-container" id="branch">
         <div class="col-md-12">
-            {% include front/branches/qc.html %}
-            {% include front/branches/makati.html %}
-            {% include front/branches/boracay.html %}
+
+          {% for branch in site.branches | sort: 'rank' %}
+          <div class="col-md-3 branches-content" align="center">
+              <div class="branches-button-container" align="center">
+                  <a href="javascript:void(0)">
+                      <img style="z-index: 100" class="center-block branches-image" src="/img/brand-logo.png"/>
+                  </a>
+                  <h3>{{ branch.name | upcase }}</h3>
+                  <ul>
+                      {% for mystery in site.data.rooms %}
+                        {% if mystery.branch.slug == branch.slug and mystery.hide != true %}
+                          <li class="branches-icon">
+                              <a class="branch-name-btn" data-target="#{{ mystery.slug }}" href="javascript:void(0)">
+                                  <span class="branch-label">
+                                      <p class="text-center">{{ mystery.slug | upcase}}</p>
+                                  </span>
+                              </a>
+                              <a class="branch-button" href="">
+                                  <img border="0" style="width: {{mystery.branch.width}}; background-position: {{ mystery.branch.position }}"  class="center-block branches-icon" src="http://www-cdr.stanford.edu/~petrie/blank.gif"/>
+                              </a>
+                          </li>
+                        {% endif %}
+                      {% endfor %}
+                  </ul>
+              </div>
+          </div>
+          {% endfor %}
+
         </div>
     </div>
     <div class="book-now-container" align="center">
-        <a class="book-now-button book-now" href="http://www.mysterymanila.com/booknow.php" target="_blank">BOOK NOW</a>
+        <a class="book-now-button book-now" href="http://booknow.mysterymanila.com/" target="_blank">BOOK NOW</a>
     </div>
 </div>
-
-
-
-
-
-
-
