@@ -1,6 +1,6 @@
 ---
 id: 1
-rank: 3
+rank: 4
 slug: libis
 name: Quezon City
 address: >
