@@ -13,6 +13,9 @@ telephone:
   - (+63) 917 823 21 55
 availability:
   - 1pm to 930pm Everyday
+tripAdvisor:
+  uniq: 678
+  locationId: 7983257
 ---
 
 <div id="TA_socialButtonReviews678" class="TA_socialButtonReviews">

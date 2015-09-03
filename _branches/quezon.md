@@ -13,6 +13,9 @@ telephone:
 availability:
     - 1 PM to 9:30 PM Mondays to Fridays 
     - 9 PM to 9:30 PM Holidays/Saturdays/Sundays
+tripAdvisor:
+    uniq: 71
+    locationId: 7142887
 ---
 <div id="TA_socialButtonReviews71" class="TA_socialButtonReviews">
   <ul id="icxi0ooFtBLn" class="TA_links lhj6es3">
@@ -21,8 +24,3 @@ availability:
     </li>
   </ul>
 </div>
-
-
-
-
-  

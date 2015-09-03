@@ -61,5 +61,11 @@
 
 </div>
 
+{% for branch in site.branches %}
+  {% if branch.tripAdvisor %}
+    <script src="http://www.jscache.com/wejs?wtype=socialButtonReviews&uniq={{ branch.tripAdvisor.uniq }}&locationId={{ branch.tripAdvisor.locationId }}&color=green&size=sm&lang=en_PH&display_version=2"></script>
+  {% endif %}
+{% endfor %}
+
 
 
