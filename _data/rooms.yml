@@ -250,7 +250,7 @@
     position: -176px -350px
   sidebar_icon:
     position: -106px -210px
-  poster: /img/posters/pp.jpg
+  poster: https://cloud.githubusercontent.com/assets/10861641/9649848/0bd1dae6-522d-11e5-8143-67c573d98d35.jpg
   video:
   frame:
     top: top-brush-frame-4
@@ -273,7 +273,7 @@
     position: 0 -438px
   sidebar_icon:
     position: 0 -261px
-  poster: /img/posters/coc.jpg
+  poster: https://cloud.githubusercontent.com/assets/10861641/9649850/0bd423b4-522d-11e5-9e2b-9dc8390f73fe.jpg
   video:
   frame:
     top: top-brush-frame-4
