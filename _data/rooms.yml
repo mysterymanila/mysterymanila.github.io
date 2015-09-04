@@ -250,7 +250,7 @@
     position: -176px -350px
   sidebar_icon:
     position: -106px -210px
-  poster: https://cloud.githubusercontent.com/assets/10861641/9649849/0bd3f196-522d-11e5-8048-bc545dc80a9c.jpg
+  poster: /img/posters/pym.jpg
   video:
   frame:
     top: top-brush-frame-4
@@ -273,7 +273,7 @@
     position: 0 -438px
   sidebar_icon:
     position: 0 -261px
-  poster: https://cloud.githubusercontent.com/assets/10861641/9649850/0bd423b4-522d-11e5-9e2b-9dc8390f73fe.jpg
+  poster: /img/posters/crime.jpg
   video:
   frame:
     top: top-brush-frame-4
@@ -296,7 +296,7 @@
     position: -88px -350px
   sidebar_icon:
     position: -53px -208px
-  poster: https://cloud.githubusercontent.com/assets/10861641/9649848/0bd1dae6-522d-11e5-8143-67c573d98d35.jpg
+  poster: /img/posters/virtual.jpg
   video:
   frame:
     top: top-brush-frame-4
