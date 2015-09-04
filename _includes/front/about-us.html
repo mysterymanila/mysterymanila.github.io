@@ -36,7 +36,7 @@
   <div class="row">
     {% assign branches = site.branches | sort: 'rank' %}
     {% for branch in branches %}
-    <div class="col-md-6">
+    <div class="col-md-6 branches-info">
       <h3 class="brand">{{ branch.name | upcase }}</h3>
       <address>
         <br>
