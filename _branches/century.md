@@ -8,7 +8,7 @@ address: >
   Kalayaan Ave. cor. Salamanca St, Brgy. Poblacion,<br>
   1210  Makati City , Philippines.<br>
 telephone: 
-  - (+632) 218 20 12
+  - (+632) 718 92 51
   - (+63) 917 820 64 69
 availability:
   - 1 PM to 9:30 PM Mondays to Fridays
