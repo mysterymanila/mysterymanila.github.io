@@ -181,6 +181,9 @@ mm.sidebar.init = function () {
     $('.sidebar-item').click(function(){
         $('html, body').animate({scrollTop:$($(this).data('target')).position().top}, 'slow');
     });
+    $('.branch-item').click(function(){
+        $('html, body').animate({scrollTop:$($(this).data('target')).position().top}, 'slow');
+    });
 };
 
 mm.sidebar.show = function () {

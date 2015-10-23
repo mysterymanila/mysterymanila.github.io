@@ -1,0 +1,11 @@
+- slugBranch: buried-bodies
+  image: /img/branches/quezon.png
+
+- slugBranch: order-of-the-oculus
+  image: /img/branches/jupiter.png
+
+- slugBranch: sinister-sensorium
+  image: /img/branches/century.png
+
+- slugBranch: villainous-vault
+  image: /img/branches/boracay.png

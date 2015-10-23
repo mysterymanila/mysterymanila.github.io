@@ -1,11 +1,15 @@
 <div id='sidebar' class="sidebar-hidden">
+    {% for branch in site.data.branch %}
+    <div class="branch-item" data-target="#{{ branch.slugBranch }}" style="background: url('{{ branch.image }}');background-size: 65px;background-repeat: no-repeat"></div>
+    {% endfor %}
+
     {% for branch in site.branches %}
-        <div class="sidebar-branch sidebar-branch-{{ branch.slug }}">
-            {% for room in site.data.rooms %}
-                {% if room.branch.slug == branch.slug and room.hide != true %}
-                    <div class="sidebar-item room-icon" data-target="#{{ room.slug }}" style="background-position: {{ room.sidebar_icon.position }}"></div>
-                {% endif %}
-            {% endfor %}
-        </div>
+    <div class="sidebar-branch sidebar-branch-{{ branch.slug }}">
+        {% for room in site.data.rooms %}
+        {% if room.branch.slug == branch.slug and room.hide != true %}
+        <div class="sidebar-item room-icon" data-target="#{{ room.slug }}" style="background-position: {{ room.sidebar_icon.position }}"></div>
+        {% endif %}
+        {% endfor %}
+    </div>
     {% endfor %}
 </div>
