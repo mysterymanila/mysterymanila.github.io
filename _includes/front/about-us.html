@@ -8,7 +8,26 @@
   <p>challenging them to solve their way out with friends in </p>
   <p>60 minutes</p>
 </div>
+<div class="col-md-12" id="email-us">
+  <h5 class="text-center">{{'You may email us at' | upcase}}</h5>
+  <h1 class="text-center">info@mysterymanila.com</h1>
+  <div class="col-md-offset-4 col-md-4 mailchimp-container">
+    <h5 class="text-center">{{ 'Or subscribe to get promo updates' | upcase}}</h5>
+    <div id="mc_embed_signup">
+      <form class="form" action="{{ site.mailchimp.form_action }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="blank">
+        <div class="form-group">
+          <label class="text-center">Email Address</label>
+          <input class="form-control" id="mce-EMAIL" type="email" name="EMAIL" required>
+        </div>
+        <div style="position: absolute; left: -5000px;"><input type="text" name="b_adcaf98baa115e601f7273ef6_bd9785a80c" tabindex="-1" value=""></div>
 
+        <div class="clear">
+          <button class="btn btn-default col-md-12" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">{{'Subscribe' | upcase}}</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
 <div class="container">
   <h2 class="section-header">BRANCHES</h2>
 
@@ -45,25 +64,3 @@
     <script src="http://www.jscache.com/wejs?wtype=socialButtonReviews&uniq={{ branch.tripAdvisor.uniq }}&locationId={{ branch.tripAdvisor.locationId }}&color=green&size=sm&lang=en_PH&display_version=2"></script>
   {% endif %}
 {% endfor %}
-
-
-<div class="col-md-12" id="email-us">
-  <h5 class="text-center">{{'You may email us at' | upcase}}</h5>
-  <h1 class="text-center">info@mysterymanila.com</h1>
-  <div class="col-md-offset-4 col-md-4 mailchimp-container">
-    <h5 class="text-center">{{ 'Or subscribe to get promo updates' | upcase}}</h5>
-    <div id="mc_embed_signup">
-      <form class="form" action="{{ site.mailchimp.form_action }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="blank">
-        <div class="form-group">
-          <label class="text-center">Email Address</label>
-          <input class="form-control" id="mce-EMAIL" type="email" name="EMAIL" required>
-        </div>
-        <div style="position: absolute; left: -5000px;"><input type="text" name="b_adcaf98baa115e601f7273ef6_bd9785a80c" tabindex="-1" value=""></div>
-
-        <div class="clear">
-          <button class="btn btn-default col-md-12" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">{{'Subscribe' | upcase}}</button>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
