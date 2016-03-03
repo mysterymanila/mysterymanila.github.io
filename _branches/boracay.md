@@ -12,7 +12,7 @@ telephone:
   - (+63) 36 390 0745
   - (+63) 917 823 21 55
 availability:
-  - 1pm to 930pm Everyday
+  - 1pm to 9:30pm Everyday
 ---
 <div id="TA_socialButtonReviews678" class="TA_socialButtonReviews">
   <ul id="OW2qPaCmHsip" class="TA_links TQJkPO4">
