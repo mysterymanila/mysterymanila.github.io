@@ -1,45 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-    {% include header/front-head.html %}
-    <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
-    <script src="js/modernizr.custom.js"></script>
-    <script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	  ga('create', 'UA-49854580-1', 'mysterymanila.com');
-	  ga('send', 'pageview');
-     </script>
+    {% include header/head.html %}
 </head>
-    <!--<body>-->
-    <body id="mock">
-    {% include nav-header.html %}
-    {{ content }}
-    {% include footer.html %}
-    <script src="/js/underscore-min.js"></script>
-    <script src="/js/jquery-2.1.1.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/front.js"></script>
-    <script src="/js/isInViewport.min.js"></script>
-    <script src="/js/jquery.stellar.min.js"></script>
-    <script src="js/jquery.cbpQTRotator.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function(){
-      $.stellar({
-        horizontalScrolling: false,
-        scrollProperty: 'scroll',
-        positionProperty: 'position',
-        responsive: true,
-        hideDistantElements: false,
-        horizontalOffset: 0,
-        verticalOffset: 0
-      });
-    });
-    </script>
 
-  </body>
+<body>
+
+{% include nav-header.html %}
+{{ content }}
+{% include footer.html %}
+
+<script src="/js/underscore-min.js"></script>
+<script src="/js/jquery-2.1.1.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/isInViewport.min.js"></script>
+<script src="/js/jquery.stellar.min.js"></script>
+<script src="js/jquery.cbpQTRotator.js"></script>
+<script src="/js/front.js"></script>
+<script src="/js/main.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+        $.stellar({
+            horizontalScrolling: false,
+            scrollProperty: 'scroll',
+            positionProperty: 'position',
+            responsive: true,
+            hideDistantElements: false,
+            horizontalOffset: 0,
+            verticalOffset: 0
+        });
+    });
+</script>
+
+</body>
 
 </html>
