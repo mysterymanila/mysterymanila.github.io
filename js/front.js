@@ -27,7 +27,7 @@ mm.init = function(){
         mm.runInstagramFeed(),
         mm.runFacebookWidget(),
         mm.runTwitterWidget()
-    }, 10);
+    }, 3000);
 };
 
 
