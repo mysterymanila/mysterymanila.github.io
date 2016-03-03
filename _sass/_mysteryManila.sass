@@ -1,111 +1,6 @@
-//#mock
-//  opacity: 0.7
-//  background: url("/img/mock.jpg")
-//  background-size: contain
-//  background-repeat: no-repeat
-
-/* colors
 $white: white
 $black: black
 $levi-text: LeviReBrushed
-
-@font-face
-  font-family: LeviReBrushed
-  src: url(/fonts/LeviReBrushed.ttf)
-
-.brand
-  font-family: "futura-pt"
-
-body
-  font-family: 'Gotham SSm A', 'Gotham SSm B', 'sans-serif'
-  font-size: 17px
-  font-weight: 400
-  background-color: $black !important
-  background-image: url(/img/mystery-wall.jpg)
-  background-size: cover
-  background-attachment: fixed
-
-header
-  border: 0 !important
-
-h2.section-header
-  font-family: "futura-pt", sans-serif
-  letter-spacing: 2px
-  border-bottom: 2px solid #fff
-  padding-top: 30px
-  margin: 0px 0px 30px 0px
-  width: -moz-fit-content
-  width: -webkit-fit-content
-  margin-left: auto
-  margin-right: auto
-
-.brand
-  font-family: "futura-pt", sans-serif
-  letter-spacing: 1px
-
-/*header style
-
-nav
-  font-family: "futura-pt",sans-serif
-  &#work-navbar
-    background-color: $black
-    border-color: transparent
-    &.navbar-visible
-      top: 0
-    &.navbar-hidden
-      top: -100px
-    &.navbar
-      min-height: 68px
-      transition: linear 0.25s
-    a
-      color: $white
-      text-decoration: none
-    .nav-container
-      margin: 0 12px
-      padding-top: 0
-      padding-bottom: 0
-      .navbar-header
-        .navbar-brand
-          height: 66px
-          padding-top: 0
-          padding-bottom: 0
-          line-height: 55px
-          a
-            img
-              top: auto
-              margin-top: 15px
-              float: left
-              &.brand-logo-small
-                height: 43px
-            #nav-title
-              float: left
-              margin: 7px 0px 0px 15px
-              letter-spacing: 1px
-              font-size: 24px
-        button
-          margin-top: 20px
-      /* end of navbar-header
-      .navbar-collapse
-        border-color: transparent
-        .navbar-right
-          margin-right: 15px
-          ul
-            &.nav
-              padding-right: 0
-              width: 100%
-              li
-                padding-top: 25px
-                margin-top: 0px
-                a
-                  display: inline
-                  padding: 0
-                  color: $white
-                  font-size: 14px
-                  letter-spacing: 3px
-                &:last-child
-                  margin-right: 38px
-                &:not(:last-child)
-                  margin-right: 43px
 
 /*cover style
 #cover
@@ -705,36 +600,8 @@ div#rooms
       width: 40%
     .corporate-description
       margin: 5% 0
-footer
-  &#footer-header
-    background: #000
-    text-align: center
-    h2
-      color: $white
-      font-weight: 400
-      padding-top: 40px
-    #brand-logo
-      text-align: center
-      padding: 90px 0px 30px 0px
-      img
-        height: 70px
-      p
-        text-align: center
-        font-size: 14px
-        padding-top: 20px
-        color: $white
-  #social-media-widgets
-    margin: 70px 0 40px
-    ul
-      margin: 0
-      padding: 0
-      li
-        padding: 0px 10px 0px 10px
-        margin-top: 0px
-        text-align: center
-        display: inline-block
-        list-style-type: none
-        vertical-align: middle
+
+
 
 #glass
   background-image: url("/img/scratches.png")
@@ -746,6 +613,24 @@ footer
   pointer-events: none
 
 /*Media Queries
+
+@media screen and (min-width: 1366px)
+  #rebeccas-room > div.room-description
+    span.bottom-brush-frame-6
+      height: 286px !important
+      top: -286px !important
+  #ticking-timebomb > div.room-description
+    span.bottom-brush-frame-1
+      height: 275px !important
+      top: -275px !important
+  div#rooms
+    .room
+      .room-description
+        span.top-brush-frame-6
+          height: 560px
+  .transparent-container #ig
+    padding-top: 120px
+
 
 @media screen and (max-width: 1200px)
   #cover
@@ -775,32 +660,6 @@ footer
         max-height: 295px
 
 @media screen and (max-width: 991px)
-  .navbar-header
-    float: none
-  .navbar-left, .navbar-right
-    float: none !important
-  .navbar-toggle
-    display: block
-  .navbar-collapse
-    border-top: 1px solid transparent
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1)
-  .navbar-fixed-top
-    top: 0
-    border-width: 0 0 1px
-  .navbar-collapse.collapse
-    display: none !important
-  .navbar-nav
-    float: none !important
-    margin-top: 7.5px
-    li
-      float: none
-      margin-bottom: 11px
-      a
-        padding-top: 10px
-        padding-bottom: 10px
-  .collapse.in
-    display: block !important
-
   #branches
     .container
       height: auto
@@ -909,27 +768,10 @@ footer
             bottom: -162px
             height: 164px
 
-@media screen and (max-width: 539px)
+@media screen and (max-width: 568px)
   #email-us
     h1
-      font-size: 33px
-
-@media screen and (max-width: 530px)
-  nav
-    &#work-navbar
-      .nav-container
-        .navbar-header
-          .navbar-brand
-            a
-              #nav-title
-                font-size: 16px
-        .navbar-collapse
-          .navbar-right
-            ul
-              &.nav
-                li
-                  a
-                    font-size: 16px
+      font-size: 18px
   #rooms
     .room
       margin: 30px 0
@@ -941,56 +783,16 @@ footer
             .room-title
               h2
                 padding-left: 0 !important
-
-@media screen and (max-width: 500px)
-  #email-us
-    h1
-      font-size: 30px
- 
   #corporate-section
     .corporate-content
       .corporate-description
         max-width: 100%
 
-@media screen and (max-width: 460px)
-  #email-us
-    h1
-      font-size: 28px
-
-@media screen and (max-width: 432px)
-  #email-us
-    h1
-      font-size: 25px
-
-@media screen and (max-width: 373px)
-  footer#footer-header #featured ul li
-    padding: 35px 10px 30px
-
-@media screen and (max-width: 392px)
-  #email-us
-    h1
-      font-size: 18px
-
-@media screen and (max-width: 350px)
   #faq
     .answer-container
       text-indent: 30px
 
-@media screen and (min-width: 1366px)
-  #rebeccas-room > div.room-description
-    span.bottom-brush-frame-6
-      height: 286px !important
-      top: -286px !important
-  #ticking-timebomb > div.room-description
-    span.bottom-brush-frame-1
-      height: 275px !important
-      top: -275px !important
-  div#rooms
-    .room
-      .room-description
-        span.top-brush-frame-6
-          height: 560px
-  .transparent-container #ig
-    padding-top: 120px
+
+
 
 
