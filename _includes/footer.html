@@ -2,16 +2,15 @@
   <div class="container">
 
     <div id="brand-logo">
-      {{ page.url }}
-      {% if page.url == index.html %}
-      <a class="scroll-to-top" href="#">
+      {{ page.layout }}
+      <a
+        {% if page.layout == "front" %}
+          class="scroll-to-top" href="#">
+        {% else" %}
+          href="/">
+        {% endif %}
         <img src="/img/brand-logo.png"/>
       </a>
-      {% else %}
-      <a href="/">
-        <img src="/img/brand-logo.png"/>
-      </a>
-      {% endif %}
       <p class="brand">&copy; {{'Mystery Manila' | upcase}} 2015</p>
       <div>
         <a href="http://www.crux.design" target="_blank">
