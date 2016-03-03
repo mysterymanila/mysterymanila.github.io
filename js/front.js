@@ -210,7 +210,7 @@ mm.initAutoHideNavbar = function(){
 };
 
 mm.navbar.init = function(){
-    $(document).on('click', '.navbar-nav li a', function(e){
+    $(document).on('click', '.navbar-nav li .navbar-item', function(e){
         e.preventDefault();
         var target = $($(this).attr('href'));
         var top = target.offset().top;
