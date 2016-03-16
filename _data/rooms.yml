@@ -89,10 +89,10 @@
     position: -155px -238px
     width: 75px
   icon:
-    position: -176px -262px
+    position: -176px -438px
   sidebar_icon:
-    position: -106px -157px
-  poster: http://www.luxottica.com/sites/luxottica.com/files/styles/main-img-768x450/public/main-image/copertina_neverhide.jpg
+    position: -106px -262px
+  poster: /img/posters/murder-mafia.jpg
   video:
   frame:
     top: top-brush-frame-4
