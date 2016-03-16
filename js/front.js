@@ -15,7 +15,7 @@ mm.init = function(){
     mm.initVideos();
     mm.initScrollToTopLinks();
     mm.initGlass();
-    mm.initBookNowLinks();
+    //mm.initBookNowLinks();
     //mm.initScrollToTeaser();
     mm.initQuotesRotator();
     mm.initEaseBranches();
