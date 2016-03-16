@@ -81,8 +81,8 @@
   description: >
     <p>You are all part of Metro Manila's elite bomb squad and have been called to disarm a ticking time bomb placed by a deranged psychopath at the heart of the city. To solve the mystery, you will need to go outside Mystery Manila and explore the nearby areas by foot to look for important clues. You have 90 minutes to disarm the bomb before it explodes.</p>
 
-- slug: order-of-the-oculus
-  title: Order of the Oculus
+- slug: murder-in-the-mafia
+  title: Murder in the Mafia
   branch:
     slug: jupiter
     class: transition7
@@ -98,9 +98,9 @@
     top: top-brush-frame-4
     bottom: bottom-brush-frame-5
   description: >
-    <p>You've been invited to be part of the most prestigious secret society whose members include various prominent and influential people throughout history. You must prove yourself worthy by completing a series of challenges, same as all the other members that have gone before you.</p>
-    <p>Your ultimate challenge for this leg is to recover the valuable golden Ray-Ban from the mansion of the evil Dr. Hide who stole it from the Order to keep it for himself. You were able to infiltrate the mansion and you have an hour inside his room to steal the golden Ray-Ban.</p>
-    <p>Do you have what it takes to be a member of the Order of the Oculus?</p>
+    <p>The boss of an infamous mafia group has been murdered at his office.</p>
+    <p>You, as his most loyal men, need to investigate his murder to catch the killer who appears to be within your organization.</p>
+    <p>Can you solve the mystery?</p>
 
 - slug: rebeccas-room
   title: Rebecca's Room
