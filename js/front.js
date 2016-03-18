@@ -11,20 +11,20 @@ mm.init = function(){
     mm.closeBurger();
     mm.navbar.init();
 
-    mm.sidebar.init();
-    mm.initVideos();
+    //mm.sidebar.init();
+    //mm.initVideos();
     mm.initScrollToTopLinks();
     mm.initGlass();
     //mm.initBookNowLinks();
     //mm.initScrollToTeaser();
     mm.initQuotesRotator();
     mm.initEaseBranches();
-    mm.initScrollBranches();
+    //mm.initScrollBranches();
     mm.initBranchesMouseOver();
+    mm.runInstagramFeed();
     $('body').trigger('scroll');
 
     setTimeout(function(){
-        mm.runInstagramFeed(),
         mm.runFacebookWidget(),
         mm.runTwitterWidget()
     }, 3000);
