@@ -254,20 +254,30 @@ $levi-text: LeviReBrushed
               -moz-transform: translate(125px,0px)
               -o-transform: translate(125px,0px)
               -ms-transform: translate(125px,0px)
-
-
           img
             height: 123px
             position: absolute
             left: 0
             right: 0
-          h3
-            font-size: 26px
-            left: 0
-            right: 0
-            color: #ffffff
-            margin-top: 149px
-            position: absolute
+            animation: pulsate 2s ease-out
+            -webkit-animation: pulsate 2s ease-out
+            -moz-animation: pulsate 2s ease-out
+            -o-animation: pulsate 2s ease-out
+            -ms-animation: pulsate 2s ease-out
+
+            animation-iteration-count: infinite
+            -webkit-animation-iteration-count: infinite
+            -moz-animation-iteration-count: infinite
+            -o-animation-iteration-count: infinite
+            -ms-animation-iteration-count: infinite
+
+    h3
+      font-size: 26px
+      left: 0
+      right: 0
+      color: #ffffff
+      margin-top: 149px
+      position: absolute
     .book-now-container
       padding: 130px 0
       .book-now-button
@@ -307,7 +317,7 @@ $levi-text: LeviReBrushed
     opacity: 1
     cursor: pointer
     transition: all 0.25s
-    //&:active
+  //&:active
   &.sidebar-hidden
     right: -150px
   &.sidebar-visible
