@@ -4,3 +4,4 @@ _site
 *.iml
 Gemfile
 Gemfile.lock
+.jekyll-metadata
