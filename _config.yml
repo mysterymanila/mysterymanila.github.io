@@ -19,7 +19,3 @@ collections:
     branches:
       output: true
       permalink: /branches/:name/
-
-    branches-room:
-      output: true
-      permalink: /branch/:name/
