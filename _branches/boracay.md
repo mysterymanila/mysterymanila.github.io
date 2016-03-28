@@ -3,8 +3,6 @@ id: 3
 rank: 1
 slug: boracay
 name: Boracay
-layout: branches
-css: /css/branches.css
 address: >
   3rd Floor Alexandrea Building, Main Road,<br>
   Station 1 Boracay, Brgy. Balabag,<br>

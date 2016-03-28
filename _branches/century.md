@@ -3,8 +3,6 @@ id: 3
 name: Century City Mall
 slug: century
 rank: 2
-layout: branches
-css: /css/branches.css
 address: > 
   Unit L305 3rd Floor Century City Mall,<br>
   Kalayaan Ave. cor. Salamanca St, Brgy. Poblacion,<br>

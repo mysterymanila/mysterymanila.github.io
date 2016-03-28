@@ -2,29 +2,26 @@
     {% for room in site.data.rooms %}
     {% if page.slug == room.branch.slug%}
     <div id="{{room.slug}}" class="room clearfix" data-branch="{{ room.branch.slug }}">
-        <div class="hero-content" data-stellar-ratio="0.7">
+        <div class="hero-content">
             <video class="room-video" poster="{{ room.poster }}" loop preload="none" data-play-status="pause">
                 <source src="{{ room.video }}" type="video/mp4">
             </video>
         </div>
 
-        <div class="room-description">
-            <span class="{{ room.frame.bottom }} brush-frame hidden-xs"></span>
-            <div class="container">
-                <div class="{% cycle 'pull-right', 'pull-left' %} col-md-6 clearfix room-text">
-                    <div class="room-title">
-                        <div class="pull-left room-icon" style="background-position: {{ room.icon.position }}"></div>
-                        <h2>{{ room.title}}</h2>
-                    </div>
-                    {{ room.description }}
-                    <h4>BRANCH: {{ site.branches | where:'slug',room.branch.slug | map: 'name' | first | upcase}}</h4>
-                    <a class="book-now" href="http://booknow.mysterymanila.com/" target="_blank">
-                        BOOK NOW <img id="book-arrow" src="/img/arrow.png" height="25px"/>
-                    </a>
+        <div class="room-description {% cycle 'room-right', 'room-left' %}">
+            <div class="room-text">
+                <div class="room-title">
+                    <div class="pull-left room-icon" style="background-position: {{ room.icon.position }}"></div>
+                    <h2>{{ room.title}}</h2>
                 </div>
+                {{ room.description }}
+                <h4>BRANCH: {{ site.branches | where:'slug',room.branch.slug | map: 'name' | first | upcase}}</h4>
+                <a class="book-now" href="http://booknow.mysterymanila.com/" target="_blank">
+                    BOOK NOW <img id="book-arrow" src="/img/arrow.png" height="25px"/>
+                </a>
             </div>
-            <span class="{{ room.frame.top }} brush-frame hidden-xs"></span>
         </div>
+
     </div>
     {% endif %}
     {% endfor %}
