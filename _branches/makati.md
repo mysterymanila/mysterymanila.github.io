@@ -3,6 +3,8 @@ id: 2
 rank: 3
 slug: jupiter
 name: Jupiter
+layout: branches
+css: /css/branches.css
 address: >
   2nd floor, G. A. Yupangco Building,<br>
   Jupiter St. and Gil Puyat Avenue corner Reposo St., <br>
