@@ -1,5 +1,4 @@
 ---
-id: 3
 rank: 1
 slug: boracay
 name: Boracay

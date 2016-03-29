@@ -1,5 +1,4 @@
 ---
-id: 3
 name: Century City Mall
 slug: century
 rank: 2
