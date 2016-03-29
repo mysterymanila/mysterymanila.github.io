@@ -1,7 +1,7 @@
 ---
 rank: 3
 slug: jupiter
-name: jupiter
+title: jupiter
 layout: branches
 css: /css/branches.css
 

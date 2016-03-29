@@ -1,7 +1,7 @@
 ---
 rank: 4
 slug: libis
-name: Quezon City
+title: Libis 
 layout: branches
 css: /css/branches.css
 ---

@@ -1,5 +1,5 @@
 ---
-name: Century City Mall
+title: Century
 slug: century
 rank: 2
 layout: branches
