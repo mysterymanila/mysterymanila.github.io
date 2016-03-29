@@ -44,8 +44,6 @@ h2.section-header
   font-family: "futura-pt", sans-serif
   letter-spacing: 1px
 
-/*header style
-
 nav
   font-family: "futura-pt",sans-serif
   &#work-navbar
@@ -85,9 +83,9 @@ nav
               font-size: 24px
         button
           margin-top: 20px
-      /* end of navbar-header
       .navbar-collapse
         border-color: transparent
+        max-height: none
         .navbar-right
           margin-right: 15px
           ul
@@ -103,10 +101,17 @@ nav
                   color: $white
                   font-size: 14px
                   letter-spacing: 3px
+                  background-color: transparent
                 &:last-child
                   margin-right: 38px
                 &:not(:last-child)
                   margin-right: 43px
+                &.dropdown
+                  .dropdown-menu
+                    background-color: rgba(0,0,0,0.7)
+                    li
+                      margin-right: 0
+                      text-align: center
 
 footer
   &#footer-header
@@ -139,7 +144,7 @@ footer
         list-style-type: none
         vertical-align: middle
 
-@media (max-width: 991px)
+@media (max-width: 1200px)
   .navbar-header
     float: none
   .navbar-left, .navbar-right
@@ -156,7 +161,7 @@ footer
     display: none !important
   .navbar-nav
     float: none !important
-    margin-top: 7.5px
+    padding: 10px 10px 20px
     li
       float: none
       margin-bottom: 11px
@@ -165,6 +170,22 @@ footer
         padding-bottom: 10px
   .collapse.in
     display: block !important
+
+  nav#work-navbar
+    .nav-container
+      .navbar-collapse
+        .navbar-right
+          ul.nav
+            li.dropdown
+              .dropdown-menu
+                li
+                  text-align: left
+                  padding-left: 23px
+
+  .navbar-right
+    .dropdown-menu
+      float: none
+      position: relative
 
 @media (max-width: 568px)
   footer#footer-header #featured ul li

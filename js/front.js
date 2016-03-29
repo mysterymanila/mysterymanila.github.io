@@ -6,30 +6,41 @@ mm.init = function(){
     $('.placeholder').each(function(){
         $(this).css('height', width);   
     });
-    //mm.resetScroll();
+    mm.scrollNavbarLinks();
+    // mm.resetScroll();
     mm.initFAQ();
     mm.closeBurger();
     mm.navbar.init();
 
-    mm.sidebar.init();
-    mm.initVideos();
+    //mm.sidebar.init();
+    //mm.initVideos();
     mm.initScrollToTopLinks();
     mm.initGlass();
     //mm.initBookNowLinks();
     //mm.initScrollToTeaser();
     mm.initQuotesRotator();
     mm.initEaseBranches();
-    mm.initScrollBranches();
+    //mm.initScrollBranches();
     mm.initBranchesMouseOver();
+    mm.runInstagramFeed();
     $('body').trigger('scroll');
 
     setTimeout(function(){
-        mm.runInstagramFeed(),
         mm.runFacebookWidget(),
         mm.runTwitterWidget()
     }, 3000);
 };
 
+
+mm.scrollNavbarLinks = function () {
+    $('.navbar-menu a').on('click', function(e){
+        e.preventDefault();
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top - 66
+        }, 1500, 'easeInOutExpo');
+    });
+};
 
 mm.closeBurger = function(){
     $('body').bind('click', function(e) {

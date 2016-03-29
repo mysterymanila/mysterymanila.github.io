@@ -1,0 +1,34 @@
+<div id="rooms">
+    {% assign sorted-room = site.data.rooms | sort: 'id' %}
+    {% for room in sorted-room %}
+    {% if page.slug == room.branch.slug%}
+    <div id="{{room.slug}}" class="room clearfix" data-branch="{{ room.branch.slug }}">
+        <div class="hero-content">
+            <video class="room-video" poster="{{ room.poster }}" loop preload="none" data-play-status="pause">
+                <source src="{{ room.video }}" type="video/mp4">
+            </video>
+        </div>
+        {% if room.id == 1 %}
+        {% else %}
+        <span class="{{ room.frame.top }} brush-frame hidden-xs"></span>
+        {% endif %}
+        <div class="room-description {% cycle 'gradient-right', 'gradient-left' %}">
+            <span class="{{ room.frame.bottom }} brush-frame hidden-lg hidden-md  hidden-xs"></span>
+            <div class="room-text {% cycle 'room-right', 'room-left' %}">
+                <div class="room-title">
+                    <div class="pull-left room-icon" style="background-position: {{ room.icon.position }}"></div>
+                    <h2>{{ room.title}}</h2>
+                </div>
+                {{ room.description }}
+                <h4>BRANCH: {{ site.branches | where:'slug',room.branch.slug | map: 'name' | first | upcase}}</h4>
+                <a class="book-now" href="http://booknow.mysterymanila.com/" target="_blank">
+                    BOOK NOW <img id="book-arrow" src="/img/arrow.png" height="25px"/>
+                </a>
+            </div>
+        </div>
+        <span class="{{ room.frame.bottom }} brush-frame hidden-xs"></span>
+
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>
