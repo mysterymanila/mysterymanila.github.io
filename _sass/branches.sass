@@ -97,7 +97,6 @@
       &.top-brush-frame-5
         height: 150px
         background-image: url(/img/brush-edges/Top_1.png)
-        
         background-position: bottom
         top: 0
 
@@ -110,40 +109,40 @@
       &.bottom-brush-frame-1
         height: 150px
         background-image: url(/img/brush-edges/Bottom_1.png)
-        
         bottom: 0
+
       &.bottom-brush-frame-2
         height: 150px
         background-image: url(/img/brush-edges/Bottom_2.png)
-        
         bottom: 0
+
       &.bottom-brush-frame-3
         height: 150px
         background-image: url(/img/brush-edges/Bottom_3.png)
-        
         bottom: 0
+
       &.bottom-brush-frame-4
         height: 200px       
         background-image: url(/img/brush-edges/Bottom_4.png)
-        
         bottom: 0
+
       &.bottom-brush-frame-5
         height: 150px
         background-image: url(/img/brush-edges/Bottom_5.png)
-        
         bottom: 0
+
       &.bottom-brush-frame-6
         height: 150px
         background-image: url(/img/brush-edges/Bottom_6.png)
-        
         bottom: 0
+
 
 .gradient-left
   //background-color: rgba(0, 0, 0, 0.7)
-  background-image: linear-gradient(to right, black, transparent)
+  background-image: linear-gradient(to right, black, rgba(0,0,0,0.5))
 .gradient-right
   //background-color: rgba(0, 0, 0, 0.7)
-  background-image: linear-gradient(to left, black, transparent)
+  background-image: linear-gradient(to left, black, rgba(0,0,0,0.5))
 
 
 .room-left
@@ -163,24 +162,51 @@
   left: 0
   right: 0
   
+  
+@media (max-width: 1200px)
+  #rooms
+    .room
+      .room-description
+        z-index: 50
+        .room-text
+          width: 60%
+
 @media (max-width: 991px)
   #rooms
     padding-top: 74px
     .room
       .room-description
         position: relative
-        width: 100%
         .room-text
+          width: 100%
           position: static
           padding: 40px 5%
           transform: none
+  span
+    &.bottom-brush-frame-1
+      top: -140px
+      background-size: 100%
 
+    &.bottom-brush-frame-2
+      top: -140px
+      background-size: 100%
 
-//@media (max-width: 767px)
-//  #rooms
-//    .room
-//      .room-description
-//        .room-text
+    &.bottom-brush-frame-3
+      top: -140px
+      background-size: 100%
+
+    &.bottom-brush-frame-4
+      top: -140px
+      background-size: 100%
+
+    &.bottom-brush-frame-5
+      top: -140px
+      background-size: 100%
+
+    &.bottom-brush-frame-6
+      top: -140px
+      background-size: 100%
+
 
 
 
