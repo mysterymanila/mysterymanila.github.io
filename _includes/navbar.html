@@ -17,18 +17,41 @@
         <div class="navbar-collapse collapse" id="nav-links">
             <div class="navbar-right">
                 <ul class="nav navbar-nav">
-                    {% if page.url == "/games/" or page.url == "/branches/" %}
+                    {% if page.url == "/games/" or page.url == "/branch/" %}
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">BRANCHES
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            {% for branches in site.branches-room %}
+                            <li>
+                                <a href="/branch/{{ branches.slug }}">{{ branches.title | upcase }}</a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </li>
                     <li class="navbar-menu"><a href="../../#branch">MYSTERIES</a></li>
                     <li class="navbar-menu"><a href="../../#faq">FAQ</a></li>
                     <li class="navbar-menu"><a href="../../#about-us">ABOUT US</a></li>
                     <li class="navbar-menu"><a href="../../#contact">CORPORATE</a></li>
                     <li ><a href="/games/">GAMES</a></li>
                     {% else %}
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">BRANCHES
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            {% for branches in site.branches-room %}
+                                <li>
+                                    <a href="/branch/{{ branches.slug }}">{{ branches.title | upcase }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </li>
                     <li class="navbar-menu"><a class="navbar-item" href="#branch">MYSTERIES</a></li>
                     <li class="navbar-menu"><a class="navbar-item" href="#faq">FAQ</a></li>
                     <li class="navbar-menu"><a class="navbar-item" href="#about-us">ABOUT US</a></li>
                     <li class="navbar-menu"><a class="navbar-item" href="#contact">CORPORATE</a></li>
                     <li><a href="/games/">GAMES</a></li>
+
                     {% endif %}
                 </ul>
             </div>
