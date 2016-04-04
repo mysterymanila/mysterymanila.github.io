@@ -13,6 +13,13 @@
       text-transform: uppercase
       padding: 20px 0
 
+#brush-top
+  height: 150px
+  background-image: url("/img/brush-edges/Bottom_4.png")
+  bottom: 0
+  background-size: 120% 100%
+  background-position: top
+
 #rooms
   padding-top: 66px
   color: $white
@@ -206,8 +213,16 @@
 
     &.bottom-brush-frame-6
       top: -140px
-      
 
-
-
+@media (max-width: 767px)
+  #cover
+    padding-bottom: 0
+    .logo-container
+      padding: 100px 0
+      #brand-logo
+        height: 150px
+      .branch-title
+        font-size: 28px
+  #rooms
+    padding-top: 0
 
