@@ -19,9 +19,9 @@ mm.init = function(){
     //mm.initBookNowLinks();
     //mm.initScrollToTeaser();
     mm.initQuotesRotator();
-    mm.initEaseBranches();
+    //mm.initEaseBranches();
     //mm.initScrollBranches();
-    mm.initBranchesMouseOver();
+    //mm.initBranchesMouseOver();
     mm.runInstagramFeed();
     $('body').trigger('scroll');
 
