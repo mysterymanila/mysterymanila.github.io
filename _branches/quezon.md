@@ -1,11 +1,11 @@
 ---
 id: 1
 rank: 4
-slug: libis
+slug: quezon
 name: Quezon City
 address: >
   Unit 9A, JW Plaza Building, 195 E. Rodriguez Jr Ave. <br>
-  (also known as C5, right across the street from the entrance of Eastwood, Libis) <br>
+  (also known as C5, right across the street from the entrance of Eastwood, quezon) <br>
   Brgy. Bagumbayan, 1110 Quezon City, Metro Manila, Philippines. <br>
 telephone:
     - (+63) 02 501 2824
