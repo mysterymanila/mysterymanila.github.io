@@ -9,23 +9,23 @@
                       <img style="z-index: 100" class="center-block branches-image" src="/img/brand-logo.png"/>
                   </a>
                   <h3>{{ branch.name | upcase }}</h3>
-                  <ul>
-                      {% for mystery in site.data.rooms %}
-                        {% if mystery.branch.slug == branch.slug and mystery.hide != true %}
-                          <li class="branches-icon">
-                              <!--<a class="branch-name-btn" data-target="#{{ mystery.slug }}" href="javascript:void(0)">-->
-                              <a class="branch-name-btn" href="/branch/{{ mystery.branch.slug }}/#{{ mystery.slug }}">
-                                  <span class="branch-label">
-                                      <p class="text-center">{{ mystery.slug | upcase}}</p>
-                                  </span>
-                              </a>
-                              <a class="branch-button" href="">
-                                  <span border="0" style="width: {{mystery.branch.width}}; background-position: {{ mystery.branch.position }}"  class="center-block branches-icon"></span>
-                              </a>
-                          </li>
-                        {% endif %}
-                      {% endfor %}
-                  </ul>
+                  <!--<ul>-->
+                      <!--{% for mystery in site.data.rooms %}-->
+                        <!--{% if mystery.branch.slug == branch.slug and mystery.hide != true %}-->
+                          <!--<li class="branches-icon">-->
+                              <!--&lt;!&ndash;<a class="branch-name-btn" data-target="#{{ mystery.slug }}" href="javascript:void(0)">&ndash;&gt;-->
+                              <!--<a class="branch-name-btn" href="/branch/{{ mystery.branch.slug }}/#{{ mystery.slug }}">-->
+                                  <!--<span class="branch-label">-->
+                                      <!--<p class="text-center">{{ mystery.slug | upcase}}</p>-->
+                                  <!--</span>-->
+                              <!--</a>-->
+                              <!--<a class="branch-button" href="">-->
+                                  <!--<span border="0" style="width: {{mystery.branch.width}}; background-position: {{ mystery.branch.position }}"  class="center-block branches-icon"></span>-->
+                              <!--</a>-->
+                          <!--</li>-->
+                        <!--{% endif %}-->
+                      <!--{% endfor %}-->
+                  <!--</ul>-->
               </div>
           </div>
           {% endfor %}
