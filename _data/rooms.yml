@@ -2,7 +2,7 @@
   slug: rebeccas-revenge
   title: Rebecca's Revenge
   branch:
-    slug: libis
+    slug: quezon
     position: 0px -318px
     width: 75px
   icon:
@@ -24,7 +24,7 @@
   slug: buried-bodies
   title: Buried Bodies
   branch:
-    slug: libis
+    slug: quezon
     class: transition1
     position: -78px 0px
     width: 75px
@@ -45,7 +45,7 @@
   slug: reversed-reality
   title: Reversed Reality
   branch:
-    slug: libis
+    slug: quezon
     class: transition2
     position: -156px -80px
     width: 75px
@@ -67,7 +67,7 @@
   slug: ticking-timebomb
   title: Ticking Time Bomb
   branch:
-    slug: libis
+    slug: quezon
     class: transition3
     position: -156px 0px
     width: 75px
@@ -320,7 +320,7 @@
     top: top-brush-frame-4
     bottom: bottom-brush-frame-5
   description: >
-    <p>Enigma strikes again! After the the ticking time bomb he planted in Libis last year, he challenges Manila's finest once more by planting a bomb in the heart of the Makati Business District</p>
+    <p>Enigma strikes again! After the the ticking time bomb he planted in quezon last year, he challenges Manila's finest once more by planting a bomb in the heart of the Makati Business District</p>
     <p>He plans to cripple the economic capital of the country and cause chaos and panic to the people</p>
     <p>It's up to you to diffuse the bomb in 90 minutes and prevent what can be the Crime of the Century</p>
     <p>The clock is ticking. Solve quickly.</p>
