@@ -1,4 +1,24 @@
 - id: 1
+  slug: buried-bodies
+  title: Buried Bodies
+  branch:
+    slug: quezon
+    class: transition1
+    position: -78px 0px
+    width: 75px
+  icon:
+    position: -88px 0
+  sidebar_icon:
+      position: -53px 0
+  poster: /img/posters/buried-bodies.jpg
+  video: http://d3pfdit6z4xogx.cloudfront.net/videos/MM_BuriedBodies.mp4
+  frame:
+    top: top-brush-frame-3
+    bottom: bottom-brush-frame-2
+  description: >
+    <p>Enigma strikes again. The psychopathic killer challenges you to escape from his graveyard using clues and puzzles hidden around the dark cemetery. Some of you will need to solve clues while being buried alive while others roam free to look for objects to help you escape.</p>
+
+- id: 2
   slug: rebeccas-revenge
   title: Rebecca's Revenge
   branch:
@@ -19,27 +39,6 @@
     <p>As part of the remaining group, you have 1 hour to find a way to keep Rebecca from killing your group. </p>
     <p>Do you have what it takes to stop Rebecca's Revenge?</p>
     <p>Watch the trailer: <a href="https://www.youtube.com/watch?v=YY2le4dPMK4" target="_blank" STYLE="TEXT-DECORATION: NONE"> >>Link<<</a></p>
-
-- id: 2
-  slug: buried-bodies
-  title: Buried Bodies
-  branch:
-    slug: quezon
-    class: transition1
-    position: -78px 0px
-    width: 75px
-  icon:
-    position: -88px 0
-  sidebar_icon:
-      position: -53px 0
-  poster: /img/posters/buried-bodies.jpg
-  video: http://d3pfdit6z4xogx.cloudfront.net/videos/MM_BuriedBodies.mp4
-  frame:
-    top: top-brush-frame-3
-    bottom: bottom-brush-frame-2
-  description: >
-    <p>Enigma strikes again. The psychopathic killer challenges you to escape from his graveyard using clues and puzzles hidden around the dark cemetery. Some of you will need to solve clues while being buried alive while others roam free to look for objects to help you escape.</p>
-
 
 - id: 3
   slug: reversed-reality
@@ -320,7 +319,7 @@
     top: top-brush-frame-4
     bottom: bottom-brush-frame-5
   description: >
-    <p>Enigma strikes again! After the the ticking time bomb he planted in quezon last year, he challenges Manila's finest once more by planting a bomb in the heart of the Makati Business District</p>
+    <p>Enigma strikes again! After the the ticking time bomb he planted in Libis last year, he challenges Manila's finest once more by planting a bomb in the heart of the Makati Business District</p>
     <p>He plans to cripple the economic capital of the country and cause chaos and panic to the people</p>
     <p>It's up to you to diffuse the bomb in 90 minutes and prevent what can be the Crime of the Century</p>
     <p>The clock is ticking. Solve quickly.</p>

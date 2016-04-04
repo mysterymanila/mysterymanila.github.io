@@ -1,7 +1,7 @@
 ---
-title: Century
 slug: century
-rank: 2
+title: Century
+branch-name: Century City Mall
 layout: branches
 css: /css/branches.css
 
