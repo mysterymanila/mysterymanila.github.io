@@ -83,28 +83,6 @@
     <p>You are all part of Metro Manila's elite bomb squad and have been called to disarm a ticking time bomb placed by a deranged psychopath at the heart of the city. To solve the mystery, you will need to go outside Mystery Manila and explore the nearby areas by foot to look for important clues. You have 90 minutes to disarm the bomb before it explodes.</p>
 
 - id: 1
-  slug: murder-in-the-mafia
-  title: Murder in the Mafia
-  branch:
-    slug: jupiter
-    class: transition7
-    position: -161px -396px
-    width: 75px
-  icon:
-    position: -176px -438px
-  sidebar_icon:
-    position: -106px -262px
-  poster: /img/posters/murder-mafia.jpg
-  video:
-  frame:
-    top: top-brush-frame-4
-    bottom: bottom-brush-frame-5
-  description: >
-    <p>The boss of an infamous mafia group has been murdered at his office.</p>
-    <p>You, as his most loyal men, need to investigate his murder to catch the killer who appears to be within your organization.</p>
-    <p>Can you solve the mystery?</p>
-
-- id: 2
   slug: rebeccas-room
   title: Rebecca's Room
   branch:
@@ -127,6 +105,28 @@
     <p>Are you brave enough to enter Rebecca's Room?</p>
     <p>Watch the trailer in</p>
     <p><a href='https://www.youtube.com/watch?v=VbLkL27cbQw' target="_blank" STYLE="TEXT-DECORATION: NONE">(Link)</a></p>
+
+- id: 2
+  slug: murder-in-the-mafia
+  title: Murder in the Mafia
+  branch:
+    slug: jupiter
+    class: transition7
+    position: -161px -396px
+    width: 75px
+  icon:
+    position: -176px -438px
+  sidebar_icon:
+    position: -106px -262px
+  poster: /img/posters/murder-mafia.jpg
+  video:
+  frame:
+    top: top-brush-frame-4
+    bottom: bottom-brush-frame-5
+  description: >
+    <p>The boss of an infamous mafia group has been murdered at his office.</p>
+    <p>You, as his most loyal men, need to investigate his murder to catch the killer who appears to be within your organization.</p>
+    <p>Can you solve the mystery?</p>
 
 - id: 3
   slug: world-of-wizardry
