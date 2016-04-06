@@ -1,6 +1,6 @@
 ---
 slug: quezon
-title: quezon 
+title: quezon city
 branch-name: Quezon City
 layout: branches
 css: /css/branches.css

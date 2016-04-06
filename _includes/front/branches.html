@@ -1,22 +1,23 @@
 <div class="container">
     <div class="row branches-container" id="branch">
         <div class="col-md-12">
-          {% assign sorted-branch = site.branches | sort: 'rank' %}
-          {% for branch in sorted-branch %}
-          <div class="col-md-4 branches-content">
-              <div class="branches-button-container">
-                  <a href="/branch/{{ branch.slug }}" class="branch-url">
-                      <img class="branches-image clearfix" src="/img/brand-logo.png"/>
-                  </a>
-                  <h3>{{ branch.name | upcase }} BRANCH</h3>
-              </div>
-          </div>
-          {% endfor %}
-
+            {% assign sorted-branch = site.branches | sort: 'rank' %}
+            {% for branch in sorted-branch %}
+            <div class="col-md-4 branches-content">
+                <div class="branches-button-container">
+                    <a href="/branch/{{ branch.slug }}" class="branch-url">
+                        <img class="branches-image clearfix" src="/img/brand-logo.png"/>
+                    </a>
+                    <h3>{{ branch.name | upcase }} BRANCH</h3>
+                </div>
+            </div>
+            {% endfor %}
         </div>
     </div>
     <div class="book-now-container">
-        <a class="book-now-button clearfix book-now" href="http://booknow.mysterymanila.com/" target="_blank">BOOK NOW</a>
+        <a class="book-now-button clearfix book-now" href="http://booknow.mysterymanila.com/" target="_blank">
+            <button class="btn btn-default">BOOK NOW</button>
+        </a>
     </div>
 </div>
 

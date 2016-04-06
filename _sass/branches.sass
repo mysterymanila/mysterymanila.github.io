@@ -3,6 +3,7 @@ body
   padding-top: 67px
 
 #cover
+  position: relative
   #background-overlay
     position: absolute
     top: 0
@@ -10,7 +11,7 @@ body
     left: 0
     right: 0
     background-color: rgba(0,0,0,0.7)
-    height: 110%
+    height: 100%
     z-index: 1
     
   .logo-container
@@ -29,12 +30,27 @@ body
       text-transform: uppercase
       padding: 20px 0
 
+.teaser-head
+  font-size: 70px
+  transform: rotate(-5deg)
+  padding: 50px 0
+  text-align: center
+  color: white
 #brush-top
   height: 150px
   background-image: url("/img/brush-edges/Bottom_4.png")
   bottom: 0
   background-size: 120% 100%
   background-position: top
+
+#bottom-brush
+  height: 150px
+  background-image: url("/img/brush-edges/Top_1.png")
+  bottom: -70px
+  background-size: 120% 100%
+  background-position: bottom
+  position: relative
+  z-index: 10
 
 #rooms
   color: $white
