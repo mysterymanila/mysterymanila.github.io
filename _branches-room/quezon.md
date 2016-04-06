@@ -4,6 +4,8 @@ title: quezon
 branch-name: Quezon City
 layout: branches
 css: /css/branches.css
+banner: /img/branches-cover/quezon.jpg
+
 ---
 
 <script>
