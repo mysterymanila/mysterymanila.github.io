@@ -14,7 +14,7 @@ availability:
     - 1 PM to 9:30 PM Mondays to Fridays
     - 9 AM to 9:30 PM Holidays/Saturdays/Sundays
 ---
-<div id="TA_socialButtonReviews71" class="TA_socialButtonReviews">
+<div id="TA_socialButtonReviews71" class="social-media TA_socialButtonReviews">
   <ul id="icxi0ooFtBLn" class="TA_links lhj6es3">
     <li id="ThyOrBSeJ" class="dbS1Vpglv">
       <a target="_blank" href="http://www.tripadvisor.com.ph/Attraction_Review-g298574-d7142887-Reviews-Mystery_Manila-Quezon_City_Metro_Manila_Luzon.html"><img src="http://www.tripadvisor.com.ph/img/cdsi/img2/branding/socialWidget/20x28_green-21692-2.png"/></a>
