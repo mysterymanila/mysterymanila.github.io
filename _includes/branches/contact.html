@@ -1,0 +1,14 @@
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <span class="text-center contact-icon glyphicon glyphicon-phone-alt"></span>
+            {% for contact in site.branches %}
+                {% if page.slug == contact.slug %}
+                    {% for contact-number in contact.telephone  %}
+                    <span class="text-center contact-list">{{ contact-number }} </span>
+                    {% endfor %}
+                {% endif %}
+            {%  endfor %}
+        </div>
+    </div>
+</section>
