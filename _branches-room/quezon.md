@@ -13,11 +13,12 @@ banner: /img/branches-cover/quezon.jpg
       var mapLocation = {lat: 14.606429, lng: 121.078643};
       var customMapType = new google.maps.StyledMapType([
           {
+            featureType: 'road',
             stylers: [
-              {hue: '#ffffff'},
               {visibility: 'simplified'},
               {gamma: 0.5},
-              {weight: 0.5}
+              {weight: 0.5},
+              { hue: "#333333" }
             ]
           },
           {

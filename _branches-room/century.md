@@ -7,16 +7,18 @@ css: /css/branches.css
 banner: /img/branches-cover/century.jpg
 
 ---
+
 <script>
     function initMap() {
       var mapLocation = {lat: 14.565571, lng: 121.027687};
       var customMapType = new google.maps.StyledMapType([
           {
+            featureType: 'road',
             stylers: [
-              {hue: '#ffffff'},
               {visibility: 'simplified'},
               {gamma: 0.5},
-              {weight: 0.5}
+              {weight: 0.5},
+              { hue: "#333333" }
             ]
           },
           {
