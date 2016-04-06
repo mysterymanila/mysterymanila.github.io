@@ -2,13 +2,30 @@
     <div class="container">
         <div class="row">
             <span class="text-center contact-icon glyphicon glyphicon-phone-alt"></span>
-            {% for contact in site.branches %}
-                {% if page.slug == contact.slug %}
-                    {% for contact-number in contact.telephone  %}
-                    <span class="text-center contact-list">{{ contact-number }} </span>
+            {% for branch in site.branches %}
+            {% if page.slug == branch.slug %}
+            <div class="branches-info text-center">
+                <h3 class="brand">{{ branch.name | upcase }}</h3>
+                <address>
+                    <br>
+                    {{ branch.address }}
+                </address>
+                <address>
+                    <br>
+                    {% for number in branch.telephone %}
+                    {{ number }}<br>
                     {% endfor %}
-                {% endif %}
-            {%  endfor %}
+                </address>
+                <address>
+                    <br>
+                    {% for item in branch.availability %}
+                    {{ item }}<br>
+                    {% endfor %}
+                </address>
+                {{ branch.output }}
+            </div>
+            {% endif %}
+            {% endfor %}
         </div>
     </div>
 </section>

@@ -2,7 +2,7 @@
 id: 1
 rank: 4
 slug: quezon
-name: Quezon City
+name: Libis, Quezon City
 address: >
   Unit 9A, JW Plaza Building, 195 E. Rodriguez Jr Ave. <br>
   (also known as C5, right across the street from the entrance of Eastwood, quezon) <br>

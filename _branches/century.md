@@ -1,7 +1,6 @@
 ---
 id: 3
-name: Century
-branch-name: Century City Mall
+name: Century City Mall
 slug: century
 rank: 2
 address: > 
