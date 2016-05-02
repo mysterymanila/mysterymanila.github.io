@@ -176,7 +176,7 @@ a:link {
 
 @media only screen and (max-width: 540px) { 	
 	#main_image {width: 240px; 	height: 200px;	text-align: center;}
-	#dp_image {width: 240px; 	height: 300px;	text-align: center;}
+	#dp_image {width: 220px; 	height: 300px;	text-align: center;}
 	#dp_image1 {width: 300px; 	height: 200px;	text-align: center;}
 	#h1_prologue {font-size: 50px;}
 	h1{font-size:34px;}
