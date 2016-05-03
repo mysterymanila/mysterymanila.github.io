@@ -346,10 +346,8 @@
     <p>You are volunteers in an experimental program to test the boundaries of virtual reality.</p>
     <p>Unfortunately, the experiment goes wrong and you are inadvertently trapped in the virtual world. </p>
     <p>You must find a way to escape back to reality within 1 hour or else be trapped in limbo forever.</p>
-	
-	
-	
-id: 6
+
+- id: 6
   slug: mutants-mission
   title: Mutant's Mission
   branch:
