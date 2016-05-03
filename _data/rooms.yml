@@ -346,4 +346,28 @@
     <p>You are volunteers in an experimental program to test the boundaries of virtual reality.</p>
     <p>Unfortunately, the experiment goes wrong and you are inadvertently trapped in the virtual world. </p>
     <p>You must find a way to escape back to reality within 1 hour or else be trapped in limbo forever.</p>
+	
+	
+	
+id: 6
+  slug: mutants-mission
+  title: Mutant's Mission
+  branch:
+    slug: century
+    class: transition7
+    position: -78px -318px
+    width: 75px
+  icon:
+    position: -88px -350px
+  sidebar_icon:
+    position: -53px -208px
+  poster: /img/posters/mutant.jpg
+  video:
+  frame:
+    top: top-brush-frame-4
+    bottom: bottom-brush-frame-5
+  description: >
+    <p>The fate of the world hangs in the balance as the all-powerful mutant, Apocalypse, threatens to destroy it.</p>
+    <p>Professor X has recruited you, a team of young mutants, to help in the fight against Apocalypse. </p>
+    <p>However, you must first prove yourselves by unleashing your mutant powers and surviving a test designed by the Professor inside the Danger Room.</p>	
     
