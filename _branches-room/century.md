@@ -14,6 +14,9 @@ banner: /img/branches-cover/century.jpg
       var customMapType = new google.maps.StyledMapType([
           {
             featureType: 'road',
+            zoomControl: false,
+            scaleControl: false,
+            scrollwheel: false,
             stylers: [
               {visibility: 'simplified'},
               {gamma: 0.5},
