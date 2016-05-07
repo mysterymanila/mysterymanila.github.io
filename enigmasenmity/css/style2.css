@@ -3,7 +3,9 @@
     src: url(../../fonts/LeviReBrushed.ttf);
 }
 @import http://fonts.googleapis.com/css?family=Indie+Flower;
-
+@import http://fonts.googleapis.com/css?family=Poiret+One;
+@import http://fonts.googleapis.com/css?family=Amatic+SC;
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
 
 
 #button1 {
@@ -154,7 +156,7 @@ a:link {
 	#main_image {width: 800px; 	height: 500px;	text-align: center;}
 	#dp_image {width: 450px; 	height: 600px;	text-align: center;}
 	#main_image_index {width: 450px; 	height: 400px;	text-align: center;}
-	#clue {text-align: center;font-family:"arvo";font-weight:normal; font-size: 25px;color: #FFF;margin:0;}
+	#clue {text-align: center;font-family:"Amatic SC";font-weight:normal; font-size: 25px;color: #FFF;margin:0;}
 	#story {text-align: center;font-family:"Rock Salt";font-size:15px;}
 	#h1_indexhtml {transform: rotate(-5deg);font-family:LeviReBrushed;}
 
