@@ -349,7 +349,7 @@
 
 - id: 6
   slug: mutants-mission
-  title: Mutant's Mission
+  title: Mutants' Mission
   branch:
     slug: century
     class: transition7
