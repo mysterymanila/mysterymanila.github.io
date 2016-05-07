@@ -35,6 +35,9 @@ banner: /img/branches-cover/makati.jpg
       var customMapTypeId = 'custom_style';
   
       var map = new google.maps.Map(document.getElementById('map'), {
+        zoomControl: false,
+        scaleControl: false,
+        scrollwheel: false,   
         zoom: 15,
         center: mapLocation,  
         mapTypeControlOptions: {
