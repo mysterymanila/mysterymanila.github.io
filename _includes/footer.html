@@ -1,0 +1,54 @@
+<footer id="footer-header" class="clearfix" >
+  <div class="container">
+    <div id="brand-logo">
+      <a
+        {% if page.layout == "front" %}
+          class="scroll-to-top" href="#">
+        {% else" %}
+          href="/">
+        {% endif %}
+        <img src="/img/brand-logo.png"/>
+      </a>
+      <p class="brand">&copy; {{'Mystery Manila' | upcase}} 2015</p>
+      <div>
+        <a href="http://www.crux.design" target="_blank">
+          <img src="/img/crux-logo.png"
+            style="margin-left: 8px;
+                  width: 85px;
+                  height: auto;
+                  margin-top: 20px;"/>
+        </a>
+      </div>
+    </div>
+
+    <div id="social-media-widgets">
+      <ul>
+        <!-- facebook -->
+        <li>
+          <div id="fb-root">
+            <div class="fb-like" data-href="https://www.facebook.com/Mysterymanila" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+          </div>
+        </li>
+
+        <!-- instagram -->
+        <!-- <li>
+          <span class="ig-follow" data-id="aab7e98871" data-count="false" data-size="small" data-username="true"></span>
+        </li> -->
+
+        <!-- twitter -->
+        <li>
+          <div style="vertical-align:middle;">
+            <a class="twitter-follow-button" href="https://twitter.com/mysterymanila" data-show-count="true" data-lang="en">
+              Follow @MysteryManila
+            </a>
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+	{% if page.slug == "jupiter" %}
+		<span><img src="www.mysterymanila.com/enigmasenmity/img/ak/txt.jpg"></span>
+	{% endif %}
+  </div>
+</footer>
