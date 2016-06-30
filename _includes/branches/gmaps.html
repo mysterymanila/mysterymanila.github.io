@@ -2,9 +2,12 @@
     <div class="container-fluid">
         <div class="row">
             <div id="map"></div>
-			{% if page.slug == "jupiter" %}
-				<br><br><span style="width: 80%; height: 300px;text-align:center;"><img src="http://www.mysterymanila.com/img/MAP-MKT2.png" ></span>
-			{% endif %}
+			
         </div>
+        {% if page.slug == "jupiter" %}
+	<div align="center" style="width: 80%; height: 300px;">
+		<img src="http://www.mysterymanila.com/img/MAP-MKT2.png" >
+	</div>
+	{% endif %}
     </div>
 </section>
