@@ -167,7 +167,9 @@ mm.runInstagramFeed = function () {
             new Instafeed({
                 get: 'tagged',
                 tagName: 'MYSTERYMANILA',
-                clientId: '2029fedaa66c420195123ec7c48407ac',
+                userId: '1162756535',
+                clientId: '2029fedaa66c420195123ec7c48',
+                // accessToken: '',
                 limit: 18,
                 sortBy: 'most-recent',
                 template: '<a href="{{link}}" target="_blank" class="col-md-2 col-sm-2 col-xs-6"><img src="{{image}}" /></a>',
