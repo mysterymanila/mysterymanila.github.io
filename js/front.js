@@ -173,6 +173,9 @@ mm.runInstagramFeed = function () {
                 sortBy: 'most-recent',
                 template: '<a href="{{link}}" target="_blank" class="col-md-2 col-sm-2 col-xs-6"><img src="{{image}}" /></a>',
                 resolution: 'low_resolution',
+                filter: function(image) {
+                    return image.tags.indexOf('TAG_NAME') >= 0;
+                },
                 success: function(feed){
                     var data = feed.data.reverse();
                     $('.placeholder').each(function(index, placeholder){
