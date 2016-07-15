@@ -169,7 +169,7 @@ mm.runInstagramFeed = function () {
                 tagName: 'MYSTERYMANILA',
                 userId: '1162756535',
                 clientId: '2029fedaa66c420195123ec7c48',
-                // accessToken: '',
+                accessToken: '1162756535.1677ed0.8fafbcb03c3d4d8cb6b559fda81ade57',
                 limit: 18,
                 sortBy: 'most-recent',
                 template: '<a href="{{link}}" target="_blank" class="col-md-2 col-sm-2 col-xs-6"><img src="{{image}}" /></a>',
