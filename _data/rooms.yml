@@ -1,22 +1,22 @@
 - id: 1
-  slug: buried-bodies
-  title: Buried Bodies
+  slug: aztec-adventure
+  title: Aztec Adventure
   branch:
     slug: quezon
-    class: transition1
-    position: -78px 0px
+    class: transition6
+    position: 0px -238px
     width: 75px
   icon:
-    position: -88px 0
+    position: 0 -262px
   sidebar_icon:
-      position: -53px 0
-  poster: /img/posters/buried-bodies.jpg
-  video: http://d3pfdit6z4xogx.cloudfront.net/videos/MM_BuriedBodies.mp4
+    position: 0 -154px
+  poster: /img/posters/aztec-adventure.jpg
+  video:
   frame:
-    top: top-brush-frame-3
-    bottom: bottom-brush-frame-2
+    top: top-brush-frame-1
+    bottom: bottom-brush-frame-4
   description: >
-    <p>Enigma strikes again. The psychopathic killer challenges you to escape from his graveyard using clues and puzzles hidden around the dark cemetery. Some of you will need to solve clues while being buried alive while others roam free to look for objects to help you escape.</p>
+    <p>Archeology Professor Jones was said to be missing in search of an artifact used by Queen Gilukhipa on an ancient Aztec ruin on the island of Boracay. While recovering his tracks inside the ruins, you found out that there are other groups that are after the artifact as well and they will do whatever it takes to grab hold of it.  With your life in danger, you have only 1 hour left to find the professor and the artifact before they find you inside the ruins and kill you.</p>
 
 - id: 2
   slug: rebeccas-revenge
@@ -66,7 +66,7 @@
   slug: ticking-timebomb
   title: Ticking Time Bomb
   branch:
-    slug: quezon
+    slug: boracay
     class: transition3
     position: -156px 0px
     width: 75px
@@ -187,26 +187,6 @@
     bottom: bottom-brush-frame-4
   description: >
     <p>You and your friends are kidnapped by psychopathic killer Enigma and only given 1 hour to escape the Chained Chamber. You must prove your worth by solving the riddles, puzzles and clues cleverly hidden inside. If you fail to escape, you will all be left for dead and stuck permanently inside.</p>
-
-- id: 3
-  slug: aztec-adventure
-  title: Aztec Adventure
-  branch:
-    slug: boracay
-    class: transition6
-    position: 0px -238px
-    width: 75px
-  icon:
-    position: 0 -262px
-  sidebar_icon:
-    position: 0 -154px
-  poster: /img/posters/aztec-adventure.jpg
-  video:
-  frame:
-    top: top-brush-frame-1
-    bottom: bottom-brush-frame-4
-  description: >
-    <p>Archeology Professor Jones was said to be missing in search of an artifact used by Queen Gilukhipa on an ancient Aztec ruin on the island of Boracay. While recovering his tracks inside the ruins, you found out that there are other groups that are after the artifact as well and they will do whatever it takes to grab hold of it.  With your life in danger, you have only 1 hour left to find the professor and the artifact before they find you inside the ruins and kill you.</p>
 
 - id: 4
   slug: tainted-treasure
