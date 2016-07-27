@@ -167,9 +167,8 @@ mm.runInstagramFeed = function () {
             new Instafeed({
                 get: 'tagged',
                 tagName: 'MYSTERYMANILA',
-                userId: '1162756535',
                 clientId: '0cd51b94022a49f0be1e4b114f24a9ea',
-                accessToken: "1162756535.0cd51b9.7b8b57dd36494ff08f9e4e5c976742b7",
+                accessToken: '1162756535.0cd51b9.7b8b57dd36494ff08f9e4e5c976742b7',
                 limit: 18,
                 sortBy: 'most-recent',
                 template: '<a href="{{link}}" target="_blank" class="col-md-2 col-sm-2 col-xs-6"><img src="{{image}}" /></a>',
@@ -178,8 +177,10 @@ mm.runInstagramFeed = function () {
                     var data = feed.data.reverse();
                     $('.placeholder').each(function(index, placeholder){
                         var model = data.pop();
-                        $(placeholder).html('<a href="'+ model.link +'" target="_blank">'
-                                + '<img src="'+ model.images.low_resolution.url +'" /></a>').hide().fadeIn();
+                        $(placeholder).html(
+                            '<a href="'+ model.link +'" target="_blank">'
+                            + '<img src="'+ model.images.low_resolution.url +'" />'
+                            + '</a>').hide().fadeIn();
                     });
                 }
             }).run();
