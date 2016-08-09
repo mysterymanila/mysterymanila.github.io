@@ -155,7 +155,7 @@ a:link {
 	#dp_image1 {width: 900px; 	height: 600px;	text-align: center;}
 	#main_image_index {width: 450px; 	height: 400px;	text-align: center;}
 	#clue {text-align: center;font-family:"arvo";font-weight:normal; font-size: 25px;color: #FFF;margin:0;}
-	#story {text-align: center;font-family:"Rock Salt";font-size:15px;}
+	#story {text-align: center;font-family:"arvo";font-size:15px;}
 	#h1_indexhtml {transform: rotate(-5deg);font-family:LeviReBrushed;}
 
 	#h1_prologue {font-size: 100px;}
