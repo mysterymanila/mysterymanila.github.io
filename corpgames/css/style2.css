@@ -150,6 +150,7 @@ a:link {
 
 
 	#logo {width: 200px; 	height: 200px;	text-align: center;}
+	#mmlogo {width: 200px; 	height: 260px;	text-align: center;}
 	#main_image {width: 800px; 	height: 500px;	text-align: center;}
 	#dp_image {width: 450px; 	height: 600px;	text-align: center;}
 	#dp_image1 {width: 900px; 	height: 600px;	text-align: center;}
@@ -157,7 +158,7 @@ a:link {
 	#clue {text-align: center;font-family:"arvo";font-weight:normal; font-size: 25px;color: #FFF;margin:0;}
 	#story {text-align: center;font-family:"arvo";font-size:15px;}
 	#h1_indexhtml {transform: rotate(-5deg);font-family:LeviReBrushed;}
-
+	#aura{background-color:black;}
 	#h1_prologue {font-size: 100px;}
 	#h1_dpstory {font-size: 60px;width:70%;text-align:center;position:block;margin-left: auto;
     margin-right: auto;}
@@ -166,6 +167,7 @@ a:link {
 
 @media only screen and (max-width: 980px) { 
 	#logo {width: 150px; 	height: 150px;	text-align: center;}
+	#mmlogo {width: 150px; 	height: 170px;	text-align: center;}
 	#main_image {width: 500px; 	height: 400px;	text-align: center;}
 	#main_image_index {width: 150px; height: 150px;	text-align: center;}
 	#clue {font-size: 15px;}
