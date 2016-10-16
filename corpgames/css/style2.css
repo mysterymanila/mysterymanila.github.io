@@ -226,13 +226,14 @@ a:link {
 
 @media only screen and (max-width: 980px) { 
 	#logo {width: 150px; 	height: 150px;	text-align: center;}
-	#mmlogo {width: 150px; 	height: 170px;	text-align: center;}
+	#mmlogo {width: 100px; 	height: 130px;	text-align: center;}
 	#main_image {width: 500px; 	height: 400px;	text-align: center;}
 	#main_image_index {width: 150px; height: 150px;	text-align: center;}
 	#clue {font-size: 15px;}
 	#story {font-size:12px;}
 	#h1_indextitle {font-size:50px;}
 	#h1_dpstory {font-size: 30px;}
+	#h1_dpstory label{font-size: 30px;}
 	#h2_dpstory {font-size: 10px;}
 	#dp_image {width: 300px; 	height: 400px;	text-align: center;}
 	#dp_image1 {width: 500px; 	height: 400px;	text-align: center;}
