@@ -51,7 +51,9 @@
 			if ($('#inputcode').val()=="268"){
 				//alert("Correct");
 				$('#img_mm').show(1000);	
+				$('#inputcode').val("---input disabled----")
 				$('#inputcode').prop('disabled', true);
+				$('#inputerror').hide(100);	
 			}
 			else{
 				//alert("Wrong");
