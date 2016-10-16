@@ -5,6 +5,7 @@
     <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>	
 	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style2.css"/>
 <script>
@@ -23,15 +24,52 @@
 	</h1>
 	<br>
 	<br>
-	<h1 id="h1_indextitle" style="font-family:LeviReBrushed;color:#FF8200">CONGRATULATIONS!</h1>
+	<h1 id="h1_indextitle" style="font-family:LeviReBrushed;color:#FF8200"></h1>
 	<p id="h1_dpstory" style="font-family:Calibri;color:white">
-			Good job on completing the mini challenge!
-			<br>
-			Use this voucher code <font color="red">"5e3s-7LeQ" </font>and enjoy a 10% discount on your next booking!
+			<img id="img_mm" src="img/mmamcctv.jpg" style="text-align:center;width:100%;height:100%;"/></h1>
 	</p>				
-	
+	<form action="" method="post">
+		<div id="login">
+			<p id="h1_dpstory" style="font-family:Calibri;color:white">
+				<label>Enter Code Here:</label>
+				<br>
+				<input type="text" id="inputcode" class="inputcode">			
+				<span id="inputerror"></span>
+				<br>
+				<button id="submit" >Submit</button>
+			<p>
+		</div>	
+	</form>
 </div>
-
+<script>
+	$('#img_mm').hide(1);
+	$('#inputerror').hide(1);
+	//function authUser(){
+	$('#submit').click(function(e) { //Add the 'e' event object to the parameters
+			e.preventDefault();
+			console.log($('#inputcode').val());
+			if ($('#inputcode').val()=="268"){
+				//alert("Correct");
+				$('#img_mm').show(1000);	
+				$('#inputcode').prop('disabled', true);
+			}
+			else{
+				//alert("Wrong");
+				//$('#img_mm').show(1000);	
+				
+				var $formContainer = $('#login');
+			  $formContainer.addClass('invalid');
+			  setTimeout(function(){
+				$formContainer.removeClass('invalid');
+			  },500);
+			//$('#email').val('');		
+			$('#inputcode').val('');			
+			$('#inputerror').html("<br>Invalid Code! Please try again");
+			$('#inputerror').show(100);
+			}
+	});
+</script>
 </body>
+
 </html>
 
