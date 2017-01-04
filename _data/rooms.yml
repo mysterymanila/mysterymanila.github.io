@@ -348,4 +348,91 @@
     <p>The fate of the world hangs in the balance as the all-powerful mutant, Apocalypse, threatens to destroy it.</p>
     <p>Professor X has recruited you, a team of young mutants, to help in the fight against Apocalypse. </p>
     <p>However, you must first prove yourselves by unleashing your mutant powers and surviving a test designed by the Professor inside the Danger Room.</p>	
-    
+
+- id: 1
+  slug: rebel-resistance
+  title: Rebel Resistance
+  branch:
+    slug: pasig
+    class: transition2
+    position: -78px -80px
+    width: 75px
+  icon:
+    position: -88px -88px
+  sidebar_icon:
+    position: -53px -53px
+  poster: /img/posters/rebel-resistance.jpg  
+  frame:
+    top: top-brush-frame-5
+    bottom: bottom-brush-frame-6
+  description: >
+    <p>You are tasked with an important mission to scour the outer rim of the galaxy and find important information that would help bring down the sinister forces threatening the galaxy. </p>
+    <p>As you are about to complete your mission, enemy ships attack and almost destroy your ship. </p>
+    <p>You have an hour to escape your ship with the critical information needed by the rebel resistance.</p>
+
+- id: 2
+  slug: sorcerers-stone
+  title: Sorcerer's Stone
+  branch:
+    slug: pasig
+    class: transition2
+    position: -78px -80px
+    width: 75px
+  icon:
+    position: -88px -88px
+  sidebar_icon:
+    position: -53px -53px
+  poster: /img/posters/sorcerers-stone.jpg  
+  frame:
+    top: top-brush-frame-5
+    bottom: bottom-brush-frame-6
+  description: >
+    <p>The evil dark wizard Sidious plots another diabolical scheme to get his hands on the famed Sorcerer's Stone that grants wealth and immortality to whoever possesses it. </p>
+    <p>You and your team of brave wizards must stop Sidious from his evil plan before it's too late.</p>
+    <p>You have an hour to finish the mission and save the world of wizardry.</p>
+	
+	
+- id: 3
+  slug: mr-moriarty
+  title: Mr. Moriarty
+  branch:
+    slug: pasig
+    class: transition2
+    position: -78px -80px
+    width: 75px
+  icon:
+    position: -88px -88px
+  sidebar_icon:
+    position: -53px -53px
+  poster: /img/posters/mr-moriarty.jpg  
+  frame:
+    top: top-brush-frame-5
+    bottom: bottom-brush-frame-6
+  description: >
+    <p>Mr. Moriarty is said to be the mastermind behind the series of terrorist attacks and murders.</p>
+    <p>Your group plays the role of Sherlock’s associates left with no choice but to gather evidence directly from Moriarty’s office.</p>
+    <p>With only an hour left, Can you find the ledger that will prove Mr. Moriarty's guilt?</p>
+		
+- id: 4
+  slug: morbid-morgue
+  title: Morbid Morgue
+  branch:
+    slug: pasig
+    class: transition2
+    position: -78px -80px
+    width: 75px
+  icon:
+    position: -88px -88px
+  sidebar_icon:
+    position: -53px -53px
+  poster: /img/posters/morbid-morgue.jpg  
+  frame:
+    top: top-brush-frame-5
+    bottom: bottom-brush-frame-6
+  description: >
+    <p>Enigma strikes again!</p>
+    <p>Your group was kidnapped and wakes up inside Enigma’s morbid morgue.</p>
+    <p>Using tools and resources found inside the morgue, you only have an hour to escape before he kills each and everyone of you.</p>
+    <p>Can you escape the Morbid Morgue?</p>
+	
+		
