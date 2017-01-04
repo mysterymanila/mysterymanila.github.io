@@ -61,27 +61,6 @@
     <p>It's 2016 and the psychopathic killer Enigma has been captured by the government. Using a method called dream snatching, you are hired to extract an evil plan from Enigma's mind within 60 minutes. In the process of extraction, you have to overcome several mind blocks and solve complex puzzles scattered within Enigma's sinister head.</p>
     <p>If you fail, millions of people will be in danger.</p>
 
-
-- id: 4
-  slug: ticking-timebomb
-  title: Ticking Time Bomb
-  branch:
-    slug: boracay
-    class: transition3
-    position: -156px 0px
-    width: 75px
-  icon:
-    position: -176px 0
-  sidebar_icon:
-    position: -106px 0
-  poster: /img/posters/ticking-timebomb.jpg
-  video: http://d3pfdit6z4xogx.cloudfront.net/videos/MM_TimeBomb.mp4
-  frame:
-    top: top-brush-frame-2
-    bottom: bottom-brush-frame-1
-  description: >
-    <p>You are all part of Metro Manila's elite bomb squad and have been called to disarm a ticking time bomb placed by a deranged psychopath at the heart of the city. To solve the mystery, you will need to go outside Mystery Manila and explore the nearby areas by foot to look for important clues. You have 90 minutes to disarm the bomb before it explodes.</p>
-
 - id: 1
   slug: rebeccas-room
   title: Rebecca's Room
@@ -147,67 +126,6 @@
     bottom: bottom-brush-frame-6
   description: >
     <p>As a trainee wizard, you and your friends are tasked to steal the magical time turner and stop Sidius from his evil master plan that will change the world of wizardry. To do this you must learn to mix potions, cast spells and solve magical puzzles. Hurry, the world of wizardry is counting on you!</p>
-
-- id: 1
-  slug: villainous-vault
-  title:  Villainous Vault
-  branch:
-    slug: boracay
-    class: transition4
-    position: -155px -158px
-    width: 75px
-  icon:
-    position: -176px -174px
-  sidebar_icon:
-    position: -106px -104px
-  poster: /img/posters/villanous-vault.jpg
-  video:
-  frame:
-    top: top-brush-frame-1
-    bottom: bottom-brush-frame-4
-  description: >
-    <p>A highly classified document that will cause a mass genocide has been contained in a secret vault on the island of Boracay. Your mission, if you choose to accept it, is to steal information from an evil spy organization's high-security vault within an hour and save the world!</p>
-
-- id: 2
-  slug: chained-chamber
-  title: Chained Chamber
-  branch:
-    slug: boracay
-    class: transition5
-    position: -78px -158px
-    width: 75px
-  icon:
-    position: -87px -174px
-  sidebar_icon:
-    position: -52px -104px
-  poster: /img/posters/chained-chamber.jpg
-  video:
-  frame:
-    top: top-brush-frame-1
-    bottom: bottom-brush-frame-4
-  description: >
-    <p>You and your friends are kidnapped by psychopathic killer Enigma and only given 1 hour to escape the Chained Chamber. You must prove your worth by solving the riddles, puzzles and clues cleverly hidden inside. If you fail to escape, you will all be left for dead and stuck permanently inside.</p>
-
-- id: 4
-  slug: tainted-treasure
-  hide: true
-  title: Tainted Treasure
-  branch:
-    slug: boracay
-    class: transition7
-    position: 0px -158px
-    width: 75px
-  icon:
-    position: 0 -174px
-  sidebar_icon:
-    position: 0 -102px
-  poster: /img/posters/tainted-treasure.jpg
-  video:
-  frame:
-    top: top-brush-frame-4
-    bottom: bottom-brush-frame-5
-  description: >
-    <p>(Coming Soon)- A century old tale says that there was a treasure left by an unknown pirate on the island of Boracay. Due to the harshness and cruelty of the pirate against the island's locals, he was cursed by the island's tribal chief along with all the treasure the pirate acquired from his past voyages.  Decades passed and it has been said that anyone who touches the treasure will be cursed and eventually perish. It is because of this curse that the treasure was locked in a safe place to keep other treasure seekers from dying. Your mission is to unlock the treasure and break the curse within 90 minutes. As your reward, you get to keep the treasure. Are you ready to run around Boracay's White Beach, break the curse, and unlock the treasure in this outdoor mystery? The choice is yours.</p>
 
 - id: 1
   slug: sinister-sensorium
