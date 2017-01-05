@@ -10,7 +10,7 @@ banner: /img/branches-cover/makati.jpg
 
 <script>
     function initMap() {
-      var mapLocation = {lat: 14.565571, lng: 121.027687};
+      var mapLocation = {lat: 14.580458, lng: 121.064753};
       var customMapType = new google.maps.StyledMapType([
           {
             featureType: 'road',
