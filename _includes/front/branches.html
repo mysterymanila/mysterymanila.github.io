@@ -3,7 +3,7 @@
         <div class="col-md-12">
             {% assign sorted-branch = site.branches | sort: 'rank' %}
             {% for branch in sorted-branch %}
-            <div class="col-md-4 branches-content">
+            <div class="col-md-6 branches-content">
                 <div class="branches-button-container">
                     <a href="/branch/{{ branch.slug }}" class="branch-url">
                         <img class="branches-image clearfix" src="/img/brand-logo.png"/>
