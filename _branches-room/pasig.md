@@ -45,13 +45,12 @@ banner: /img/branches-cover/makati.jpg
         }
       });
       
-      var image = '/img/map-icon/jupiter.png'
+      
       
       var marker = new google.maps.Marker({
           position: mapLocation,
           map: map,
-          center: mapLocation,
-          icon: image
+          center: mapLocation
       });
       
       map.mapTypes.set(customMapTypeId, customMapType);
