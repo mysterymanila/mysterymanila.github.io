@@ -361,7 +361,7 @@
     position: -88px -88px
   sidebar_icon:
     position: -53px -53px
-  poster: /img/posters/rebel-resistance.jpg  
+  poster: /img/posters/rebel-resistance.jpg
   frame:
     top: top-brush-frame-5
     bottom: bottom-brush-frame-6
@@ -382,7 +382,7 @@
     position: -88px -88px
   sidebar_icon:
     position: -53px -53px
-  poster: /img/posters/sorcerers-stone.jpg  
+  poster: /img/posters/sorcerers-stone.jpg
   frame:
     top: top-brush-frame-5
     bottom: bottom-brush-frame-6
@@ -390,8 +390,7 @@
     <p>The evil dark wizard Sidious plots another diabolical scheme to get his hands on the famed Sorcerer's Stone that grants wealth and immortality to whoever possesses it. </p>
     <p>You and your team of brave wizards must stop Sidious from his evil plan before it's too late.</p>
     <p>You have an hour to finish the mission and save the world of wizardry.</p>
-	
-	
+
 - id: 3
   slug: mr-moriarty
   title: Mr. Moriarty
@@ -404,7 +403,7 @@
     position: -88px -88px
   sidebar_icon:
     position: -53px -53px
-  poster: /img/posters/mr-moriarty.jpg  
+  poster: /img/posters/mr-moriarty.jpg
   frame:
     top: top-brush-frame-5
     bottom: bottom-brush-frame-6
@@ -412,7 +411,7 @@
     <p>Mr. Moriarty is said to be the mastermind behind the series of terrorist attacks and murders.</p>
     <p>Your group plays the role of Sherlock’s associates left with no choice but to gather evidence directly from Moriarty’s office.</p>
     <p>With only an hour left, Can you find the ledger that will prove Mr. Moriarty's guilt?</p>
-		
+
 - id: 4
   slug: morbid-morgue
   title: Morbid Morgue
@@ -425,7 +424,7 @@
     position: -88px -88px
   sidebar_icon:
     position: -53px -53px
-  poster: /img/posters/morbid-morgue.jpg  
+  poster: /img/posters/morbid-morgue.jpg
   frame:
     top: top-brush-frame-5
     bottom: bottom-brush-frame-6
@@ -434,5 +433,7 @@
     <p>Your group was kidnapped and wakes up inside Enigma’s morbid morgue.</p>
     <p>Using tools and resources found inside the morgue, you only have an hour to escape before he kills each and everyone of you.</p>
     <p>Can you escape the Morbid Morgue?</p>
-	
-		
+
+
+
+

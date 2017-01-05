@@ -4,7 +4,7 @@ title: AYALA MALLS THE 30TH
 branch-name: Ayala Malls The 30th
 layout: branches
 css: /css/branches.css
-banner: /img/branches-cover/jupiter.jpg
+banner: /img/branches-cover/makati.jpg
 
 ---
 
