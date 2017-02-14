@@ -67,7 +67,7 @@
 			$('#inputerror').hide(100);	
 		}
 		else{
-			alert("Wrong");
+			//alert("Wrong");
 			//$('#img_mm').show(1000);	
 			timeCounter=180;
 			ctr+=1;	
@@ -92,6 +92,8 @@
 				},180000);
 				$('#inputcode').val("Input disabled for 3 minutes")
 				$('#inputcode').prop('disabled', true);
+				$('#inputerror').html('Do not refresh the browser! The penalty countdown will start again with 3 minutes');
+				$('#inputerror').show(100);
 				$('#submit').prop('disabled', true);
 				
 			}
@@ -112,6 +114,8 @@
 				},180000);
 				$('#inputcode').val("Input disabled for 3 minutes")
 				$('#inputcode').prop('disabled', true);
+				$('#inputerror').html('Do not refresh the browser! The penalty countdown will start again with 3 minutes');
+				$('#inputerror').show(100);
 				$('#submit').prop('disabled', true);
 				
 			}
