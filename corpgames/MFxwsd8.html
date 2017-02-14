@@ -51,7 +51,7 @@
 	else{
 		var ctr = Number(localStorage.getItem("ctr"));
 	}
-	//alert(ctr);
+	alert(ctr);
 	//var ctr = 0;
 	$('#img_mm').hide(1);
 	$('#inputerror').hide(1);
@@ -67,7 +67,7 @@
 			$('#inputerror').hide(100);	
 		}
 		else{
-			//alert("Wrong");
+			alert("Wrong");
 			//$('#img_mm').show(1000);	
 			timeCounter=180;
 			ctr+=1;	
@@ -80,8 +80,7 @@
 			$('#inputcode').val('');			
 			$('#inputerror').html("<br>Invalid Code! Please try again");
 			$('#inputerror').show(100);
-			if(ctr>=1){
-				ctr=0;
+			if(ctr>=1){				
 				setTimeout(function(){
 					$('#inputcode').val("");
 					$('#inputcode').prop('disabled', false);
@@ -89,6 +88,7 @@
 					$('#submit').prop('disabled', false);
 					$('#inputerror').hide(100);	
 					localStorage.setItem("ctr",ctr);
+					ctr=0;
 				},180000);
 				$('#inputcode').val("Input disabled for 3 minutes")
 				$('#inputcode').prop('disabled', true);
@@ -98,7 +98,23 @@
 			localStorage.setItem("ctr",ctr);
 			//alert(document.cookie.ctr);
 		}
+		
 	});
+	if(ctr>=1){				
+				setTimeout(function(){
+					$('#inputcode').val("");
+					$('#inputcode').prop('disabled', false);
+					$('#inputcode').attr('placeholder', "Try Again");
+					$('#submit').prop('disabled', false);
+					$('#inputerror').hide(100);	
+					localStorage.setItem("ctr",ctr);
+					ctr=0;
+				},180000);
+				$('#inputcode').val("Input disabled for 3 minutes")
+				$('#inputcode').prop('disabled', true);
+				$('#submit').prop('disabled', true);
+				
+			}
 </script>
 </body>
 
