@@ -26,7 +26,8 @@
 	<br>
 	<h1 id="h1_indextitle" style="font-family:LeviReBrushed;color:#FF8200"></h1>
 	<p id="h1_dpstory" style="font-family:Calibri;color:white">
-			<img id="img_mm" src="img/mmamcctv.jpg" style="text-align:center;width:100%;height:100%;"/></h1>
+			<img id="img_mm2" src="img/MMA.jpg" style="text-align:center;width:100%;height:100%;"/></h1>
+			<img id="img_mm" src="img/code.jpg" style="text-align:center;width:100%;height:100%;display:none"/></h1>
 	</p>				
 	<form action="" method="post">
 		<div id="login">
@@ -42,33 +43,60 @@
 	</form>
 </div>
 <script>
+
+	if(Number(localStorage.getItem("ctr"))<0){
+		var ctr = 0;
+	}
+	else{
+		var ctr = Number(localStorage.getItem("ctr"));
+	}
+	//alert(ctr);
+	//var ctr = 0;
 	$('#img_mm').hide(1);
 	$('#inputerror').hide(1);
-	//function authUser(){
 	$('#submit').click(function(e) { //Add the 'e' event object to the parameters
-			e.preventDefault();
-			console.log($('#inputcode').val());
-			if ($('#inputcode').val()=="C2"){
-				//alert("Correct");
-				$('#img_mm').show(1000);	
-				$('#inputcode').val("---input disabled----")
-				$('#inputcode').prop('disabled', true);
-				$('#inputerror').hide(100);	
-			}
-			else{
-				//alert("Wrong");
-				//$('#img_mm').show(1000);	
-				
-				var $formContainer = $('#login');
+		e.preventDefault();
+		//console.log($('#inputcode').val());
+		if ($('#inputcode').val()=="C2"){
+			//alert("Correct");
+			$('#img_mm2').hide(1000);	
+			$('#img_mm').show(1000);					
+			$('#inputcode').val("---input disabled----")
+			$('#inputcode').prop('disabled', true);
+			$('#inputerror').hide(100);	
+		}
+		else{
+			//alert("Wrong");
+			//$('#img_mm').show(1000);	
+			timeCounter=180;
+			ctr+=1;	
+			var $formContainer = $('#login');
 			  $formContainer.addClass('invalid');
 			  setTimeout(function(){
 				$formContainer.removeClass('invalid');
-			  },500);
+			  },1000);
 			//$('#email').val('');		
 			$('#inputcode').val('');			
 			$('#inputerror').html("<br>Invalid Code! Please try again");
 			$('#inputerror').show(100);
+			if(ctr>=3){
+				ctr=0;
+				setTimeout(function(){
+					$('#inputcode').val("");
+					$('#inputcode').prop('disabled', false);
+					$('#inputcode').attr('placeholder', "Try Again");
+					$('#submit').prop('disabled', false);
+					$('#inputerror').hide(100);	
+					localStorage.setItem("ctr",ctr);
+				},5000);
+				$('#inputcode').val("Input disabled for 3 minutes")
+				$('#inputcode').prop('disabled', true);
+				$('#submit').prop('disabled', true);
+				
 			}
+			localStorage.setItem("ctr",ctr);
+			//alert(document.cookie.ctr);
+		}
 	});
 </script>
 </body>
