@@ -74,8 +74,9 @@
 			  if (user) {
 				var teamName = $('#inputTeam').val().toUpperCase();
 				console.log(teamName);
-				groupName.child(teamName).once('value', function(snapshot) {
-								var errorCount = snapshot.val();
+				groupName.once('value', function(snapshot) {
+					if(snapshot.hasChild(teamName)){
+						var errorCount = snapshot.child(teamName).val();
 								//console.log(snapshot.key);
 								//console.log(errorCount.tries);
 								if (errorCount.tries >= 3){
@@ -189,6 +190,10 @@
 										}
 									}//else inputcode
 								}//else errorCount>=3
+					}
+					else{
+						alert("TEAM DOES NOT EXISTS");
+					}	
 				});//close groupName FB Value
 			  }//if user
 		});//end of main_config.auth().onAuthStateChanged(function(user)	  
