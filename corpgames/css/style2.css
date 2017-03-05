@@ -18,7 +18,7 @@
 	text-align:center;
 	vertical-align:middle;
 }
-#inputcode{
+#inputcode, #inputTeam{
 	font-size:30px;
 	/*font-family: 'Rubik', sans-serif;*/
 	border:2px black solid;
@@ -252,4 +252,9 @@ a:link {
 	#clue{font-size:15px;}
 	#story {font-size:9px;}
 	#h2_dpstory {font-size: 10px;}
+	#inputcode, #inputTeam{
+	font-size:10px;
+	width:80%;
+	
+	}
 }

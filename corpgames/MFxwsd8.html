@@ -163,6 +163,11 @@
 										var ctr = errorCount.tries;
 										ctr++;
 										if(ctr==3){
+											$('#inputcode').val("Input disabled for 180 seconds")
+											$('#inputcode').prop('disabled', true);
+											//$('#inputerror').html('Do not refresh the browser! The penalty countdown will start again with 3 minutes');
+											//$('#inputerror').show(1000);
+											$('#submit').prop('disabled', true);
 											timeNow = Date.now();
 											console.log(timeNow);
 											groupName.child(teamName).update({
