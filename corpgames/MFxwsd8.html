@@ -122,8 +122,8 @@
 										
 										$('#inputcode').val("Input disabled for "+penaltyTime2/1000+" seconds")
 										$('#inputcode').prop('disabled', true);
-										//$('#inputerror').html('Do not refresh the browser! The penalty countdown will start again with 3 minutes');
-										//$('#inputerror').show(1000);
+										$('#inputerror').html('You have exceeded the allowable attempts. Please wait for a few seconds before trying again');
+										$('#inputerror').show(1000);
 										$('#submit').prop('disabled', true);
 									}
 									else{
