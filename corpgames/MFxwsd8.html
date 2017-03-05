@@ -145,9 +145,15 @@
 										//alert("Correct");
 										$('#img_mm2').hide(1000);	
 										$('#img_mm').show(1000);					
-										$('#inputcode').val("---input disabled----")
+										$('#img_mm').focus();
+										$('#inputcode').val("---input disabled----");
+										$('#inputerror').html("<font color='green'>CONGRATULATIONS! CHECK THE IMAGE ABOVE FOR YOUR NEXT CLUE!</font>");
+										$('#inputerror').show(100);
 										$('#inputcode').prop('disabled', true);
-										$('#inputerror').hide(100);	
+																				
+										groupName.child(teamName).update({
+												"tries":0												
+											});
 									}
 									else{//else inputcode
 										var $formContainer = $('#login');
