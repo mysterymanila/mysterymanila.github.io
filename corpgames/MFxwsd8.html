@@ -155,9 +155,10 @@
 										  setTimeout(function(){
 											$formContainer.removeClass('invalid');
 										  },1000);
-										//$('#email').val('');		
+										//$('#email').val('');
+										tries = 2 - errorCount.tries;
 										$('#inputcode').val('');			
-										$('#inputerror').html("<br>Invalid Code!" + errorCount.tries + " Please try again");
+										$('#inputerror').html("<br>Invalid Code! You have " + tries + " attempt/s left! Please try again");
 										$('#inputerror').show(100);
 										var ctr = errorCount.tries;
 										ctr++;
