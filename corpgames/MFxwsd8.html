@@ -72,11 +72,12 @@
 		e.preventDefault();
 		main_config.auth().onAuthStateChanged(function(user) {
 			  if (user) {
-				var teamName = $('#inputTeam').val();
+				var teamName = $('#inputTeam').val().toUpperCase();
+				console.log(teamName);
 				groupName.child(teamName).once('value', function(snapshot) {
 								var errorCount = snapshot.val();
-								console.log(snapshot.key);
-								console.log(errorCount.tries);
+								//console.log(snapshot.key);
+								//console.log(errorCount.tries);
 								if (errorCount.tries >= 3){
 									var timeNow = Date.now();
 									console.log("Time Now: "+timeNow);
@@ -150,7 +151,7 @@
 										$('#inputerror').html("<font color='green'>CONGRATULATIONS! CHECK THE IMAGE ABOVE FOR YOUR NEXT CLUE!</font>");
 										$('#inputerror').show(100);
 										$('#inputcode').prop('disabled', true);
-																				
+										$('#submit').prop('disabled', true);										
 										groupName.child(teamName).update({
 												"tries":0												
 											});
