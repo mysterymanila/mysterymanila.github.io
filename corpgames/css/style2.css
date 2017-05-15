@@ -13,7 +13,7 @@
 #inputerror{
 	color:red;
 	/*font-family: 'Rubik', sans-serif;*/
-	font-family:LeviReBrushed;
+	/* font-family:LeviReBrushed; */
 	font-size:20px;	
 	text-align:center;
 	vertical-align:middle;
@@ -220,7 +220,8 @@ a:link {
 	#h1_prologue {font-size: 100px;}
 	#h1_dpstory {font-size: 60px;width:70%;text-align:center;position:block;margin-left: auto;
     margin-right: auto;}
-	#h1_dpstory label {font-size:40px;font-family:LeviReBrushed;color:orange;}
+	#h1_dpstory label {font-size:40px;color:orange;}
+	/* #h1_dpstory label {font-family:LeviReBrushed;} */
 	#h2_dpstory {font-size: 20px;width:70%;text-align:center;position:block;margin-left: auto;
     margin-right: auto;}
 
