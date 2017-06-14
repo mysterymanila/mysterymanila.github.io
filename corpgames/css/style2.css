@@ -247,6 +247,7 @@ a:link {
 	#dp_image {width: 240px; 	height: 300px;	text-align: center;}
 	#dp_image1 {width: 300px; 	height: 200px;	text-align: center;}
 	#dp_image_small {width: 240px; height: 100px;	text-align: center;}
+	#mmlogo {width: 100px; 	height: 100px;	text-align: center;}/*FOR BLACK LOGO only*/
 	#h1_prologue {font-size: 50px;}
 	h1{font-size:34px;}
 	#h1_indextitle {font-size:34px;}
