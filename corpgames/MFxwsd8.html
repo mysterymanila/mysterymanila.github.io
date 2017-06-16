@@ -26,13 +26,17 @@
 <body>
 <div id = "content">
 	<h1>
-		<img src="../img/logo/MM-logo-square-black.gif" id="mmlogo" />
+		<img src="../img/logo/MM-logo-square-white.gif" id="mmlogo" />
 	</h1>
 	<br>
 	<h1 id="h1_indextitle" style="color:#FF8200"></h1>
-	<p id="h1_dpstory" style="font-family:Calibri;color:white">
-			<img id="img_mm2" src="img/unilabFirst.PNG" style="text-align:center;width:100%;height:100%;"/></h1>
-			<img id="img_mm" src="img/braille419.png" style="text-align:center;width:100%;height:100%;display:none"/>
+	<p id="h1_dpstory" style="font-family:Calibri;color:black">
+			<img id="img_mm2" src="img/unilabFirst2.PNG" style="text-align:center;width:100%;height:100%;"/></h1>
+			<!-- UNILAB -->
+			<!-- <img id="img_mm" src="img/braille419.png" style="text-align:center;width:100%;height:100%;display:none"/> -->
+			<!-- MJN -->
+			<!-- <img id="img_mm" src="img/braille419.png" style="text-align:center;width:100%;height:100%;display:none"/> -->
+			<img id="img_mm" src="img/MJNFinal.png" style="text-align:center;width:100%;height:100%;display:none"/>
 	</p>				
 	<form action="" method="post">
 		<div id="login">
@@ -42,7 +46,7 @@
 				<!-- <br> -->
 				<!-- <input type="text" id="inputTeam" class="inputTeam">			 -->
 				
-				<label style="color:BLACK">Enter Password:</label>
+				<label style="color:white">Enter Password:</label>
 				<br>
 				<input type="text" id="inputcode" class="inputcode">			
 				<br><span id="inputerror"></span>
@@ -58,14 +62,20 @@
 	$('#inputerror').hide(1);
 	$('#submit').click(function(e) { //Add the 'e' event object to the parameters
 		var inputString = $('#inputcode').val();
-		var answerString = "3215";
+		//UNILAB
+		//var answerString = "3215";
+		//MJN
+		var answerString = "innovate";
 		if (inputString.toUpperCase() === answerString.toUpperCase()){
 			//alert("Correct");
 			//$('#img_mm2').hide(1000);	
 			//$('#img_mm').show(1000);					
 			//$('#img_mm').focus();
 			$('#inputcode').val("---input disabled----");
-			$('#inputerror').html("<font color='green'>The OVAL has the answer to decipher the code above!</font>");
+			//UNILAB
+			//$('#inputerror').html("<font color='green'>The OVAL has the answer to decipher the code above!</font>");
+			//MJN
+			//$('#inputerror').html("<font color='green'>Congratulations on solving this chall</font>");
 			$('#inputerror').show(100);
 			$('#img_mm').show(100);
 			$('#img_mm2').hide(1);
