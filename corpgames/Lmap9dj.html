@@ -1,10 +1,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<title>FINAL CLUE</title>
+<title>Mystery Manila Mini Challenge</title>
     <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>	
 	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style2.css"/>
 <script>
@@ -15,23 +16,78 @@
 	  ga('create', 'UA-49854580-1', 'mysterymanila.com');
 	  ga('send', 'pageview');
    </script>
+<script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
+<script>
+  // Initialize Firebase
+
+		
+</script>   
 </head>
-<body id = "aura">
+<body>
 <div id = "content">
 	<h1>
-		<img src="../img/mystery-logo.png" id="mmlogo" />
+		<img src="../img/logo/MM-logo-square-white.gif" id="mmlogo" />
 	</h1>
 	<br>
-	<h2 id="clue">To find out who I am, investigate the picture below:</h2>		
-	<p>
-		<img src="img/final_clue.JPG" id="dp_image1" />
-	</p>
-	<br><hr><br>
-	<h2 id="clue">To find out where the diamonds are, solve the anagrams below:
-	<br><br><font color="red">CONFER ONCE MORE</font></h2>	
-	
+	<h1 id="h1_indextitle" style="color:#FF8200"></h1>
+	<p id="h1_dpstory" style="font-family:LeviReBrushed;color:white">
+			<img id="img_mm2" src="img/unilabFirst.PNG" style="text-align:center;width:100%;height:100%;"/></h1>
+			<!-- UNILAB -->
+			<img id="img_mm" src="img/braille958.png" style="text-align:center;width:100%;height:100%;display:none"/>
+			<!-- MJN -->
+			<!-- <img id="img_mm" src="img/braille419.png" style="text-align:center;width:100%;height:100%;display:none"/> -->
+			<!-- <img id="img_mm" src="img/MJNFinal.png" style="text-align:center;width:100%;height:100%;display:none"/> -->
+	</p>				
+	<form action="" method="post">
+		<div id="login">
+			<p id="h1_dpstory" style="font-family:Calibri;color:black">
+				
+				<!-- <label style="color:white">Enter Username:</label> -->
+				<!-- <br> -->
+				<!-- <input type="text" id="inputTeam" class="inputTeam">			 -->
+				
+				<label style="color:white">Enter Password:</label>
+				<br>
+				<input type="text" id="inputcode" class="inputcode">			
+				<br><span id="inputerror"></span>
+				<br>
+				<button id="submit" >Submit</button>
+			<p>
+		</div>	
+	</form>
 </div>
-
+<script>
+	
+	$('#img_mm').hide(1);
+	$('#inputerror').hide(1);
+	$('#submit').click(function(e) { //Add the 'e' event object to the parameters
+		var inputString = $('#inputcode').val();
+		//UNILAB
+		var answerString = "3215";
+		//MJN
+		//var answerString = "innovate";
+		if (inputString.toUpperCase() === answerString.toUpperCase()){
+			//alert("Correct");
+			//$('#img_mm2').hide(1000);	
+			//$('#img_mm').show(1000);					
+			//$('#img_mm').focus();
+			$('#inputcode').val("---input disabled----");
+			//UNILAB
+			$('#inputerror').html("<font color='green'>The OVAL has the answer to decipher the code above!</font>");
+			//MJN
+			//$('#inputerror').html("<font color='green'>Congratulations on solving this chall</font>");
+			$('#inputerror').show(100);
+			$('#img_mm').show(100);
+			$('#img_mm2').hide(1);
+			$('#inputcode').prop('disabled', true);
+			$('#submit').prop('disabled', true);										
+			
+		}
+		else{
+			alert("ERROR!");
+		}//else inputcode	
+	});//end of $('#submit').click(function(e) {
+</script>
 </body>
-</html>
 
+</html>
