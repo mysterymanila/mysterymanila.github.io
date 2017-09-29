@@ -1,10 +1,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<title>Welcome Orange Citizens!</title>
+<title>Mystery Manila Mini Challenge</title>
     <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>	
 	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style2.css"/>
 <script>
@@ -15,33 +16,78 @@
 	  ga('create', 'UA-49854580-1', 'mysterymanila.com');
 	  ga('send', 'pageview');
    </script>
+<script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
+<script>
+  // Initialize Firebase
+
+		
+</script>   
 </head>
-<body>
+<body style="background:white">
 <div id = "content">
 	<h1>
-		<img src="img/OW.png" id="logo" />
+		<img src="../img/logo/MM-logo-square-black.gif" id="mmlogo" />
 	</h1>
 	<br>
-	<h1 id="h1_indextitle" style="font-family:Calibri;color:#FF8200">CONGRATULATIONS!</h1>
-	<p id="h1_dpstory" style="font-family:Calibri;color:white">
-		<br><br>"This is the second part of the puzzle. Your objective is to <font color="#FF8200">show the gamekeeper that you have successfully logged in to my Orange World APP account</font> for you to move on to the next challenge. Remember that throughout this game, you only need my account to win the challenges.
-		<br>
-		<br> My next clue is somewhere on this page. If you can't see anything, try selecting all, copy it and paste it on your notes"		
-	</p>				
-	<br><hr>
-	<p id="story" ><font color="#002123">Login using the designated account for your group:				
-		<br>"<b>Username</b>: finnwdiaz11@gmail.com		<b>Password</b>: n _ a _ n _ 1 _" 		
-		<br>"<b>Username</b>: finnwdiaz12@gmail.com		<b>Password</b>: 1 _ 9 _ 1 _ 1 _" 		
-		<br>"<b>Username</b>: finnwdiaz13@gmail.com		<b>Password</b>: J _ u _ 1 _ 2 _" 		
-		<br>"<b>Username</b>: finnwdiaz14@gmail.com		<b>Password</b>: 7 _ m _ a _ D" 		
-		<br>"<b>Username</b>: finnwdiaz15@gmail.com		<b>Password</b>: c _ 9 _ n _ c _ E" 		
-	</p></font><br><br>
-	
-	<p id="h2_dpstory" style="font-family:Calibri;color:white">
-		<br><br>I mean select everything
+	<h1 id="h1_indextitle" style="color:#FF8200"></h1>
+	<p id="h1_dpstory" style="font-family:LeviReBrushed;color:white">
+			<img id="img_mm2" src="img/aev.jpg" style="text-align:center;width:100%;height:100%;"/></h1>
+			<!-- UNILAB -->
+			<!-- <img id="img_mm" src="img/braille958.png" style="text-align:center;width:100%;height:100%;display:none"/> -->
+			<!-- MJN -->
+			<!-- <img id="img_mm" src="img/braille419.png" style="text-align:center;width:100%;height:100%;display:none"/> -->
+			<img id="img_mm" src="img/MJNFinal.png" style="text-align:center;width:100%;height:100%;display:none"/> 
 	</p>
+	<br><span id="inputerror"></span>				
+	<form action="" method="post">
+		<div id="login">
+			<p id="h1_dpstory" style="font-family:Futura ;color:red">
+				
+				You have failed the integrity challenge! 
+				
+				<br><br>A penalty additional 5 minutes will be imposed to your team on your total time. 
+
+				<br><br>To continue playing, ask your marshall for your next clue!
+				
+			<p>
+				
+		</div>	
+	</form>
 </div>
-
+<script>
+	
+	$('#img_mm').hide(1);
+	$('#inputerror').hide(1);
+	$('#submit').click(function(e) { //Add the 'e' event object to the parameters
+		var inputString = $('#inputcode').val();
+		//UNILAB
+		//var answerString = "3215";
+		//MJN
+		var answerString = "teamwork";
+		if (inputString.toUpperCase() === answerString.toUpperCase()){
+			$('#login').hide(1);
+			//alert("Correct");
+			//$('#img_mm2').hide(1000);	
+			//$('#img_mm').show(1000);					
+			//$('#img_mm').focus();
+			$('#inputcode').val("---input disabled----");
+			//UNILAB
+			$('#inputerror').html("<font color='RED' font='arial'>To open the black box, use <b>POWER</b> to open the lock. </font>");
+			//MJN
+			//$('#inputerror').html("<font color='green'>Congratulations on solving this chall</font>");
+			$('#inputerror').show(100);
+			$('#img_mm').show(100);
+			
+			$('#img_mm2').hide(1);
+			$('#inputcode').prop('disabled', true);
+			$('#submit').prop('disabled', true);										
+			
+		}
+		else{
+			alert("ERROR!");
+		}//else inputcode	
+	});//end of $('#submit').click(function(e) {
+</script>
 </body>
-</html>
 
+</html>
