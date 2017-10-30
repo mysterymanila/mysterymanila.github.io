@@ -209,7 +209,7 @@ a:link {
 
 	#logo {width: 200px; 	height: 200px;	text-align: center;}
 	#mmlogo {width: 200px; 	height: 260px;	text-align: center;}/*white logo*/
-	#mmlogo {width: 300px; 	height: 300px;	text-align: center;}/*black logo*/
+	/* #mmlogo {width: 300px; 	height: 300px;	text-align: center;} */
 	#main_image {width: 800px; 	height: 500px;	text-align: center;}
 	#dp_image {width: 450px; 	height: 600px;	text-align: center;}
 	#dp_image1 {width: 900px; 	height: 600px;	text-align: center;}
