@@ -69,6 +69,7 @@
 	$('#inputerror').hide(1);
 	$('#submit').click(function(e) { //Add the 'e' event object to the parameters
 		e.preventDefault();
+		var answerString = "#SmartGigaSurf";
 		main_config.auth().onAuthStateChanged(function(user) {
 			  if (user) {
 				var teamName = $('#inputTeam').val().toUpperCase();
@@ -130,7 +131,12 @@
 										$('#submit').prop('disabled', true);
 									}
 									else{
-										if ($('#inputcode').val()=="#SmartGigaSurf"){
+										var inputString = $('#inputcode').val();
+										//UNILAB
+										//var answerString = "3215";
+										//MJN
+										
+										if (inputString.toUpperCase() === answerString.toUpperCase()){
 												//alert("Correct");
 												$('#img_mm2').hide(1000);	
 												$('#img_mm').show(1000);					
@@ -179,7 +185,12 @@
 									
 								}
 								else{
-									if ($('#inputcode').val()=="#SmartGigaSurf"){
+									var inputString = $('#inputcode').val();
+										//UNILAB
+										//var answerString = "3215";
+										//MJN
+										
+										if (inputString.toUpperCase() === answerString.toUpperCase()){
 										$('#img_mm2').hide(1000);	
 										$('#img_mm').show(1000);					
 										$('#img_mm').focus();
