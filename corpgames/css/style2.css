@@ -2,9 +2,9 @@
     font-family: LeviReBrushed;
     src: url(../../fonts/LeviReBrushed.ttf);
 }
-@import http://fonts.googleapis.com/css?family=Indie+Flower;
+/* @import http://fonts.googleapis.com/css?family=Indie+Flower;
 @import http://fonts.googleapis.com/css?family=Poiret+One;
-@import http://fonts.googleapis.com/css?family=Amatic+SC;
+@import http://fonts.googleapis.com/css?family=Amatic+SC; */
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
 @import url('https://fonts.googleapis.com/css?family=Rubik');
 #login{
