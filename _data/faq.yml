@@ -34,28 +34,28 @@
         <thead>
             <th>No. of Pax</th>
             <th>Price per Pax(Manila Branches)</th>
-            <th>Price per Pax(Boracay Branch)</th>
+           
         </thead>
         <tbody>
             <tr>
                 <td>2</td>
                 <td>550</td>
-                <td>650</td>
+                
             </tr>
             <tr>
                 <td>3</td>
                 <td>500</td>
-                <td>600</td>
+                
             </tr>
             <tr>
                 <td>4</td>
                 <td>450</td>
-                <td>550</td>
+                
             </tr>
             <tr>
-                <td>5 or 6</td>
+                <td>5 - 7</td>
                 <td>400</td>
-                <td>500</td>
+               
             </tr>
         </tbody>
     </table>
