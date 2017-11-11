@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Mystery Manila Mini Challenge</title>
+    <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>	
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="js/bootstrap.min.js"></script>	
+<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-49854580-1', 'mysterymanila.com');
+	  ga('send', 'pageview');
+   </script>
+<script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
+<script>
+  // Initialize Firebase
+
+		
+</script>   
+</head>
+<body style="background:black">
+		<div class="col-sm-12 col-lg-12">			
+			<div class="row">					
+					<img src="img/poster.jpg" />
+			</div>
+		</div>
+
+<script>
+	
+	$('#img_mm').hide(1);
+	$('#inputerror').hide(1);
+	$('#submit').click(function(e) { //Add the 'e' event object to the parameters
+		var inputString = $('#inputcode').val();
+		//UNILAB
+		//var answerString = "3215";
+		//MJN
+		var answerString = "teamwork";
+		if (inputString.toUpperCase() === answerString.toUpperCase()){
+			$('#login').hide(1);
+			//alert("Correct");
+			//$('#img_mm2').hide(1000);	
+			//$('#img_mm').show(1000);					
+			//$('#img_mm').focus();
+			$('#inputcode').val("---input disabled----");
+			//UNILAB
+			$('#inputerror').html("<font color='RED' font='Futura'>To open the black box, use <b>POWER</b> to open the lock. </font>");
+			//MJN
+			//$('#inputerror').html("<font color='green'>Congratulations on solving this chall</font>");
+			$('#inputerror').show(100);
+			$('#img_mm').show(100);
+			
+			$('#img_mm2').hide(1);
+			$('#inputcode').prop('disabled', true);
+			$('#submit').prop('disabled', true);										
+			
+		}
+		else{
+			alert("ERROR!");
+		}//else inputcode	
+	});//end of $('#submit').click(function(e) {
+</script>
+</body>
+
+</html>

@@ -1,0 +1,813 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+h1.hilight {
+    background: yellow;
+  }
+@font-face {
+    font-family: futura;
+    src: url(futura.ttf);
+}
+
+/*
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+-----------------------------------GENERAL CSS--------------------------------------
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+*/
+#container {width: 30%;margin-left:auto;margin-right:auto;}		
+#container2 {width: 80%;margin-left:auto;margin-right:auto;}		
+#container2 label { display: table-cell; padding: 0 20px 0 0; vertical-align:middle;font-size:30px;}
+#container2 label.label_provisionsR { display: table-cell; padding: 0 0px 0 20px; vertical-align:middle;}
+#container2 form  { display: table;   margin:auto;width:100%;text-align:center;   }
+#container2 p     { display: table-row;  }
+#add_route input [type=text]{ display: table-cell; vertical-align:middle;}
+#container2 input[type=submit]{   
+display:table-cell;
+text-decoration: none;
+background-color:#0288d1;
+color:#fff;
+padding:10px;
+font-size:30px;
+cursor:pointer;
+margin:0 10px;
+font-family: 'Rubik', sans-serif;
+border:0;
+width:40%
+}
+#container2 select{   
+text-decoration: none;
+background-color:white;
+color:#0288d1;
+padding:10px;
+font-size:30px;
+cursor:pointer;
+font-family: 'Rubik', sans-serif;
+border:1px solid #0288d1;
+width:40%;
+text-align:center;
+text-align-last:center;
+
+}
+#container2 select.orig_provisions,#container2 input.orig_provisions, #container2 select.dest_provisions{width:40%;text-align-last:center;margin: 2% 5%;font-size:30px;}
+#container2 input.inputFlightDetails{width:25%;margin:3%;font-size:20px;text-align:center;}
+
+img {display:block;margin-left:auto;margin-right:auto;text-align:center;height:200px;width:200px;}
+label{text-align:left;font-family: 'Rubik', sans-serif;color:#0288d1}
+button{border:0;}	
+#main {
+margin:10px auto;
+font-family: 'Rubik', sans-serif;
+}
+body {
+margin:0;
+/*background-color:#212121;*/
+}
+span {
+color:red
+}
+h2 {
+font-family: 'Rubik', sans-serif;
+background-color:0288d1;
+text-align:center;
+color:#fff;
+/*margin:-10px -40px 10px -40px;*/
+padding:15px
+}
+h1 {text-align:center; font-size:15px; width:25%;border: 1px solid #0288d1;}
+h3 {text-align:center;}
+h4 {text-align:center;}
+hr {
+border:0;
+border-bottom:1px solid #ccc;
+margin-bottom:30px
+}
+#login_logo {width:150;height:150;margin-top:30px}
+
+#login {
+font-family: 'Rubik', sans-serif;
+border:2px solid #0288d1;
+padding:10px 40px 25px;
+margin:30px auto;
+}
+input[type=text],input[type=password],button {
+width:99.5%;
+padding:10px;
+/* margin-top:8px; */
+color:#0288d1;
+border:1px solid #0288d1;
+padding-left:5px;
+font-size:16px;
+font-family: 'Rubik', sans-serif;
+background-color:white;
+}
+input[type=submit],button {
+width:40%;
+background-color:0288d1;
+color:#fff;
+padding:10px;
+font-size:20px;
+cursor:pointer;
+/*margin-left:100px;*/
+margin-bottom:15px;
+border:0
+
+}
+input[type=submit]:hover {
+	cursor:pointer;
+	background:white;
+	color:black;	
+	border-style:solid;
+	border-color:black;
+	border-width:2px;
+
+}
+#page_header{
+		text-align:center;
+		font-size:30px;
+		padding:50px;
+		font-family: 'Rubik', sans-serif;
+		background-color:black;
+		color:white;
+}
+/*
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+-----------------------------------CHECK DATE CSS--------------------------------------
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+*/
+#header h2{font-family: 'Rubik', sans-serif;font-size:30px;}
+#container h1 {font-family: 'Rubik', sans-serif;text-align:center;font-size:30px;}		
+input[type=checkbox] {
+background-color:black;
+width:5%;
+height:4%;
+color:#fff;
+padding:10px;
+font-size:20px;
+cursor:pointer;
+margin-bottom:15px
+}
+/*adminweb*/
+#submitdiv {
+	text-align:center;	
+}
+
+#checkdate_form label, #timesheet label, #updatetbl  label{text-align:left;}
+#timesheet input[type=submit], #updatetbl input[type=submit], #checkdate_form input[type=submit]{	
+	width:70%;
+}
+#checkbox_div{
+	font-size:25px;
+	font-family: 'Rubik', sans-serif;
+	text-align:left;	
+}
+#flight_id, #flightStatus{
+	width:40%;
+	text-align:center;
+	font-size:30px;	
+}
+#flight_id{margin-top:3%;display:none}
+#flight_id2{
+	width:100%;
+	text-align:center;
+	font-size:20px;	
+	text-align-last:center;
+}
+
+#profile {
+padding: 20px 50px 50px 50px;
+font-size:30px;
+background-color:#0288d1;
+color:#fff;
+font-family: 'Rubik', sans-serif;
+}
+#profile p {margin:0; font-size:15px;text-align:right;}
+#welcome{
+	padding:5px;
+}
+/*
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+-----------------------------------LOGOUT CSS--------------------------------------
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+*/
+#logout {
+float:right;
+padding:5px;
+background:#0288d1;
+color:white;
+}
+#logout img{
+	height:40px;
+	width:40px;
+	
+}
+a:hover {
+	cursor:pointer;	
+	color:#0288d1;
+	/* background-color:white;	 */
+}
+a {
+text-decoration:none;
+color:#fff
+}
+i {
+color:#fff
+}
+/*
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+-----------------------------------PROFILE CSS--------------------------------------
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+*/
+
+#add_route{
+	padding: 0 0 10px 0;
+	margin: 20px auto;
+	text-align:left;
+	color:white;
+	/* font-size:20px; */
+	font-family: 'Rubik', sans-serif;
+	width:90%;
+	background:white;
+	border-radius: 8px;
+	border: 3px solid #0288d1; 
+}
+
+#add_route h2 {text-decoration: underline; margin: 0;}
+#add_route form  { display: table;   margin:auto;width:90%   }
+#add_route p     { display: table-row;  }
+#add_route label { display: table-cell; padding: 0 20px 0 0; vertical-align:middle;}
+#add_route label.label_provisionsR { display: table-cell; padding: 0 0px 0 20px; vertical-align:middle;}
+
+#add_route select { display:table-cell;
+text-decoration: none;
+background-color:white;
+color:#0288d1;
+padding:10px;
+font-size:20px;
+cursor:pointer;
+margin:10px;
+font-family: 'Rubik', sans-serif;
+border:1px solid #0288d1;
+width:91%
+}
+
+#add_route select.dest_provisions { margin-left:15px;}
+#add_route select.orig_provisions { margin-left:14px;}
+#add_route select.time_unit {width:40%;margin: 8px 2px 0px 14px;text-align-last:center;}
+#add_route input { display: table-cell; vertical-align:middle;}
+#add_route input[type=submit]{   
+display:table-cell;
+text-decoration: none;
+background-color:#0288d1;
+color:#fff;
+padding:10px;
+font-size:20px;
+cursor:pointer;
+margin:0 10px;
+font-family: 'Rubik', sans-serif;
+border:0;
+width:20%
+}
+#add_route input[type=submit]:hover{
+	cursor:pointer;
+	background:white;
+	color:#0288d1;	
+	border-style:solid;
+	border-color:#0288d1;
+	border-width:2px;
+}
+#add_route input[type=text]{
+	width:88%;
+	float:right;	
+	background:white;
+	color:#0288d1;
+	text-align:center;
+	padding: 10px 3px;
+}
+#add_route input.input_provisions1 { width: 40%;margin: 8px 2px 0px 10px;}
+#add_route select.input_provisions1 { width: 40%;margin: 8px 2px 0px 8px;}
+
+#airlineGlobalVar {
+	padding: 0 0 10px 0;
+	margin: 20px auto;
+	text-align:left;
+	color:white;
+	/* font-size:20px; */
+	font-family: 'Rubik', sans-serif;
+	width:90%;
+	background:white;
+	border: 3px solid #0288d1; 
+	border-radius: 8px
+}
+
+
+.cell {
+  display:table-cell;
+  padding:0px;
+  background-color: gold;
+}
+#firstName_span {color:white;}
+#airlineName_ID {color:#0288d1;font-size:30px}
+#airlineGlobalVar h2 {text-decoration: underline; margin: 0;}
+#airlineLocalVar h4 {color:#0288d1;margin: 0;text-align:center}
+#airlineGlobalVar form  { display: table;   margin:auto ;width:85%;  }
+#airlineGlobalVar p     { display: table-row;  }
+#airlineGlobalVar label { display: table-cell; padding: 0 20px 0 0; vertical-align:middle;}
+#airlineGlobalVar label.label_provisionsR { display: table-cell; padding: 0 0px 0 20px; vertical-align:middle;}
+#airlineGlobalVar select.input_provisionsR { width:91%;}
+#airlineGlobalVar input { display: table-cell; vertical-align:middle;}
+#airlineGlobalVar input[type=submit],#airlineLocalVar input[type=submit]  {   
+display:table-cell;
+text-decoration: none;
+background-color:#0288d1;
+color:#fff;
+padding:10px;
+font-size:20px;
+cursor:pointer;
+margin:0 10px;
+font-family: 'Rubik', sans-serif;
+border:0;
+width:20%
+}
+
+.remove_local:hover {cursor:pointer;color:white;background-color:#0288d1;border-radius:8px;}
+h1.remove_local {
+    font-size: 20px;
+    width: 15%;
+}
+.disabled_box:hover {cursor:pointer;color:white;background-color:#0288d1;border-radius:8px;}
+#airlineGlobalVar input[type=submit]:hover,#airlineLocalVar input[type=submit]:hover{
+	cursor:pointer;
+	background:white;
+	color:#0288d1;	
+	border-style:solid;
+	border-color:#0288d1;
+	border-width:2px;
+}
+#airlineGlobalVar select { display:table-cell;
+text-decoration: none;
+background-color:white;
+color:#0288d1;
+padding:10px;
+font-size:16px;
+cursor:pointer;
+margin:10px 0 0 17px;
+font-family: 'Rubik', sans-serif;
+border:1px solid #0288d1;
+width:40%;
+text-align-last:center;
+}
+#airlineGlobalVar input[type=text]{
+	width:88%;
+	float:right;	
+	background:white;
+	color:#0288d1;
+	text-align:center;
+	padding: 10px 3px;
+}
+#localDiv {padding: 0 0 10px 0;
+	margin: 20px auto;
+	text-align:left;
+	color:white;
+	font-size:20px;
+	font-family: 'Rubik', sans-serif;
+	width:80%;
+	border: 2px solid #0288d1; }
+#airlineGlobalVar input.input_provisions1 { width: 39%;margin: 8px 2px 0px 10px;}
+#airlineLocalVar {
+	padding: 0 0 10px 0;
+	margin: 20px auto;
+	text-align:left;
+	color:white;
+	font-size:20px;
+	font-family: 'Rubik', sans-serif;
+	width:90%;
+	background:white;
+	border: 3px solid #0288d1; 
+	border-radius: 8px;
+}
+
+
+#firstName_span {color:white;}
+#airlineLocalVar h2 {text-decoration: underline; margin: 0;}
+#airlineLocalVar form  { display: table;   margin:auto   }
+#airlineLocalVar p     { display: table-row;  }
+#airlineLocalVar label { display: table-cell; padding: 0 10px 0 0; vertical-align:middle;}
+#airlineLocalVar label.label_provisionsR { display: table-cell; padding: 0 0 0 10px; vertical-align:middle;margin-right:10px;}
+#airlineLocalVar input { display: table-cell; vertical-align:middle;}
+#airlineLocalVar input[type=text]{
+	width:88%;
+	float:right;	
+	background:white;
+	color:#0288d1;
+	text-align:center;
+	padding: 10px 3px;
+}
+#airlineLocalVar input.input_provisions1 { 
+width: 40%;
+/* margin: 8px 2px 0px 12px; */
+}
+#airlineLocalVar select { display:table-cell;
+text-decoration: none;
+background-color:white;
+color:#0288d1;
+padding:10px;
+font-size:16px;
+cursor:pointer;
+margin:10px 20px;
+font-family: 'Rubik', sans-serif;
+border:1px solid #0288d1;
+width:91%
+}
+#airlineLocalVar select.time_unit {width:40%;
+margin: 8px 2px 0px 21px;
+/* padding: 9.5px 30px; */
+}
+#airlineLocalVar input[type=submit] {
+width:25%;
+background-color:#0288d1;
+color:#fff;
+padding:10px;
+font-size:20px;
+cursor:pointer;
+margin-bottom:15px;
+border:0
+
+}
+#airlineLocalVar input[type=submit]:hover {
+	cursor:pointer;
+	background:white;
+	color:#0288d1;	
+	border-style:solid;
+	border-color:#0288d1;
+	border-width:2px;
+
+}
+
+
+
+
+
+
+
+
+
+
+#messagesDiv{
+	margin: 0 auto;
+	text-align:center;
+	color:white;
+	font-size:30px;
+	font-family: 'Rubik', sans-serif;
+	width:60%;
+}
+
+#pagebuttons{
+	width:80%;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:10%;
+	text-align:center;
+	
+}
+#button1 {
+    width: 70%;
+	font-size: 30px;
+	font-family: 'Rubik', sans-serif;;
+    height:100px;
+	margin-bottom:30px;
+    background-color:#0288d1;
+	color:white;
+	margin-right:20px;
+	margin-left:20px;
+	border:0;
+}
+#button3 {
+    width: 45%;
+	font-size: 30px;
+	font-family: 'Rubik', sans-serif;;
+    height:100px;
+	margin-bottom:30px;
+    background-color:black;
+	color:white;
+	margin-right:20px;
+	margin-left:20px;
+	border:0;
+}
+#button2{
+    width: 70%;
+	font-size: 30px;
+	font-family: 'Rubik', sans-serif;;
+    height:100px;
+	margin-bottom:30px;
+    background-color:black;
+	color:white;
+	margin-right:20px;
+	margin-left:20px;
+	border:0;
+}
+#button1:hover,#button2:hover,#button3:hover {
+	cursor:pointer;
+	background:white;
+	color:#0288d1;	
+	border-style:solid;
+	border-color:#0288d1;
+	border-width:2px;
+}
+/*
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+-----------------------------------MOBILE CSS--------------------------------------
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+*/
+@media only screen and (max-width: 980px) { 
+	#container {width: 80%;margin-left:auto;margin-right:auto;}		
+	img {display:block;margin-left:auto;margin-right:auto;text-align:center;}
+	#profile {font-size:20px}
+	#button1,#button2,#button3{width:70%; margin-bottom:20px;font-size:25px;height:120px;}
+	button {margin-left:130px;}
+	h1{width:100%;}
+}
+@media only screen and (max-width: 480px) { 
+	#container {width: 80%;margin-left:auto;margin-right:auto;}		
+	img {display:block;margin-left:auto;margin-right:auto;text-align:center;}
+	#profile {font-size:20px}
+	#button1,#button2,#button3{width:70%; margin-bottom:20px;font-size:25px;height:120px;border:0;}
+	#checkbox_div{font-size:20px;}
+	input[type=checkbox] {height:13px;}
+	#date_booking, #date_departure, #date_arrival{	width:100%;	text-align:center;	font-size:30px;}
+	#header h2{ font-family: 'Rubik', sans-serif;font-size:30px;}
+	#container h1 {font-size:30px;}	
+	#login_logo {width:100;height:100;margin-top:30px}
+	button {font-size:17px;margin-left:44;width:60%}	
+	h2 {font-size:15px;}
+	input[type=submit]  {   
+	font-size:15px;
+	}
+
+}
+/*table{
+    border: 1px solid black;
+    table-layout: fixed;
+    width: 200px;
+}
+
+th, td {
+    border: 1px solid black;
+    overflow: hidden;
+    width: 100px;
+	word-wrap: break-word
+}*/
+
+
+.invalid {
+    outline-color: red;
+    /* also need animation and -moz-animation */
+    animation: shake .5s linear;
+    -webkit-animation: shake .5s linear;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+/* also need keyframes and -moz-keyframes */
+ @-webkit-keyframes shake {
+    8%, 41% {
+        -webkit-transform: translateX(-10px);
+    }
+    25%, 58% {
+        -webkit-transform: translateX(10px);
+    }
+    75% {
+        -webkit-transform: translateX(-5px);
+    }
+    92% {
+        -webkit-transform: translateX(5px);
+    }
+    0%, 100% {
+        -webkit-transform: translateX(0);
+    }
+}
+
+
+#accordion {
+    background:#white;
+    width: 90%;
+    margin: 2% auto;
+	border-radius: 8px;	
+}
+
+/* accordion header */
+#accordion h2 {
+    background:#ccc;
+    line-height: 14px;
+    margin:0;
+    padding:20px 15px;
+    font-size:20px;
+	font-family: 'Rubik', sans-serif;
+    font-weight:normal;
+    border-bottom:1px solid #0288d1;
+    cursor:pointer;
+	text-decoration: none;
+}
+#accordion h3 {
+    background:white;
+    line-height: 14px;
+    margin:0;
+    padding:20px 15px;
+    font-size:20px;
+	font-family: 'Rubik', sans-serif;
+    font-weight:normal;
+    border-bottom:1px solid #0288d1;
+    cursor:pointer;
+	text-decoration: none;
+}
+
+/* currently active header */
+#accordion h2.current {
+    cursor:pointer;
+    background-color:#fff;
+	text-decoration: underline;
+	
+}
+
+/* accordion pane */
+#accordion .pane {
+    border:2px solid #0288d1;
+	/* border-radius: 0 0 8px 8px; */
+    border-bottom:2px solid #0288d1;
+	background-color:white;
+    display:none;
+    /* height:330px; */
+    padding:15px;
+    color:#0288d1;
+    font-size:15px;
+	/* padding-bottom: 10%; */
+}
+
+/* a title inside pane */
+#accordion .pane h3 {
+    font-weight:normal;
+    margin:0;
+    font-size:16px;
+    color:#999;
+}
+
+/*
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+--------------------------------------DASHBOARD CSS-----------------------------------
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+*/
+#submitAddFlight, #submitDashboard, #submitCALvalue, #submitDashboardConfirm {margin-top: 5%;text-align:center;
+text-decoration: none;
+background-color:#0288d1;
+color:#fff;
+padding:10px;
+font-size:30px;
+text-align-last:center;
+cursor:pointer;
+margin:5% 10px;
+font-family: 'Rubik', sans-serif;
+border:0;}
+
+#submitDashboard:hover {
+	cursor:pointer;
+	background:white;
+	color:#0288d1;	
+	border-style:solid;
+	border-color:#0288d1;
+	border-width:2px;
+
+}
+
+.ordes_form {width:70%}
+#dashboard {
+	width:80%;
+	margin: 0 auto;	
+}
+
+#dashboard table{
+	width:100%;
+	font-family: 'Rubik', sans-serif;
+	/*border:2px solid #0288d1;*/
+	margin: 5% auto;	
+	color: #0288d1;
+	border-collapse: collapse;
+}
+#dashboard th,td{
+		/* font-size:30px; */
+		border:1px solid #0288d1;
+		border-collapse: collapse;
+		text-align: center;
+}
+#date_booking{
+	width:40%;
+	text-align:center;
+	font-size:30px;
+	/*margin-left:10%;	*/
+}
+#dashboard select{   
+text-decoration: none;
+background-color:white;
+color:#0288d1;
+padding:9px;
+font-size:30px;
+cursor:pointer;
+font-family: 'Rubik', sans-serif;
+border:1px solid #0288d1;
+width:40%;
+text-align:center;
+text-align-last:center;
+
+}
+#flightAvailability, #flightStatus{
+	width:30%;
+	text-align:center;
+	font-size:30px;
+	margin:0 5%;	
+}
+
+#dashboard h2 {color:#0288d1;font-size:30px;font-family: 'Rubik', sans-serif;}
+#dashboard form  { display: table;   margin:auto;width:80%;text-align:center;   }
+#dashboard p     { display: table-row; margin-bottom:5%;text-align-last:center }
+#dashboard input [type=text]{ display: table-cell; vertical-align:middle;}
+#dashboard label.label_provisions { display: table-cell; padding: 0 0px 0 20px; vertical-align:middle;}
+#dashboard label { display: table-cell; padding: 0 20px 0 0; vertical-align:middle;font-size:20px;}
+#dashboard label.label_provisionsR { display: table-cell; padding: 0 0px 0 20px; vertical-align:middle;}
+#submitfdashboard{   
+display:table-cell;
+text-decoration: none;
+background-color:#0288d1;
+color:#fff;
+padding:10px;
+font-size:30px;
+text-align-last:center;
+cursor:pointer;
+margin:5% 10px;
+font-family: 'Rubik', sans-serif;
+border:0;
+width:50%
+}
+#tableDashboard {}
+#fdashboardStatus input.label_dashboardStatus{
+	display:table-cell;
+	border:0;
+}
+#totalBidAmount,#totalFlightRevenue,#totalActualFlightRevenue{font-size:30px;}
+
+/*
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+--------------------------------------FLIGHT LEVEL CSS-----------------------------------------
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+*/
+#airlineFlightLevelVar select { display:table-cell;
+text-decoration: none;
+background-color:white;
+color:#0288d1;
+padding:10px;
+font-size:16px;
+cursor:pointer;
+margin:10px 20px;
+font-family: 'Rubik', sans-serif;
+border:1px solid #0288d1;
+width:91%
+}
+#airlineFlightLevelVar select.time_unit {width:40%;margin: 8px 2px 0px 21px;padding: 9.5px 30px;text-align-last:middle;}
+#airlineFlightLevelVar input[type=submit] {
+width:25%;
+background-color:#0288d1;
+color:#fff;
+padding:10px;
+font-size:20px;
+cursor:pointer;
+margin-bottom:15px;
+border:0
+
+}
+#airlineFlightLevelVar input[type=submit]:hover {
+	cursor:pointer;
+	background:white;
+	color:#0288d1;	
+	border-style:solid;
+	border-color:#0288d1;
+	border-width:2px;
+
+}
+#addrouteform{
+	background:white;
+}
+
+#origin_add{
+	text-align-last:center;
+}
