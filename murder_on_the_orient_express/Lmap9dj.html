@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<title>Mystery Manila Mini Challenge</title>
+<title>Murder On The Orient Express</title>
     <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>	
 	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
@@ -17,54 +17,77 @@
 	  ga('create', 'UA-49854580-1', 'mysterymanila.com');
 	  ga('send', 'pageview');
    </script>
+   <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
 <script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
+<style>
+	.post-content {
+background: none repeat scroll 0 0 #FFFFFF;
+opacity: 0.5;
+top:85%;
+left:23%;
+position: absolute;
+color: blue;
+font-family:  'Lora';
+}
+</style>
 <script>
   // Initialize Firebase
 
 		
 </script>   
 </head>
-<body style="background:black">
-		<div class="col-sm-12 col-lg-12">			
-			<div class="row">					
-					<img src="img/poster.jpg" />
+<body style="background:white">				
+	<div class="row">
+		<div class="container">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="img/poster.jpg" alt="Los Angeles" style="width:100%;">
+						<div class="caption post-content">
+							<h3>
+								<p id="demo"></p> 
+							</h3>	
+						</div>
+					</div>
+				</div>
+			
+				<!-- Left and right controls -->
+				
 			</div>
 		</div>
-
-<script>
-	
-	$('#img_mm').hide(1);
-	$('#inputerror').hide(1);
-	$('#submit').click(function(e) { //Add the 'e' event object to the parameters
-		var inputString = $('#inputcode').val();
-		//UNILAB
-		//var answerString = "3215";
-		//MJN
-		var answerString = "teamwork";
-		if (inputString.toUpperCase() === answerString.toUpperCase()){
-			$('#login').hide(1);
-			//alert("Correct");
-			//$('#img_mm2').hide(1000);	
-			//$('#img_mm').show(1000);					
-			//$('#img_mm').focus();
-			$('#inputcode').val("---input disabled----");
-			//UNILAB
-			$('#inputerror').html("<font color='RED' font='Futura'>To open the black box, use <b>POWER</b> to open the lock. </font>");
-			//MJN
-			//$('#inputerror').html("<font color='green'>Congratulations on solving this chall</font>");
-			$('#inputerror').show(100);
-			$('#img_mm').show(100);
-			
-			$('#img_mm2').hide(1);
-			$('#inputcode').prop('disabled', true);
-			$('#submit').prop('disabled', true);										
-			
-		}
-		else{
-			alert("ERROR!");
-		}//else inputcode	
-	});//end of $('#submit').click(function(e) {
-</script>
+	</div>
 </body>
-
+<script>
+		// Set the date we're counting down to
+		var countDownDate = new Date("Nov 29, 2017 13:00:00").getTime();
+		
+		// Update the count down every 1 second
+		var x = setInterval(function() {
+		
+		  // Get todays date and time
+		  var now = new Date().getTime();
+		
+		  // Find the distance between now an the count down date
+		  var distance = countDownDate - now;
+		
+		  // Time calculations for days, hours, minutes and seconds
+		  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+		  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+		  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+		
+		  // Display the result in the element with id="demo"
+		  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+		  + minutes + "m " + seconds + "s ";
+		
+		  // If the count down is finished, write some text 
+		  if (distance < 0) {
+			clearInterval(x);
+			document.getElementById("demo").innerHTML = "EXPIRED";
+		  }
+		}, 1000);
+		</script>
 </html>
