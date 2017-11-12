@@ -5,7 +5,15 @@
     <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>	
 	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+	
+	<!-- MULTISCROLL HEADERS -->
+	<link rel="stylesheet" type="text/css" href="css/jquery.multiscroll.css" />		
+	<link rel="stylesheet" type="text/css" href="css/examples.css" />		
 	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+	<script type="text/javascript" src="js/jquery.easings.min.js"></script>
+	<script type="text/javascript" src="js/jquery.multiscroll.js"></script>
+
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<script src="js/bootstrap.min.js"></script>	
@@ -27,7 +35,12 @@
 	}
 </style>
 <script>
-  // Initialize Firebase
+  // Initialize Multi Scrolll
+  $(document).ready(function() {
+	$('#myContainer').multiscroll({
+		sectionsColor: ['', '#4BBFC3', '#7BAABE'],
+	});
+});
 
   		
 </script>   
@@ -38,11 +51,12 @@
 		background-image: url("img/poster.jpg");
 		
 		/* Set a specific height */
-		height: 700px; 
-
+		height: 900px; 
+		
 		/* Create the parallax scrolling effect */
 		background-attachment: fixed;
 		background-position: center;
+		background-position: top 100px bottom 10px;
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
@@ -107,8 +121,27 @@
 		  }
 		  #vid {
 			width: 80%;
+			height: 100%;
+			}
+			.parallax { 
+			/* The image used */
+			background-image: url("img/poster.jpg");
+			
+			/* Set a specific height */
+			height: 900px; 
+
+			/* Create the parallax scrolling effect */
+			
+			}
+			.caption {
+			position: absolute;
+			left: 0;
+			top: 70%;
+			width: 100%;
+			text-align: center;
+			color: #000;
 		}
-	  }
+	  }/* END OF @MEDIA */
 	  
 	
 
@@ -139,7 +172,18 @@
 			
 		</div>	
 		<div class="row" style="text-align:center">
-
+				<div id="multiscroll">
+						<div class="ms-left">
+							<div class="ms-section"></div>
+							<div class="ms-section">Some section</div>
+							<div class="ms-section">Some section</div>
+						</div>
+						<div class="ms-right">
+							<div class="ms-section"></div>
+							<div class="ms-section">Some section</div>
+							<div class="ms-section">Some section</div>
+						</div>
+				</div>
 		</div>
 	</div>
 </body>
