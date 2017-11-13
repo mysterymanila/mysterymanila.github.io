@@ -28,17 +28,13 @@
    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
 <script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
 <style>
-	#demo {
-		opacity: 0.5;
-		
-		font-family:  'Lora';
-	}
+
 </style>
 <script>
   // Initialize Multi Scrolll
   $(document).ready(function() {
 	$('#myContainer').multiscroll({
-		sectionsColor: ['', '#4BBFC3', '#7BAABE'],
+		sectionsColor: ['', '#019dae', '#7BAABE'],
 	});
 });
 
@@ -46,6 +42,16 @@
 </script>   
 
 <style>
+	@font-face {
+	font-family: 'Rational';
+	src: url(fonts/Rational.otf),        
+	}
+	#demo {
+		/* opacity: 0.5; */
+		font-family:  'Rational',sans-serif;
+		font-size: 1em;
+	}
+
 	.parallax { 
 		/* The image used */
 		background-image: url("img/poster.jpg");
@@ -55,8 +61,8 @@
 		
 		/* Create the parallax scrolling effect */
 		background-attachment: fixed;
-		background-position: center;
-		background-position: top 100px bottom 10px;
+		/* background-position: center; */
+		background-position: 50% calc(50% - 30px) ;	
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
@@ -104,39 +110,39 @@
 	  h3 {
 		letter-spacing: 5px;
 		text-transform: uppercase;
-		font: 20px "Lato", sans-serif;
+		font-family:  'Rational',sans-serif;
 		color: #ffffff;
 	  }
 	#id{
 		color: white;
 	}
 	#vid {
-	width: 60%;
+		width: 80%;
+		height: 40%;
 	}
 	  
 	  /* Turn off parallax scrolling for tablets and phones */
 	  @media only screen and (max-device-width: 1024px) {
-		  .bgimg-1, .bgimg-2, .bgimg-3 {
-			  background-attachment: scroll;
-		  }
-		  #vid {
+		.bgimg-1, .bgimg-2, .bgimg-3 {
+			background-attachment: scroll;
+		}
+		#vid {
 			width: 80%;
 			height: 100%;
-			}
-			.parallax { 
+		}
+		.parallax { 
 			/* The image used */
 			background-image: url("img/poster.jpg");
 			
 			/* Set a specific height */
 			background-size: contain;
 			width: 370px;
- 			height: 667px;
+			height: 667px;
 
 			/* Create the parallax scrolling effect */
-			
-			}
-			
-			.caption {
+		}
+		
+		.caption {
 			position: absolute;
 			left: 0;
 			top: 70%;
@@ -145,50 +151,66 @@
 			color: #000;
 		}
 	  }/* END OF @MEDIA */
-	  
+	 
 	
 
 </style>
 </head>
-<body style="background:#000" >				
+<body style="background:#000;font-family:'Rational',sans-serif;" >				
 	<div class="parallax">
-		<div class="caption">
-			<span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"><p id="demo"></p> </span>
-		  </div>
+		<!-- <div class="caption">
+			<span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">START</span>
+		  </div> -->
 	</div>
 	<div class="container" style="background:#000">
 		<!-- COUNT DOWN TIMER -->
 		<div class="row" style="text-align:center">
-			<div class="col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4 center-block">
-				<ol class="breadcrumb">
-					<p id="demo"></p> 
-				</ol>
-			</div>
-		</div>
-
-		<div class="row" style="text-align:center">
-			<h3>Catch the trailer!</h3>
-			
-			<video id="vid" controls>
-					<source src="img/trailer.mp4" type="video/mp4">
-			</video>
-			
-		</div>	
-		<div class="row" style="text-align:center">
 				<div id="multiscroll">
 						<div class="ms-left">
-							<div class="ms-section"></div>
-							<div class="ms-section">Some section</div>
+							<div class="ms-section">
+									
+							</div>
+							<div class="ms-section" >
+								
+									<video id="vid" controls>
+											<source src="img/trailer.mp4" type="video/mp4">
+										</video>
+
+								
+							</div>
 							<div class="ms-section">Some section</div>
 						</div>
 						<div class="ms-right">
 							<div class="ms-section"></div>
-							<div class="ms-section">Some section</div>
+							<div class="ms-section">
+								
+								<h1 style="
+								color: #45cdff;
+								text-shadow: 0 0 0.36vw #45cdff;
+								font-family:  'Rational',sans-serif;
+								letter-spacing: 1px;" >
+									Catch the trailer
+								</h1>
+								<br>
+								<h2 style="
+								color: #45cdff;
+								text-shadow: 0 0 0.36vw #45cdff;
+								font-family:  'Rational',sans-serif;
+								letter-spacing: 1px;">
+									In cinemas on November 29
+									<p id="demo" style="font-size: 1em;
+									color: #45cdff;
+									text-shadow: 0 0 0.36vw #45cdff;
+									font-family:  'Rational',sans-serif;
+									letter-spacing: 1px;"></p> 
+								</h2>
+							</div>
 							<div class="ms-section">Some section</div>
 						</div>
 				</div>
 		</div>
 	</div>
+	
 </body>
 <script>
 		// Set the date we're counting down to
