@@ -12,7 +12,7 @@
 	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
 	<script type="text/javascript" src="js/jquery.easings.min.js"></script>
 	<script type="text/javascript" src="js/jquery.multiscroll.js"></script>
-
+	
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -34,7 +34,7 @@
   // Initialize Multi Scrolll
   $(document).ready(function() {
 	$('#myContainer').multiscroll({
-		sectionsColor: ['', '#019dae', '#7BAABE'],
+		sectionsColor: ['', '#000', '#afb0b5'],
 	});
 });
 
@@ -44,7 +44,7 @@
 <style>
 	@font-face {
 	font-family: 'Rational';
-	src: url(fonts/Rational.otf),        
+	src: url(https://www.cluesareeverywhere.com/html/fonts/Rational/Rene%20Bieder%20-%20RationalDisplay-ExtraLight.otf),        
 	}
 	#demo {
 		/* opacity: 0.5; */
@@ -132,14 +132,26 @@
 		}
 		.parallax { 
 			/* The image used */
-			background-image: url("img/poster.jpg");
-			
+			background-image: url("img/title.png");
+			background-position: 50% 40%; 
 			/* Set a specific height */
+			
+			
+			height: 100%;
+
+			background: url(img/338410id1k.jpg) no-repeat center center fixed;
 			background-size: contain;
-			width: 370px;
-			height: 667px;
+			
+}
 
 			/* Create the parallax scrolling effect */
+			h1 {
+				color: #45cdff;
+								text-shadow: 0 0 0.36vw #45cdff;
+								font-family:  'Rational',sans-serif;
+								letter-spacing: 1px;
+			}
+
 		}
 		
 		.caption {
@@ -178,34 +190,22 @@
 
 								
 							</div>
-							<div class="ms-section">Some section</div>
+							<div class="ms-section"></div>
 						</div>
 						<div class="ms-right">
 							<div class="ms-section"></div>
 							<div class="ms-section">
 								
-								<h1 style="
-								color: #45cdff;
-								text-shadow: 0 0 0.36vw #45cdff;
-								font-family:  'Rational',sans-serif;
-								letter-spacing: 1px;" >
+								<h1 >
 									Catch the trailer
 								</h1>
-								<br>
-								<h2 style="
-								color: #45cdff;
-								text-shadow: 0 0 0.36vw #45cdff;
-								font-family:  'Rational',sans-serif;
-								letter-spacing: 1px;">
+								
+								<h2>
 									In cinemas on November 29
-									<p id="demo" style="font-size: 1em;
-									color: #45cdff;
-									text-shadow: 0 0 0.36vw #45cdff;
-									font-family:  'Rational',sans-serif;
-									letter-spacing: 1px;"></p> 
+									<p id="demo"></p> 
 								</h2>
 							</div>
-							<div class="ms-section">Some section</div>
+							<div class="ms-section"></div>
 						</div>
 				</div>
 		</div>
@@ -213,6 +213,8 @@
 	
 </body>
 <script>
+
+
 		// Set the date we're counting down to
 		var countDownDate = new Date("Nov 29, 2017 13:00:00").getTime();
 		
