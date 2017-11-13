@@ -34,15 +34,18 @@
   // Initialize Multi Scrolll
   $(document).ready(function() {
 	$('#myContainer').multiscroll({
-		sectionsColor: ['', '#000', '#afb0b5'],
-		anchors: ['home', 'trailer', 'characters'],
+		sectionsColor: ['', '#000', '#afb0b5','white'],
+		anchors: ['home', 'trailer', 'characters','media'],
 		
 		navigation: true,
-		navigationTooltips: ['Home', 'Trailer', 'Main Characters'],
+		navigationTooltips: ['Home', 'Trailer', 'Main Characters','Media'],
 		css3:true,
 		responsiveWidth: 1000,
 		responsiveExpand: true,
 		responsiveExpandKey: 'YWx2YXJvdHJpZ28uY29tX3IxaGNtVnpjRzl1YzJsMlpVVjRjR0Z1WkE9PWo4Mw==',
+		afterRender: function(){
+                    $('body').addClass('section1-loaded');
+                }
 	});
 });
 
@@ -93,6 +96,13 @@
         #section2-left h2{
             font-size: 1.7em;
         }
+		#section2-right h2{
+            font-size: 3em;
+			color: #45cdff;
+				text-shadow: 0 0 3em #45cdff;
+				font-family:  'Rational',sans-serif;
+				letter-spacing: 1px;
+        }
         #section3-left{
            background-color: #27474E;
            background-image: url('imgs/cards.jpg');
@@ -116,17 +126,26 @@
         #section2-right{
             background: #ffe164;
             text-align: center;
-            background-image: url(imgs/phone.png);
+            /* background-image: url(imgs/phone.png);
             background-position: 100% 100%;
-            background-repeat: no-repeat;
+            background-repeat: no-repeat; */
         }
         #section3-right{
-            background: #66D7D1;
+            /* background: #66D7D1;
             text-align: right;
-            color: #fff;
+            color: #fff; */
         }
         #section3-right h2{
             color: #fff;
+        }
+		#section4-right{
+            color: #000;
+        }
+		#section4-left{
+            color: #000;
+        }
+		#section4-right,#section4-left{
+            color: #000;
         }
 	#demo {
 		/* opacity: 0.5; */
@@ -190,7 +209,7 @@
 	  }
 	  
 	  h3 {
-		letter-spacing: 5px;
+		letter-spacing: 3px;
 		text-transform: uppercase;
 		font-family:  'Rational',sans-serif;
 		color: #ffffff;
@@ -257,7 +276,9 @@
 				font-family:  'Rational',sans-serif;
 				letter-spacing: 1px;
 			}
-
+			#section2-right h2{
+            font-size: 1em;
+			}
 			.caption {
 			font-size:1em;
 			display: none;
@@ -292,10 +313,12 @@
 									
 							</div>
 							<div class="ms-section section2" id="section2-left">
-								
+									
 									<video id="vid" controls>
 											<source src="img/trailer.mp4" type="video/mp4">
 										</video>
+										
+										
 
 								
 							</div>
@@ -304,12 +327,11 @@
 									<h1>Responsive Expand</h1>
 									<p>Turn auto scrolling off and expand each side into<br />a full-width section</p>
 					
-									<div class="button" id="download">
-										<a href="https://gum.co/multiscrollResponsiveExpand" class="button-purchase">
-										I want it!
-										</a>
-									</div>
+									
 								</div>
+							</div>
+							<div class="ms-section section4" id="section4-left">
+									
 							</div>
 						</div>
 						<div id="right-side" class="ms-right">
@@ -317,29 +339,25 @@
 
 							</div>
 							<div class="ms-section section2" id="section2-right">
-								
-								<h1 >
-									Catch the trailer
-								</h1>
-								
-								<h2>
+								<h2>MOVIE TRAILER</h2>
+								<h3>
 									In cinemas on November 29
+									<br><br>
 									<p id="demo"></p> 
-								</h2>
+								</h3>	
+								
 							</div>
 							<div class="ms-section section3" id="section3-right">
 									<div class="intro">
 											<h1>Responsive Expand</h1>
 											<p>Turn auto scrolling off and expand each side into<br />a full-width section</p>
 							
-											<div class="button" id="download">
-												<a href="https://gum.co/multiscrollResponsiveExpand" class="button-purchase">
-												I want it!
-												</a>
-											</div>
+											
 										</div>
 							</div>
-
+							<div class="ms-section section4" id="section4-right">
+									
+							</div>
 						</div>
 				</div>
 		</div>
