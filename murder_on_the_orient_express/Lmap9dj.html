@@ -35,17 +35,96 @@
   $(document).ready(function() {
 	$('#myContainer').multiscroll({
 		sectionsColor: ['', '#000', '#afb0b5'],
+		anchors: ['first', 'second', 'third'],
+		
+		navigation: true,
+		navigationTooltips: ['Home', 'Trailer', 'Main Characters'],
+		css3:true,
 	});
 });
 
   		
 </script>   
-
+<!-- DESKTOP CSS -->
 <style>
 	@font-face {
 	font-family: 'Rational';
 	src: url(https://www.cluesareeverywhere.com/html/fonts/Rational/Rene%20Bieder%20-%20RationalDisplay-ExtraLight.otf),        
 	}
+	#section1-left .intro{
+            left: 50%;
+        }
+        #section1-right .intro{
+            right: 50%
+        }
+        #section1-left h1,
+        #section1-right h1{
+            width: 100%;
+
+            color: white;
+            z-index: 999;
+            font-weight: bold;
+            text-align: center;
+
+            display: block;
+            margin: 0;
+            padding: 0;
+            font-size: 7em;
+        }
+        /* #section1-left{
+            /* background: #EC6367; */
+        } */
+        #section1-left h1{
+            left: 50%;
+        }
+        #section2-left{
+            background: #fff;
+            color:#a7a7a7;
+        }
+        #section2-left .intro{
+            padding: 0 0 60px 0;
+        }
+        #section2-left .intro:last-child{
+            padding: 0;
+        }
+        #section2-left h2{
+            font-size: 1.7em;
+        }
+        #section3-left{
+           background-color: #27474E;
+           background-image: url('imgs/cards.jpg');
+           background-repeat: no-repeat;
+           background-position: 50%;
+        }
+        #section1-right h1{
+            left: -50%;
+        }
+        /* #section1-right{
+            background-color: #afb0b5;
+            background-image: url(imgs/girl.jpg);
+            background-repeat: no-repeat;
+            background-position: 50%;
+            text-align: center;
+
+        } */
+        #section1-right.hideOverflow{
+            overflow: hidden;
+        }
+        #section2-right{
+            background: #ffe164;
+            text-align: center;
+            background-image: url(imgs/phone.png);
+            background-position: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        #section3-right{
+            background: #66D7D1;
+            text-align: right;
+            color: #fff;
+        }
+        #section3-right h2{
+            color: #fff;
+        }
 	#demo {
 		/* opacity: 0.5; */
 		font-family:  'Rational',sans-serif;
@@ -122,7 +201,38 @@
 	}
 	  
 	  /* Turn off parallax scrolling for tablets and phones */
-	  @media only screen and (max-device-width: 1024px) {
+	 
+	 
+	
+
+</style>
+<!-- mobile CSS -->
+<style>
+	 /*
+        * Improving design in small resolutions
+        */
+        @media all and (max-width:700px){
+            #section1-left h1,
+            #section1-right h1{
+                font-size: 5em;
+            }
+        }
+        @media all and (max-width:550px){
+            #section1-left h1,
+            #section1-right h1{
+                font-size: 4em;
+            }
+        }
+        @media all and (max-width:400px){
+            #section1-left h1,
+            #section1-right h1{
+                font-size: 3em;
+            }
+            .section1 .intro p{
+                font-size: 1em;
+            }
+        }
+	 @media only screen and (max-device-width: 1024px) {
 		.bgimg-1, .bgimg-2, .bgimg-3 {
 			background-attachment: scroll;
 		}
@@ -131,18 +241,11 @@
 			height: 100%;
 		}
 		.parallax { 
-			/* The image used */
-			background-image: url("img/posterP.jpg");
-			background-position: 50% 40%; 
-			/* Set a specific height */
 			
-			
-			height: 100%;
-
-			background: url(img/338410id1k.jpg) no-repeat center center fixed;
+			background: url(img/posterP.jpg) no-repeat center center fixed;
 			background-size: contain;
 			
-}
+				}
 
 			/* Create the parallax scrolling effect */
 			h1 {
@@ -152,37 +255,34 @@
 								letter-spacing: 1px;
 			}
 
-		}
-		
-		.caption {
+			
+	  }/* END OF @MEDIA */
+	  .caption {
 			position: absolute;
 			left: 0;
-			top: 70%;
+			top: 90%;
 			width: 100%;
 			text-align: center;
 			color: #000;
-		}
-	  }/* END OF @MEDIA */
-	 
-	
-
-</style>
+		}	
+		
+	</style>
 </head>
 <body style="background:#000;font-family:'Rational',sans-serif;" >				
 	<div class="parallax">
-		<!-- <div class="caption">
-			<span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">START</span>
-		  </div> -->
+		<div class="caption">
+			<span class="border" style="background-color:transparent;font-size:2em;color: #f7f7f7;">scroll down</span>
+		  </div>
 	</div>
 	<div class="container" style="background:#000">
 		<!-- COUNT DOWN TIMER -->
 		<div class="row" style="text-align:center">
 				<div id="multiscroll">
-						<div class="ms-left">
-							<div class="ms-section">
+						<div id="left-side" class="ms-left">
+								<div class="ms-section section1" id="section1-left">
 									
 							</div>
-							<div class="ms-section" >
+							<div class="ms-section section2" id="section2-left">
 								
 									<video id="vid" controls>
 											<source src="img/trailer.mp4" type="video/mp4">
@@ -190,11 +290,15 @@
 
 								
 							</div>
-							<div class="ms-section"></div>
+							<div class="ms-section section3" id="section3-left">
+
+							</div>
 						</div>
-						<div class="ms-right">
-							<div class="ms-section"></div>
-							<div class="ms-section">
+						<div id="right-side" class="ms-right">
+							<div class="ms-section section1" id="section1-right">
+
+							</div>
+							<div class="ms-section section2" id="section2-right">
 								
 								<h1 >
 									Catch the trailer
@@ -205,7 +309,9 @@
 									<p id="demo"></p> 
 								</h2>
 							</div>
-							<div class="ms-section"></div>
+							<div class="ms-section section3" id="section3-right">
+							</div>
+
 						</div>
 				</div>
 		</div>
