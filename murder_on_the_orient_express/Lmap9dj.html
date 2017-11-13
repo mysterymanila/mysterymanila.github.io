@@ -35,7 +35,7 @@
   $(document).ready(function() {
 	$('#myContainer').multiscroll({
 		sectionsColor: ['', '#000', '#afb0b5'],
-		anchors: ['first', 'second', 'third'],
+		anchors: ['home', 'trailer', 'characters'],
 		
 		navigation: true,
 		navigationTooltips: ['Home', 'Trailer', 'Main Characters'],
@@ -244,20 +244,20 @@
 			
 			background: url(img/posterP.jpg) no-repeat center center fixed;
 			background-size: contain;
-			
+			background-position: 0% 35%;	
 				}
 
 			/* Create the parallax scrolling effect */
 			h1 {
 				color: #45cdff;
-								text-shadow: 0 0 0.36vw #45cdff;
-								font-family:  'Rational',sans-serif;
-								letter-spacing: 1px;
+				text-shadow: 0 0 0.36vw #45cdff;
+				font-family:  'Rational',sans-serif;
+				letter-spacing: 1px;
 			}
 
 			.caption {
 			font-size:1em;
-			display: hidden;
+			display: none;
 		}	
 			
 	  }/* END OF @MEDIA */
