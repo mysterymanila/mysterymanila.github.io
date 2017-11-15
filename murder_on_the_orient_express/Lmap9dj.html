@@ -34,7 +34,7 @@
   // Initialize Multi Scrolll
   $(document).ready(function() {
 	$('#myContainer').multiscroll({
-		sectionsColor: ['', '#000', '#afb0b5','white'],
+		sectionsColor: ['', '#000', '#afb0b5','black'],
 		anchors: ['home', 'trailer', 'characters','media'],
 		
 		navigation: true,
@@ -53,10 +53,7 @@
 </script>   
 <!-- DESKTOP CSS -->
 <style>
-	@font-face {
-	font-family: 'Rational';
-	src: url(https://www.cluesareeverywhere.com/html/fonts/Rational/Rene%20Bieder%20-%20RationalDisplay-ExtraLight.otf),        
-	}
+	
 	#section1-left .intro{
             left: 50%;
         }
@@ -104,10 +101,15 @@
 				letter-spacing: 1px;
         }
         #section3-left{
-           background-color: #27474E;
-           background-image: url('imgs/cards.jpg');
-           background-repeat: no-repeat;
-           background-position: 50%;
+			background-image: url(img/hercule.png);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			font-family:  'Rational',sans-serif;
+			color: #45cdff;
+				text-shadow: 0 0 1.36vw #45cdff;
+				font-family:  'Rational',sans-serif;
+				letter-spacing: 1px;
         }
         #section1-right h1{
             left: -50%;
@@ -131,10 +133,43 @@
             background-repeat: no-repeat; */
         }
         #section3-right{
-            /* background: #66D7D1;
-            text-align: right;
-            color: #fff; */
+			background-image: url(img/jd.jpg);
+			background-repeat: no-repeat;
+			background-position: center;
+			width: 100%;
+			background-size: cover;
+			font-family:  'Rational',sans-serif;
+			color: #45cdff;
+				text-shadow: 0 0 1.36vw #45cdff;
+				font-family:  'Rational',sans-serif;
+				letter-spacing: 1px;
         }
+		#section4-right{
+			background-color: black;
+			background-image: url(img/evidence.png);
+			background-repeat: no-repeat;
+			background-position: center;
+			width: 100%;
+			background-size: auto 100%;
+		}
+		#section4-left{
+			background-color: black;
+			background-image: url(img/suspect.png);
+			background-repeat: no-repeat;
+			background-position: center;
+			width: 100%;
+			background-size: auto 100%;
+		}
+		#section3-left h1 ,#section3-right h1{
+            color: #45cdff;
+			text-shadow: 0 0 4.36vw #45cdff;
+			font-size: 3em;
+			padding-bottom: 2em;
+        }
+		#section3-left .ms-tableCell ,#section3-right .ms-tableCell{
+			vertical-align: bottom;
+			
+		}
         #section3-right h2{
             color: #fff;
         }
@@ -313,22 +348,14 @@
 									
 							</div>
 							<div class="ms-section section2" id="section2-left">
-									
-									<video id="vid" controls>
-											<source src="img/trailer.mp4" type="video/mp4">
-										</video>
-										
-										
-
-								
+								<video id="vid" controls>
+										<source src="img/trailer.mp4" type="video/mp4">
+								</video>
 							</div>
 							<div class="ms-section section3" id="section3-left">
-								<div class="intro">
-									<h1>Responsive Expand</h1>
-									<p>Turn auto scrolling off and expand each side into<br />a full-width section</p>
-					
-									
-								</div>
+									<div class="intro">
+											<h1>The Detective</h1>
+										</div>
 							</div>
 							<div class="ms-section section4" id="section4-left">
 									
@@ -349,10 +376,7 @@
 							</div>
 							<div class="ms-section section3" id="section3-right">
 									<div class="intro">
-											<h1>Responsive Expand</h1>
-											<p>Turn auto scrolling off and expand each side into<br />a full-width section</p>
-							
-											
+											<h1>The Gangster</h1>
 										</div>
 							</div>
 							<div class="ms-section section4" id="section4-right">
