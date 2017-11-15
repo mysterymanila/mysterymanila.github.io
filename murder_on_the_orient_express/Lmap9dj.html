@@ -122,6 +122,7 @@
             text-align: center;
 
         } */
+
         #section1-right.hideOverflow{
             overflow: hidden;
         }
@@ -132,6 +133,7 @@
             background-position: 100% 100%;
             background-repeat: no-repeat; */
         }
+		
         #section3-right{
 			background-image: url(img/jd.jpg);
 			background-repeat: no-repeat;
@@ -140,9 +142,9 @@
 			background-size: cover;
 			font-family:  'Rational',sans-serif;
 			color: #45cdff;
-				text-shadow: 0 0 1.36vw #45cdff;
-				font-family:  'Rational',sans-serif;
-				letter-spacing: 1px;
+			text-shadow: 0 0 1.36vw #45cdff;
+			font-family:  'Rational',sans-serif;
+			letter-spacing: 1px;
         }
 		#section4-right{
 			background-color: black;
@@ -170,9 +172,19 @@
 			vertical-align: bottom;
 			
 		}
-        #section3-right h2{
-            color: #fff;
-        }
+		#section3-left:hover ,#section3-right:hover{
+			vertical-align: bottom;
+			background-color: white;
+		}
+		#section3-left h2 ,#section3-right h2{
+			vertical-align: middle;
+			font-size: 3em;
+			color: #45cdff;
+	text-shadow: 0 0 3.36vw #45cdff;
+			font-family:  'Rational',sans-serif;
+			letter-spacing: 1px;
+		}
+        
 		#section4-right{
             color: #000;
         }
@@ -202,29 +214,7 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
-	.bgimg-1, .bgimg-2, .bgimg-3 {
-		position: relative;
-		opacity: 0.65;
-		background-attachment: fixed;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-	  
-	  }
-	  .bgimg-1 {
-		background-image: url("img_parallax.jpg");
-		min-height: 100%;
-	  }
-	  
-	  .bgimg-2 {
-		background-image: url("img_parallax2.jpg");
-		min-height: 400px;
-	  }
-	  
-	  .bgimg-3 {
-		background-image: url("img_parallax3.jpg");
-		min-height: 400px;
-	  }
+	
 	  
 	  .caption {
 		position: absolute;
@@ -258,9 +248,78 @@
 	}
 	  
 	  /* Turn off parallax scrolling for tablets and phones */
-	 
-	 
+	.sectionContainer {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	}
+
+	.image {
+	background-image: url(img/jd.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	background-size: cover;
+	font-family:  'Rational',sans-serif;
+	color: #45cdff;
+	/* text-shadow: 0 0 1.36vw #45cdff; */
+	font-family:  'Rational',sans-serif;
+	letter-spacing: 1px;
+	}
+
+	.overlay {
+	position: absolute;
+	bottom: 0;
+	left: 100%;
+	right: 0;
+	background-color: black;
+	overflow: hidden;
+	width: 0;
+	height: 100%;
+	transition: .5s ease;
+	}
+	.overlay2 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: black;
+	overflow: hidden;
+	width: 0;
+	height: 100%;
+	transition: .5s ease;
+	}
+
+	#section3-right:hover .overlay {
+	width: 100%;
+	height: 100%;
+	left: 0;
+	}
+	#section3-left:hover .overlay2 {
+	width: 100%;
+	height: 100%;
 	
+	}
+
+	.text {
+	white-space: nowrap; 
+	color: #45cdff;
+	text-shadow: 0 0 1.36vw #45cdff;
+			font-family:  'Rational',sans-serif;
+			letter-spacing: 1px;
+	position: absolute;
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	word-wrap: break-word;
+	} 
+	 
+	.text p{
+		font-size: 20px;
+		
+	}
 
 </style>
 <!-- mobile CSS -->
@@ -296,6 +355,9 @@
 		#vid {
 			width: 80%;
 			height: 100%;
+		}
+		#section3-left h1 ,#section3-right h1{
+			padding-bottom: 0;
 		}
 		.parallax { 
 			
@@ -353,9 +415,18 @@
 								</video>
 							</div>
 							<div class="ms-section section3" id="section3-left">
-									<div class="intro">
-											<h1>The Detective</h1>
-										</div>
+									<div class="sectionContainer">
+											<img class="image2">
+											<div class="overlay2">
+												<div class="text">
+													<h2>Samuel Ratchett</h2>
+													<p>
+														a.k.a. 
+													</p>	
+													<h2>The Gangster</h2>
+												</div>
+											</div>
+										</div>	
 							</div>
 							<div class="ms-section section4" id="section4-left">
 									
@@ -375,9 +446,18 @@
 								
 							</div>
 							<div class="ms-section section3" id="section3-right">
-									<div class="intro">
-											<h1>The Gangster</h1>
+								<div class="sectionContainer">
+									<img class="image">
+									<div class="overlay">
+										<div class="text">
+											<h2>Hercule Poroit</h2>
+											<p>
+												a.k.a. 
+											</p>	
+											<h2>The Detective</h2>
 										</div>
+									</div>
+								</div>	
 							</div>
 							<div class="ms-section section4" id="section4-right">
 									
