@@ -36,11 +36,11 @@
 	
 	$('#myContainer').multiscroll({
 		sectionsColor: ['', '#000', '#afb0b5','black','black'],
-		anchors: ['home', 'trailer', 'characters','game'],
+		anchors: ['home', 'trailer', 'characters','game','m_game'],
 		
 		// navigation: true,
 		// navigationTooltips: ['Home', 'Trailer', 'Main Characters','Media'],
-		css3:true
+		css3:true,
 		
 	});
 });
@@ -168,10 +168,11 @@
 			vertical-align: bottom;
 			
 		}
-		#section5-left .intro ,#section5-right .intro{
-            color: #45cdff;
-			text-shadow: 0 0 4.36vw #45cdff;
+		#section4-left .intro ,#section4-right .intro{
+            color: #ec6367;
+			text-shadow: 0 0 4.36vw #ec6367;
 			font-size: 2em;
+			visibility: hidden;
         }
 		a { color: inherit; } 
 		#section3-left:hover ,#section3-right:hover{
@@ -182,7 +183,7 @@
 			vertical-align: middle;
 			font-size: 3em;
 			color: #45cdff;
-	text-shadow: 0 0 3.36vw #45cdff;
+		text-shadow: 0 0 3.36vw #45cdff;
 			font-family:  'Rational',sans-serif;
 			letter-spacing: 1px;
 		}
@@ -196,10 +197,7 @@
 		#section4-right,#section4-left{
             color: #000;
         }
-	.section5{
-            visibility: hidden;
-			display: none;
-        }
+	
 	#demo {
 		/* opacity: 0.5; */
 		font-family:  'Rational',sans-serif;
@@ -333,34 +331,14 @@
 	 /*
         * Improving design in small resolutions
         */
-        @media all and (max-width:700px){
-            #section1-left h1,
-            #section1-right h1{
-                font-size: 5em;
-            }
-        }
-        @media all and (max-width:550px){
-            #section1-left h1,
-            #section1-right h1{
-                font-size: 4em;
-            }
-        }
-        @media all and (max-width:400px){
-            #section1-left h1,
-            #section1-right h1{
-                font-size: 3em;
-            }
-            .section1 .intro p{
-                font-size: 1em;
-            }
-        }
+       
 	 @media only screen and (max-device-width: 1024px) {
 		.bgimg-1, .bgimg-2, .bgimg-3 {
 			background-attachment: scroll;
 		}
 		#vid {
 			width: 80%;
-			height: 100%;
+			height: 40%;
 		}
 		#section3-left h2 ,#section3-right h2{
 			padding-bottom: 0;
@@ -369,6 +347,11 @@
 		/* #section4-right,#section4-left{
             visibility: hidden;
         } */
+		#section4{height: 100%}
+		#section4-left .intro ,#section4-right .intro{
+			visibility: visible;
+			font-size: 1em;
+		}
 		#section4-right{
 			background-color: black;
 			background-image: none;
@@ -379,9 +362,7 @@
 			background-image: none;
 			
 		}
-		#section5-right,#section5-left{
-            visibility: visible;
-        }
+		
 		.parallax { 
 			
 			background: url(img/posterP.jpg) no-repeat center center fixed;
@@ -433,7 +414,7 @@
 									
 							</div>
 							<div class="ms-section section2" id="section2-left">
-								<video id="vid" controls>
+								<video id="vid" poster="img/title2.png"controls onclick="this.play();">
 										<source src="img/trailer.mp4" type="video/mp4">
 								</video>
 							</div>
@@ -446,13 +427,15 @@
 													<p>
 														a.k.a. 
 													</p>	
-													<h2>The Gangster</h2>
+													<h2>"The Gangster"</h2>
 												</div>
 											</div>
 										</div>	
 							</div>
 							<div class="ms-section section4" id="section4-left">
-									
+								<div class="intro">
+											<a href="img/suspect.png">Guess The Suspect</a>
+										</div>		
 							</div>
 							
 						</div>
@@ -478,13 +461,15 @@
 											<p>
 												a.k.a. 
 											</p>	
-											<h2>The Detective</h2>
+											<h2>"The Detective"</h2>
 										</div>
 									</div>
 								</div>	
 							</div>
 							<div class="ms-section section4" id="section4-right">
-									
+									<div class="intro">
+											<a href="img/evidence.png">Find The Evidence</a>
+										</div>			
 							</div>
 							
 						</div>
