@@ -33,19 +33,15 @@
 <script>
   // Initialize Multi Scrolll
   $(document).ready(function() {
+	
 	$('#myContainer').multiscroll({
-		sectionsColor: ['', '#000', '#afb0b5','black'],
-		anchors: ['home', 'trailer', 'characters','media'],
+		sectionsColor: ['', '#000', '#afb0b5','black','black'],
+		anchors: ['home', 'trailer', 'characters','game'],
 		
-		navigation: true,
-		navigationTooltips: ['Home', 'Trailer', 'Main Characters','Media'],
-		css3:true,
-		responsiveWidth: 1000,
-		responsiveExpand: true,
-		responsiveExpandKey: 'YWx2YXJvdHJpZ28uY29tX3IxaGNtVnpjRzl1YzJsMlpVVjRjR0Z1WkE9PWo4Mw==',
-		afterRender: function(){
-                    $('body').addClass('section1-loaded');
-                }
+		// navigation: true,
+		// navigationTooltips: ['Home', 'Trailer', 'Main Characters','Media'],
+		css3:true
+		
 	});
 });
 
@@ -162,16 +158,22 @@
 			width: 100%;
 			background-size: auto 100%;
 		}
-		#section3-left h1 ,#section3-right h1{
+		#section5-left h1 ,#section5-right h1{
             color: #45cdff;
 			text-shadow: 0 0 4.36vw #45cdff;
-			font-size: 3em;
-			padding-bottom: 2em;
+			font-size: 2em;
+			
         }
 		#section3-left .ms-tableCell ,#section3-right .ms-tableCell{
 			vertical-align: bottom;
 			
 		}
+		#section5-left .intro ,#section5-right .intro{
+            color: #45cdff;
+			text-shadow: 0 0 4.36vw #45cdff;
+			font-size: 2em;
+        }
+		a { color: inherit; } 
 		#section3-left:hover ,#section3-right:hover{
 			vertical-align: bottom;
 			background-color: white;
@@ -194,8 +196,9 @@
 		#section4-right,#section4-left{
             color: #000;
         }
-		#section5-right,#section5-left{
+	.section5{
             visibility: hidden;
+			display: none;
         }
 	#demo {
 		/* opacity: 0.5; */
@@ -363,9 +366,19 @@
 			padding-bottom: 0;
 			font-size: 1em;
 		}
-		#section4-right,#section4-left{
+		/* #section4-right,#section4-left{
             visibility: hidden;
-        }
+        } */
+		#section4-right{
+			background-color: black;
+			background-image: none;
+			
+		}
+		#section4-left{
+			background-color: black;
+			background-image: none;
+			
+		}
 		#section5-right,#section5-left{
             visibility: visible;
         }
@@ -439,13 +452,9 @@
 										</div>	
 							</div>
 							<div class="ms-section section4" id="section4-left">
-									<div class="intro">
-										<a href src="img/suspect.png">Find the suspect</a>
-									</div>
-							</div>
-							<div class="ms-section section5" id="section5-left">
 									
 							</div>
+							
 						</div>
 						<div id="right-side" class="ms-right">
 							<div class="ms-section section1" id="section1-right">
@@ -477,9 +486,7 @@
 							<div class="ms-section section4" id="section4-right">
 									
 							</div>
-							<div class="ms-section section5" id="section5-right">
-									
-							</div>
+							
 						</div>
 				</div>
 		</div>
