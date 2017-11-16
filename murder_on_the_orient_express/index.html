@@ -35,7 +35,7 @@
   $(document).ready(function() {
 	
 	$('#myContainer').multiscroll({
-		sectionsColor: ['', '#000', '#afb0b5','black','black'],
+		sectionsColor: ['', '', '#afb0b5','black','black'],
 		anchors: ['home', 'trailer', 'characters','game','m_game'],
 		
 		// navigation: true,
@@ -77,8 +77,10 @@
             left: 50%;
         }
         #section2-left{
-            background: #fff;
-            color:#a7a7a7;
+            background: #000;
+			background-size: 200%;
+            
+			
         }
         #section2-left .intro{
             padding: 0 0 60px 0;
@@ -86,8 +88,12 @@
         #section2-left .intro:last-child{
             padding: 0;
         }
-        #section2-left h2{
-            font-size: 1.7em;
+        #section2-left h1{
+			font-size: 3em;
+			color: #45cdff;
+				text-shadow: 0 0 3em #45cdff;
+				font-family:  'Rational',sans-serif;
+				letter-spacing: 1px;
         }
 		#section2-right h2{
             font-size: 3em;
@@ -122,8 +128,11 @@
         #section1-right.hideOverflow{
             overflow: hidden;
         }
+		#section2{
+			vertical-align: top;
+		}
         #section2-right{
-            background: #ffe164;
+            /* background: #ffe164; */
             text-align: center;
             /* background-image: url(imgs/phone.png);
             background-position: 100% 100%;
@@ -138,6 +147,7 @@
 			background-size: cover;
 			font-family:  'Rational',sans-serif;
 			color: #45cdff;
+
 			text-shadow: 0 0 1.36vw #45cdff;
 			font-family:  'Rational',sans-serif;
 			letter-spacing: 1px;
@@ -146,9 +156,11 @@
 			background-color: black;
 			background-image: url(img/evidence.png);
 			background-repeat: no-repeat;
+			background-size: auto 90%;
 			background-position: center;
 			width: 100%;
-			background-size: auto 100%;
+			
+			
 		}
 		#section4-left{
 			background-color: black;
@@ -156,7 +168,7 @@
 			background-repeat: no-repeat;
 			background-position: center;
 			width: 100%;
-			background-size: auto 100%;
+			background-size: auto 95%;
 		}
 		#section5-left h1 ,#section5-right h1{
             color: #45cdff;
@@ -248,7 +260,7 @@
 	}
 	#vid {
 		width: 80%;
-		height: 40%;
+		height: 80%;
 	}
 	  
 	  /* Turn off parallax scrolling for tablets and phones */
@@ -281,6 +293,21 @@
 	width: 0;
 	height: 100%;
 	transition: .5s ease;
+	}
+	#header, #footer {
+    position: fixed;
+    height: 10px;
+	font-size: 10px;
+    display: block;
+    width: 100%;
+    background: #000;
+    z-index: 9;
+    text-align: left;
+    color: #333;
+    padding: 20px 0 0 0;
+	}
+	#footer{
+		bottom:0px;
 	}
 	.overlay2 {
 	position: absolute;
@@ -324,6 +351,22 @@
 		font-size: 20px;
 		
 	}
+	.ms-left .section2 .fullscreen{
+	top:23%;
+	}
+	.fullscreen{
+		background: black;
+	position: inherit;
+	width:200%;
+	height: 100%;
+	left: 0;
+	z-index: 1;
+	vertical-align: middle;
+	text-align: center;
+	 -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 </style>
 <!-- mobile CSS -->
@@ -333,12 +376,19 @@
         */
        
 	 @media only screen and (max-device-width: 1024px) {
+		 #footer{
+			 visibility: hidden;
+		 }
 		.bgimg-1, .bgimg-2, .bgimg-3 {
 			background-attachment: scroll;
 		}
 		#vid {
 			width: 80%;
 			height: 40%;
+		
+		}
+		#section3-left h1{
+			font-size: 2em;
 		}
 		#section3-left h2 ,#section3-right h2{
 			padding-bottom: 0;
@@ -400,82 +450,85 @@
 	</style>
 </head>
 <body style="background:#000;font-family:'Rational',sans-serif;" >				
-	<div class="parallax">
-		<div class="caption">
-			<span class="border"style="background-color: transparent;">scroll down</span>
-		  </div>
-	</div>
+	
 	<div class="container" style="background:#000">
 		<!-- COUNT DOWN TIMER -->
-		<div class="row" style="text-align:center">
-				<div id="multiscroll">
-						<div id="left-side" class="ms-left">
-								<div class="ms-section section1" id="section1-left">
-									
-							</div>
-							<div class="ms-section section2" id="section2-left">
-								<video id="vid" poster="img/title2.png"controls onclick="this.play();">
-										<source src="img/trailer.mp4" type="video/mp4">
-								</video>
-							</div>
-							<div class="ms-section section3" id="section3-left">
-									<div class="sectionContainer">
-											<img class="image2">
-											<div class="overlay2">
-												<div class="text">
-													<h2>Samuel Ratchett</h2>
-													<p>
-														a.k.a. 
-													</p>	
-													<h2>"The Gangster"</h2>
-												</div>
-											</div>
-										</div>	
-							</div>
-							<div class="ms-section section4" id="section4-left">
-								<div class="intro">
-											<a href="img/suspect.png">Guess The Suspect</a>
-										</div>		
-							</div>
-							
-						</div>
-						<div id="right-side" class="ms-right">
-							<div class="ms-section section1" id="section1-right">
-
-							</div>
-							<div class="ms-section section2" id="section2-right">
-								<h2>MOVIE TRAILER</h2>
-								<h3>
-									In cinemas on November 29
-									<br><br>
-									<p id="demo"></p> 
-								</h3>	
-								
-							</div>
-							<div class="ms-section section3" id="section3-right">
-								<div class="sectionContainer">
-									<img class="image">
-									<div class="overlay">
-										<div class="text">
-											<h2>Hercule Poroit</h2>
-											<p>
-												a.k.a. 
-											</p>	
-											<h2>"The Detective"</h2>
-										</div>
-									</div>
-								</div>	
-							</div>
-							<div class="ms-section section4" id="section4-right">
-									<div class="intro">
-											<a href="img/evidence.png">Find The Evidence</a>
-										</div>			
-							</div>
-							
-						</div>
+		<div class="parallax">
+				<div class="caption">
+					<span class="border"style="background-color: transparent;">scroll down</span>
+				  </div>
+			</div>
+		<div id="footer">©2017 Twentieth Century Fox Film Corporation. All rights reserved.</div>	
+		<div id="multiscroll">
+			<div id="left-side" class="ms-left">
+					<div class="ms-section section1" id="section1-left">
+						
 				</div>
+				<div class="ms-section section2" id="section2-left" >
+						
+						<div class="fullscreen">
+								<h1><p id="demo"></p> </h1>	
+								<video id="vid" poster="img/title_rescaled.png"controls onclick="this.play();">
+									<source src="img/trailer.mp4" type="video/mp4">
+							</video>
+							
+						</div>
+						
+						
+				</div>
+				<div class="ms-section section3" id="section3-left">
+						<div class="sectionContainer">
+								<img class="image2">
+								<div class="overlay2">
+									<div class="text">
+										<h2>Samuel Ratchett</h2>
+										<p>
+											a.k.a. 
+										</p>	
+										<h2>"The Gangster"</h2>
+									</div>
+								</div>
+							</div>	
+				</div>
+				<div class="ms-section section4" id="section4-left">
+					<div class="intro">
+								<a href="img/suspect.png">Guess The Suspect</a>
+							</div>		
+				</div>
+				
+			</div>
+			<div id="right-side" class="ms-right">
+				<div class="ms-section section1" id="section1-right">
+
+				</div>
+				<div class="ms-section section2" id="section2-right">
+					
+					
+				</div>
+				<div class="ms-section section3" id="section3-right">
+					<div class="sectionContainer">
+						<img class="image">
+						<div class="overlay">
+							<div class="text">
+								<h2>Hercule Poroit</h2>
+								<p>
+									a.k.a. 
+								</p>	
+								<h2>"The Detective"</h2>
+							</div>
+						</div>
+					</div>	
+				</div>
+				<div class="ms-section section4" id="section4-right">
+						<div class="intro">
+								<a href="img/evidence.png">Find The Evidence</a>
+							</div>			
+				</div>
+				
+			</div>
 		</div>
-	</div>
+		
+</div>
 	
 </body>
 <script>
