@@ -69,7 +69,7 @@
 	$('#inputerror').hide(1);
 	$('#submit').click(function(e) { //Add the 'e' event object to the parameters
 		e.preventDefault();
-		var answerString = "#SmartGigaSurf";
+		var answerString = "#DiscoverLTE";
 		main_config.auth().onAuthStateChanged(function(user) {
 			  if (user) {
 				var teamName = $('#inputTeam').val().toUpperCase();
@@ -109,8 +109,8 @@
 									console.log("Formatted Time 2: "+formattedTime2);
 									penaltyTime = timeNow - fbTime;
 									penaltyTime= Math.floor(penaltyTime / 1000);
-									if(penaltyTime<180 && penaltyTime>0 ){
-										penaltyTime2 = (180 - penaltyTime)*1000;
+									if(penaltyTime<60 && penaltyTime>0 ){
+										penaltyTime2 = (60 - penaltyTime)*1000;
 										console.log("penaltyTime: " + penaltyTime);
 										setTimeout(function(){
 											$('#inputcode').val("");
@@ -163,9 +163,9 @@
 												var ctr = errorCount.tries;
 												ctr++;
 												if(ctr>=1){
-													$('#inputcode').val("Input disabled for 3 Minutes")
+													$('#inputcode').val("Input disabled for 1 Minute")
 													$('#inputcode').prop('disabled', true);
-													//$('#inputerror').html('Do not refresh the browser! The penalty countdown will start again with 3 minutes');
+													//$('#inputerror').html('Do not refresh the browser! The penalty countdown will start again with 1 Minute');
 													//$('#inputerror').show(1000);
 													$('#submit').prop('disabled', true);
 													timeNow = Date.now();
@@ -219,9 +219,9 @@
 										var ctr = errorCount.tries;
 										ctr++;
 										if(ctr>=1){
-											$('#inputcode').val("Input disabled for 3 Minutes")
+											$('#inputcode').val("Input disabled for 1 Minute")
 											$('#inputcode').prop('disabled', true);
-											//$('#inputerror').html('Do not refresh the browser! The penalty countdown will start again with 3 minutes');
+											//$('#inputerror').html('Do not refresh the browser! The penalty countdown will start again with 1 Minute');
 											//$('#inputerror').show(1000);
 											$('#submit').prop('disabled', true);
 											timeNow = Date.now();
