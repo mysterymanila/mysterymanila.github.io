@@ -69,7 +69,7 @@
 	$('#inputerror').hide(1);
 	$('#submit').click(function(e) { //Add the 'e' event object to the parameters
 		e.preventDefault();
-		var answerString = "#DiscoverLTE";
+		var answerString = "#LevelUpToLTE";
 		main_config.auth().onAuthStateChanged(function(user) {
 			  if (user) {
 				var teamName = $('#inputTeam').val().toUpperCase();

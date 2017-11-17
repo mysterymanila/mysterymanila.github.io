@@ -35,7 +35,7 @@
   $(document).ready(function() {
 	
 	$('#myContainer').multiscroll({
-		sectionsColor: ['', '', '#afb0b5','black','black'],
+		sectionsColor: ['', '', '#afb0b5','black',''],
 		anchors: ['home', 'trailer', 'characters','game','m_game'],
 		
 		// navigation: true,
@@ -355,18 +355,21 @@
 	.ms-left .section2 .fullscreen{
 	top:23%;
 	}
+	.ms-left .section5 .fullscreen{
+	top:23%;
+	}
 	.fullscreen{
 		background: black;
-	position: inherit;
-	width:200%;
-	height: 100%;
-	left: 0;
-	z-index: 1;
-	vertical-align: middle;
-	text-align: center;
-	 -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+		position: inherit;
+		width:200%;
+		height: 100%;
+		left: 0;
+		z-index: 1;
+		vertical-align: middle;
+		text-align: center;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
 }
 
 </style>
@@ -499,6 +502,16 @@
 								<a href="img/suspect.png">Guess The Suspect</a>
 							</div>		
 				</div>
+				<div class="ms-section section5" id="section5-left">
+						<div class="fullscreen">
+							<h1>
+								Get a chance to win free movie tickets for the 
+							</h1>	
+							
+							
+						</div>
+							
+					</div>
 				
 			</div>
 			<div id="right-side" class="ms-right">
@@ -527,6 +540,9 @@
 						<div class="intro">
 								<a href="img/evidence.png">Find The Evidence</a>
 							</div>			
+				</div>
+				<div class="ms-section section5" id="section5-right">
+							
 				</div>
 				
 			</div>
