@@ -5,7 +5,7 @@
     <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>	
 	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
-	
+	<link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
 	<!-- MULTISCROLL HEADERS -->
 	<link rel="stylesheet" type="text/css" href="css/jquery.multiscroll.css" />		
 	<link rel="stylesheet" type="text/css" href="css/examples.css" />		
@@ -89,11 +89,12 @@
             padding: 0;
         }
         #section2-left h1{
-			font-size: 2em;
+			font-size: 1em;
 			color: #45cdff;
 				text-shadow: 0 0 3em #45cdff;
-				font-family:  'Rational',sans-serif;
+				font-family:  'Lato',sans-serif;
 				letter-spacing: 1px;
+				padding-top: 5%;
 				/* padding: 10% 0 0 0; */
         }
 		#section2-right h2{
@@ -171,10 +172,16 @@
 			width: 100%;
 			background-size: auto 95%;
 		}
+		#section5-left {text-align: center;}
 		#section5-left h1 ,#section5-right h1{
             color: #45cdff;
+			font-family: 'Lato',sans-serif;
 			text-shadow: 0 0 4.36vw #45cdff;
 			font-size: 2em;
+			padding-top: 10%;
+			width: 80%;
+			text-align:center;
+			margin: auto;
 			
         }
 		#section3-left .ms-tableCell ,#section3-right .ms-tableCell{
@@ -474,7 +481,7 @@
 						
 						<div class="fullscreen">
 								<h1>
-									Catch the movie in: <p id="demo"></p></h1>	
+									CATCH THE MOVIE IN: <p id="demo"></p></h1>	
 								<video id="vid" poster="img/title_rescaled.png"controls onclick="this.play();">
 									<source src="img/trailer.mp4" type="video/mp4">
 							</video>
@@ -505,7 +512,9 @@
 				<div class="ms-section section5" id="section5-left">
 						<div class="fullscreen">
 							<h1>
-								Get a chance to win free movie tickets for the 
+								Get a chance to win free movie tickets for the block screening of 
+								<br><br>Murder on the Orient Express 
+								<br><br>this November 27, 7pm at Glorietta 4.
 							</h1>	
 							
 							
@@ -573,8 +582,8 @@
 		  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 		
 		  // Display the result in the element with id="demo"
-		  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-		  + minutes + "m " + seconds + "s ";
+		  document.getElementById("demo").innerHTML = days + "D " + hours + "H "
+		  + minutes + "M " + seconds + "S ";
 		
 		  // If the count down is finished, write some text 
 		  if (distance < 0) {
