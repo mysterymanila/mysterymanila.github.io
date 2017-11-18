@@ -198,6 +198,10 @@
 		#section3-left:hover ,#section3-right:hover{
 			vertical-align: bottom;
 			background-color: white;
+			animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+			transform: translate3d(0, 0, 0);
+			backface-visibility: hidden;
+			perspective: 1000px;
 		}
 		#section3-left h2 ,#section3-right h2{
 			vertical-align: middle;
@@ -279,7 +283,7 @@
 	}
 
 	.image {
-	background-image: url(img/jd.jpg);
+	background-image: url(img/jd.gif);
 	background-repeat: no-repeat;
 	background-position: center;
 	width: 100%;
@@ -333,11 +337,20 @@
 	width: 100%;
 	height: 100%;
 	left: 0;
+	-ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
 	}
 	#section3-left:hover .overlay2 {
 	width: 100%;
 	height: 100%;
-	
+	-ms-transform: scale(1.3);
+    -moz-transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    -o-transform: scale(1.4);
+    transform: scale(1.4);
 	}
 
 	.text {
@@ -517,7 +530,7 @@
 						<div class="fullscreen">
 							<h1>
 								Get a chance to win free movie tickets for the block screening of 
-								<br><br>Murder on the Orient Express 
+								<br><br>"Murder on the Orient Express"
 								<br><br>this November 27, 7pm at Glorietta 4.
 
 								<br><br><br>Check out this <a href="https://www.facebook.com/mysterymanila" target="#"><font color="#ec6367">LINK</font></a> for instructions!
