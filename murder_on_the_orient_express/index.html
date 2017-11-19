@@ -8,7 +8,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
 	<!-- MULTISCROLL HEADERS -->
 	<link rel="stylesheet" type="text/css" href="css/jquery.multiscroll.css" />		
-	<link rel="stylesheet" type="text/css" href="css/examples.css" />		
+	<link rel="stylesheet" type="text/css" href="css/examples.css" />
+	<link rel="stylesheet" type="text/css" href="css/motoe.css" />		
 	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
 	<script type="text/javascript" src="js/jquery.easings.min.js"></script>
 	<script type="text/javascript" src="js/jquery.multiscroll.js"></script>
@@ -47,348 +48,7 @@
 
   		
 </script>   
-<!-- DESKTOP CSS -->
-<style>
-	
-	#section1-left .intro{
-            left: 50%;
-        }
-        #section1-right .intro{
-            right: 50%
-        }
-        #section1-left h1,
-        #section1-right h1{
-            width: 100%;
 
-            color: white;
-            z-index: 999;
-            font-weight: bold;
-            text-align: center;
-
-            display: block;
-            margin: 0;
-            padding: 0;
-            font-size: 7em;
-        }
-        /* #section1-left{
-            /* background: #EC6367;
-        } */
-        #section1-left h1{
-            left: 50%;
-        }
-        #section2-left{
-            background: #000;
-			background-size: 200%;
-            
-			
-        }
-        #section2-left .intro{
-            padding: 0 0 60px 0;
-        }
-        #section2-left .intro:last-child{
-            padding: 0;
-        }
-        #section2-left h1{
-			font-size: 1em;
-			color: #45cdff;
-				text-shadow: 0 0 3em #45cdff;
-				font-family:  'Lato',sans-serif;
-				letter-spacing: 1px;
-				padding-top: 5%;
-				/* padding: 10% 0 0 0; */
-        }
-		#section2-right h2{
-            font-size: 3em;
-			color: #45cdff;
-				text-shadow: 0 0 3em #45cdff;
-				font-family:  'Rational',sans-serif;
-				letter-spacing: 1px;
-        }
-        #section3-left{
-			background-image: url(img/hercule.png);
-			background-repeat: no-repeat;
-			background-position: center;
-			background-size: cover;
-			font-family:  'Rational',sans-serif;
-			color: #45cdff;
-				text-shadow: 0 0 1.36vw #45cdff;
-				font-family:  'Rational',sans-serif;
-				letter-spacing: 1px;
-        }
-        #section1-right h1{
-            left: -50%;
-        }
-        /* #section1-right{
-            background-color: #afb0b5;
-            background-image: url(imgs/girl.jpg);
-            background-repeat: no-repeat;
-            background-position: 50%;
-            text-align: center;
-
-        } */
-
-        #section1-right.hideOverflow{
-            overflow: hidden;
-        }
-		#section2{
-			vertical-align: top;
-		}
-        #section2-right{
-            /* background: #ffe164; */
-            text-align: center;
-            /* background-image: url(imgs/phone.png);
-            background-position: 100% 100%;
-            background-repeat: no-repeat; */
-        }
-		
-        #section3-right{
-			background-image: url(img/jd.jpg);
-			background-repeat: no-repeat;
-			background-position: center;
-			width: 100%;
-			background-size: cover;
-			font-family:  'Rational',sans-serif;
-			color: #45cdff;
-
-			text-shadow: 0 0 1.36vw #45cdff;
-			font-family:  'Rational',sans-serif;
-			letter-spacing: 1px;
-        }
-		#section4-right{
-			background-color: black;
-			background-image: url(img/evidence.png);
-			background-repeat: no-repeat;
-			background-size: auto 90%;
-			background-position: center;
-			width: 100%;
-			
-			
-		}
-		#section4-left{
-			background-color: black;
-			background-image: url(img/suspect.png);
-			background-repeat: no-repeat;
-			background-position: center;
-			width: 100%;
-			background-size: auto 95%;
-		}
-		#section5-left {text-align: center;}
-		#section5-left h1 ,#section5-right h1{
-            color: #45cdff;
-			font-family: 'Lato',sans-serif;
-			text-shadow: 0 0 4.36vw #45cdff;
-			font-size: 2em;
-			padding-top: 10%;
-			width: 80%;
-			text-align:center;
-			margin: auto;
-			
-        }
-		#section3-left .ms-tableCell ,#section3-right .ms-tableCell{
-			vertical-align: bottom;
-			
-		}
-		#section4-left .intro ,#section4-right .intro{
-            color: #ec6367;
-			text-shadow: 0 0 4.36vw #ec6367;
-			font-size: 2em;
-			visibility: hidden;
-        }
-		a { color: inherit; } 
-		#section3-left:hover ,#section3-right:hover{
-			vertical-align: bottom;
-			background-color: white;
-			animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-			transform: translate3d(0, 0, 0);
-			backface-visibility: hidden;
-			perspective: 1000px;
-		}
-		#section3-left h2 ,#section3-right h2{
-			vertical-align: middle;
-			font-size: 3em;
-			color: #45cdff;
-		text-shadow: 0 0 3.36vw #45cdff;
-			font-family:  'Rational',sans-serif;
-			letter-spacing: 1px;
-		}
-        
-		#section4-right{
-            color: #000;
-        }
-		#section4-left{
-            color: #000;
-        }
-		#section4-right,#section4-left{
-            color: #000;
-        }
-	
-	#demo {
-		/* opacity: 0.5; */
-		font-family:  'Lato',sans-serif;
-		font-size: 1em;
-	}
-
-	.parallax { 
-		/* The image used */
-		background-image: url("img/poster.gif");
-		
-		/* Set a specific height */
-		height: 1100px; 
-		
-		/* Create the parallax scrolling effect */
-		background-attachment: fixed;
-		/* background-position: center; */
-		background-position: 50% calc(50% - 100px) ;	
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-	
-	  
-	  .caption {
-		position: absolute;
-		left: 0;
-		top: 30%;
-		width: 100%;
-		text-align: center;
-		color: #000;
-	  }
-	  
-	  .caption span.border {
-		background-color: #111;
-		color: #fff;
-		padding: 18px;
-		font-size: 25px;
-		letter-spacing: 10px;
-	  }
-	  
-	  h3 {
-		letter-spacing: 3px;
-		text-transform: uppercase;
-		font-family:  'Rational',sans-serif;
-		color: #ffffff;
-	  }
-	#id{
-		color: white;
-	}
-	#vid {
-		width: 80%;
-		height: 80%;
-	}
-	  
-	  /* Turn off parallax scrolling for tablets and phones */
-	.sectionContainer {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	}
-
-	.image {
-	background-image: url(img/jd.gif);
-	background-repeat: no-repeat;
-	background-position: center;
-	width: 100%;
-	background-size: cover;
-	font-family:  'Rational',sans-serif;
-	color: #45cdff;
-	/* text-shadow: 0 0 1.36vw #45cdff; */
-	font-family:  'Rational',sans-serif;
-	letter-spacing: 1px;
-	}
-
-	.overlay {
-	position: absolute;
-	bottom: 0;
-	left: 100%;
-	right: 0;
-	background-color: black;
-	overflow: hidden;
-	width: 0;
-	height: 100%;
-	transition: .5s ease;
-	}
-	#header, #footer {
-    position: fixed;
-    height: 10px;
-	font-size: 10px;
-    display: block;
-    width: 100%;
-    background: #000;
-    z-index: 9;
-    text-align: left;
-    color: #333;
-    padding: 20px 0 0 0;
-	}
-	#footer{
-		bottom:0px;
-	}
-	.overlay2 {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: black;
-	overflow: hidden;
-	width: 0;
-	height: 100%;
-	transition: .5s ease;
-	}
-
-	#section3-right:hover .overlay {
-	width: 100%;
-	height: 100%;
-	left: 0;
-	
-	}
-	#section3-left:hover .overlay2 {
-	width: 100%;
-	height: 100%;
-	-ms-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    transform: scale(1.2);
-	}
-
-	.text {
-	white-space: nowrap; 
-	color: #45cdff;
-	text-shadow: 0 0 1.36vw #45cdff;
-			font-family:  'Rational',sans-serif;
-			letter-spacing: 1px;
-	position: absolute;
-	overflow: hidden;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	word-wrap: break-word;
-	} 
-	 
-	.text p{
-		font-size: 20px;
-		
-	}
-	.ms-left .section2 .fullscreen{
-	top:23%;
-	}
-	.ms-left .section5 .fullscreen{
-	top:23%;
-	}
-	.fullscreen{
-		background: black;
-		position: inherit;
-		width:200%;
-		height: 100%;
-		left: 0;
-		z-index: 1;
-		vertical-align: middle;
-		text-align: center;
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		box-sizing: border-box;
-}
-
-</style>
 <!-- mobile CSS -->
 <style>
 	 /*
@@ -505,15 +165,16 @@
 						
 				</div>
 				<div class="ms-section section3" id="section3-left">
+						
 						<div class="sectionContainer">
 								<img class="image2">
 								<div class="overlay2">
 									<div class="text">
-										<h2>Samuel Ratchett</h2>
+										<h2>Hercule Poroit</h2>
 										<p>
 											a.k.a. 
 										</p>	
-										<h2>"The Gangster"</h2>
+										<h2>"The Detective"</h2>
 									</div>
 								</div>
 							</div>	
@@ -528,9 +189,9 @@
 							<h1>
 								Get a chance to win free movie tickets for the block screening of 
 								<br><br>"Murder on the Orient Express"
-								<br><br>this November 27, 7pm at Glorietta 4.
+								<br><br>this November 27, 6pm at Glorietta 4.
 
-								<br><br><br>Check out this <a href="https://www.facebook.com/mysterymanila" target="#"><font color="#ec6367">LINK</font></a> for instructions!
+								<br><br><br>Check out this <a href="https://www.facebook.com/Mysterymanila/photos/a.648683075167091.1073741829.639144492787616/1475319349170122/?type=3&theater" target="#"><font color="#ec6367">LINK</font></a> for instructions!
 							</h1>	
 
 							
@@ -553,11 +214,11 @@
 						<img class="image">
 						<div class="overlay">
 							<div class="text">
-								<h2>Hercule Poroit</h2>
+								<h2>Samuel Ratchett</h2>
 								<p>
 									a.k.a. 
 								</p>	
-								<h2>"The Detective"</h2>
+								<h2>"The Gangster"</h2>
 							</div>
 						</div>
 					</div>	
@@ -605,7 +266,7 @@
 		  // If the count down is finished, write some text 
 		  if (distance < 0) {
 			clearInterval(x);
-			document.getElementById("demo").innerHTML = "EXPIRED";
+			document.getElementById("demo").innerHTML = "OPEN IN CINEMAS NEAR YOU.";
 		  }
 		}, 1000);
 		</script>
