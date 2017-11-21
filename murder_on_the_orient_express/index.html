@@ -100,10 +100,11 @@
 		
 		.parallax { 
 			/* height: 570px; */
-		background: url(img/poster2.gif) no-repeat center center fixed;
-			/* background-image: url(img/posterP.gif); */
-			background-size: 100%;
-			/* background-position: 50% 50%; */
+			background-image: url("img/poster2.gif");
+			background-attachment: fixed;			
+			background-position: 50% calc(50% - 100px) ;	
+			background-repeat: no-repeat;
+			background-size: cover;
 				}
 
 			/* Create the parallax scrolling effect */
@@ -168,9 +169,12 @@ width: 80%;
 		<div id="multiscroll">
 			<div id="left-side" class="ms-left">
 					<div class="ms-section section1" id="section1-left">
+							<div class="intro">
+									<img src="img/poster2.gif">
+									<h6>(Click Me)</h6>
+								</div>
 					
-					
-				</div>
+					</div>
 				<div class="ms-section section2" id="section2-left" >
 						
 						<div class="fullscreen">
