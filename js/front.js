@@ -303,7 +303,7 @@ $(function(){
 
  setTimeout(function() {
      $('#overlay').modal('hide');
- }, 10000);
+ }, 5000);
 
 /*social media*/
 
