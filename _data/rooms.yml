@@ -265,7 +265,28 @@
   description: >
     <p>The fate of the world hangs in the balance as the all-powerful mutant, Apocalypse, threatens to destroy it.</p>
     <p>Professor X has recruited you, a team of young mutants, to help in the fight against Apocalypse. </p>
-    <p>However, you must first prove yourselves by unleashing your mutant powers and surviving a test designed by the Professor inside the Danger Room.</p>	
+    <p>However, you must first prove yourselves by unleashing your mutant powers and surviving a test designed by the Professor inside the Danger Room.</p>
+- id: 7
+  slug: alien-assault
+  title: Alien Assault
+  branch:
+    slug: century
+    class: transition7
+    position: -78px -318px
+    width: 75px
+  icon:
+    position: -88px -350px
+  sidebar_icon:
+    position: -53px -208px
+  poster: /img/posters/a3.jpg
+  video:
+  frame:
+    top: top-brush-frame-4
+    bottom: bottom-brush-frame-5
+  description: >
+    <p>During an on-going expedition, your team encountered a distress signal from an old ally ship.</p>
+    <p>When the team boarded the ship,they found out that the ship is a beacon to an impending alien assault to the confederate base. </p>
+    <p>You have 60 minutes to destroy the ship’s beacon and find out where the aliens will be attacking from.</p>	
 
 - id: 1
   slug: rebel-resistance
