@@ -9,7 +9,7 @@ address: >
   Brgy. Bel Air, 1200 Makati City, Metro Manila, Philippines.<br>
   (Landmark: Starbucks right across Mapua Makati & SM Jazz) 
 telephone: 
-  - (+632) 587 1689
+  - (+632) 625 87 66
   - (+63) 917 559 40 10
 availability:
   - 1 PM to 9:30 PM Mondays to Fridays
