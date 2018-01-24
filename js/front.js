@@ -299,11 +299,11 @@ $(function(){
     mm.init();
 });
 
-// $('#overlay').modal('show');
+ $('#overlay').modal('show');
 
-// setTimeout(function() {
-//     $('#overlay').modal('hide');
-// }, 10000);
+ setTimeout(function() {
+     $('#overlay').modal('hide');
+ }, 10000);
 
 /*social media*/
 
