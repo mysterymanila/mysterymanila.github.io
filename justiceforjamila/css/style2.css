@@ -206,7 +206,7 @@ a:link {
 	body {background-color:black;}
 
 
-
+#content{text-align: center;}
 	#logo {width: 200px; 	height: 200px;	text-align: center;}
 	#mmlogo {width: 200px; 	height: 260px;	text-align: center;}/*white logo*/
 	#mmlogo {width: 300px; 	height: 300px;	text-align: center;} 
@@ -224,7 +224,9 @@ a:link {
 	#h1_dpstory label {font-size:40px;color:black;}
 	/* #h1_dpstory label {font-family:LeviReBrushed;} */
 	#h2_dpstory {font-size: 20px;width:70%;text-align:center;position:block;margin-left: auto;
-    margin-right: auto;}
+	margin-right: auto;}
+	#img_mm{width:70%;text-align:center;position:block;margin-left: auto;
+		margin-right: auto;}
 
 @media only screen and (max-width: 980px) { 
 	#logo {width: 150px; 	height: 150px;	text-align: center;}
