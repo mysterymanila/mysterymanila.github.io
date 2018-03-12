@@ -191,7 +191,7 @@ a:link {
 
 #content{text-align: center;}
 	#logo {width: 200px; 	height: 200px;	text-align: center;}
-	#login {font-family: futura;}
+	#login {font-family: futura;font-size: 30px}
 	#mmlogo {width: 10%; 	height: 10%;	margin-top: 5%;text-align: center;} 
 	#main_image {width: 800px; 	height: 500px;	text-align: center;}
 	#dp_image {width: 450px; 	height: 600px;	text-align: center;}
