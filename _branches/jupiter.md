@@ -13,7 +13,7 @@ telephone:
   - (+63) 917 559 40 10
 availability:
   - 1 PM to 9:30 PM Mondays to Fridays
-  - 9 AM to 9:30 PM Holidays/Saturdays/Sundays
+  - 9 AM to 9:30 PM Saturdays/Sundays
 ---
 <div id="TA_socialButtonReviews726" class="social-media TA_socialButtonReviews">
   <ul id="anK57tqO" class="TA_links XlzeS8tC9">
