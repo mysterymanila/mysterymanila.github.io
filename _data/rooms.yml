@@ -1,65 +1,77 @@
 - id: 1
-  slug: aztec-adventure
-  title: Aztec Adventure
+  slug: tragedy-on-the-train
+  title: Tragedy On The Train
   branch:
-    slug: quezon
+    slug: eastwood
     class: transition6
     position: 0px -238px
     width: 75px
-  icon:
-    position: 0 -262px
+  icon: /img/icon/TT.jpg
   sidebar_icon:
     position: 0 -154px
-  poster: /img/posters/aztec-adventure.jpg
+  poster: /img/posters/TT.jpg
   video:
   frame:
     top: top-brush-frame-1
     bottom: bottom-brush-frame-4
   description: >
-    <p>Archeology Professor Jones was said to be missing in search of an artifact used by Queen Gilukhipa on an ancient Aztec ruin on the island of Boracay. While recovering his tracks inside the ruins, you found out that there are other groups that are after the artifact as well and they will do whatever it takes to grab hold of it.  With your life in danger, you have only 1 hour left to find the professor and the artifact before they find you inside the ruins and kill you.</p>
+    <p>There’s been a murder on the train and passengers have been trapped inside the speeding train car. The controls have been jammed by the killer making the train unstoppable. Passengers have one hour to find out who the killer is and escape from the train before they reach the end of the tracks and fall to their deaths off an unfinished bridge.</p>
 
 - id: 2
-  slug: rebeccas-revenge
-  title: Rebecca's Revenge
+  slug: school-of-sorcery
+  title: School Of Sorcery
   branch:
-    slug: quezon
+    slug: eastwood
     position: 0px -318px
     width: 75px
-  icon:
-    position: 0 -350px
+  icon: /img/icon/S3.jpg
   sidebar_icon:
     position: 0 -208px
-  poster: /img/posters/rebeccas-revenge.jpg
+  poster: /img/posters/S3.jpg
   frame:
       top: top-brush-frame-1
       bottom: bottom-brush-frame-1
   description: >
-    <p>A group of spirit questors were hired to solve the mystery of Rebecca's disappearance from her room in Jupiter, Makati City.</p>
-    <P>After a few hours of investigating the paranormal activities inside the room, they thought they managed to solve the mystery. However, this didn't give peace to Rebecca's soul. The spirit questors left the scene thinking their work was done... all along leaving the spirit of Rebecca trapped inside her room.</p>
-    <p>As part of the remaining group, you have 1 hour to find a way to keep Rebecca from killing your group. </p>
-    <p>Do you have what it takes to stop Rebecca's Revenge?</p>
-    <p>Watch the trailer: <a href="https://www.youtube.com/watch?v=YY2le4dPMK4" target="_blank" STYLE="TEXT-DECORATION: NONE"> >>Link<<</a></p>
+    <p>Welcome to the Mysterium School of Sorcery and Spells, the premiere magical learning institution here in Manila. You have been chosen by the school as you have shown great potential for magic. But before you can be officially admitted, you must prove yourself worthy by completing a series of magical tests within an hour. Failure to do so will mean immediate expulsion and removal of your magical abilities.
+    </p>
 
 - id: 3
-  slug: reversed-reality
-  title: Reversed Reality
+  slug: dark-dimension
+  title: Dark Dimension
   branch:
-    slug: quezon
+    slug: eastwood
     class: transition2
     position: -156px -80px
     width: 75px
-  icon:
-    position: -176px -88px
+  icon: /img/icon/D2.jpg
   sidebar_icon:
     position: -106px -53px
-  poster: /img/posters/reversed-reality.jpg
-  video: http://d3pfdit6z4xogx.cloudfront.net/videos/MM_ReversedReality.mp4
+  poster: /img/posters/D2.jpg
   frame:
     top: top-brush-frame-4
     bottom: bottom-brush-frame-3
   description: >
-    <p>It's 2016 and the psychopathic killer Enigma has been captured by the government. Using a method called dream snatching, you are hired to extract an evil plan from Enigma's mind within 60 minutes. In the process of extraction, you have to overcome several mind blocks and solve complex puzzles scattered within Enigma's sinister head.</p>
-    <p>If you fail, millions of people will be in danger.</p>
+    <p>Strange things have been happening in the small town of Hawkins. A kid, Bill Wyeth, went missing for a few days now and as his friends, you are helping everyone to find Bill and look for clues starting from his room. Little did you know, his room can lead you to an alter dimension. Do you have what it takes to go through the Dark Dimension?</p>
+
+- id: 4
+  slug: excalibur-expedition
+  title: Excalibur Expedition
+  branch:
+    slug: eastwood
+    class: transition6
+    position: -156px -80px
+    width: 75px
+  icon: /img/icon/EE.jpg
+  sidebar_icon:
+    position: -106px -53px
+  poster: /img/posters/EE.jpg
+  frame:
+    top: top-brush-frame-4
+    bottom: bottom-brush-frame-3
+  description: >
+    <p>Centuries ago, the great wizard Gondorf had a vision that an evil creature, Hellios, will soon rise and conquer middle earth. To help save the human race, he created Excalibur. A weapon so powerful that it can be the only one used to slay Hellios</p>
+    <p>Now, as the doomsday approaches, your group of defenders of the land has found the epic sword. All you have to do now is prove themselves worthy to wield the sword and use it to vanquish Hellios.</p>
+    <p>Are you worthy to claim Excalibur?</p>
 
 - id: 1
   slug: rebeccas-room
