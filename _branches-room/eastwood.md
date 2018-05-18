@@ -10,7 +10,7 @@ banner: /img/branches-cover/eastwood.jpg
 
 <script>
     function initMap() {
-      var mapLocation = {lat: 14.6098516, lng: 121.0109385};
+      var mapLocation = {lat: 14.6098876, lng: 121.0813123};
       var customMapType = new google.maps.StyledMapType([
           {
             featureType: 'road',
