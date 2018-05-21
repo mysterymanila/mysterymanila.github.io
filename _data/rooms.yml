@@ -7,7 +7,7 @@
     position: 0px -238px
     width: 75px
   icon:
-    position: -88px -88px
+    position: -88px -628px
   sidebar_icon:
     position: 0 -154px
   poster: /img/posters/TT.jpg
@@ -26,7 +26,7 @@
     position: 0px -318px
     width: 75px
   icon:
-    position: -268px -538px
+    position: -178px -628px
   sidebar_icon:
     position: 0 -208px
   poster: /img/posters/S3.jpg
