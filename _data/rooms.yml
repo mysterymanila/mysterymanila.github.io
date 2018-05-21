@@ -7,7 +7,7 @@
     position: 0px -238px
     width: 75px
   icon:
-    position: -88px -542px
+    position: -88px -526px
   sidebar_icon:
     position: 0 -154px
   poster: /img/posters/TT.jpg
@@ -26,7 +26,7 @@
     position: 0px -318px
     width: 75px
   icon:
-    position: -178px -538px
+    position: -178px -526px
   sidebar_icon:
     position: 0 -208px
   poster: /img/posters/S3.jpg
@@ -46,7 +46,7 @@
     position: -156px -80px
     width: 75px
   icon:
-    position: 0px -536px
+    position: 0px -526px
   sidebar_icon:
     position: -106px -53px
   poster: /img/posters/D2.jpg
@@ -65,7 +65,7 @@
     position: -156px -80px
     width: 75px
   icon:
-    position: 0px -626px
+    position: 0px -612px
   sidebar_icon:
     position: -106px -53px
   poster: /img/posters/E2.jpg
