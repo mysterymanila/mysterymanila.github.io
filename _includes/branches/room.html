@@ -24,7 +24,7 @@
                 <h4>BRANCH: {{ site.branches | where:'slug',room.branch.slug | map: 'name' | first | upcase}}</h4>
                 <!-- {% if room.branch.slug == "eastwood" %}
                 <button class="btn btn-warning" disabled>COMING SOON!</button> -->
-                {% else %}
+                <!-- {% else %} -->
                 <a class="book-now" href="https://booknow.mysterymanila.com/" target="_blank">
                     <button class="btn btn-primary">BOOK NOW</button>
                  </a>
