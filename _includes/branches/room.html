@@ -3,7 +3,7 @@
     {% assign sorted-room = site.data.rooms | sort: 'id' %}
     {% for room in sorted-room %}
     {% if page.slug == room.branch.slug%}
-    <div id="{{room.slug}}" class="room clearfix" data-branch="{{ room.branch.slug }}">
+    <div id="{{room.slug}}" class="room clearfix" data-branch="{{ room.branch.slug }} ">
         <div class="hero-content">
             <video class="room-video" poster="{{ room.poster }}" loop preload="none" data-play-status="pause">
                 <source src="{{ room.video }}" type="video/mp4">
@@ -17,7 +17,7 @@
             <span class="{{ room.frame.bottom }} brush-frame hidden-lg hidden-md  hidden-xs"></span>
             <div class="room-text {% cycle 'room-right', 'room-left' %}">
                 <div class="room-title">
-                    <div class="pull-left room-icon" style="background-position: {{ room.icon.position }}"></div>
+                    <div class="pull-left room-icon" style="background-position: {{ room.icon.position }} "></div>
                     <h2>{{ room.title}}</h2>
                 </div>
                 {{ room.description }}
