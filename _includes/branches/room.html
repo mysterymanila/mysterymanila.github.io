@@ -22,13 +22,9 @@
                 </div>
                 {{ room.description }}
                 <h4>BRANCH: {{ site.branches | where:'slug',room.branch.slug | map: 'name' | first | upcase}}</h4>
-               
                     <a class="book-now" href="https://booknow.mysterymanila.com/" target="_blank">
                         <button class="btn btn-success">BOOK NOW</button>
                     </a>
-               
-                
-                    
             </div>
         </div>
         <span class="{{ room.frame.bottom }} brush-frame hidden-xs"></span>
