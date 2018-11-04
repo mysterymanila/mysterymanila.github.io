@@ -1,5 +1,6 @@
 - id: 1
   slug: tragedy-on-the-train
+  mysteryId: 29
   title: Tragedy On The Train
   branch:
     slug: eastwood
@@ -20,6 +21,7 @@
 
 - id: 2
   slug: school-of-sorcery
+  mysteryId: 30
   title: School Of Sorcery
   branch:
     slug: eastwood
@@ -40,6 +42,7 @@
 - id: 3
   slug: dark-dimension
   title: Dark Dimension
+  mysteryId: 31
   branch:
     slug: eastwood
     class: transition2
@@ -58,6 +61,7 @@
 
 - id: 4
   slug: excalibur-expedition
+  mysteryId: 32
   title: Excalibur Expedition
   branch:
     slug: eastwood
