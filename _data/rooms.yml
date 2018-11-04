@@ -84,6 +84,7 @@
 - id: 1
   slug: rebeccas-room
   title: Rebecca's Room
+  mysteryId: 4
   branch:
     slug: jupiter
     class: transition2
@@ -108,6 +109,7 @@
 - id: 2
   slug: murder-in-the-mafia
   title: Murder in the Mafia
+  mysteryId: 20
   branch:
     slug: jupiter
     class: transition7
@@ -130,6 +132,7 @@
 - id: 3
   slug: world-of-wizardry
   title: World of Wizardry
+  mysteryId: 6
   branch:
     slug: jupiter
     class: transition3
@@ -149,6 +152,7 @@
 
 - id: 1
   slug: sinister-sensorium
+  mysteryId: 17
   title: Sinister Sensorium
   branch:
     slug: century
@@ -173,6 +177,7 @@
 
 - id: 2
   slug: pym-particle
+  mysteryId: 18
   title: Pym Particle
   branch:
     slug: century
@@ -196,6 +201,7 @@
     
 - id: 3
   slug: debbys-doll
+  mysteryId: 19
   title: Debby's Doll
   branch:
     slug: century
@@ -220,6 +226,7 @@
     
 
 - id: 4
+  mysteryId: 15
   slug: crime-of-the-century
   title: Crime of the Century
   branch:
@@ -245,6 +252,7 @@
 
 - id: 5
   slug: virtual-voyage
+  mysteryId: 16
   title: Virtual Voyage
   branch:
     slug: century
@@ -267,6 +275,7 @@
 
 - id: 6
   slug: mutants-mission
+  mysteryId: 21
   title: Mutants' Mission
   branch:
     slug: century
@@ -288,6 +297,7 @@
     <p>However, you must first prove yourselves by unleashing your mutant powers and surviving a test designed by the Professor inside the Danger Room.</p>
 - id: 7
   slug: alien-assault
+  mysteryId: 28
   title: Alien Assault
   branch:
     slug: century
@@ -310,6 +320,7 @@
 
 - id: 1
   slug: rebel-resistance
+  mysteryId: 23
   title: Rebel Resistance
   branch:
     slug: pasig
@@ -331,6 +342,7 @@
 
 - id: 2
   slug: sorcerers-stone
+  mysteryId: 24
   title: Sorcerer's Stone
   branch:
     slug: pasig
@@ -352,6 +364,7 @@
 
 - id: 3
   slug: mr-moriarty
+  mysteryId: 25
   title: Mr. Moriarty
   branch:
     slug: pasig
@@ -373,6 +386,7 @@
 
 - id: 4
   slug: morbid-morgue
+  mysteryId: 26
   title: Morbid Morgue
   branch:
     slug: pasig
