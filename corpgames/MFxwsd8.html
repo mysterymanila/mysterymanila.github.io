@@ -5,6 +5,7 @@
     <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>	
 	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></head>
 	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style2.css"/>
@@ -17,6 +18,9 @@
 	  ga('send', 'pageview');
    </script>
 <script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script>
   // Initialize Firebase
   var config = {
@@ -62,6 +66,24 @@
 			<p>
 		</div>	
 	</form>
+
+	<div class="modal fade" id="overlay">
+			<div class="modal-dialog">
+					<div class="modal-content">
+					<div class="modal-header">
+							Incoming Transmission...
+					</div>
+					<div class="modal-body" style="text-align:center">
+						You have successfully cracked the code. Show this to your gamekeeper to earn a Zircon
+						This message will self destruct in 10 seconds
+					</div> 
+							
+	
+							
+					</div>
+					</div>
+			</div>
+	</div>
 </div>
 <script>
 	main_config.auth().signInWithEmailAndPassword("events@mysterymanila.com", "test123").then(function(user) {
@@ -133,7 +155,12 @@
 										$('#submit').prop('disabled', true);
 									}
 									else{
-										if ($('#inputcode').val()=="8954"){
+										if ($('#inputcode').val()=="8954"){	
+											$('#overlay').modal('show');
+
+											setTimeout(function() {
+													$('#overlay').modal('hide');
+											}, 10000);
 												//alert("Correct");
 												//$('#img_mm2').hide(1000);	
 												//$('#img_mm').show(1000);					
@@ -182,6 +209,11 @@
 								}
 								else{
 									if ($('#inputcode').val()=="8954"){
+										$('#overlay').modal('show');
+
+											setTimeout(function() {
+													$('#overlay').modal('hide');
+											}, 10000);
 										//alert("Correct");
 										//$('#img_mm2').hide(1000);	
 										//$('#img_mm').show(1000);					
