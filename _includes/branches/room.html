@@ -8,6 +8,9 @@
             <video class="room-video" poster="{{ room.poster }}" loop preload="none" data-play-status="pause">
                 <source src="{{ room.video }}" type="video/mp4">
             </video>
+            {% if room.mysteryId == 15 %}
+                <span><h1 class="text-danger">PROMO ALERT: Price 300 per head </h1></span>
+            {% endif %}
         </div>
         {% if room.id == 1 %}
         {% else %}
