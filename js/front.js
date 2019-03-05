@@ -92,9 +92,9 @@ mm.initEaseBranches = function() {
 
 };
 
-// mm.initQuotesRotator = function(){
-//     $( '#cbp-qtrotator' ).cbpQTRotator();
-// };
+mm.initQuotesRotator = function(){
+    $( '#cbp-qtrotator' ).cbpQTRotator();
+};
 
 //mm.initScrollToTeaser = function () {
 //    $('#scroll-to-teaser').click(function (event) {
