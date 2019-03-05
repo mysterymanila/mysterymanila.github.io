@@ -2,7 +2,25 @@
   <h2 class="section-header">{{"First time booking? Let us suggest a room for your" | upcase}}</h2>
   
   <form action="queryMystery">
-    <p> I want to book a <input type="input" class="form-control" required placeholder="Genre" autofocus name="genre"/> themed room with <input type="input" class="form-control" required placeholder="Difficulty" autofocus name="difficulty"/> 
+    <p> I want to book a 
+      
+      <select class="form-control text-center" id="genre" name="genre" required >
+        <option value="" disabled selected>Select Genre</option>
+        <option value="1" disabled selected>TEST</option>
+      </select>
+      
+      themed room with 
+      
+      <select class="form-control text-center" id="difficulty" name="difficulty" required>
+        <option value="" disabled selected>Select Difficulty</option>
+        <option value="1" disabled selected>Easy</option>
+        <option value="2" disabled selected>Medium</option>
+        <option value="3" disabled selected>Hard</option>
+      </select>
+    
+      Difficulty
+    </p>
+
       <button class="btn btn-primary">Search</button>
   </form>
   </div>
