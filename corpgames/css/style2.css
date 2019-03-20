@@ -28,14 +28,17 @@
 button{
 	background-color:black;
 	color:white;
+	padding: 1em;
 	font-size:20px;
+	border: 2px solid white;
 	font-family:'Rubik', sans-serif;	
 	margin:3%;
 }
 button:hover{
 	cursor:pointer;
-	background-color:black;
-	color:white;
+	background-color:white;
+	color:black;
+	
 }
 .invalid {
     outline-color: red;
@@ -187,7 +190,7 @@ a:link {
 
 	hr { width: 50%; margin: 25px auto; }
 	body {background-color:white;}
-	#submit{border:0;background-color: black;font-size: 40px}
+	#submit{font-size: 40px}
 	#mmlogo {width: 25%; 	height: 25%;	margin-top: 5%;text-align: center;} 
 #content{text-align: center;}
 	#logo {width: 200px; 	height: 200px;	text-align: center;}

@@ -23,43 +23,36 @@
 		
 </script>   
 </head>
-<body style="background:white">
-<div id = "content">
+<body id = "aura" style="background-color:black">
+<div > 
 	<h1>
-		<img src="../img/logo/MM-logo-square-black.gif" id="mmlogo" />
+		<img src="../img/logo/MM-logo-square-white.gif" id="mmlogo" />
 	</h1>
 	<br>
 	<h1 id="h1_indextitle" style="color:#FF8200"></h1>
 	<p id="h1_dpstory" style="font-family:LeviReBrushed;color:white">
-			<img id="img_mm2" src="img/edc264.png" style="text-align:center;width:100%;height:100%;"/></h1>
+			<img id="img_mm2" src="img/rebus.jpg" style="text-align:center;width:100%;height:100%;"/></h1>
 			<!-- UNILAB -->
 			<!-- <img id="img_mm" src="img/braille958.png" style="text-align:center;width:100%;height:100%;display:none"/> -->
 			<!-- MJN -->
 			<!-- <img id="img_mm" src="img/braille419.png" style="text-align:center;width:100%;height:100%;display:none"/> -->
-			<img id="img_mm" src="img/edcBalanceCode.png" style="text-align:center;width:100%;height:100%;display:none"/> 
-	</p>
-	<br><span id="inputerror"></span>				
+			<!-- <img id="img_mm" src="img/MJNFinal.png" style="text-align:center;width:100%;height:100%;display:none"/>  -->
+	</p>				
 	<form action="" method="post">
 		<div id="login">
-			<p id="h1_dpstory" style="font-family:Futura ;color:black">
-				
-				To continue your challenge, get the password based on the blocks above.
-				
-				<br><br>Once you have the correct password, put it in the field below: 
+			<p id="h1_dpstory" style="font-family:Calibri;color:black">
 				
 				<!-- <label style="color:white">Enter Username:</label> -->
 				<!-- <br> -->
 				<!-- <input type="text" id="inputTeam" class="inputTeam">			 -->
 				
-				<br><br>
 				<label style="color:white">Enter Password:</label>
 				<br>
-				<input type="text" id="inputcode" class="inputcode">			
-				
+				<input type="text" id="inputcode" class="inputcode" style="width:100%;">			
+				<br><span id="inputerror"></span>
 				<br>
 				<button id="submit" >Submit</button>
 			<p>
-				
 		</div>	
 	</form>
 </div>
@@ -72,28 +65,29 @@
 		//UNILAB
 		//var answerString = "3215";
 		//MJN
-		var answerString = "264";
+		var answerString = "JUST BETWEEN YOU AND ME";
 		if (inputString.toUpperCase() === answerString.toUpperCase()){
-			$('#login').hide(1);
 			//alert("Correct");
 			//$('#img_mm2').hide(1000);	
 			//$('#img_mm').show(1000);					
 			//$('#img_mm').focus();
-			//$('#inputcode').val("---input disabled----");
+			$('#inputcode').val("---input disabled----");
 			//UNILAB
-			//$('#inputerror').html("<font color='RED' font='Futura'>To open the black box, <b>POWER</b> is the code to open the lock. </font>");
+			
+			$('#inputerror').html("<font color='green'>Congratulations! The code is 153.</font>");
+			$('#inputerror').css('font-size','40px');
 			//MJN
 			//$('#inputerror').html("<font color='green'>Congratulations on solving this chall</font>");
 			$('#inputerror').show(100);
-			$('#img_mm').show(100);
 			
+			$('#img_mm').show(100);
 			$('#img_mm2').hide(1);
 			$('#inputcode').prop('disabled', true);
 			$('#submit').prop('disabled', true);										
 			
 		}
 		else{
-			alert("ERROR!");
+			alert("TRY AGAIN!");
 		}//else inputcode	
 	});//end of $('#submit').click(function(e) {
 </script>
