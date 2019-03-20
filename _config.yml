@@ -1,7 +1,7 @@
 # Site settings
 title: Mystery Manila
 description: >
-    The first live escape room game in the Philippines. One room. One mystery. One hour. One way out. Can you solve it?
+    The first live escape room game in the Philippines. One room. One mystery. One way out. Can you solve it?
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://mysterymanila.com" # the base hostname & protocol for your site
 

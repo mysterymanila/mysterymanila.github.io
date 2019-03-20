@@ -17,7 +17,7 @@
     top: top-brush-frame-1
     bottom: bottom-brush-frame-4
   description: >
-    <p>There’s been a murder on the train and passengers have been trapped inside the speeding train car. The controls have been jammed by the killer making the train unstoppable. Passengers have one hour to find out who the killer is and escape from the train before they reach the end of the tracks and fall to their deaths off an unfinished bridge.</p>
+    <p>There’s been a murder on the train and passengers have been trapped inside the speeding train car. The controls have been jammed by the killer making the train unstoppable. Passengers have less than an hour to find out who the killer is and escape from the train before they reach the end of the tracks and fall to their deaths off an unfinished bridge.</p>
 
 - id: 2
   slug: school-of-sorcery
@@ -100,7 +100,7 @@
     top: top-brush-frame-5
     bottom: bottom-brush-frame-6
   description: >
-    <p>Play the role of spirit questors out to give peace to Rebecca's soul. You are given 60 minutes inside Rebecca's Room to solve her mysterious death.</p>
+    <p>Play the role of spirit questors out to give peace to Rebecca's soul. You are given 50 minutes inside Rebecca's Room to solve her mysterious death.</p>
     <p>While inside the room, you find that there is more behind her disappearance. You even experience some paranormal events...what could these mean?</p>
     <p>Are you brave enough to enter Rebecca's Room?</p>
     <p>Watch the trailer in</p>
@@ -170,7 +170,7 @@
     bottom: bottom-brush-frame-4
   description: >
     <p>You and your friends have been held captive by the psychopathic killer named Enigma. He has taken away one sense from each of you. It could be your sense of hearing, speaking, or sight.</p>
-    <p>It's up to you to escape the room in 60 minutes using your remaining senses.</p>
+    <p>It's up to you to escape the room in 50 minutes using your remaining senses.</p>
     <p>Unravel the clues and solve the puzzles found inside the room. If you don't solve the mystery, you will be left for dead. </p>
     <p>The clock is ticking. Solve quickly.</p>
     <p>Can you escape the Sinister Sensorium? </p>
@@ -273,7 +273,7 @@
   description: >
     <p>You are volunteers in an experimental program to test the boundaries of virtual reality.</p>
     <p>Unfortunately, the experiment goes wrong and you are inadvertently trapped in the virtual world. </p>
-    <p>You must find a way to escape back to reality within 1 hour or else be trapped in limbo forever.</p>
+    <p>You must find a way to escape back to reality less than an hour or else be trapped in limbo forever.</p>
 
 - id: 6
   slug: mutants-mission
@@ -318,7 +318,7 @@
   description: >
     <p>During an on-going expedition, your team encountered a distress signal from an old ally ship.</p>
     <p>When the team boarded the ship,they found out that the ship is a beacon to an impending alien assault to the confederate base. </p>
-    <p>You have 60 minutes to destroy the ship’s beacon and find out where the aliens will be attacking from.</p>	
+    <p>You have 50 minutes to destroy the ship’s beacon and find out where the aliens will be attacking from.</p>	
 
 - id: 1
   slug: rebel-resistance
