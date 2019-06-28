@@ -7,7 +7,7 @@ address: >
   Unit 2F B2 - 2F, Citywalk2 Eastwood City, 195 E. Rodriguez Jr Ave. <br>
   Brgy. Bagumbayan, 1110 Quezon City, Metro Manila, Philippines. <br>
 telephone:
-    - (+63) 02 501 2824
+    - (+63) 02 503 91 63
     - (+63) 917 582 08 08
 availability:
     - 1 PM to 10:30 PM Mondays to Fridays
