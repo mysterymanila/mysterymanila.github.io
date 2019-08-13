@@ -297,13 +297,18 @@ mm.initFAQ = function() {
 
 $(function(){
     mm.init();
+    if(new Date() < new Date('2019-09-19')) {
+        console.log(new Date());
+        console.log(new Date('2019-09-19'));
+        $('#overlay').modal('show');
+        
+         setTimeout(function() {
+             $('#overlay').modal('hide');
+         }, 10000);
+    }
 });
 
-//  $('#overlay').modal('show');
 
-//  setTimeout(function() {
-//      $('#overlay').modal('hide');
-//  }, 10000);
 
 /*social media*/
 
