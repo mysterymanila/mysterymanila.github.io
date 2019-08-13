@@ -297,9 +297,10 @@ mm.initFAQ = function() {
 
 $(function(){
     mm.init();
+    console.log(new Date());
+    console.log(new Date('2019-09-19'));
     if(new Date() < new Date('2019-09-19')) {
-        console.log(new Date());
-        console.log(new Date('2019-09-19'));
+        
         $('#overlay').modal('show');
         
          setTimeout(function() {
