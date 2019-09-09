@@ -60,9 +60,9 @@
     <p>Strange things have been happening in the small town of Hawkins. A kid, Bill Wyeth, went missing for a few days now and as his friends, you are helping everyone to find Bill and look for clues starting from his room. Little did you know, his room can lead you to an alter dimension. Do you have what it takes to go through the Dark Dimension?</p>
 
 - id: 4
-  slug: excalibur-expedition
-  mysteryId: 32
-  title: Excalibur Expedition
+  slug: witch-of-the-woods
+  mysteryId: 33
+  title: Witch Of The Woods
   branch:
     slug: eastwood
     class: transition6
@@ -72,14 +72,12 @@
     position: 0px -612px
   sidebar_icon:
     position: -106px -53px
-  poster: /img/posters/E2.jpg
+  poster: /img/posters/ww2.jpg
   frame:
     top: top-brush-frame-4
     bottom: bottom-brush-frame-3
   description: >
-    <p>Centuries ago, the great wizard Gondorf had a vision that an evil creature, Hellios, will soon rise and conquer middle earth. To help save the human race, he created Excalibur. A weapon so powerful that it can be the only one used to slay Hellios</p>
-    <p>Now, as the doomsday approaches, your group of defenders of the land has found the epic sword. All you have to do now is prove themselves worthy to wield the sword and use it to vanquish Hellios.</p>
-    <p>Are you worthy to claim Excalibur?</p>
+    <p>You and your group will play as victims who are trying to escape an evil witch. The only way to do so is to find the witch's hear and kill it before she gets back. Can you escape the Witch of the Woods?</p>
 
 - id: 1
   slug: rebeccas-room
