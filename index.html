@@ -36,6 +36,32 @@ css: /css/front.css
 
 
 </div>
+<style>
+    #imgNavBarLogo {
+    width:150px;
+    height:150px;
+    
+}
+
+#imgMobileLogo{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) { 
+    #imgNavBarLogo {
+        
+        display: none;
+    }
+    
+    #imgMobileLogo{
+        width:100px;
+        height:100px;
+        display: inline;
+        text-align: center;
+    }  
+    
+}
+</style>
 <div class="modal fade" id="overlay">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -45,7 +71,7 @@ css: /css/front.css
             </div>
             <div class="modal-body" style="text-align:center">
                 <div class="row align-items-center h-100">
-                    <div class="col-lg-6 col-sm-8 mx-auto">
+                    <div class="col text-center">
                       <div class="jumbotron">
                         <h1><img class="img-responsive" src="img/logo/MM-logo-square-black.gif" id="imgNavBarLogo">
                           <img class="img-responsive" src="img/logo/MM-logo-square-black.gif" id="imgMobileLogo"></h1>
