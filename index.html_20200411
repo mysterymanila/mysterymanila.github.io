@@ -1,0 +1,79 @@
+---
+layout: front
+title: Home
+css: /css/front.css
+---
+
+{% include front/cover.html %}
+<div id="glass-container">
+    <div id="glass" data-stellar-background-ratio="0.1" class="clearfix"></div>
+    <div id="teaser">
+        {% include front/teaser.html %}
+    </div>
+</div>
+<div class="transparent-container">
+    <div id="about-us">
+        {% include front/about-us.html %}
+    </div>
+    <div id="branches">
+        {% include front/branches.html %}
+    </div>
+
+    <!-- <div id="branches-details">
+        {% include front/branches-details.html %}
+    </div> -->
+
+    <div id="faq">
+        {% include front/faq.html %}
+    </div>
+
+    <div id="contact">
+        {% include front/corporate.html %}
+    </div>
+    <div id="ig" class="clearfix">
+        {%include front/instagram.html%}
+    </div>
+
+
+</div>
+<div class="modal fade" id="overlay">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Check out our new pop-up store!</h5>
+                <button type="button" class="close " data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body" style="text-align:center">
+               <!-- <div class="row mt-4 mb-4">
+                   <div class="col-lg-12 text-center">
+                        <div class="card">
+                            <img class="card-img-top" style="width: 100%!important;height: 100%!important;object-fit: cover;" src="img/events/tragicthrone.jpg" >
+                            <div class="card-body">
+                                <h5 class="card-title">Mystery Manila | Solaire PH</h5>
+                                <p class="card-text">Tragic Throne</p>
+                                <a href="http://www.mysterymanila.com/events/tragicthrone" class="btn btn-primary">Check me out!</a>
+                                
+                            </div>
+                        </div>
+                   </div>
+                  
+                </div>  -->
+                <div class="row mt-4 mb-4">
+                        <div class="col-lg-12 text-center">
+                                <div class="card">
+                                    <img class="card-img-top" style="width: 100%!important;height: 200px!important;object-fit: cover;" src="img/events/deathatdinner/cover2.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Murder Manila | Death at Dinner</h5>
+                                        <p class="card-text">A dinner like no other</p>
+                                        <a href="events/deathatdinner" class="btn btn-primary">Get your tickets!</a>
+                                        
+                                    </div>
+                                </div>
+                           </div>
+                </div>
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
