@@ -282,7 +282,7 @@ mm.initFAQ = function() {
     $(document).on('click', '.questions li a', function(e){
         e.preventDefault();
         $question = $(e.target);
-        console.log($question);
+        // console.log($question);
         $('.answer').slideUp(300);
         $($question.attr('href')).fadeIn(300);
         $('.questions li').removeClass('active');
