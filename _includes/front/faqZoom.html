@@ -1,13 +1,13 @@
 <h2 class="section-header">{{ 'Escape Zoom FAQs' | upcase }}</h2>
 <div class="container">    
-        <ul class="questions">
+        <ul class="questions2">
         {% for item in site.data.faqEz %}
             <li class="clearfix">
                 <div class="col-md-5">
-                    <h5><a href="#answer-{{forloop.index}}">{{ item.question | upcase }}</a></h5>
+                    <h5><a href="#answer2-{{forloop.index}}">{{ item.question | upcase }}</a></h5>
                 </div>
                 <div class="col-md-7 answer-container">
-                    <span class="answer" id="answer-{{forloop.index}}" style="display:none">
+                    <span class="answer2" id="answer2-{{forloop.index}}" style="display:none">
                         {{ item.answer }}
                     </span>
                 </div>
@@ -15,3 +15,4 @@
         {% endfor %}
         </ul>
 </div>
+A

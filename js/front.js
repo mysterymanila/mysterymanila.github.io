@@ -9,6 +9,7 @@ mm.init = function(){
     mm.scrollNavbarLinks();
     // mm.resetScroll();
     mm.initFAQ();
+    mm.initFAQ2();
     mm.closeBurger();
     mm.navbar.init();
 
@@ -286,6 +287,20 @@ mm.initFAQ = function() {
         $('.answer').slideUp(300);
         $($question.attr('href')).fadeIn(300);
         $('.questions li').removeClass('active');
+        $question.parents().eq(2).addClass('active');
+        setTimeout(function(){
+            $('html, body').animate({scrollTop: $question.parents(2).offset().top - 96}, 'easeInOutExpo');
+        }, 300);
+    });
+}
+mm.initFAQ2 = function() {
+    $(document).on('click', '.questions2 li a', function(e){
+        e.preventDefault();
+        $question = $(e.target);
+        // console.log($question);
+        $('.answer2').slideUp(300);
+        $($question.attr('href')).fadeIn(300);
+        $('.questions2 li').removeClass('active');
         $question.parents().eq(2).addClass('active');
         setTimeout(function(){
             $('html, body').animate({scrollTop: $question.parents(2).offset().top - 96}, 'easeInOutExpo');
