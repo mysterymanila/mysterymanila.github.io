@@ -32,6 +32,8 @@
                     <a class="book-now" href="https://booknow.mysterymanila.com/?myst_id={{room.mysteryId}}" target="_blank">
                         <button class="btn btn-success">BOOK NOW</button>
                     </a>
+                    {% else %}
+                    <span style="color:red">Branch closed until further notice. Please select a different branch to play</span>
                     {% endif %}
             </div>
         </div>
