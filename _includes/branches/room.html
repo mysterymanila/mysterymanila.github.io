@@ -28,7 +28,7 @@
 
                 
                 <h4>BRANCH: {{ site.branches | where:'slug',room.branch.slug | map: 'name' | first | upcase}}</h4>
-                {% if room.branch.slug=='pasig'%}
+                {% if room.branch.slug=='century'%}
                     <a class="book-now" href="https://booknow.mysterymanila.com/?myst_id={{room.mysteryId}}" target="_blank">
                         <button class="btn btn-success">BOOK NOW</button>
                     </a>
