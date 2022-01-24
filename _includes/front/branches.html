@@ -3,7 +3,7 @@
         <div class="col-md-12">
             {% assign sorted-branch = site.branches | sort: 'rank' %}
             {% for branch in sorted-branch %}
-                {% if branch.slug=="jupiter"%}
+                {% if branch.slug=="jupiter" or branch.slug=="pasig"  %}
 
                 {% else %}
                 <div class="col-md-6 branches-content">
