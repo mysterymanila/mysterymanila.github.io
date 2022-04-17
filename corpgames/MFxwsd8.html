@@ -19,226 +19,70 @@
 <script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
 <script>
   // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyDwSv5eABgqwHa-8dBpa3J-JH9q1PCWLt0",
-    authDomain: "mmeventdb.firebaseapp.com",
-    databaseURL: "https://mmeventdb.firebaseio.com",
-    storageBucket: "mmeventdb.appspot.com",
-    messagingSenderId: "1024263913903"
-  };
-  		var main_config = firebase.initializeApp(config);	
-		var groupName = firebase.database().ref("groupName/");
+
 		
 </script>   
 </head>
-<body id = "aura">
+<body style="background:white">
 <div id = "content">
 	<h1>
-		<!-- <img src="../img/mystery-logo.png" id="mmlogo" /> -->
+		<img src="../img/logo/MM-logo-square-black.gif" id="mmlogo" />
 	</h1>
 	<br>
-	<br>
 	<h1 id="h1_indextitle" style="color:#FF8200"></h1>
-	<p id="h1_dpstory" style="font-family:Calibri;color:white">
-			<img id="img_mm2" src="img/baxter.jpg" style="text-align:center;width:100%;height:100%;"/></h1>
-			<img id="img_mm" src="img/baxter.jpg" style="text-align:center;width:100%;height:100%;display:none"/></h1>
+	<p id="h1_dpstory" style="font-family:LeviReBrushed;color:white">
+			<img id="img_mm2" src="img/aev.jpg" style="text-align:center;width:100%;height:100%;"/></h1>
+			<!-- UNILAB -->
+			<!-- <img id="img_mm" src="img/braille958.png" style="text-align:center;width:100%;height:100%;display:none"/> -->
+			<!-- MJN -->
+			<!-- <img id="img_mm" src="img/braille419.png" style="text-align:center;width:100%;height:100%;display:none"/> -->
+			<img id="img_mm" src="img/MJNFinal.png" style="text-align:center;width:100%;height:100%;display:none"/> 
 	</p>
 	<br><span id="inputerror"></span>				
 	<form action="" method="post">
 		<div id="login">
-			<p id="h1_dpstory" style="font-family:Calibri;color:white">
-				<label>Enter username and password below. Warning: Incorrect password will lock data entry for 3 minutes.</label>
-				<br><br>
-				<label style="color:white">Enter Username:</label>
-				<br>
-				<input type="text" id="inputTeam" class="inputTeam">			
-				<br><br>				
-				<label style="color:white">Enter Password:</label>
-				<br>
-				<input type="text" id="inputcode" class="inputcode">			
-		
-				<br>
-				<button id="submit" >Submit</button>
+			<p id="h1_dpstory" style="font-family:Futura ;color:red">
+				
+				Using the morse code cipher, get the secret message of the thief below: 
+				
+				<br><br>--.   .   -    
+
+				<br><br>.--.  .-  -   -  .   .-.    -. 
+				
 			<p>
+				
 		</div>	
-		
 	</form>
 </div>
 <script>
-	main_config.auth().signInWithEmailAndPassword("events@mysterymanila.com", "test123").then(function(user) {
-		console.log("Authenticated successfully with payload:", user.uid);
-		
-	});
+	
 	$('#img_mm').hide(1);
 	$('#inputerror').hide(1);
 	$('#submit').click(function(e) { //Add the 'e' event object to the parameters
-		e.preventDefault();
-		main_config.auth().onAuthStateChanged(function(user) {
-			  if (user) {
-				var teamName = $('#inputTeam').val().toUpperCase();
-				var inputCode = $('#inputcode').val().toUpperCase();
-				console.log(teamName);
-				groupName.once('value', function(snapshot) {
-					if(snapshot.hasChild(teamName)){
-						//console.log(snapshot.val);
-						//console.log(errorCount.tries);
-						var errorCount = snapshot.child(teamName).val();
-								//console.log(snapshot.key);
-								//console.log(errorCount.tries);
-								if (errorCount.tries >= 1){
-									var timeNow = Date.now();
-									console.log("Time Now: "+timeNow);
-									var ftimeNow = new Date(timeNow);
-									// Hours part from the timestamp
-									var hours = ftimeNow.getHours();
-									// Minutes part from the timestamp
-									var minutes = "0" + ftimeNow.getMinutes();
-									// Seconds part from the timestamp
-									var seconds = "0" + ftimeNow.getSeconds();
-
-									// Will display time in 10:30:23 format
-									var formattedTime = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
-									console.log("Formatted Time: "+formattedTime);
-									
-									var fbTime = errorCount.fbTime;
-									console.log("FBTIME: "+fbTime);
-									var ffbTime = new Date(fbTime);
-									// Hours part from the timestamp
-									var hours = ffbTime.getHours();
-									// Minutes part from the timestamp
-									var minutes = "0" + ffbTime.getMinutes();
-									// Seconds part from the timestamp
-									var seconds = "0" + ffbTime.getSeconds();
-									var formattedTime2 = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
-									console.log("Formatted Time 2: "+formattedTime2);
-									penaltyTime = timeNow - fbTime;
-									penaltyTime= Math.floor(penaltyTime / 1000);
-									if(penaltyTime<180 && penaltyTime>0 ){
-										penaltyTime2 = (180 - penaltyTime)*1000;
-										console.log("penaltyTime: " + penaltyTime);
-										setTimeout(function(){
-											$('#inputcode').val("");
-											$('#inputcode').prop('disabled', false);
-											$('#inputcode').attr('placeholder', "Try Again");
-											$('#submit').prop('disabled', false);
-											$('#inputerror').hide(100);	
-											groupName.child(teamName).update({
-												"tries":0,												
-											});
-											//localStorage.setItem("ctr",ctr);
-										},penaltyTime2);
-										
-										$('#inputcode').val("Input disabled for "+penaltyTime2/1000+" seconds")
-										$('#inputcode').prop('disabled', true);
-										$('#inputerror').html('You have exceeded the allowable attempts. Please wait for a few seconds before trying again');
-										$('#inputerror').show(1000);
-										$('#submit').prop('disabled', true);
-									}
-									else{
-										if (inputCode=="E"){
-												//alert("Correct");
-												//$('#img_mm2').hide(1000);	
-												//$('#img_mm').show(1000);					
-												//$('#img_mm').focus();
-												$('#inputcode').val("---input disabled----");
-												$('#img_mm2').hide(1);
-												$('#login').hide(1);
-												$('#inputerror').html("<font color='green'>Congratulations for completing the challenge! Present this message to the game keeper to continue with your challenge. </font>");
-												$('#inputerror').show(100);
-												$('#inputcode').prop('disabled', true);
-												$('#submit').prop('disabled', true);										
-												groupName.child(teamName).update({
-														"tries":0												
-													});
-											}
-											else{//else inputcode
-												var $formContainer = $('#login');
-												  $formContainer.addClass('invalid');
-												  setTimeout(function(){
-													$formContainer.removeClass('invalid');
-												  },1000);
-												//$('#email').val('');
-												
-												$('#inputcode').val('');			
-												var ctr = errorCount.tries;
-												ctr++;
-												if(ctr>=1){
-													$('#inputcode').val("Input disabled for 5 Minutes")
-													$('#inputcode').prop('disabled', true);
-													//$('#inputerror').html('Do not refresh the browser! The penalty countdown will start again with 3 minutes');
-													//$('#inputerror').show(1000);
-													$('#submit').prop('disabled', true);
-													timeNow = Date.now();
-													console.log(timeNow);
-													groupName.child(teamName).update({
-														"tries":ctr,
-														"fbTime":timeNow
-													});
-												}
-												else{
-													groupName.child(teamName).update({
-														"tries":ctr
-													});
-												}
-											}//else inputcode
-									}
-									
-								}
-								else{
-									if (inputCode=="E"){
-										//alert("Correct");
-										//$('#img_mm2').hide(1000);	
-										//$('#img_mm').show(1000);					
-										//$('#img_mm').focus();
-										$('#inputcode').val("---input disabled----");
-										$('#inputerror').html("<font color='green'>Congratulations for completing the challenge! Present this message to the game keeper to continue with your challenge. </font>");
-										$('#inputerror').show(100);
-										$('#img_mm2').hide(1);
-										$('#login').hide(1);
-										$('#inputcode').prop('disabled', true);
-										$('#submit').prop('disabled', true);										
-										groupName.child(teamName).update({
-												"tries":0												
-											});
-									}
-									else{//else inputcode
-										var $formContainer = $('#login');
-										  $formContainer.addClass('invalid');
-										  setTimeout(function(){
-											$formContainer.removeClass('invalid');
-										  },1000);
-										//$('#email').val('');
-										
-										$('#inputcode').val('');			
-										var ctr = errorCount.tries;
-										ctr++;
-										if(ctr>=1){
-											$('#inputcode').val("Input disabled for 5 Minutes")
-											$('#inputcode').prop('disabled', true);
-											//$('#inputerror').html('Do not refresh the browser! The penalty countdown will start again with 3 minutes');
-											//$('#inputerror').show(1000);
-											$('#submit').prop('disabled', true);
-											timeNow = Date.now();
-											console.log(timeNow);
-											groupName.child(teamName).update({
-												"tries":ctr,
-												"fbTime":timeNow
-											});
-										}
-										else{
-											groupName.child(teamName).update({
-												"tries":ctr
-											});
-										}
-									}//else inputcode
-								}//else errorCount>=3
-					}
-					else{
-						alert("TEAM DOES NOT EXISTS");
-					}	
-				});//close groupName FB Value
-			  }//if user
-		});//end of main_config.auth().onAuthStateChanged(function(user)	  
+		var inputString = $('#inputcode').val();
+		//UNILAB
+		//var answerString = "3215";
+		//MJN
+		var answerString = "get pattern";
+		if (inputString.toUpperCase() === answerString.toUpperCase()){
+			$('#login').hide(1);
+			//alert("Correct");
+			//$('#img_mm2').hide(1000);	
+			//$('#img_mm').show(1000);					
+			//$('#img_mm').focus();
+			// $('#inputcode').val("---input disabled----");
+			$('#inputerror').html("<font color='green'>Congratulations on solving this challenge! Get the pattern from the game keeper</font>");
+			$('#inputerror').show(100);
+			$('#img_mm').show(100);
+			
+			$('#img_mm2').hide(1);
+			$('#inputcode').prop('disabled', true);
+			$('#submit').prop('disabled', true);										
+			
+		}
+		else{
+			alert("ERROR!");
+		}//else inputcode	
 	});//end of $('#submit').click(function(e) {
 </script>
 </body>

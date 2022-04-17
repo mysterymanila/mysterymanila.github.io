@@ -43,11 +43,11 @@
 		<div id="login">
 			<p id="h1_dpstory" style="font-family:Futura ;color:red">
 				
-				You have failed the integrity challenge! 
+				Using the morse code cipher, get the secret message of the thief below: 
 				
-				<br><br>A penalty of additional 5 minutes will be imposed to your team on top of your total time. 
+				<br><br>--.   .   -    
 
-				<br><br>To continue playing, ask your marshall for your next clue!
+				<br><br>.--.  .-  -   -  .   .-.    -. 
 				
 			<p>
 				
@@ -63,18 +63,15 @@
 		//UNILAB
 		//var answerString = "3215";
 		//MJN
-		var answerString = "teamwork";
+		var answerString = "get pattern";
 		if (inputString.toUpperCase() === answerString.toUpperCase()){
 			$('#login').hide(1);
 			//alert("Correct");
 			//$('#img_mm2').hide(1000);	
 			//$('#img_mm').show(1000);					
 			//$('#img_mm').focus();
-			$('#inputcode').val("---input disabled----");
-			//UNILAB
-			$('#inputerror').html("<font color='RED' font='arial'>To open the black box, use <b>POWER</b> to open the lock. </font>");
-			//MJN
-			//$('#inputerror').html("<font color='green'>Congratulations on solving this chall</font>");
+			// $('#inputcode').val("---input disabled----");
+			$('#inputerror').html("<font color='green'>Congratulations on solving this challenge! Get the pattern from the game keeper</font>");
 			$('#inputerror').show(100);
 			$('#img_mm').show(100);
 			
