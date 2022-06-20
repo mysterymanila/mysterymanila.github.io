@@ -28,8 +28,8 @@
 
                 
                 <h4>BRANCH: {{ site.branches | where:'slug',room.branch.slug | map: 'name' | first | upcase}}</h4>
-                {% if room.branch.slug=='century' ||  room.branch.slug=='eastwood' %}
-                    {% if room.mysteryId=='29' || room.mysteryId=='33' %} 
+                {% if room.branch.slug=='century' OR  room.branch.slug=='eastwood' %}
+                    {% if room.mysteryId=='29' OR room.mysteryId=='33' %} 
                     <a class="book-now" href="https://booknow.mysterymanila.com/?myst_id={{room.mysteryId}}" target="_blank">
                         <button class="btn btn-success">BOOK NOW</button>
                         
