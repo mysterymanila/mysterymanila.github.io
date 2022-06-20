@@ -8,9 +8,7 @@
             <video class="room-video" poster="{{ room.poster }}" loop preload="none" data-play-status="pause">
                 <source src="{{ room.video }}" type="video/mp4">
             </video>
-            {% if room.mysteryId == 15 %}
-                <h1 class="text-danger" style="z-index: 2;">PROMO ALERT: Price 300 per head </h1>
-            {% endif %}
+           
         </div>
         {% if room.id == 1 %}
         {% else %}
@@ -30,7 +28,7 @@
                 <h4>BRANCH: {{ site.branches | where:'slug',room.branch.slug | map: 'name' | first | upcase}}</h4>
                 {% if room.branch.slug=='century' or  room.branch.slug=='eastwood' %}
                     {% if room.branch.slug=='eastwood' %} 
-                        {% if room.mysteryId==29 or room.mysteryId==31 %} 
+                        {% if room.mysteryId=='29' or room.mysteryId=='33' %} 
                         <a class="book-now" href="https://booknow.mysterymanila.com/?myst_id={{room.mysteryId}}" target="_blank">
                             <button class="btn btn-success">BOOK NOW</button>
                             
@@ -39,10 +37,15 @@
                             <span style="color:red">Room closed until further notice. Please select a different room to play</span>
                         {% endif %}
                     {% else %}  
+                        {% if room.mysteryId == 15 %}
+                            <!-- <h1 class="text-danger" style="z-index: 2;">PROMO ALERT: Price 300 per head </h1> -->
+                            <span style="color:red">Room closed until further notice. Please select a different room to play</span>
+                        {% else %}
                         <a class="book-now" href="https://booknow.mysterymanila.com/?myst_id={{room.mysteryId}}" target="_blank">
                             <button class="btn btn-success">BOOK NOW</button>
                             
                         </a>
+                        {% endif %}
                     {% endif %}
                 {% else %}
                     <span style="color:red">Branch closed until further notice. Please select a different branch to play</span>
