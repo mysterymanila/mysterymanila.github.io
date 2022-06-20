@@ -28,9 +28,9 @@
 
                 
                 <h4>BRANCH: {{ site.branches | where:'slug',room.branch.slug | map: 'name' | first | upcase}}</h4>
-                {% if room.branch.slug=='century' OR  room.branch.slug=='eastwood' %}
+                {% if room.branch.slug=='century' or  room.branch.slug=='eastwood' %}
                     {% if room.branch.slug=='eastwood' %} 
-                        {% if room.mysteryId=='29' OR room.mysteryId=='33' %} 
+                        {% if room.mysteryId=='29' or room.mysteryId=='33' %} 
                         <a class="book-now" href="https://booknow.mysterymanila.com/?myst_id={{room.mysteryId}}" target="_blank">
                             <button class="btn btn-success">BOOK NOW</button>
                             
@@ -44,9 +44,9 @@
                             
                         </a>
                     {% endif %}
-                    {% else %}
+                {% else %}
                     <span style="color:red">Branch closed until further notice. Please select a different branch to play</span>
-                    {% endif %}
+                {% endif %}
             </div>
         </div>
         <span class="{{ room.frame.bottom }} brush-frame hidden-xs"></span>
