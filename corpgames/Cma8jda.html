@@ -36,20 +36,39 @@
 			<!-- <img id="img_mm" src="img/braille958.png" style="text-align:center;width:100%;height:100%;display:none"/> -->
 			<!-- MJN -->
 			<!-- <img id="img_mm" src="img/braille419.png" style="text-align:center;width:100%;height:100%;display:none"/> -->
-			<img id="img_mm" src="img/MJNFinal.png" style="text-align:center;width:100%;height:100%;display:none"/> 
+			<!-- <img id="img_mm" src="img/MJNFinal.png" style="text-align:center;width:100%;height:100%;display:none"/>  -->
+			<!-- QepUWBhOW5c -->
+			<!-- <iframe id="img_mm" sandbox="allow-same-origin allow-scripts allow-popups allow-forms" width="560" height="315" 
+			src="https://www.youtube.com/embed/QepUWBhOW5c" 
+			frameborder="0" allowfullscreen></iframe> -->
+
 	</p>
 	<br><span id="inputerror"></span>				
 	<form action="" method="post">
 		<div id="login">
-			<p id="h1_dpstory" style="font-family:Futura ;color:red">
-				
-				Using the morse code cipher, get the secret message of the thief below: 
-				
-				<br><br>- - .    /    .    /       -    
-
-				<br><br>. - - .      /   . -     /     -    /     -     /     .     /     . - .   /    - . 
+			<p id="h1_dpstory" style="font-family:'Rubik', sans-serif ;">
+				<img id="img_mm2" src="img/beq.jpg" style="text-align:center;width:100%;height:100%;"/></h1>
 				
 			</p>
+
+<style>
+	#submit, .labelPassword{ 
+		font-size: 20px;
+	}
+	#inputcode{ 
+		font-size: 20px;
+		padding: .5em;
+	}
+</style>
+			<br><br>				
+				<!-- <label class="labelPassword" >Enter Password:</label>
+				<br>
+				<input type="text" id="inputcode" class="inputcode">			
+				<br><span id="inputerror"></span>
+				
+				<br>
+				<button id="submit" >SUBMIT</button> -->
+
 				
 		</div>	
 	</form>
@@ -63,15 +82,20 @@
 		//UNILAB
 		//var answerString = "3215";
 		//MJN
-		var answerString = "get pattern";
+		var answerString = "1532";
 		if (inputString.toUpperCase() === answerString.toUpperCase()){
 			$('#login').hide(1);
-			//alert("Correct");
-			//$('#img_mm2').hide(1000);	
-			//$('#img_mm').show(1000);					
-			//$('#img_mm').focus();
+			alert("Correct");
+			$('#img_mm2').hide(1000);	
+			$('#img_mm').show(1000);					
+			$('#img_mm').focus();
 			// $('#inputcode').val("---input disabled----");
-			$('#inputerror').html("<font color='green'>Congratulations on solving this challenge! Get the pattern from the game keeper</font>");
+
+
+			// https://drive.google.com/file/d/1yZJ55cTfkgScecUs_AVK8SXr82YvBmhA/view?usp=sharing
+
+
+			$('#inputerror').html("<font color='green'>Congratulations on solving this challenge!</font>");
 			$('#inputerror').show(100);
 			$('#img_mm').show(100);
 			
