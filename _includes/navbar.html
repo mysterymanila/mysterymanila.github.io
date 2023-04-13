@@ -85,14 +85,26 @@
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">BRANCHES
                             <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                            {% for branches in site.branches-room %}
-                            <li>
-                                <a href="/branch/{{ branches.slug }}">{{ branches.title | upcase }}</a>
-                            </li>
-                            {% endfor %}
+                                {% for branches in site.branches-room %}
+                                {% if branches.slug=="jupiter" or branches.slug=="pasig"  %}
+    
+                                {% else %}
+                                <li>
+                                    <a href="/branch/{{ branches.slug }}">{{ branches.title | upcase }}</a>
+                                </li>
+                                {% endif %}
+                                {% endfor %}
                         </ul>
                     </li>
-                  
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">EVENTS
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/events/evilsofenigma.html">Evils of Enigma, Uptown Mall BGC,  Taguig</a>
+                            </li>
+                        </ul>
+                    </li>
                     <!-- <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">EVENTS
                             <span class="caret"></span></a>
