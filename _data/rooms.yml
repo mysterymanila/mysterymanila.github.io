@@ -175,7 +175,7 @@
 
 - id: 2
   slug: chained-chamber
-  mysteryId: 119
+  mysteryId: 120
   title: Chained Chamber
   branch:
     slug: uptown
