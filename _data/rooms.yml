@@ -150,10 +150,10 @@
 
 - id: 1
   slug: sinister-sensorium
-  mysteryId: 17
+  mysteryId: 119
   title: Sinister Sensorium
   branch:
-    slug: century
+    slug: taguig
     class: transition1
     position: 0px -80px
     width: 75px
@@ -172,6 +172,30 @@
     <p>Unravel the clues and solve the puzzles found inside the room. If you don't solve the mystery, you will be left for dead. </p>
     <p>The clock is ticking. Solve quickly.</p>
     <p>Can you escape the Sinister Sensorium? </p>
+
+- id: 2
+  slug: chained-chamber
+  mysteryId: 119
+  title: Chained Chamber
+  branch:
+    slug: taguig
+    class: transition1
+    position: 0px -80px
+    width: 75px
+  icon:
+    position: 0 -88px
+  sidebar_icon:
+      position: 0 -53px
+  poster: /img/posters/sinister-sensorium.jpg
+  video: 
+  frame:
+    top: top-brush-frame-1
+    bottom: bottom-brush-frame-4
+  description: >
+   <p>You and your friends are given 30 minutes to escape the Chained Chamber devised by a psychopathic serial killer. </p>
+   <p>Your group must make use of the riddles, puzzles and clues around to escape this deadly room. If your group fails to escape, you will be left for dead and stuck permanently inside the room.</p>
+    <p>The choice is yours. Solve quickly.</p>
+    <p>Can you escape the Chained Chamber? </p>
 
 - id: 2
   slug: pym-particle
