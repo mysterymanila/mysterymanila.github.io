@@ -10,7 +10,7 @@ banner: /img/events/uptown/KV.jpg
 
 <script>
     function initMap() {
-      var mapLocation = {lat: 14.580458, lng: 121.064753};
+      var mapLocation = {lat: 14.55756557285469, lng: 121.05431757671528};
       var customMapType = new google.maps.StyledMapType([
           {
             featureType: 'road',
