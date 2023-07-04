@@ -86,12 +86,12 @@
                             <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 {% for branches in site.branches-room %}
-                                {% if branches.slug=="jupiter" or branches.slug=="pasig"  %}
-    
-                                {% else %}
+                                {% if branches.slug=="century" or branches.slug=="eastwood"  %}
                                 <li>
                                     <a href="/branch/{{ branches.slug }}">{{ branches.title | upcase }}</a>
                                 </li>
+                                {% else %}
+                               
                                 {% endif %}
                                 {% endfor %}
                         </ul>
