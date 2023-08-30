@@ -126,8 +126,8 @@
 			// https://drive.google.com/file/d/1yZJ55cTfkgScecUs_AVK8SXr82YvBmhA/view?usp=sharing
 
 
-			$('#inputerror').html("<font color='green'>Congratulations on solving this challenge!</font>");
-			$('#inputerror').show(100);
+			// $('#inputerror').html("<font color='green'>Congratulations on solving this challenge!</font>");
+			// $('#inputerror').show(100);
 			$('#img_mm').show(100);
 			
 			$('#img_mm2').hide(1);
@@ -137,6 +137,7 @@
 		}
 		else{
 			alert("Invalid Passcode! Please try again!");
+			location.reload();
 		}//else inputcode	
 	});//end of $('#submit').click(function(e) {
 </script>
