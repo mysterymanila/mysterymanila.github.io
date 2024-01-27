@@ -35,12 +35,13 @@ mm.init = function(){
 
 mm.scrollNavbarLinks = function () {
     $('.navbar-menu a').on('click', function(e){
-        e.preventDefault();
+        
         var $anchor = $(this);
         // console.log($(this).innerText);
         if($(this)[0].innerText=='PROMIL'){ 
 
         } else {
+            e.preventDefault();
             $('html, body').stop().animate({
                 scrollTop: $($anchor.attr('href')).offset().top - 66
             }, 1500, 'easeInOutExpo');
