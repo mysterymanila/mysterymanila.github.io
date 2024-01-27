@@ -38,7 +38,7 @@ mm.scrollNavbarLinks = function () {
         
         var $anchor = $(this);
         // console.log($(this).innerText);
-        if($(this)[0].innerText=='PROMIL'){ 
+        if($(this)[0].innerText=='PROMIL®'){ 
             window.location.href = "https://www.mysterymanila.com/events/promil";
         } else {
             e.preventDefault();
