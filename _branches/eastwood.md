@@ -1,6 +1,6 @@
 ---
 id: 1
-rank: 4
+rank: 3
 slug: eastwood
 name: Eastwood, Quezon City
 address: >
