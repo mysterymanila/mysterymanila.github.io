@@ -37,6 +37,7 @@ mm.scrollNavbarLinks = function () {
     $('.navbar-menu a').on('click', function(e){
         e.preventDefault();
         var $anchor = $(this);
+        console.log($anchor);    
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top - 66
         }, 1500, 'easeInOutExpo');
