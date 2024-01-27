@@ -38,7 +38,7 @@ mm.scrollNavbarLinks = function () {
         e.preventDefault();
         var $anchor = $(this);
         console.log($(this).innerText);
-        if($(this).innerText=='PROMIL'){ 
+        if($(this)[0].innerText=='PROMIL'){ 
 
         } else {
             $('html, body').stop().animate({
