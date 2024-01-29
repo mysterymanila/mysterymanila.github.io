@@ -10,7 +10,7 @@ banner: /img/branches-cover/newport.jpg
 
 <script>
     function initMap() {
-      var mapLocation = {lat: 14.565571, lng: 121.027687};
+      var mapLocation = {lat: 14.5190331, lng: 121.01946055};
       var customMapType = new google.maps.StyledMapType([
           {
             featureType: 'road',
