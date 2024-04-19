@@ -24,113 +24,169 @@
 </script>   
 </head>
 <body style="background:white">
-<div id = "content">
+<div id = "container">
 	<h1>
 		<img src="../img/logo/MM-logo-square-black.gif" id="mmlogo" />
 	</h1>
 	<br>
-	<h1 id="h1_indextitle" style="color:#FF8200"></h1>
-	<p id="h1_dpstory" style="font-family:LeviReBrushed;color:white">
-			<!-- <img id="img_mm2" src="img/aev.jpg" style="text-align:center;width:100%;height:100%;"/></h1> -->
-			<!-- UNILAB -->
-			<!-- <img id="img_mm" src="img/braille958.png" style="text-align:center;width:100%;height:100%;display:none"/> -->
-			<!-- MJN -->
-			<!-- <img id="img_mm" src="img/braille419.png" style="text-align:center;width:100%;height:100%;display:none"/> -->
-			<!-- <img id="img_mm" src="img/MJNFinal.png" style="text-align:center;width:100%;height:100%;display:none"/>  -->
-			<!-- QepUWBhOW5c -->
-			<!-- <iframe id="img_mm" sandbox="allow-same-origin allow-scripts allow-popups allow-forms" width="560" height="315" 
-			src="https://www.youtube.com/embed/QepUWBhOW5c" 
-			frameborder="0" allowfullscreen></iframe> -->
+	
+	<div id="question-container">
+		<div id="question"></div>
+		<ol id="answers-list"></ol>
+</div>
 
-	</p>
-	<br><span id="inputerror"></span>			
-	<style>
-		a:link {
-			color: green;
-			background-color: transparent;
-			text-decoration: none;
-		}
-		
-		a:visited {
-			color: green;
-			background-color: transparent;
-			text-decoration: none;
-		}
-		
-		a:hover {
-			color: green;
-			background-color: transparent;
-			text-decoration: underline;
-		}
-		
-		a:active {
-			color: green;
-			background-color: transparent;
-			text-decoration: underline;
-		}
+	<style> 
+	body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container{ 
+  width: 100vw;
+}
+#answer-list{
+  
+  margin: 20px 0 ;
+}
+li{ 
+  
+  margin: 20px;
+  border-radius: 5px;
+  border-bottom: 1px solid #aeaeae;
+  filter:drop-shadow(1px 1px)
+}
+
+#question-container {
+    text-align: center;
+    font-size: 1.5em;
+}
+#question { 
+  font-weight: bold;
+  font-size: 2em;
+  
+}
+
+
+.modal {
+	color: #000;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    text-align: center;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-content p{ 
+	font-size: 16px;
+	color: black;
+}
+.modal-content h1 { 
+	color: #000;
+	
+}
 		</style>	
-	<form action="" method="post">
-		<div id="login">
-			<p id="h1_dpstory" style="font-family:'Rubik', sans-serif ;">
+	<div id="congratulations-modal" class="modal">
+		<div class="modal-content">
+				<span class="close-button">&times;</span>
+				<h1>Congratulations!</h1>
+				<p>You have answered all questions correctly!</p>
+				<br><br>
+				<h3>Here is your next clue:</h3>
+				<h1>1</h1>
+		</div>
+    </div>
 
-				<img id="img_mm2" src="img/cmc.jpg" style="text-align:center;width:100%;height:100%;"/>
-				
-			</p>
-			<p>
-				<a href="https://youtu.be/rIMxRO_11hA" target="_blank">https://youtu.be/rIMxRO_11hA</a>
-			</p>
-
-
-<style>
-	#submit, .labelPassword{ 
-		font-size: 20px;
-	}
-	#inputcode{ 
-		font-size: 20px;
-		padding: .5em;
-	}
-</style>
-			<br><br>			
-
-				
-		</div>	
-	</form>
 </div>
 <script>
-	
-	$('#img_mm').hide(1);
-	$('#inputerror').hide(1);
-	$('#submit').click(function(e) { //Add the 'e' event object to the parameters
-		var inputString = $('#inputcode').val();
-		//UNILAB
-		//var answerString = "3215";
-		//MJN
-		var answerString = "1532";
-		if (inputString.toUpperCase() === answerString.toUpperCase()){
-			$('#login').hide(1);
-			alert("Correct");
-			$('#img_mm2').hide(1000);	
-			$('#img_mm').show(1000);					
-			$('#img_mm').focus();
-			// $('#inputcode').val("---input disabled----");
+	const questions = [
+    { 
+        question: "Which sports is the focus of the documentary series “Legends of the Game” on Blast Sports", 
+        answers: ["Basketball", "Soccer", "Baseball", "Tennis"],
+        correct: "Basketball"
+    },
+    { 
+        question: "What is 2 + 2?", 
+        answers: ["3", "4", "5", "6"],
+        correct: "4"
+    },
+    { 
+        question: "What color do you get by mixing red and white?", 
+        answers: ["Pink", "Purple", "Red", "White"],
+        correct: "Pink"
+    }
+];
 
+let currentQuestionIndex = 0;
 
-			// https://drive.google.com/file/d/1yZJ55cTfkgScecUs_AVK8SXr82YvBmhA/view?usp=sharing
+function displayQuestion() {
+    const question = questions[currentQuestionIndex];
+    document.getElementById('question').textContent = question.question;
+    const answersList = document.getElementById('answers-list');
+    answersList.innerHTML = ''; // Clear previous answers
 
+    question.answers.forEach(answer => {
+        const li = document.createElement('li');
+        li.textContent = answer;
+        li.addEventListener('click', () => checkAnswer(answer));
+        answersList.appendChild(li);
+    });
+}
 
-			$('#inputerror').html("<font color='green'>Congratulations on solving this challenge!</font>");
-			$('#inputerror').show(100);
-			$('#img_mm').show(100);
-			
-			$('#img_mm2').hide(1);
-			$('#inputcode').prop('disabled', true);
-			$('#submit').prop('disabled', true);										
-			
-		}
-		else{
-			alert("ERROR!");
-		}//else inputcode	
-	});//end of $('#submit').click(function(e) {
+function checkAnswer(selectedAnswer) {
+    if (selectedAnswer === questions[currentQuestionIndex].correct) {
+        currentQuestionIndex++;
+        if (currentQuestionIndex < questions.length) {
+            displayQuestion();
+        } else {
+            showCongratulationsModal();
+        }
+    } else {
+        alert('Wrong answer. Try again!');
+    }
+}
+
+function showCongratulationsModal() {
+    const modal = document.getElementById('congratulations-modal');
+    modal.style.display = 'block';
+}
+
+document.querySelector('.close-button').addEventListener('click', function() {
+    document.getElementById('congratulations-modal').style.display = 'none';
+    currentQuestionIndex = 0;
+    displayQuestion(); // Restart the game
+});
+
+// Initially display the first question
+displayQuestion();
 </script>
 </body>
 
