@@ -18,12 +18,16 @@
    </script>
 <script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
 <style>
-
+#question {
+    font-weight: bold;
+    font-size: 2em;
+}
 #question-container {
     text-align: center;
 }
 
 .modal {
+	color: #000;
     display: none;
     position: fixed;
     z-index: 1;
@@ -57,6 +61,23 @@
     text-decoration: none;
     cursor: pointer;
 }
+.modal-content p{ 
+	font-size: 16px;
+	color: black;
+}
+.modal-content h1 { 
+	color: #000;
+	
+}
+#answer-input {
+    font-size: 40px;
+    font-family: 'Rubik', sans-serif;
+    border: 2px black solid;
+    width: 60%;
+    text-align: center;
+    font-size: 20px;
+    padding: .5em;
+}
 </style> 
 </head>
 <body style="background:white">
@@ -75,12 +96,15 @@
 	</div>
 
 	<div id="congratulations-modal" class="modal">
-			<div class="modal-content">
-					<span class="close-button">&times;</span>
-					<h1>Congratulations!</h1>
-					<p>You have answered all questions correctly!</p>
-			</div>
-	</div>
+		<div class="modal-content">
+				<span class="close-button">&times;</span>
+				<h1>Congratulations!</h1>
+				<p>You have answered all questions correctly!</p>
+				<br><br>
+				<h3>Here is your next clue:</h3>
+				<h1>1</h1>
+		</div>
+    </div>
 
 	</p>
 	
