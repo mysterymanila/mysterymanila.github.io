@@ -31,20 +31,24 @@
 	<br>
 	<h1 id="h1_indextitle" style="color:#FF8200"></h1>
 	<p id="h1_dpstory" style="font-family:LeviReBrushed;color:white">
-			<!-- <img id="img_mm2" src="img/aev.jpg" style="text-align:center;width:100%;height:100%;"/></h1> -->
-			<!-- UNILAB -->
-			<!-- <img id="img_mm" src="img/braille958.png" style="text-align:center;width:100%;height:100%;display:none"/> -->
-			<!-- MJN -->
-			<!-- <img id="img_mm" src="img/braille419.png" style="text-align:center;width:100%;height:100%;display:none"/> -->
-			<!-- <img id="img_mm" src="img/MJNFinal.png" style="text-align:center;width:100%;height:100%;display:none"/>  -->
-			<!-- QepUWBhOW5c -->
-			<!-- <iframe id="img_mm" sandbox="allow-same-origin allow-scripts allow-popups allow-forms" width="560" height="315" 
-			src="https://www.youtube.com/embed/QepUWBhOW5c" 
-			frameborder="0" allowfullscreen></iframe> -->
+		
+		<div id="game-board" class="game-board">
+			<!-- Images will be dynamically added here -->
+	</div>
 
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!-- <script src="script.js"></script> -->
 	</p>
 	<br><span id="inputerror"></span>			
 	<style>
+		   body {
+    /* font-family: Arial, sans-serif; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
 		a:link {
 			color: green;
 			background-color: transparent;
@@ -68,69 +72,120 @@
 			background-color: transparent;
 			text-decoration: underline;
 		}
+
+.game-board {
+    display: flex;
+    /* overflow: auto; */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+  margin: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: #FFF;
+    border: 1px solid #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.card img {
+    width: 80%; /* Slightly smaller than the container to provide padding */
+    /* display: none; Hide images initially */
+}
 		</style>	
-	<form action="" method="post">
-		<div id="login">
-			<p id="h1_dpstory" style="font-family:'Rubik', sans-serif ;">
-
-				<img id="img_mm2" src="img/cmc.jpg" style="text-align:center;width:100%;height:100%;"/>
-				
-			</p>
-			<p>
-				<a href="https://youtu.be/rIMxRO_11hA" target="_blank">https://youtu.be/rIMxRO_11hA</a>
-			</p>
+	
 
 
-<style>
-	#submit, .labelPassword{ 
-		font-size: 20px;
-	}
-	#inputcode{ 
-		font-size: 20px;
-		padding: .5em;
-	}
-</style>
-			<br><br>			
 
-				
-		</div>	
-	</form>
+		
 </div>
 <script>
-	
-	$('#img_mm').hide(1);
-	$('#inputerror').hide(1);
-	$('#submit').click(function(e) { //Add the 'e' event object to the parameters
-		var inputString = $('#inputcode').val();
-		//UNILAB
-		//var answerString = "3215";
-		//MJN
-		var answerString = "1532";
-		if (inputString.toUpperCase() === answerString.toUpperCase()){
-			$('#login').hide(1);
-			alert("Correct");
-			$('#img_mm2').hide(1000);	
-			$('#img_mm').show(1000);					
-			$('#img_mm').focus();
-			// $('#inputcode').val("---input disabled----");
+	 $(document).ready(function() {
+    var x = 0;
+    const items = [
+        { image: 'comicu.png', brand: 'edge.png' },
+        { image: 'taptv.png', brand: 'sports2.png' },
+        { image: 'tapedge.png', brand: 'sports.png' },
+        { image: 'tapmovies.png', brand: 'football.png' },
+        { image: 'tapsports.png', brand: 'tapactionflix.png' }
+    ];
 
+    // Create pairs and shuffle
+    let gameItems = items.flatMap(item => [
+        { type: 'character', src: item.image, matchId: item.brand },
+        { type: 'brand', src: item.brand, matchId: item.image }
+    ]);
+    gameItems.sort(() => 0.5 - Math.random());
 
-			// https://drive.google.com/file/d/1yZJ55cTfkgScecUs_AVK8SXr82YvBmhA/view?usp=sharing
+    // Append images to the game board
+    gameItems.forEach(item => {
+        $('#game-board').append(`<div class="card" data-match="${item.matchId}"><img src="${item.src}" alt="Image" style="display:block;"></div>`);
+    });
 
+    let firstCard = null;
+    let secondCard = null;
+    let freezeBoard = false;
 
-			$('#inputerror').html("<font color='green'>Congratulations on solving this challenge!</font>");
-			$('#inputerror').show(100);
-			$('#img_mm').show(100);
-			
-			$('#img_mm2').hide(1);
-			$('#inputcode').prop('disabled', true);
-			$('#submit').prop('disabled', true);										
-			
-		}
-		else{
-			alert("ERROR!");
-		}//else inputcode	
-	});//end of $('#submit').click(function(e) {
+    $('.card').on('click', function() {
+        if (freezeBoard) return;
+        if (this === firstCard) return;
+
+        if (!firstCard) {
+            // First card clicked
+            firstCard = this;
+            $(firstCard).css('background-color','rgb(255 235 0 / 55%)');
+        } else {
+            // Second card clicked
+            secondCard = this;
+            $(secondCard).css('background-color','rgb(255 235 0 / 55%)');
+            checkForMatch();
+        }
+    });
+
+    function checkForMatch() {
+        const matchIdFirst = $(firstCard).data('match');
+        const srcSecond = $(secondCard).find('img').attr('src');
+
+        if (matchIdFirst === srcSecond || $(secondCard).data('match') === $(firstCard).find('img').attr('src')) {
+            correctMatch();
+            x++;
+            
+        } else {
+            incorrectMatch();
+        }
+    }
+
+    function correctMatch() {
+        $(firstCard).css({'border': '3px solid green','background-color':'rgb(94 255 80 / 50%)'});
+        $(secondCard).css({'border': '3px solid green','background-color':'rgb(94 255 80 / 50%)'});
+        resetBoard();
+    }
+
+    function incorrectMatch() {
+        $(firstCard).css('background-color','rgba(255, 0, 0, 0.5)');
+        $(secondCard).css('background-color','rgba(255, 0, 0, 0.5)');
+        setTimeout(() => {
+          $('.card').each(function() {
+          // Reset CSS styles
+            $(this).css({
+                'border': '', // Remove any border style
+                'background-color': '' // Remove any background color
+            });
+          });
+            resetBoard();
+        }, 1000);
+    }
+
+    function resetBoard() {
+        [firstCard, secondCard] = [null, null];
+       
+        freezeBoard = false;
+    }
+});
 </script>
 </body>
 
