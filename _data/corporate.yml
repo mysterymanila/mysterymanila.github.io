@@ -5,4 +5,6 @@
   description: "We also do customized mysteries for special corporate events and media launches"
 
 - image: /img/corporate/partner.gif
-  description: "Be the killer, victim or witness! <br/> Check out our sister company <br/>www.murdermanila.com <br/> for details."
+  description: "Be the killer, victim or witness! <br/> <a href="/downloads/MurderManila05-2024.pdf" class="clearfix"  target="_blank">
+        <button class="btn btn-default  col-sm-2 col-sm-offset-5 col-xs-6 col-xs-offset-3">{{'Download' | upcase}}</button>
+    </a>"
