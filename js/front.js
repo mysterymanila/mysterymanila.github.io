@@ -323,10 +323,10 @@ $(function(){
     // console.log(new Date('2019-09-19'));
     // if(new Date() < new Date('2019-12-24')) {
         
-        // $('#overlay').modal('show');
-        //  setTimeout(function() {
-        //      $('#overlay').modal('hide');
-        //  }, 15000);
+        $('#mpass').modal('show');
+         setTimeout(function() {
+             $('#mpass').modal('hide');
+         }, 10000);
     // }
 });
 
