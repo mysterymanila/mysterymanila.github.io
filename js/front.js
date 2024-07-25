@@ -323,9 +323,9 @@ $(function(){
     // console.log(new Date('2019-09-19'));
     // if(new Date() < new Date('2019-12-24')) {
         
-        $('#mpass').modal('show');
+        $('#overlay').modal('show');
          setTimeout(function() {
-             $('#mpass').modal('hide');
+             $('#overlay').modal('hide');
          }, 10000);
     // }
 });
