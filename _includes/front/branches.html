@@ -1,14 +1,7 @@
 <div class="container">
     <div class="row branches-container" id="branch">
         <div class="col-md-12">
-            <div class="col-md-6 branches-content">
-                <div class="branches-button-container">
-                    <a href="https://www.mysterymanila.com/events/promil" class="branch-url">
-                        <img class="branches-image clearfix" style="animation:none" src="/img/promil/logofree.png"/>
-                    </a>
-                    <h3>PROMIL<sup>&reg;</sup> GIFTED BRAIN ROOM</h3>
-                </div>
-            </div>
+            
             {% assign sorted-branch = site.branches | sort: 'rank' %}
             {% for branch in sorted-branch %}
                 {% if branch.slug=="jupiter" or branch.slug=="pasig"  %}
