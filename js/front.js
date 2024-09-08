@@ -319,16 +319,16 @@ mm.initFAQ2 = function() {
 
 $(function(){
     mm.init();
-    // console.log(new Date());
-    // console.log(new Date('2019-09-19'));
-    // if(new Date() < new Date('2019-12-24')) {
+    console.log(new Date());
+    console.log(new Date('2019-09-19'));
+    if(new Date() < new Date('2019-12-24')) {
         
-        // $('#overlay').modal('show');
-        //  setTimeout(function() {
-        //      $('#overlay').modal('hide');
-        //  }, 10000);
+        $('#mpass').modal('show');
+         setTimeout(function() {
+             $('#mpass').modal('hide');
+         }, 10000);
 
-    // }
+    }
 });
 
 
