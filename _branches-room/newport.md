@@ -4,7 +4,7 @@ title: NEWPORT MALL
 branch-name: newport Mall
 layout: branches
 css: /css/branches.css
-banner: /img/branches-cover/newport.jpg
+banner: /img/branches-cover/hallway.png
 
 ---
 
