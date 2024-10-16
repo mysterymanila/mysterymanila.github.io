@@ -315,17 +315,25 @@ mm.initFAQ2 = function() {
     });
 }
 
-
+function randomIntFromInterval(min, max) { // min and max included 
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  }
+  
+ 
 
 $(function(){
     mm.init();
     console.log(new Date());
     console.log(new Date('2019-09-19'));
     // if(new Date() < new Date('2019-12-24')) {
-        
-        $('#mpass').modal('show');
+    const arrayMystery = ["clowns", "bambike", "titt", "hallways"];
+    const rndInt = randomIntFromInterval(0, 3);
+    const modalID = arrayMystery[rndInt];
+
+    console.log(rndInt);   
+        $('#' + modalID).modal('show');
          setTimeout(function() {
-             $('#mpass').modal('hide');
+             $('#' + modalID).modal('hide');
          }, 10000);
 
     // }
