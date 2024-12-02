@@ -323,18 +323,19 @@ function randomIntFromInterval(min, max) { // min and max included
 
 $(function(){
     mm.init();
-    console.log(new Date());
-    console.log(new Date('2019-09-19'));
+    // console.log(new Date());
+    // console.log(new Date('2019-09-19'));
     // if(new Date() < new Date('2019-12-24')) {
-    const arrayMystery = ["hallways","overlay"];
-    const rndInt = randomIntFromInterval(0,1);
-    const modalID = arrayMystery[rndInt];
+    // const arrayMystery = ["hallways","overlay"];
+    // const rndInt = randomIntFromInterval(0,1);
+    // const modalID = arrayMystery[rndInt];
 
-    console.log(rndInt);   
-        $('#' + modalID).modal('show');
-         setTimeout(function() {
-             $('#' + modalID).modal('hide');
-         }, 10000);
+    // console.log(rndInt);   
+    // $('#' + modalID).modal('show');
+
+    // setTimeout(function() {
+    //     $('#' + modalID).modal('hide');
+    // }, 10000);
 
     // }
 });
