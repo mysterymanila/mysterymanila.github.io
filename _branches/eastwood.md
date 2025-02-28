@@ -10,8 +10,8 @@ telephone:
     - (+632) 7503 9163
     - (+63) 917 582 08 08
 availability:
-    - 1 PM to 10:30 PM Mondays to Fridays
-    - 10 AM to 10:30 PM Holidays/Saturdays/Sundays
+    - 12 PM to 9:30 PM Mondays to Fridays
+    - 11 AM to 9:30 PM Holidays/Saturdays/Sundays
 ---
 <div id="TA_socialButtonReviews71" class="social-media TA_socialButtonReviews">
   <ul id="icxi0ooFtBLn" class="TA_links lhj6es3">
