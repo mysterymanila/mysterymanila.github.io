@@ -342,6 +342,30 @@
     <p>When the team boarded the ship,they found out that the ship is a beacon to an impending alien assault to the confederate base. </p>
     <p>You have 50 minutes to destroy the ship’s beacon and find out where the aliens will be attacking from.</p>	
 
+- id: 7
+  slug: rebeccas-return
+  mysteryId: 125
+  title: Rebecca's Return
+  branch:
+    slug: century
+    class: transition7
+    position: -78px -318px
+    width: 75px
+  icon:
+    position: -88px -350px
+  sidebar_icon:
+    position: -53px -208px
+  poster: /img/posters/r5.png
+  video:
+  frame:
+    top: top-brush-frame-4
+    bottom: bottom-brush-frame-5
+  description: >
+
+    <p>In this mystery, your group will play as paranormal investigators hired by the victim's family after disappearing. Learning about what happened, you realized this is a case you all were familiar. </p>
+    <p>It's Rebecca and she returned to seek for more victims. </p>
+    <p>Do you have what it takes to stop Rebecca's Return? </p>
+
 - id: 1
   slug: rebel-resistance
   mysteryId: 23
