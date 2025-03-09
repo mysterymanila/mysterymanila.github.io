@@ -329,13 +329,12 @@
     position: -88px -350px
   sidebar_icon:
     position: -53px -208px
-  poster: /img/posters/r5.png
+  poster: /img/posters/R5.png
   video:
   frame:
     top: top-brush-frame-4
     bottom: bottom-brush-frame-5
   description: >
-
     <p>In this mystery, your group will play as paranormal investigators hired by the victim's family after disappearing. Learning about what happened, you realized this is a case you all were familiar. </p>
     <p>It's Rebecca and she returned to seek for more victims. </p>
     <p>Do you have what it takes to stop Rebecca's Return? </p>
