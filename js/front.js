@@ -336,6 +336,11 @@ $(function(){
     // setTimeout(function() {
     //     $('#' + modalID).modal('hide');
     // }, 10000);
+    $('#clevercrew').modal('show');
+
+    setTimeout(function() {
+        $('#clevercrew').modal('hide');
+    }, 10000);
 
     // }
 });
