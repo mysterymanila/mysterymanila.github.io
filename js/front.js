@@ -336,7 +336,7 @@ $(function(){
     // setTimeout(function() {
     //     $('#' + modalID).modal('hide');
     // }, 10000);
-    // $('#mpass').modal('show');
+    $('#mpass').modal('show');
 
     setTimeout(function() {
         $('#mpass').modal('hide');
