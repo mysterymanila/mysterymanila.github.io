@@ -339,11 +339,11 @@ $(function(){
 
 
 
-    $('#mpass').modal('show');
+    // $('#mpass').modal('show');
 
-    setTimeout(function() {
-        $('#mpass').modal('hide');
-    }, 10000);
+    // setTimeout(function() {
+    //     $('#mpass').modal('hide');
+    // }, 10000);
 
 
 
