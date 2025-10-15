@@ -326,24 +326,24 @@ $(function(){
     // console.log(new Date());
     // console.log(new Date('2019-09-19'));
     // if(new Date() < new Date('2019-12-24')) {
-    // const arrayMystery = ["hallways","overlay"];
-    // const rndInt = randomIntFromInterval(0,1);
-    // const modalID = arrayMystery[rndInt];
+    const arrayMystery = ["titt","bambike"];
+    const rndInt = randomIntFromInterval(0,1);
+    const modalID = arrayMystery[rndInt];
 
-    // console.log(rndInt);   
-    // $('#' + modalID).modal('show');
-
-    // setTimeout(function() {
-    //     $('#' + modalID).modal('hide');
-    // }, 10000);
-
-
-
-    $('#titt').modal('show');
+    console.log(rndInt);   
+    $('#' + modalID).modal('show');
 
     setTimeout(function() {
-        $('#titt').modal('hide');
+        $('#' + modalID).modal('hide');
     }, 10000);
+
+
+
+    // $('#titt').modal('show');
+
+    // setTimeout(function() {
+    //     $('#titt').modal('hide');
+    // }, 10000);
 
 
 
