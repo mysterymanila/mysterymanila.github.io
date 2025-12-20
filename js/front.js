@@ -330,12 +330,12 @@ $(function(){
     const rndInt = randomIntFromInterval(0,1);
     const modalID = arrayMystery[rndInt];
 
-    console.log(rndInt);   
-    $('#' + modalID).modal('show');
+    // console.log(rndInt);   
+    // $('#' + modalID).modal('show');
 
-    setTimeout(function() {
-        $('#' + modalID).modal('hide');
-    }, 10000);
+    // setTimeout(function() {
+    //     $('#' + modalID).modal('hide');
+    // }, 10000);
 
 
 
