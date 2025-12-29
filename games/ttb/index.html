@@ -1,0 +1,739 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ticking Time Bomb</title>
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --phone:#121a24;
+      --screen:#b9e7a6;
+      --screen2:#98d882;
+      --ink:#0c1b12;
+      --key:#1b2736;
+      --key2:#233449;
+      --accent:#7ee081;
+      --danger:#ff6b6b;
+    }
+    *{ box-sizing:border-box; }
+    body{
+  margin:0;
+  min-height:100vh;
+  display:grid;
+  place-items:center;
+
+  /* image + dark overlay + your radial glow */
+  background:
+    radial-gradient(1200px 800px at 50% 20%, rgba(26,37,64,.85) 0%, rgba(11,15,20,.92) 55%),
+    url("img/bg.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color:#e8eef7;
+}
+
+
+    .phone{
+      width:min(420px, 92vw);
+      background: linear-gradient(180deg, #182233, var(--phone));
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:28px;
+      padding:18px;
+      box-shadow: 0 18px 60px rgba(0,0,0,.55);
+    }
+
+    .toprow{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+      margin-bottom:12px;
+      opacity:.9;
+      font-size:12px;
+    }
+
+    .screen{
+      position:relative;
+      background: linear-gradient(180deg, var(--screen), var(--screen2));
+      border-radius:16px;
+      padding:14px 14px 44px;
+      border:1px solid rgba(0,0,0,.25);
+      box-shadow: inset 0 0 0 2px rgba(255,255,255,.18);
+      color:var(--ink);
+      overflow:hidden;
+      user-select:none;
+    }
+
+    .screen:before{
+      content:"";
+      position:absolute; inset:0;
+      background: repeating-linear-gradient(
+        to bottom,
+        rgba(0,0,0,.06),
+        rgba(0,0,0,.06) 1px,
+        rgba(255,255,255,.00) 3px,
+        rgba(255,255,255,.00) 6px
+      );
+      pointer-events:none;
+      mix-blend-mode:multiply;
+      opacity:.55;
+    }
+
+    .lcd-row{
+      position:relative;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      justify-content:space-between;
+      margin-bottom:6px;
+      font-weight:700;
+      letter-spacing:.08em;
+    }
+
+    .status{
+      font-size:11px;
+      font-weight:800;
+      letter-spacing:.12em;
+      opacity:.85;
+      display:flex;
+      align-items:center;
+      gap:8px;
+    }
+
+    .dot{
+      width:8px; height:8px;
+      border-radius:99px;
+      background:#2a3;
+      box-shadow: 0 0 0 2px rgba(0,0,0,.15);
+    }
+    .dot.locked{ background: var(--danger); }
+
+    .typed-wrap{
+      margin-top:6px;
+      min-height:42px;
+      display:flex;
+      align-items:flex-end;
+      justify-content:space-between;
+      gap:10px;
+    }
+
+    .typed{
+      font-size:28px;
+      font-weight:900;
+      letter-spacing:.10em;
+      line-height:1;
+      text-transform:uppercase;
+      filter: contrast(1.1);
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      max-width:100%;
+    }
+
+    .cursor{
+      width:10px;
+      height:18px;
+      background: rgba(12,27,18,.55);
+      margin-left:6px;
+      border-radius:2px;
+      transform: translateY(-2px);
+      animation: blink 1s step-end infinite;
+      flex:0 0 auto;
+    }
+    @keyframes blink { 50% { opacity:0; } }
+
+    .hint{
+      margin-top:8px;
+      font-size:12px;
+      font-weight:800;
+      letter-spacing:.08em;
+      opacity:.9;
+    }
+
+    .subhint{
+      font-size:11px;
+      font-weight:700;
+      opacity:.75;
+      letter-spacing:.06em;
+      margin-top:4px;
+    }
+
+    .typed.anim-pop{ animation: lcdPop 140ms ease-out; }
+    @keyframes lcdPop{
+      0%{ transform:translateY(2px); filter: blur(.6px) contrast(1.4); opacity:.65; }
+      100%{ transform:translateY(0); filter: blur(0) contrast(1.1); opacity:1; }
+    }
+
+    .typed.anim-shake{ animation: shake 240ms ease-in-out; }
+    @keyframes shake{
+      0%,100%{ transform:translateX(0); }
+      25%{ transform:translateX(-2px); }
+      75%{ transform:translateX(2px); }
+    }
+
+    .playing{
+      position:absolute;
+      left:12px; right:12px; bottom:10px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+      padding:8px 10px;
+      border-radius:12px;
+      background: rgba(12,27,18,.10);
+      border:1px solid rgba(12,27,18,.18);
+      opacity:0;
+      transform: translateY(6px);
+      transition: .18s ease;
+      pointer-events:none;
+    }
+    .playing.on{
+      opacity:1;
+      transform: translateY(0);
+    }
+    .playing .label{
+      font-size:11px;
+      font-weight:900;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+    }
+    .eq{
+      display:flex;
+      align-items:flex-end;
+      gap:3px;
+      height:16px;
+    }
+    .bar{
+      width:4px;
+      height:6px;
+      border-radius:2px;
+      background: rgba(12,27,18,.6);
+      animation: eq 600ms ease-in-out infinite;
+      transform-origin: bottom;
+    }
+    .bar:nth-child(2){ animation-delay: 80ms; }
+    .bar:nth-child(3){ animation-delay: 160ms; }
+    .bar:nth-child(4){ animation-delay: 240ms; }
+    @keyframes eq{
+      0%,100%{ transform: scaleY(.45); opacity:.55; }
+      50%{ transform: scaleY(1.35); opacity:.95; }
+    }
+
+    .keys{
+      margin-top:14px;
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:10px;
+    }
+
+    button.key{
+      appearance:none;
+      border:none;
+      border-radius:16px;
+      padding:14px 10px;
+      background: linear-gradient(180deg, var(--key2), var(--key));
+      color:#eaf2ff;
+      border:1px solid rgba(255,255,255,.10);
+      box-shadow:
+        0 10px 22px rgba(0,0,0,.30),
+        inset 0 0 0 2px rgba(255,255,255,.04);
+      cursor:pointer;
+      user-select:none;
+      -webkit-tap-highlight-color: transparent;
+      transition: transform .06s ease, filter .06s ease, opacity .12s ease;
+      min-height:64px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      gap:4px;
+    }
+    button.key:active{
+      transform: translateY(1px) scale(.99);
+      filter: brightness(1.08);
+    }
+    button.key[disabled]{
+      cursor:not-allowed;
+      opacity:.45;
+      transform:none;
+      filter:none;
+    }
+
+    .num{ font-size:18px; font-weight:900; letter-spacing:.08em; }
+    .letters{ font-size:11px; font-weight:800; letter-spacing:.18em; opacity:.75; }
+
+    .row-actions{
+      margin-top:12px;
+      display:flex;
+      gap:10px;
+    }
+    .action{
+      flex:1;
+      border-radius:14px;
+      padding:12px 10px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.06);
+      color:#eaf2ff;
+      font-weight:900;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+      cursor:pointer;
+      transition: opacity .12s ease;
+    }
+    .action:active{ transform: translateY(1px); }
+    .action[disabled]{ cursor:not-allowed; opacity:.45; }
+
+    .toast{
+      margin-top:10px;
+      font-size:12px;
+      opacity:.9;
+      min-height:18px;
+      letter-spacing:.06em;
+    }
+    .toast.good{ color: #b7ffb9; }
+    .toast.bad{ color: #ffd1d1; }
+
+    .footer{
+      margin-top:10px;
+      font-size:11px;
+      opacity:.7;
+      line-height:1.35;
+    }
+    .kbd{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.10);
+      padding: 2px 6px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <main class="phone">
+    <div class="toprow">
+      <div>🟩 SIGNAL</div>
+      <div>MM TIME BOMB</div>
+      <div id="clock">--:--</div>
+    </div>
+
+    <section class="screen" aria-label="LCD screen">
+      <div class="lcd-row">
+        <div class="status">
+          <span id="lockDot" class="dot"></span>
+          <span id="modeText">MULTI-TAP</span>
+          <span id="lockText" style="margin-left:6px;"></span>
+        </div>
+        <div class="status"><span id="tapInfo">TAP: —</span></div>
+      </div>
+
+      <div class="typed-wrap">
+        <div style="display:flex; align-items:flex-end; min-width:0;">
+          <div id="typed" class="typed" aria-live="polite"></div>
+          <div class="cursor" aria-hidden="true"></div>
+        </div>
+      </div>
+
+      <div class="hint">Key in correct word to play an audio</div>
+      <div class="subhint">
+        
+        • <span class="kbd">#</span> = submit<br>• <span class="kbd">*</span> = backspace<br> • <span class="kbd">0</span> = space
+      </div>
+
+      <div id="playing" class="playing" aria-hidden="true">
+        <div class="label">Playing audio</div>
+        <div class="eq" aria-hidden="true">
+          <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="keys" aria-label="Keypad">
+      <button class="key" data-key="1"><div class="num">1</div><div class="letters">—</div></button>
+      <button class="key" data-key="2"><div class="num">2</div><div class="letters">ABC</div></button>
+      <button class="key" data-key="3"><div class="num">3</div><div class="letters">DEF</div></button>
+
+      <button class="key" data-key="4"><div class="num">4</div><div class="letters">GHI</div></button>
+      <button class="key" data-key="5"><div class="num">5</div><div class="letters">JKL</div></button>
+      <button class="key" data-key="6"><div class="num">6</div><div class="letters">MNO</div></button>
+
+      <button class="key" data-key="7"><div class="num">7</div><div class="letters">PQRS</div></button>
+      <button class="key" data-key="8"><div class="num">8</div><div class="letters">TUV</div></button>
+      <button class="key" data-key="9"><div class="num">9</div><div class="letters">WXYZ</div></button>
+
+      <button class="key" data-key="*"><div class="num">*</div><div class="letters">DEL</div></button>
+      <button class="key" data-key="0"><div class="num">0</div><div class="letters">SPACE</div></button>
+      <button class="key" data-key="#"><div class="num">#</div><div class="letters">SEND</div></button>
+    </section>
+
+    <div class="row-actions">
+      <button id="clear" class="action">Clear</button>
+      <button id="help" class="action">How to</button>
+    </div>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <div class="footer">
+      
+    </div>
+  </main>
+
+  <script>
+    // --- Config ---
+    const MULTITAP_TIMEOUT_MS = 650; // pause to commit a letter
+    const VIBE_MS = 12;
+
+    const T9 = {
+      "1": "",
+      "2": "ABC",
+      "3": "DEF",
+      "4": "GHI",
+      "5": "JKL",
+      "6": "MNO",
+      "7": "PQRS",
+      "8": "TUV",
+      "9": "WXYZ"
+    };
+
+    const SPELLS = {
+      "EPOCH":  "audio/0001.mp3",
+      "CHRONOS":"audio/0002.mp3",
+      "BELLS":  "audio/0003.mp3"
+    };
+
+    // --- State ---
+    let text = "";
+    let lastKey = null;
+    let cycleIndex = 0;
+    let commitTimer = null;
+
+    let audio = new Audio();
+    audio.preload = "auto";
+
+    // Lockout while audio plays
+    let locked = false;
+
+    const elTyped   = document.getElementById("typed");
+    const elToast   = document.getElementById("toast");
+    const elPlaying = document.getElementById("playing");
+    const elTapInfo = document.getElementById("tapInfo");
+    const elClock   = document.getElementById("clock");
+    const elLockDot = document.getElementById("lockDot");
+    const elLockText= document.getElementById("lockText");
+
+    const keyButtons = Array.from(document.querySelectorAll("button.key"));
+    const actionButtons = [
+      document.getElementById("clear"),
+      document.getElementById("help")
+    ];
+
+    function tickClock(){
+      const d = new Date();
+      const hh = String(d.getHours()).padStart(2,"0");
+      const mm = String(d.getMinutes()).padStart(2,"0");
+      elClock.textContent = `${hh}:${mm}`;
+    }
+    tickClock();
+    setInterval(tickClock, 10000);
+
+    function haptic(){
+      if (navigator.vibrate) navigator.vibrate(VIBE_MS);
+    }
+
+    // --- Keypress Beep (WebAudio) ---
+    let audioCtx = null;
+    function ensureAudioCtx(){
+      if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      if (audioCtx.state === "suspended") audioCtx.resume();
+      return audioCtx;
+    }
+
+    function beep({freq=880, dur=0.03, type="square", gain=0.04} = {}){
+      const ctx = ensureAudioCtx();
+      const o = ctx.createOscillator();
+      const g = ctx.createGain();
+      o.type = type;
+      o.frequency.value = freq;
+
+      g.gain.value = 0;
+      o.connect(g);
+      g.connect(ctx.destination);
+
+      const t = ctx.currentTime;
+      // tiny attack/release to avoid clicks
+      g.gain.setValueAtTime(0.0001, t);
+      g.gain.linearRampToValueAtTime(gain, t + 0.005);
+      g.gain.linearRampToValueAtTime(0.0001, t + dur);
+
+      o.start(t);
+      o.stop(t + dur + 0.01);
+    }
+
+    function keyClickSound(){
+      // short click
+      beep({freq: 1200, dur: 0.02, type:"square", gain:0.045});
+    }
+    function errorBeep(){
+      beep({freq: 220, dur: 0.06, type:"sawtooth", gain:0.05});
+    }
+
+    function lcdAnimate(kind="pop"){
+      elTyped.classList.remove("anim-pop","anim-shake");
+      void elTyped.offsetWidth;
+      elTyped.classList.add(kind === "shake" ? "anim-shake" : "anim-pop");
+    }
+
+    function render(){
+      elTyped.textContent = text;
+    }
+
+    function setToast(msg, type=""){
+      elToast.textContent = msg;
+      elToast.className = "toast " + (type || "");
+    }
+
+    function clearCommitTimer(){
+      if (commitTimer) clearTimeout(commitTimer);
+      commitTimer = null;
+    }
+
+    function commitLetter(){
+      lastKey = null;
+      cycleIndex = 0;
+      elTapInfo.textContent = "TAP: —";
+    }
+
+    function scheduleCommit(){
+      clearCommitTimer();
+      commitTimer = setTimeout(() => {
+        commitLetter();
+      }, MULTITAP_TIMEOUT_MS);
+    }
+
+    function replaceLastChar(newChar){
+      if (!text.length) return;
+      text = text.slice(0, -1) + newChar;
+    }
+
+    function addChar(ch){
+      text += ch;
+    }
+
+    function setLocked(on){
+      locked = on;
+      keyButtons.forEach(b => b.disabled = on);
+      actionButtons.forEach(b => b.disabled = on);
+
+      if (on){
+        elLockDot.classList.add("locked");
+        elLockText.textContent = "LOCKED";
+      } else {
+        elLockDot.classList.remove("locked");
+        elLockText.textContent = "";
+      }
+    }
+
+    function handleNumberKey(k){
+      const letters = T9[k];
+      if (!letters) return;
+
+      if (lastKey === k && text.length > 0){
+        cycleIndex = (cycleIndex + 1) % letters.length;
+        replaceLastChar(letters[cycleIndex]);
+      } else {
+        commitLetter();
+        lastKey = k;
+        cycleIndex = 0;
+        addChar(letters[cycleIndex]);
+      }
+
+      elTapInfo.textContent = `TAP: ${k}`;
+      lcdAnimate("pop");
+      render();
+      scheduleCommit();
+    }
+
+    function handleBackspace(){
+      clearCommitTimer();
+      if (text.length === 0) return;
+      text = text.slice(0, -1);
+      commitLetter();
+      lcdAnimate("pop");
+      render();
+    }
+
+    function handleSpace(){
+      clearCommitTimer();
+      commitLetter();
+      if (text && !text.endsWith(" ")) addChar(" ");
+      lcdAnimate("pop");
+      render();
+    }
+
+    function normalize(s){
+      return s.trim().replace(/\s+/g, " ").toUpperCase();
+    }
+
+    async function playSpell(word){
+      const src = SPELLS[word];
+      if (!src) return false;
+
+      try {
+        audio.pause();
+        audio.currentTime = 0;
+        audio.src = src;
+
+        setLocked(true);
+        elPlaying.classList.add("on");
+        elPlaying.setAttribute("aria-hidden", "false");
+        setToast(`MATCH: ${word} ✅`, "good");
+
+        await audio.play();
+
+        return true;
+      } catch (e){
+        elPlaying.classList.remove("on");
+        elPlaying.setAttribute("aria-hidden", "true");
+        setLocked(false);
+        setToast(`Could not play ${src}. Check the file path.`, "bad");
+        return false;
+      }
+    }
+
+    function stopPlayingUI(){
+      elPlaying.classList.remove("on");
+      elPlaying.setAttribute("aria-hidden", "true");
+    }
+
+    audio.addEventListener("ended", () => {
+      stopPlayingUI();
+      setLocked(false);
+      // clear after playback
+      text = "";
+      commitLetter();
+      lcdAnimate("pop");
+      render();
+    });
+
+    audio.addEventListener("pause", () => {
+      // if paused manually, unlock
+      if (!audio.ended){
+        stopPlayingUI();
+        setLocked(false);
+      }
+    });
+
+    function submit(){
+      clearCommitTimer();
+      commitLetter();
+
+      const word = normalize(text).replace(/ /g, "");
+      if (!word){
+        setToast("Type something first.", "bad");
+        lcdAnimate("shake");
+        errorBeep();
+        return;
+      }
+
+      if (SPELLS[word]){
+        playSpell(word);
+      } else {
+        setToast(`NO MATCH: "${word}"`, "bad");
+        lcdAnimate("shake");
+        errorBeep();
+      }
+    }
+
+    function guardLocked(){
+      if (!locked) return false;
+      // locked feedback
+      haptic();
+      errorBeep();
+      setToast("Locked while audio is playing…", "bad");
+      lcdAnimate("shake");
+      return true;
+    }
+
+    // --- UI events ---
+    document.querySelectorAll("button.key").forEach(btn => {
+      btn.addEventListener("click", () => {
+        // allow the click itself to establish audio context
+        ensureAudioCtx();
+
+        if (guardLocked()) return;
+
+        const k = btn.dataset.key;
+
+        haptic();
+        keyClickSound();
+
+        if (k === "*") return handleBackspace();
+        if (k === "0") return handleSpace();
+        if (k === "#") return submit();
+        if (/^[1-9]$/.test(k)) return handleNumberKey(k);
+      });
+    });
+
+    document.getElementById("clear").addEventListener("click", () => {
+      ensureAudioCtx();
+      if (guardLocked()) return;
+
+      haptic();
+      keyClickSound();
+
+      stopPlayingUI();
+      audio.pause();
+      audio.currentTime = 0;
+
+      text = "";
+      commitLetter();
+      render();
+      setToast("Cleared.");
+      lcdAnimate("pop");
+    });
+
+    document.getElementById("help").addEventListener("click", () => {
+      ensureAudioCtx();
+      if (guardLocked()) return;
+
+      haptic();
+      keyClickSound();
+
+      setToast("Multi-tap: press same number to cycle letters. Pause to commit. # submits.", "");
+      lcdAnimate("pop");
+    });
+
+    // Keyboard support (desktop testing)
+    window.addEventListener("keydown", (e) => {
+      // if audio playing, ignore
+      if (guardLocked()) return;
+
+      const k = e.key;
+
+      // for any accepted key, do click + haptic
+      const accepted =
+        (k >= "1" && k <= "9") || k === "Backspace" || k === " " || k === "Enter" || k === "#" || k === "*";
+
+      if (!accepted) return;
+
+      ensureAudioCtx();
+      haptic();
+      keyClickSound();
+
+      if (k >= "1" && k <= "9") handleNumberKey(k);
+      else if (k === "Backspace" || k === "*") handleBackspace();
+      else if (k === " ") handleSpace();
+      else if (k === "Enter" || k === "#") submit();
+    });
+
+    // Initial
+    render();
+    setToast("Ready. Spell a word and press # to submit.");
+  </script>
+</body>
+</html>
+
