@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
   <title>Ticking Time Bomb</title>
   <style>
     :root{
@@ -252,6 +253,8 @@
       align-items:center;
       justify-content:center;
       gap:4px;
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
     }
     button.key:active{
       transform: translateY(1px) scale(.99);
@@ -263,6 +266,18 @@
       transform:none;
       filter:none;
     }
+
+    /* Prevent iOS double-tap zoom + unwanted selections */
+    .keys, .key, button {
+      touch-action: manipulation;     /* stops double-tap-to-zoom on many browsers */
+      -webkit-user-select: none;
+      user-select: none;
+      -webkit-touch-callout: none;    /* iOS long-press menu */
+    }
+
+    /* Also stop zooming from focusing */
+    button:focus { outline: none; }
+
 
     .num{ font-size:18px; font-weight:900; letter-spacing:.08em; }
     .letters{ font-size:11px; font-weight:800; letter-spacing:.18em; opacity:.75; }
