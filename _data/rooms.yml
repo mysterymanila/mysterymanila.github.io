@@ -428,6 +428,138 @@
     <p>Using tools and resources found inside the morgue, you only have an hour to escape before he kills each and everyone of you.</p>
     <p>Can you escape the Morbid Morgue?</p>
 
-
-
+#//ttb dd cc rr tt mm bb
+- id: 1
+  slug: deadly-dinner
+  mysteryId: 130
+  title: The Deadly Dinner
+  branch:
+    slug: podium
+    class: transition2
+    position: -78px -80px
+    width: 75px
+  icon:
+    position: -88px -88px
+  sidebar_icon:
+    position: -53px -53px
+  poster: /img/posters/smdd.jpg
+  frame:
+    top: top-brush-frame-5
+    bottom: bottom-brush-frame-6
+  description: >
+    <p>Cluedo meets Sherlock in this murder-mystery room. Someone has been murdered at a dinner party. Using logic and deduction, you must figure out the killer, weapon and motive. <br>With several possible solutions to the mystery, each time you play the game will surely be a unique and thrilling experience.</p>
+- id: 2
+  slug: crushing-chamber
+  mysteryId: 131
+  title: The Crushing Chamber
+  branch:
+    slug: podium
+    class: transition2
+    position: -78px -80px
+    width: 75px
+  icon:
+    position: -88px -88px
+  sidebar_icon:
+    position: -53px -53px
+  poster: /img/posters/smcc.jpg
+  frame:
+    top: top-brush-frame-5
+    bottom: bottom-brush-frame-6
+  description: >
+    <p>While performing routine maintenance on a subterranean pressure capsule, something has gone wrong and the controls malfunction, trapping you inside. <br>Now, the room’s walls are slowly closing in and you only have 50 minutes to escape before you’re crushed to death.</p>
+- id: 3
+  slug: rebecca-rises
+  mysteryId: 132
+  title: Rebecca Rises
+  branch:
+    slug: podium
+    class: transition2
+    position: -78px -80px
+    width: 75px
+  icon:
+    position: -88px -88px
+  sidebar_icon:
+    position: -53px -53px
+  poster: /img/posters/smrr.jpg
+  frame:
+    top: top-brush-frame-5
+    bottom: bottom-brush-frame-6
+  description: >
+    <p>Relieve the story how the evil Rebecca came into our world. The setting was in the old days where dark magic was practiced in a tiny cabin and everything went wrong. Your congregation knows this evil entity shouldn’t be let out in the world and since the ritual was already set, and you have 50 minutes left to stop it.</p>
+- id: 4
+  slug: temporal-thief
+  mysteryId: 133
+  title: Temporal Thief
+  branch:
+    slug: podium
+    class: transition2
+    position: -78px -80px
+    width: 75px
+  icon:
+    position: -88px -88px
+  sidebar_icon:
+    position: -53px -53px
+  poster: /img/posters/smtt.jpg
+  frame:
+    top: top-brush-frame-5
+    bottom: bottom-brush-frame-6
+  description: >
+    <p>You are part of the Temporal Team tasked to maintain peace across different timeline and multiverse. You recently discovered 3 artifacts were stolen that may cause chaos and disruption in the timeline. Your mission is to relieve the artifacts before major catastrophe occurs across different timelines. You have 50 minutes left. Do you have what it takes to catch the temporal thief?</p>
+- id: 5
+  slug: mirror-magic
+  mysteryId: 134
+  title: Mirrors of Magic
+  branch:
+    slug: podium
+    class: transition2
+    position: -78px -80px
+    width: 75px
+  icon:
+    position: -88px -88px
+  sidebar_icon:
+    position: -53px -53px
+  poster: /img/posters/smmm.jpg
+  frame:
+    top: top-brush-frame-5
+    bottom: bottom-brush-frame-6
+  description: >
+    <p>The Glass of Glories has been shattered into pieces and locked away inside the enchanted castle. You must break through all the magical puzzles protecting it to restore the shards to its proper place before a terrible curse is unleashed upon the realm.</p>
+- id: 6
+  slug: buried-bodies
+  mysteryId: 135
+  title: Buried Bodies
+  branch:
+    slug: podium
+    class: transition2
+    position: -78px -80px
+    width: 75px
+  icon:
+    position: -88px -88px
+  sidebar_icon:
+    position: -53px -53px
+  poster: /img/posters/smbb.jpg
+  frame:
+    top: top-brush-frame-5
+    bottom: bottom-brush-frame-6
+  description: >
+    <p>Kidnapped by the psychopath Enigma, you and your friends have been trapped inside a coffin and sealed in a tomb. Decipher the clues and solve the puzzles that have been left behind to escape or else be imprisoned forever. </p>
+- id: 7
+  slug: ticking-timer
+  mysteryId: 136
+  title: The Ticking Timer
+  branch:
+    slug: podium
+    class: transition2
+    position: -78px -80px
+    width: 75px
+  icon:
+    position: -88px -88px
+  sidebar_icon:
+    position: -53px -53px
+  poster: /img/posters/smtbb.jpg
+  frame:
+    top: top-brush-frame-5
+    bottom: bottom-brush-frame-6
+  description: >
+    <p>As part of an elite bomb squad, you’ve been called in to disarm the ticking time bomb left behind by the evil psychopath Enigma. The only way to do this is to decipher the clues he has hidden all over the mall to figure out the disarm code before the 50 min countdown is up.</p>
 
