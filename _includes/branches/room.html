@@ -1,5 +1,6 @@
 
 <div id="rooms">
+    <div id="bottom-brush"></div>
     {% assign sorted-room = site.data.rooms | sort: 'id' %}
     {% for room in sorted-room %}
     {% if page.slug == room.branch.slug%}
