@@ -442,7 +442,7 @@
     position: -88px -88px
   sidebar_icon:
     position: -53px -53px
-  poster: /img/posters/smdd.jpg
+  poster: /img/posters/smdd.png
   frame:
     top: top-brush-frame-5
     bottom: bottom-brush-frame-6
@@ -461,7 +461,7 @@
     position: -88px -88px
   sidebar_icon:
     position: -53px -53px
-  poster: /img/posters/smcc.jpg
+  poster: /img/posters/smcc.png
   frame:
     top: top-brush-frame-5
     bottom: bottom-brush-frame-6
@@ -480,7 +480,7 @@
     position: -88px -88px
   sidebar_icon:
     position: -53px -53px
-  poster: /img/posters/smrr.jpg
+  poster: /img/posters/smrr.png
   frame:
     top: top-brush-frame-5
     bottom: bottom-brush-frame-6
@@ -499,7 +499,7 @@
     position: -88px -88px
   sidebar_icon:
     position: -53px -53px
-  poster: /img/posters/smtt.jpg
+  poster: /img/posters/smtt.png
   frame:
     top: top-brush-frame-5
     bottom: bottom-brush-frame-6
@@ -518,7 +518,7 @@
     position: -88px -88px
   sidebar_icon:
     position: -53px -53px
-  poster: /img/posters/smmm.jpg
+  poster: /img/posters/smmm.png
   frame:
     top: top-brush-frame-5
     bottom: bottom-brush-frame-6
@@ -537,7 +537,7 @@
     position: -88px -88px
   sidebar_icon:
     position: -53px -53px
-  poster: /img/posters/smbb.jpg
+  poster: /img/posters/smbb.png
   frame:
     top: top-brush-frame-5
     bottom: bottom-brush-frame-6
@@ -556,7 +556,7 @@
     position: -88px -88px
   sidebar_icon:
     position: -53px -53px
-  poster: /img/posters/smtbb.jpg
+  poster: /img/posters/smtbb.png
   frame:
     top: top-brush-frame-5
     bottom: bottom-brush-frame-6

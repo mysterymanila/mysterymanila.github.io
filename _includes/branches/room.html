@@ -26,7 +26,7 @@
 
                 
                 <h4>BRANCH: {{ site.branches | where:'slug',room.branch.slug | map: 'name' | first | upcase}}</h4>
-                {% if room.branch.slug=='century' or  room.branch.slug=='eastwood' or  room.branch.slug=='uptown' %}
+                {% if room.branch.slug=='century' or  room.branch.slug=='eastwood' or  room.branch.slug=='podium' or  room.branch.slug=='uptown' %}
                     {% if room.branch.slug=='eastwood' %} 
                         
                         <a class="book-now" href="https://booknow.mysterymanila.com/?myst_id={{room.mysteryId}}" target="_blank">
@@ -34,7 +34,11 @@
                             
                         </a>
                     {% else %}  
-                        {% if room.mysteryId == 16 %}
+                        {% if room.mysteryId == 16
+                            or room.mysteryId == 130 
+                            or room.mysteryId == 132 
+                            or room.mysteryId == 133 
+                            or room.mysteryId == 134  %}
                             <!-- <h1 class="text-danger" style="z-index: 2;">PROMO ALERT: Price 300 per head </h1> -->
                             <span style="color:red">Room closed until further notice. Please select a different room to play</span>
                         {% else %}
