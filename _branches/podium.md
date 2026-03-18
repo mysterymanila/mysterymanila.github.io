@@ -8,8 +8,8 @@ address: >
   12 ADB Avenue cor Julia Vargas, Ortigas CBD<br>
   1550 Mandaluyong City, Metro Manila, Philippines.<br>
 telephone: 
-  - (+632) 7625 8766
-  - (+63) 917 582 08 08
+  # - (+632) 7625 8766
+  - (+63) 917 180 3526
 availability:
   - 12 PM to 10 PM Everyday
 ---
