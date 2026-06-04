@@ -24,7 +24,7 @@
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">BRANCHES
                             <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            
+
                             {% for branches in site.branches-room %}
                             {% if branches.slug=="jupiter" or branches.slug=="qc"  %}
 
@@ -123,10 +123,13 @@
                                 {% if branches.slug=="century" or branches.slug=="eastwood"  %}
                                 <li>
                                     <a href="/branch/{{ branches.slug }}">{{ branches.title | upcase }}</a>
-                                </li>                        
-                               
+                                </li>
+
                                 {% endif %}
                                 {% endfor %}
+                                <li class="visible-xs-block">
+                                    <a href="/branch/podium">SM PODIUM</a>
+                                </li>
                         </ul>
                     </li>
                     <li class="dropdown">
