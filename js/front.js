@@ -326,16 +326,8 @@ $(function(){
     // console.log(new Date());
     // console.log(new Date('2019-09-19'));
     // if(new Date() < new Date('2019-12-24')) {
-    const arrayMystery = ["mpass"];
-    const rndInt = randomIntFromInterval(0,1);
-    const modalID = arrayMystery[rndInt];
-
-    console.log(rndInt);   
-    $('#' + modalID).modal('show');
-
-    setTimeout(function() {
-        $('#' + modalID).modal('hide');
-    }, 10000);
+    // Booking system is down — show downtime notice instead of regular promo modal
+    $('#bookingDownModal').modal('show');
 
 
 
