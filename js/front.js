@@ -326,14 +326,6 @@ $(function(){
     // console.log(new Date());
     // console.log(new Date('2019-09-19'));
     // if(new Date() < new Date('2019-12-24')) {
-    const arrayMystery = ["army"];
-    const rndInt = randomIntFromInterval(0, arrayMystery.length - 1);
-    const modalID = arrayMystery[rndInt];
-
-    // console.log(rndInt);
-    $('#' + modalID).modal('show');
-
-
 
     // $('#titt').modal('show');
 
