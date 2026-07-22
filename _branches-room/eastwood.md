@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 slug: eastwood
 title: eastwood
 branch-name: Eastwood
